@@ -1039,7 +1039,7 @@ enum _@en@casa
     hSpeed, 
     hEctasy, 
     hRitalin, 
-    hHeroina, 
+    hCocaina,
     hMarihuana, 
 	hWorld, 
 	hTime, 
@@ -1874,8 +1874,8 @@ new YaAposto																	[MAX_PLAYERS];
 new Maskuse																		[MAX_PLAYERS];
 new EctasyEffect																[MAX_PLAYERS];
 new RitalinEffect																[MAX_PLAYERS];
-new HeroinaEffect																[MAX_PLAYERS];
-new HeroinaBeat																	[MAX_PLAYERS];
+new CocainaEffect																[MAX_PLAYERS];
+new CocainaBeat																	[MAX_PLAYERS];
 new MarihuanaEffect																[MAX_PLAYERS];
 
 enum _@en@enteroChar{
@@ -1925,7 +1925,7 @@ new PlayerStatInfo																[MAX_PLAYERS][8][32];
 new CEDULAName																		[MAX_PLAYERS][32];
 new UsingEctasy																	[MAX_PLAYERS];
 new UsingRitalin																[MAX_PLAYERS];
-new UsingHeroina																[MAX_PLAYERS];
+new UsingCocaina																[MAX_PLAYERS];
 new UsingMarihuana																[MAX_PLAYERS];
 new JustReported																[MAX_PLAYERS];
 new Mochila																		[MAX_PLAYERS][2];
@@ -2006,7 +2006,7 @@ enum _@en@cuenta
 	cSpeed, 
 	cExtasis, 
 	cRitalin, 
-	cHeroina, 
+	cCocaina,
 	cMarihuana, 
 	cLider, 
 	cMiembro, 
@@ -2761,9 +2761,9 @@ public OnPlayerDeath(playerid, killerid, reason)
 	EctasyEffect[playerid] = 0;
 	UsingRitalin[playerid] = 0;
 	RitalinEffect[playerid] = 0;
-	UsingHeroina[playerid] = 0;
-	HeroinaEffect[playerid] = 0;
-	HeroinaBeat[playerid] = 0;
+	UsingCocaina[playerid] = 0;
+	CocainaEffect[playerid] = 0;
+	CocainaBeat[playerid] = 0;
 	UsingMarihuana[playerid] = 0;
 	MarihuanaEffect[playerid] = 0;
 	MarihuanaBeat[playerid] = 0;
@@ -3380,8 +3380,8 @@ public OnPlayerEnterCheckpoint(playerid)
 							}
 							case 3:
 							{
-								cuenta[playerid][cHeroina] += 2;
-								Mensaje(playerid, COLOR_BLANCO, "Usted recibio {008000}+2 {ffffff}gramos de heroina.");
+								cuenta[playerid][cCocaina] += 2;
+								Mensaje(playerid, COLOR_BLANCO, "Usted recibio {008000}+2 {ffffff}gramos de cocaina.");
 							}
 							case 4:
 							{
@@ -6727,7 +6727,7 @@ CallBack::GuardarDatosMySQL(playerid)
 	mysql_format(servidor[mysqlControl], tmp, sizeof(tmp), "UPDATE zz_usuarios SET nivel=%d, contrato=%d, niveladmin=%d, zzcash=%d, \
 	connectedtime=%d, acento=%d, registro=%d, sexo=%d, edad=%d, origen=%d, estilocaminar=%d, cobro=%d, stereo=%d, respeto=%d, \
 	dinero=%d, dinerobanco=%d, cheques=%d, kills=%d, muertes=%d, arrestos=%d, lottonr=%d, trabajo=%d, carcel=%d, tiempocarcel=%d, \
-	materiales=%d, drogas=%d, speed=%d, ectasy=%d, ritalin=%d, heroina=%d, marihuana=%d, lider=%d, miembro=%d, rango=%d, caracter=%d, \
+	materiales=%d, drogas=%d, speed=%d, ectasy=%d, ritalin=%d, Cocaina=%d, marihuana=%d, lider=%d, miembro=%d, rango=%d, caracter=%d, \
 	interior=%d, virtualworld=%d, team=%d, numerotelefonico=%d, minutos=%d, minutr=%d, horas=%d, mtexto=%d, ipod=%d, \
 	auto=%d, auto2=%d, auto3=%d, auto4=%d, casa=%d, casa2=%d, negocio=%d, negocio2=%d, licenciaauto=%d, licenciaarma=%d, gafas=%d, tutorial=%d, \
 	encendedor=%d, cigarrillos=%d, mascara=%d, advertencias=%d, adminadver=%d, dni=%d, weap0=%d, ammo0=%d, weap1=%d, ammo1=%d, \
@@ -6741,7 +6741,7 @@ CallBack::GuardarDatosMySQL(playerid)
 	cuenta[playerid][cDinero], cuenta[playerid][cDineroBanco], cuenta[playerid][cCheques], cuenta[playerid][cAsesinatos], cuenta[playerid][cMuerte], 
 	cuenta[playerid][cArrestado], cuenta[playerid][cLoteria], cuenta[playerid][cTrabajo], cuenta[playerid][cCarcel], cuenta[playerid][cTiempoCarcel], 
 	cuenta[playerid][cMateriales], cuenta[playerid][cDrogas], cuenta[playerid][cSpeed], cuenta[playerid][cExtasis], cuenta[playerid][cRitalin], 
-	cuenta[playerid][cHeroina], cuenta[playerid][cMarihuana], cuenta[playerid][cLider], cuenta[playerid][cMiembro], cuenta[playerid][cRango], cuenta[playerid][cTraje], 
+	cuenta[playerid][cCocaina], cuenta[playerid][cMarihuana], cuenta[playerid][cLider], cuenta[playerid][cMiembro], cuenta[playerid][cRango], cuenta[playerid][cTraje],
 	cuenta[playerid][cInterior], cuenta[playerid][cMundo], cuenta[playerid][cEquipo], cuenta[playerid][cTelefono], 
 	cuenta[playerid][cSaldo], cuenta[playerid][cMinutos], cuenta[playerid][cHoras], cuenta[playerid][cMensajes], cuenta[playerid][cIpod], 
 	cuenta[playerid][cCoche], cuenta[playerid][cCoche2], cuenta[playerid][cCoche3], cuenta[playerid][cCoche4], cuenta[playerid][cCasa], cuenta[playerid][cCasa2], 
@@ -8111,8 +8111,8 @@ command(revisarcasa, playerid, params[])
 			format(string, sizeof(string), "* %s revisa la casa en busca de materiales/drogas.", PlayerName(playerid));
 			ProxDetector(20.0, playerid, string, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA);
 			Mensaje(playerid, COLOR_AMARILLO2, "============================== Inventario =============================");
-			format(string, sizeof(string), "Materiales: %d - Drogas: %d - Speed: %d - Ectasy: %d - Ritalin: %d - Heroina: %d - Marihuana: %d", casa[i][hMats], 
-			casa[i][hDrugs], casa[i][hSpeed], casa[i][hEctasy], casa[i][hRitalin], casa[i][hHeroina], casa[i][hMarihuana]);
+			format(string, sizeof(string), "Materiales: %d - Drogas: %d - Speed: %d - Ectasy: %d - Ritalin: %d - Cocaina: %d - Marihuana: %d", casa[i][hMats],
+			casa[i][hDrugs], casa[i][hSpeed], casa[i][hEctasy], casa[i][hRitalin], casa[i][hCocaina], casa[i][hMarihuana]);
 			Mensaje(playerid, COLOR_BLANCO, string);
 			return 1;
 		}
@@ -8128,7 +8128,7 @@ COMMAND:incautar(playerid, params[])
 		{
 			if(IsPlayerInRangeOfPoint(playerid, 20.0, casa[i][hExitx], casa[i][hExity], casa[i][hExitz]))
 			{
-				if(!casa[i][hMats] || !casa[i][hDrugs] || !casa[i][hSpeed] || !casa[i][hEctasy] || !casa[i][hRitalin] || !casa[i][hHeroina] || !casa[i][hMarihuana]) return Mensaje(playerid, COLOR_GRIS2, "Esta casa no tiene nada para incautar!");
+				if(!casa[i][hMats] || !casa[i][hDrugs] || !casa[i][hSpeed] || !casa[i][hEctasy] || !casa[i][hRitalin] || !casa[i][hCocaina] || !casa[i][hMarihuana]) return Mensaje(playerid, COLOR_GRIS2, "Esta casa no tiene nada para incautar!");
 				
 				format(string, sizeof(string), "* %s toma la evidencia y las guarda.", PlayerName(playerid));
 				ProxDetector(20.0, playerid, string, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA);
@@ -8138,7 +8138,7 @@ COMMAND:incautar(playerid, params[])
 				casa[i][hSpeed] = 0;
 				casa[i][hEctasy] = 0;
 				casa[i][hRitalin] = 0;
-				casa[i][hHeroina] = 0;
+				casa[i][hCocaina] = 0;
 				casa[i][hMarihuana] = 0;
 				
 				format(string, sizeof(string), "* Central: %s ha incautado drogas/materiales en una casa de Los Santos.", PlayerName(playerid));
@@ -9343,7 +9343,7 @@ command(cachear, playerid, params[])
 			if(cuenta[params[0]][cSpeed] > 0) drugs++;
 				if(cuenta[params[0]][cExtasis] > 0) drugs++;
 				if(cuenta[params[0]][cRitalin] > 0) drugs++;
-				if(cuenta[params[0]][cHeroina] > 0) drugs++;
+				if(cuenta[params[0]][cCocaina] > 0) drugs++;
 				if(cuenta[params[0]][cMarihuana] > 0) drugs++;
 
 				if(drugs) Mensaje(playerid, COLOR_GRIS2, "El sujeto contiene drogas.");
@@ -9390,7 +9390,7 @@ command(revisar, playerid, params[])
 			if(cuenta[params[0]][cSpeed] > 0) drugs++;
 			if(cuenta[params[0]][cExtasis] > 0) drugs++;
 			if(cuenta[params[0]][cRitalin] > 0) drugs++;
-			if(cuenta[params[0]][cHeroina] > 0) drugs++;
+			if(cuenta[params[0]][cCocaina] > 0) drugs++;
 			if(cuenta[params[0]][cMarihuana] > 0) drugs++;
 
 			if(drugs) Mensaje(playerid, COLOR_GRIS2, "El sujeto porta drogas.");
@@ -10112,7 +10112,7 @@ COMMAND:bguardar(playerid, params[])
 		{
 			if(IsPlayerInRangeOfPoint(playerid, 10.0, IFacciones[faccid - 16][If@bpos][0], IFacciones[faccid - 16][If@bpos][1], IFacciones[faccid - 16][If@bpos][2]))
 			{
-				if(sscanf(params, "s[12]", opcion))return Mensaje(playerid, COLOR_GRIS2, "Utiliza /bguardar [dinero - arma - speed - extasis - ritalin - heroina - marihuana]");
+				if(sscanf(params, "s[12]", opcion))return Mensaje(playerid, COLOR_GRIS2, "Utiliza /bguardar [dinero - arma - speed - extasis - ritalin - cocaina - marihuana]");
 				if(!strcmp(opcion, "dinero"))
 				{
 					if(obtenerDinero(playerid) < 2000)return Mensaje(playerid, COLOR_GRIS, "Usted necesita 2000$ para guardar.");
@@ -10198,17 +10198,17 @@ COMMAND:bguardar(playerid, params[])
 					Mensaje(playerid, COLOR_ROJO, "No hay espacio para meter mas drogas.");
 					return 1;
 				}
-				else if(!strcmp(opcion, "heroina"))
+				else if(!strcmp(opcion, "cocaina"))
 				{
-					if(cuenta[playerid][cHeroina] <= 30)return Mensaje(playerid, COLOR_ROJO, "Usted necesita tener mas de 30 gramos de heroina para guardar en la boveda!");
+					if(cuenta[playerid][cCocaina] <= 30)return Mensaje(playerid, COLOR_ROJO, "Usted necesita tener mas de 30 gramos de Cocaina para guardar en la boveda!");
 					for(new i=0; i<20; i++)
 					{
 						if(!IFacciones[faccid - 16][If@drogas][i])
 						{
 							IFacciones[faccid - 16][If@drogas][i] = 4;
-							format(string, sizeof(string), "%s acaba de guardar heroina en la boveda de %s.", PlayerName(playerid), IFacciones[faccid - 16][If@nombre]);
+							format(string, sizeof(string), "%s acaba de guardar Cocaina en la boveda de %s.", PlayerName(playerid), IFacciones[faccid - 16][If@nombre]);
 							SendFamilyMessage(faccid, COLOR_VERDE, string);
-							cuenta[playerid][cHeroina] -= 30;
+							cuenta[playerid][cCocaina] -= 30;
 							ActualizarFaccion(faccid - 16);
 							return 1;
 						}
@@ -11719,14 +11719,14 @@ command(adminduty, playerid, params[]){
        			format(string, sizeof(string), "* Has recibido %d de ritalin. Ahora tienes %d", params[2], cuenta[params[1]][cRitalin]);
 	        	Mensaje(params[1], COLOR_AMARILLO2, string);
             }
-            if(strcmp(item, "heroina", true) == 0)
+            if(strcmp(item, "cocaina", true) == 0)
             {
-                if(params[2] > cuenta[playerid][cHeroina])return Mensaje(playerid, COLOR_GRIS2, "No tienes esa cantidad de heroina!");
+                if(params[2] > cuenta[playerid][cCocaina])return Mensaje(playerid, COLOR_GRIS2, "No tienes esa cantidad de cocaina!");
                 format(string, sizeof(string), "* %s le da algo a %s.", PlayerName(playerid), PlayerName(params[1]));
        			ProxDetector(30.0, playerid, string, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA);
-                cuenta[params[1]][cHeroina] += params[2];
-       			cuenta[playerid][cHeroina] -= params[2];
-       			format(string, sizeof(string), "* Has recibido %d de heroina. Ahora tienes %d", params[2], cuenta[params[1]][cHeroina]);
+                cuenta[params[1]][cCocaina] += params[2];
+       			cuenta[playerid][cCocaina] -= params[2];
+       			format(string, sizeof(string), "* Has recibido %d de cocaina. Ahora tienes %d", params[2], cuenta[params[1]][cCocaina]);
 	        	Mensaje(params[1], COLOR_AMARILLO2, string);
             }
             if(strcmp(item, "marihuana", true) == 0)
@@ -11741,7 +11741,7 @@ command(adminduty, playerid, params[]){
             }
         } else {
             Mensaje(playerid, COLOR_GRIS2, "Utiliza: /pasar <Item> <PlayerID> <Cantidad>");
-            Mensaje(playerid, COLOR_GRIS2, "Items: materiales, drogas, speed, ectasy, ritalin, heroina, marihuana");
+            Mensaje(playerid, COLOR_GRIS2, "Items: materiales, drogas, speed, ectasy, ritalin, cocaina, marihuana");
         }
         return 1;
     }
@@ -13341,9 +13341,9 @@ command(new, playerid, params[]){
 				Mensaje(playerid, COLOR_BLANCO, "Has tomado Ritalin, el efecto de la droga durará 5 minutos");
 				cuenta[playerid][cRitalin] -= 1;
 			}
-			else if(strcmp(params[0], "heroina", true) == 0)
+			else if(strcmp(params[0], "cocaina", true) == 0)
 	        {
-	            if(cuenta[playerid][cHeroina] == 0)return Mensaje(playerid, COLOR_BLANCO, "No tienes suficiente Heroina!");
+	            if(cuenta[playerid][cCocaina] == 0)return Mensaje(playerid, COLOR_BLANCO, "No tienes suficiente Cocaina!");
 
 	            cuenta[playerid][pEpilepsia] += 5;
 	            cuenta[playerid][pCancer] += 5;
@@ -13355,12 +13355,12 @@ command(new, playerid, params[]){
 				format(string, sizeof(string), "* %s se inyecta una substancia.", PlayerName(playerid));
    				ProxDetector(30.0, playerid, string, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA);
 				ApplyAnimation(playerid, "CRACK", "crckdeth2", 2.5, 1, 0, 1, 0, 0);
-				UsingHeroina[playerid] = 120;
-				HeroinaEffect[playerid] = 1;
-				HeroinaBeat[playerid] = 1;
+				UsingCocaina[playerid] = 120;
+				CocainaEffect[playerid] = 1;
+				CocainaBeat[playerid] = 1;
 				UsingDrugs[playerid] = 1 ;
-				Mensaje(playerid, COLOR_BLANCO, "Has tomado Heroina, el efecto de la droga durará 2 minutos");
-   				cuenta[playerid][cHeroina] -= 1;
+				Mensaje(playerid, COLOR_BLANCO, "Has tomado Cocaina, el efecto de la droga durará 2 minutos");
+   				cuenta[playerid][cCocaina] -= 1;
 			}
 			else if(strcmp(params[0], "marihuana", true) == 0)
 	        {
@@ -13384,7 +13384,7 @@ command(new, playerid, params[]){
    				cuenta[playerid][cMarihuana] -= 1;
 			}
         }
-        else Mensaje(playerid, COLOR_GRIS2, "Utiliza: /usardrogas <nombre> (speed, extasis, ritalin, heroina, marihuana)");
+        else Mensaje(playerid, COLOR_GRIS2, "Utiliza: /usardrogas <nombre> (speed, extasis, ritalin, cocaina, marihuana)");
         return 1;
     }
    	command(estadodeshb, playerid, params[])
@@ -15742,7 +15742,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 								{FF7F00}[*]{FFFFFF} Speed\t{008000}1500$\t50 semillas\n\
 								{FF7F00}[*]{FFFFFF} Extasis\t{008000}3000$\t50 semillas\n\
 								{FF7F00}[*]{FFFFFF} Ritalin\t{008000}4250$\t50 semillas\n\
-								{FF7F00}[*]{FFFFFF} Heroina\t{008000}6000$\t50 semillas\n\
+								{FF7F00}[*]{FFFFFF} Cocaina\t{008000}6000$\t50 semillas\n\
 								{FF7F00}[*]{FFFFFF} Marihuana\t{008000}4500$\t50 semillas\
 								", "Aceptar", "Salir");
 							}
@@ -16878,7 +16878,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					cuenta[playerid][cSpeed] = cache_get_row_int(0, 31, servidor[mysqlControl]);
 					cuenta[playerid][cExtasis] = cache_get_row_int(0, 32, servidor[mysqlControl]);
 					cuenta[playerid][cRitalin] = cache_get_row_int(0, 33, servidor[mysqlControl]);
-					cuenta[playerid][cHeroina] = cache_get_row_int(0, 34, servidor[mysqlControl]);
+					cuenta[playerid][cCocaina] = cache_get_row_int(0, 34, servidor[mysqlControl]);
 					cuenta[playerid][cMarihuana] = cache_get_row_int(0, 35, servidor[mysqlControl]);
 					cuenta[playerid][cLider] = cache_get_row_int(0, 36, servidor[mysqlControl]);
 					cuenta[playerid][cMiembro] = cache_get_row_int(0, 37, servidor[mysqlControl]);
@@ -19168,7 +19168,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						{
 							pierdeDinero(playerid, 6000);
 							cuenta[playerid][cSemillas][3] += 50;
-							Mensaje(playerid, COLOR_GRIS1, "Compraste 50 semillas de Heroina!");
+							Mensaje(playerid, COLOR_GRIS1, "Compraste 50 semillas de Cocaina!");
 							Mensaje(playerid, COLOR_VERDE, "Para sembrar usar /sembrarsemilla en un lugar discreto! Que no te roben tu cosecha!");
 							return 1;
 						}
@@ -19753,7 +19753,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		            case 1:		drug = "Speed";
 		            case 2:		drug = "Extasis";
 	    	        case 3:		drug = "Ritalin";
-	        	    case 4:		drug = "Heroina";
+	        	    case 4:		drug = "Cocaina";
 	            	case 5:		drug = "Marihuana";
 	            	case 6:     drug = "dvirgen";
          		}
@@ -19774,7 +19774,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				    case 1:		drug = "Speed";
 				    case 2:		drug = "Extasis";
 			    	case 3:		drug = "Ritalin";
-			  	  	case 4:		drug = "Heroina";
+			  	  	case 4:		drug = "Cocaina";
 			    	case 5:		drug = "Marihuana";
    				}
 				format(string, sizeof(string), "* %s compró a %s %d gramos de %s por %d$", PlayerName(BuyNarco[playerid]), PlayerName(playerid), NarcoSellAmmo[BuyNarco[playerid]], drug, NarcoSellPrice[BuyNarco[playerid]]);
@@ -19788,7 +19788,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				    case 1:	{cuenta[BuyNarco[playerid]][cSpeed] += NarcoSellAmmo[BuyNarco[playerid]]; cuenta[playerid][cSpeed] -= NarcoSellAmmo[BuyNarco[playerid]];}
 				    case 2:	{cuenta[BuyNarco[playerid]][cExtasis] += NarcoSellAmmo[BuyNarco[playerid]]; cuenta[playerid][cExtasis] -= NarcoSellAmmo[BuyNarco[playerid]];}
 				    case 3:	{cuenta[BuyNarco[playerid]][cRitalin] += NarcoSellAmmo[BuyNarco[playerid]]; cuenta[playerid][cRitalin] -= NarcoSellAmmo[BuyNarco[playerid]];}
-			    	case 4:	{cuenta[BuyNarco[playerid]][cHeroina] += NarcoSellAmmo[BuyNarco[playerid]]; cuenta[playerid][cHeroina] -= NarcoSellAmmo[BuyNarco[playerid]];}
+			    	case 4:	{cuenta[BuyNarco[playerid]][cCocaina] += NarcoSellAmmo[BuyNarco[playerid]]; cuenta[playerid][cCocaina] -= NarcoSellAmmo[BuyNarco[playerid]];}
 			    	case 5:	{cuenta[BuyNarco[playerid]][cMarihuana] += NarcoSellAmmo[BuyNarco[playerid]]; cuenta[playerid][cMarihuana] -= NarcoSellAmmo[BuyNarco[playerid]];}
 				}
 				BuyNarco[playerid] = 0;
@@ -21436,7 +21436,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 										case 1: cuenta[playerid][cSpeed] += 30;
 										case 2: cuenta[playerid][cExtasis] += 30;
 										case 3: cuenta[playerid][cRitalin] += 30;
-										case 4: cuenta[playerid][cHeroina] += 30;
+										case 4: cuenta[playerid][cCocaina] += 30;
 										case 5: cuenta[playerid][cMarihuana] += 30;
 									}
 									format(string, sizeof(string), "Usted acaba de retirar 30 gramos de %s.", NombreDroga(IFacciones[faccid - 16][If@drogas][listitem - 17]));
@@ -24202,22 +24202,22 @@ CallBack::SetPlayerUnjail()
        			UsingRitalin[i] = 0;
 			    RitalinEffect[i] = 0;
 			}
-			if(UsingHeroina[i] > 0)
+			if(UsingCocaina[i] > 0)
 			{
 			    new Float:PlayerHealth;
 			    GetPlayerHealth(i, PlayerHealth);
 			    new crack = random(10);
 			    if(crack == 2){ ApplyAnimation(i, "CRACK", "crckdeth2", 2.5, 0, 0, 0, 0, 5000); }
-			    if(HeroinaBeat[i] == 1){ SetHP(i, PlayerHealth-1);}
-			    UsingHeroina[i] -= 1;
+			    if(CocainaBeat[i] == 1){ SetHP(i, PlayerHealth-1);}
+			    UsingCocaina[i] -= 1;
 			}
-			if(UsingHeroina[i] == 0 &&HeroinaEffect[i] == 1 && UsingDrugs[i] == 1)
+			if(UsingCocaina[i] == 0 &&CocainaEffect[i] == 1 && UsingDrugs[i] == 1)
 			{
-			    GameTextForPlayer(i, "~w~Efecto ~g~heroina ~n~~w~pasado", 5000, 1);
+			    GameTextForPlayer(i, "~w~Efecto ~g~cocaina ~n~~w~pasado", 5000, 1);
 			    UsingDrugs[i] = 0;
-       			UsingHeroina[i] = 0;
-			    HeroinaEffect[i] = 0;
-			    HeroinaBeat[i] = 0;
+       			UsingCocaina[i] = 0;
+			    CocainaEffect[i] = 0;
+			    CocainaBeat[i] = 0;
 			    SetHP(i, 25);
 			}
 			if(UsingMarihuana[i] > 0)
@@ -24546,9 +24546,9 @@ CallBack::ResetearVariables(playerid)
 	UsingMarihuana[playerid] = 0;
 	MarihuanaEffect[playerid] = 0; 
 	MarihuanaBeat[playerid] = 0; 
-	UsingHeroina[playerid] = 0; 		
-	HeroinaEffect[playerid] = 0; 	
-	HeroinaBeat[playerid] = 0;
+	UsingCocaina[playerid] = 0;
+	CocainaEffect[playerid] = 0;
+	CocainaBeat[playerid] = 0;
 	peticionIDofertante[playerid] = 999; 							
 	peticionIDItem[playerid] = 999; 		
 	peticionPrecio[playerid] = 0;  
@@ -26668,7 +26668,7 @@ CallBack::ActualizaVehiculo(idx)
 CallBack::ActualizaCasa(idx)
 {
 	new consulta[1024];
-	format(consulta, sizeof(consulta), "UPDATE zz_casas SET ocupado=%d, propietario='%s', ubicacion='%s', nombre='%s', entradax=%f, entraday=%f, entradaz=%f, salidax=%f, saliday=%f, salidaz=%f, interior=%d, nivel=%d, precio=%d, seguro=%d, cuartos=%d, renta=%d, rentabil=%d, arma=%d, municion=%d, materiales=%d, drogas=%d, speed=%d, ectasi=%d, ritalin=%d, heroina=%d, marihuana=%d, world=%d, tiempo=%d WHERE casaid=%d;", 
+	format(consulta, sizeof(consulta), "UPDATE zz_casas SET ocupado=%d, propietario='%s', ubicacion='%s', nombre='%s', entradax=%f, entraday=%f, entradaz=%f, salidax=%f, saliday=%f, salidaz=%f, interior=%d, nivel=%d, precio=%d, seguro=%d, cuartos=%d, renta=%d, rentabil=%d, arma=%d, municion=%d, materiales=%d, drogas=%d, speed=%d, ectasi=%d, ritalin=%d, cocaina=%d, marihuana=%d, world=%d, tiempo=%d WHERE casaid=%d;",
     casa[idx][hOwned], 
     casa[idx][hOwner], 
     casa[idx][hUbicacion], 
@@ -26693,7 +26693,7 @@ CallBack::ActualizaCasa(idx)
     casa[idx][hSpeed], 
     casa[idx][hEctasy], 
     casa[idx][hRitalin], 
-    casa[idx][hHeroina], 
+    casa[idx][hCocaina],
     casa[idx][hMarihuana], 
 	casa[idx][hWorld], 
 	casa[idx][hTime], 
@@ -26901,7 +26901,7 @@ CallBack::CargarCasas(){
 		casa[i][hSpeed]		= cache_get_row_int(i, 22, servidor[mysqlControl]);
 		casa[i][hEctasy]		= cache_get_row_int(i, 23, servidor[mysqlControl]);
 		casa[i][hRitalin]		= cache_get_row_int(i, 24, servidor[mysqlControl]);
-		casa[i][hHeroina]		= cache_get_row_int(i, 25, servidor[mysqlControl]);
+		casa[i][hCocaina]		= cache_get_row_int(i, 25, servidor[mysqlControl]);
 		casa[i][hMarihuana]	= cache_get_row_int(i, 26, servidor[mysqlControl]);
 		casa[i][hWorld]		= cache_get_row_int(i, 27, servidor[mysqlControl]);
 		casa[i][hTime]			= cache_get_row_int(i, 28, servidor[mysqlControl]);
@@ -28777,7 +28777,7 @@ COMMAND:inventario(playerid, params[])
 COMMAND:sembrarsemilla(playerid, params[])
 {
 	new ndroga[12], string[128], LimitarSemillas;
-	if(sscanf(params, "s[12]", ndroga))return Mensaje(playerid, -1, "Utiliza: /sembrarsemilla [speed - ectasy - ritalin - heroina - marihuana]");
+	if(sscanf(params, "s[12]", ndroga))return Mensaje(playerid, -1, "Utiliza: /sembrarsemilla [speed - ectasy - ritalin - cocaina - marihuana]");
 
 	for(new f=0;f<MAX_SEMILLAS_SEMBRADAS;f++)
 	{
@@ -28899,7 +28899,7 @@ COMMAND:sembrarsemilla(playerid, params[])
 			}
 		}else Mensaje(playerid, COLOR_GRIS1, "No posees este tipo de semilla.");
 	}
-	else if(!strcmp("heroina", ndroga))
+	else if(!strcmp("cocaina", ndroga))
 	{
 		if(cuenta[playerid][cSemillas][3] > 0)
 		{
@@ -28922,7 +28922,7 @@ COMMAND:sembrarsemilla(playerid, params[])
 					}
 
 					semillas[f][sDueno] = Nombre(playerid);
-					format(semillas[f][sNameTipo], 24, "Heroina");
+					format(semillas[f][sNameTipo], 24, "Cocaina");
 
 					GetPlayerPos(playerid, semillas[f][sPosicion][0], semillas[f][sPosicion][1], semillas[f][sPosicion][2]);
 					format(string, sizeof(string), "{ffff00}Tipo{ffffff}: %s\n{ffff00}Tiempo de Cosecha{ffffff}: %s\n{ffff00}Dueño{ffffff}: %s", semillas[f][sNameTipo], ObtenerTiempoRestante(semillas[f][sTime]), semillas[f][sDueno]);
@@ -28966,7 +28966,7 @@ COMMAND:sembrarsemilla(playerid, params[])
 				}
 			}
 		}else Mensaje(playerid, COLOR_GRIS1, "No posees este tipo de semilla.");
-	}else Mensaje(playerid, -1, "Utiliza: /sembrarsemilla [speed - ectasy - ritalin - heroina - marihuana]");
+	}else Mensaje(playerid, -1, "Utiliza: /sembrarsemilla [speed - ectasy - ritalin - cocaina - marihuana]");
 	return 1;
 }
 COMMAND:cosecharsemilla(playerid, params[])
@@ -28999,8 +28999,8 @@ COMMAND:cosecharsemilla(playerid, params[])
 					}
 					case 4:
 					{
-						cuenta[playerid][cHeroina] += dGramos;
-						format(string, sizeof(string), "Usted ha cosechado %d Gramos de Heroina", dGramos);
+						cuenta[playerid][cCocaina] += dGramos;
+						format(string, sizeof(string), "Usted ha cosechado %d Gramos de Cocaina", dGramos);
 						Mensaje(playerid, COLOR_BLANCO, string);
 					}
 					case 5:
@@ -29024,7 +29024,7 @@ COMMAND:cosecharsemilla(playerid, params[])
 COMMAND:drogas(playerid, params[]){
 	new string[128];
 	Mensaje(playerid, COLOR_BLANCO, "Drogas Encima:");
-	format(string, sizeof(string), "Drogas: %d - Speed: %d - Extasis: %d - Ritalin: %d - Heroína: %d - Marihuana: %d", cuenta[playerid][cDrogas], cuenta[playerid][cSpeed], cuenta[playerid][cExtasis], cuenta[playerid][cRitalin], cuenta[playerid][cHeroina], cuenta[playerid][cMarihuana]);
+	format(string, sizeof(string), "Drogas: %d - Speed: %d - Extasis: %d - Ritalin: %d - Heroína: %d - Marihuana: %d", cuenta[playerid][cDrogas], cuenta[playerid][cSpeed], cuenta[playerid][cExtasis], cuenta[playerid][cRitalin], cuenta[playerid][cCocaina], cuenta[playerid][cMarihuana]);
 	Mensaje(playerid, COLOR_AMARILLO2, string);
 	Mensaje(playerid, COLOR_BLANCO, "Semillas Encima:");
 	format(string, sizeof(string), "Speed: %d - Extasis: %d - Ritalin: %d - Heroína: %d - Marihuana: %d", cuenta[playerid][cSemillas][0], cuenta[playerid][cSemillas][1], cuenta[playerid][cSemillas][2], cuenta[playerid][cSemillas][3], cuenta[playerid][cSemillas][4]);
@@ -29221,7 +29221,7 @@ COMMAND:vmaletero(playerid, params[])
 		Mensaje(playerid, COLOR_BLANCO, string);
 		format(string, sizeof(string), "Droga: {C0C0C0}%d gramos de Ritalin", maletero[result][mdrogas][2]);
 		Mensaje(playerid, COLOR_BLANCO, string);
-		format(string, sizeof(string), "Droga: {C0C0C0}%d gramos de Heroina", maletero[result][mdrogas][3]);
+		format(string, sizeof(string), "Droga: {C0C0C0}%d gramos de Cocaina", maletero[result][mdrogas][3]);
 		Mensaje(playerid, COLOR_BLANCO, string);
 		format(string, sizeof(string), "Droga: {C0C0C0}%d gramos de Marihuana", maletero[result][mdrogas][4]);
 		Mensaje(playerid, COLOR_BLANCO, string);
@@ -29321,7 +29321,7 @@ COMMAND:vmaletero(playerid, params[])
 	}
 	else if(!strcmp(opcion, "gdroga"))
 	{
-		if(slotid < 1 || slotid > 5)return Mensaje(playerid, COLOR_ROJO, "Utiliza: /maletero gdroga [1(Speed) - 2(Extasis) - 3(Ritalin) - 4(Heroina) - 5(Marihuana)]");
+		if(slotid < 1 || slotid > 5)return Mensaje(playerid, COLOR_ROJO, "Utiliza: /maletero gdroga [1(Speed) - 2(Extasis) - 3(Ritalin) - 4(Cocaina) - 5(Marihuana)]");
 		if(!maletero[result][mbloqueo])return Mensaje(playerid, COLOR_ROJO, "Este maletero esta cerrado.");
 		switch(slotid)
 		{
@@ -29351,10 +29351,10 @@ COMMAND:vmaletero(playerid, params[])
 			}
 			case 4:
 			{
-				maletero[result][mdrogas][3] += cuenta[playerid][cHeroina];
-				cuenta[playerid][cHeroina] = 0;
+				maletero[result][mdrogas][3] += cuenta[playerid][cCocaina];
+				cuenta[playerid][cCocaina] = 0;
 
-				format(string, sizeof(string), "Acabas de guardar %d gramos de Heroina.", maletero[result][mdrogas][3]);
+				format(string, sizeof(string), "Acabas de guardar %d gramos de Cocaina.", maletero[result][mdrogas][3]);
 				Mensaje(playerid, COLOR_BLANCO, string);
 			}
 			case 5:
@@ -29370,7 +29370,7 @@ COMMAND:vmaletero(playerid, params[])
 	}
 	else if(!strcmp(opcion, "sdroga"))
 	{
-		if(slotid < 1 || slotid > 5)return Mensaje(playerid, COLOR_ROJO, "Utiliza: /maletero sdroga [1(Speed) - 2(Extasis) - 3(Ritalin) - 4(Heroina) - 5(Marihuana)]");
+		if(slotid < 1 || slotid > 5)return Mensaje(playerid, COLOR_ROJO, "Utiliza: /maletero sdroga [1(Speed) - 2(Extasis) - 3(Ritalin) - 4(Cocaina) - 5(Marihuana)]");
 		if(!maletero[result][mbloqueo])return Mensaje(playerid, COLOR_ROJO, "Este maletero esta cerrado.");
 		switch(slotid)
 		{
@@ -29403,9 +29403,9 @@ COMMAND:vmaletero(playerid, params[])
 			}
 			case 4:
 			{
-				cuenta[playerid][cHeroina] += maletero[result][mdrogas][3];
+				cuenta[playerid][cCocaina] += maletero[result][mdrogas][3];
 
-				format(string, sizeof(string), "Acabas de retirar %d gramos de Heroina.", maletero[result][mdrogas][3]);
+				format(string, sizeof(string), "Acabas de retirar %d gramos de Cocaina.", maletero[result][mdrogas][3]);
 				Mensaje(playerid, COLOR_BLANCO, string);
 
 				maletero[result][mdrogas][3] = 0;
@@ -29805,7 +29805,7 @@ COMMAND:quitar(playerid, params[])
 			}
 			case 4:
 			{
-				cuenta[jugador][cHeroina] = 0;
+				cuenta[jugador][cCocaina] = 0;
 				cuenta[jugador][cMarihuana] = 0;
 				cuenta[jugador][cRitalin] = 0;
 				cuenta[jugador][cExtasis] = 0;
@@ -29861,7 +29861,7 @@ COMMAND:arrestar(playerid, params[]){
 				inventario[player][invBalas][x] = 0;
 			}
 			
-			cuenta[player][cHeroina] = 0;
+			cuenta[player][cCocaina] = 0;
    			cuenta[player][cMarihuana] = 0;
       		cuenta[player][cRitalin] = 0;
         	cuenta[player][cExtasis] = 0;
@@ -30612,8 +30612,8 @@ COMMAND:setstat(playerid, params[])
 							}
 							case 27:
 							{
-								cuenta[Jugador][cHeroina] = Cantidad;
-								format(string, sizeof(string), "Admin %s ha dado %d gramos de heroina a %s", PlayerName(playerid), Cantidad, PlayerName(Jugador));
+								cuenta[Jugador][cCocaina] = Cantidad;
+								format(string, sizeof(string), "Admin %s ha dado %d gramos de cocaina a %s", PlayerName(playerid), Cantidad, PlayerName(Jugador));
 								AdminMensaje(string);
 							}
 							case 28:
@@ -30682,7 +30682,7 @@ COMMAND:setstat(playerid, params[])
 				Mensaje(playerid, COLOR_GRAD4, "|6.Casa - 7.Trabajo - 8.Vehículo - 9. Vehículo2 - 10.AutoPremium - 11.Edad");
 				Mensaje(playerid, COLOR_GRAD4, "|12.Deagle - 13.Shotgun - 14.MP5 - 15.ak47 - 16.M4 - 17.Sniper - 18.Sexo");
 				Mensaje(playerid, COLOR_GRAD4, "|19.Drunk - 20.Rent - 21.Lucha - 22.Materiales - 23.Drogas - 24.Speed - 25.Extasis");
-				Mensaje(playerid, COLOR_GRAD4, "|26.Ritalin - 27.Heroina - 28.Marihuana - 29.Advertencias - 30.Negocio - 31.Negocio2");
+				Mensaje(playerid, COLOR_GRAD4, "|26.Ritalin - 27.Cocaina - 28.Marihuana - 29.Advertencias - 30.Negocio - 31.Negocio2");
 				Mensaje(playerid, COLOR_GRAD4, "|32.Autopremium2 - 33. Tarjeta - 34.Nacionalidad");
 				return Mensaje(playerid, COLOR_GRAD4, "|33. Nacionalidad");
 			}
@@ -31592,7 +31592,7 @@ Funcion.VenderPropiedad(playerid, x)
 		cuenta[playerid][cSpeed] += casa[x][hSpeed];
 		cuenta[playerid][cExtasis] += casa[x][hEctasy];
 		cuenta[playerid][cRitalin] += casa[x][hRitalin];
-		cuenta[playerid][cHeroina] += casa[x][hHeroina];
+		cuenta[playerid][cCocaina] += casa[x][hCocaina];
 		cuenta[playerid][cMarihuana] += casa[x][hMarihuana];
 		PlayerPlaySound(playerid, 1052, 0.0, 0.0, 0.0);
 	}
@@ -31608,7 +31608,7 @@ Funcion.VenderPropiedad(playerid, x)
 	casa[x][hSpeed] = 0;
 	casa[x][hEctasy] = 0;
 	casa[x][hRitalin] = 0;
-	casa[x][hHeroina] = 0;
+	casa[x][hCocaina] = 0;
 	casa[x][hMarihuana] = 0;
 	format(casa[x][hOwner], 24, "El Estado");
 	OnPropTextdrawUpdate(x);
