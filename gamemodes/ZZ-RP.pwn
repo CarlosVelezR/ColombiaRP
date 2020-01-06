@@ -119,13 +119,13 @@ AntiDeAMX()
 #define CELDA2         															(15)
 #define CELDA3         															(16)
 #define EQUIPO_NG      															(17)
-#define DNI_MENU        														(18)
+#define CEDULA_MENU        														(18)
 #define DIALOG_HIT     															(19)
 #define DIALOGO_IMPUESTO_CASAS													(20)
 #define DIALOGO_IMPUESTO_NEGOCIOS												(21)
 #define DIALOGO_IMPUESTO_AUTOS													(22)
 #define DIALOGO_TRABAJO_UBICACION 												(23)
-#define DNI_CONFIRM     														(24)
+#define CEDULA_CONFIRM     														(24)
 #define DIALOGO_PAQUETES_PREMIUM												(25)
 #define DIALOGO_BARRENDERO														(26)
 #define ADMINDUTY_LOGIN		                                                    (27)
@@ -582,7 +582,7 @@ new static nonplayers[][_@en@nonplayers] =
 	{240, {1307.4492, -980.1454, 39.1699, 90.1767}, 0, false, "retirar subsidio", "sacar tarjeta", "_", "_", "Jose Medina"}, //banquero
 	{017, {360.24480, 138.03480, 1025.23, 4.05080}, 0, false, "pagar casa", "pagar negocio", "pagar auto", "_", "Esteban Guridi"}, //Ayuntamiento
 	{076, {362.10660, 138.03500, 1025.25, 356.844}, 0, false, "pagar casa", "pagar negocio", "pagar auto", "_", "Carolina Lenzi"}, //Ayuntamiento
-	{098, {1712.0562, -1851.057, 13.5669, 178.579}, 0, false, "sacar dni", "cambiar nacionalidad", "_", "_", "Ricardo Simanca"}, //Sacar DNI
+	{098, {1712.0562, -1851.057, 13.5669, 178.579}, 0, false, "sacar cedula", "cambiar nacionalidad", "_", "_", "Ricardo Simanca"}, //Sacar CEDULA
 	{164, {1277.5189, -980.8588, 38.3699, 297.099}, 0, false, "deseo trabajar aqui", "renuncio", "comenzar trabajo", "_", "Armando Ventura"}, //Transportador de Valores
 	{061, {1957.0010, -2183.723, 13.5469, 265.845}, 0, false, "deseo trabajar aqui", "renuncio", "comenzar trabajo", "_", "George Bartolome"}, //Piloto
 	{006, {2205.6243, -2667.085, 14.8645, 92.9303}, 0, false, "deseo trabajar aqui", "renuncio", "comenzar trabajo", "_", "Juan Morales"}, //Camionero
@@ -1733,7 +1733,7 @@ new const premiums[][_@en@premiums] =
 new ReduceTimeb                                                                 [MAX_PLAYERS];
 new AntiFloodCommand															[MAX_PLAYERS][2];
 new tCambioPagina																[MAX_PLAYERS];
-new DniValores																	[MAX_PLAYERS][2];
+new CedulaValores																	[MAX_PLAYERS][2];
 new DriveBy																		[MAX_PLAYERS];
 new	Att_Obj_Slot_0																[MAX_PLAYERS][20];
 new Att_Obj_Slot_1																[MAX_PLAYERS][20];
@@ -1821,7 +1821,7 @@ enum _@en@booleano
 	ConEstado, 
 	CallGiveWeapon, 
 	_ComprandoCoche, 
-	_ComprandoDNI, 
+	_ComprandoCEDULA,
 	_EstadoIphone, 
 	iConnect, 
 	PhoneOnline, 
@@ -1922,7 +1922,7 @@ new static entero[MAX_PLAYERS][_@en@entero];
 new Color																		[MAX_PLAYERS];
 new HouseExplo																	[MAX_PLAYERS];
 new PlayerStatInfo																[MAX_PLAYERS][8][32]; 
-new DNIName																		[MAX_PLAYERS][32];
+new CEDULAName																		[MAX_PLAYERS][32];
 new UsingEctasy																	[MAX_PLAYERS];
 new UsingRitalin																[MAX_PLAYERS];
 new UsingHeroina																[MAX_PLAYERS];
@@ -4791,7 +4791,7 @@ public OnGameModeInit()
 	CreateDynamic3DTextLabel("Gobierno - {868FD9}Deposito LSPD\n{AA3333}Acceso Restringido", 0xFFFFFFFF, 2422.0039, -2077.8850, 13.5538, 12.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	CreateDynamicPickup(1239, 1, 2422.0039, -2077.8850, 13.5538); // Deposito
 	//Labels de Inicio ZZ [IMPORTANTES]
-	CreateDynamicPickup(1239, 1, 1713.2515, -1860.7002, 13.5784); // DNI Inicio
+	CreateDynamicPickup(1239, 1, 1713.2515, -1860.7002, 13.5784); // CEDULA Inicio
 	CreateDynamic3DTextLabel("Gobierno -{868FD9}Registro Ciudadano", 0xFFFFFFFF, 1713.2515, -1860.7002, 13.5784, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	CreateDynamicPickup(1239, 1, 1710.8884, -1888.7478, 13.5676); // Duda Inicio
  	CreateDynamic3DTextLabel("ZonaZero:\nBienvenido!\n{CE726E}/duda", 0xFFFFFFFF, 1710.8884, -1888.7478, 13.5676, 40.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
@@ -6730,7 +6730,7 @@ CallBack::GuardarDatosMySQL(playerid)
 	materiales=%d, drogas=%d, speed=%d, ectasy=%d, ritalin=%d, heroina=%d, marihuana=%d, lider=%d, miembro=%d, rango=%d, caracter=%d, \
 	interior=%d, virtualworld=%d, team=%d, numerotelefonico=%d, minutos=%d, minutr=%d, horas=%d, mtexto=%d, ipod=%d, \
 	auto=%d, auto2=%d, auto3=%d, auto4=%d, casa=%d, casa2=%d, negocio=%d, negocio2=%d, licenciaauto=%d, licenciaarma=%d, gafas=%d, tutorial=%d, \
-	encendedor=%d, cigarrillos=%d, mascara=%d, advertencias=%d, adminadver=%d, dni=%d, weap0=%d, ammo0=%d, weap1=%d, ammo1=%d, \
+	encendedor=%d, cigarrillos=%d, mascara=%d, advertencias=%d, adminadver=%d, cedula=%d, weap0=%d, ammo0=%d, weap1=%d, ammo1=%d, \
 	weap2=%d, ammo2=%d, weap3=%d, ammo3=%d, weap4=%d, ammo4=%d, weap5=%d, ammo5=%d, weap6=%d, ammo6=%d, weap7=%d, ammo7=%d, \
 	weap8=%d, ammo8=%d, weap9=%d, ammo9=%d, weap10=%d, ammo10=%d, weap11=%d, ammo11=%d, maleta=%d, mochila=%d, casco=%d, miniwofer=%d, fam=%d, famr=%d, deagle=%d, shotgun=%d, mp5=%d, \
 	ak47=%d, m4=%d, sniper=%d, fstyle=%d, leccion=%d, busqueda=%d, rent=%d, rob=%d, donate=%d, donatedia=%d, donatemes=%d, donateyear=%d, banduda=%d, \
@@ -9197,32 +9197,32 @@ command(bar, playerid, params[]){
         return 1;
     }
 
-COMMAND:dni(playerid, params[])
+COMMAND:cedula(playerid, params[])
 {
-	if(!cuenta[playerid][cIdentificacion])return Mensaje(playerid, COLOR_ROJO, "Usted no tiene DNI.");
+	if(!cuenta[playerid][cIdentificacion])return Mensaje(playerid, COLOR_ROJO, "Usted no tiene CEDULA.");
 	
 	new jugador, string[144];
-	if(sscanf(params, "u", jugador))return Mensaje(playerid, COLOR_GRIS2, "Utiliza: /dni [Usuario]");
+	if(sscanf(params, "u", jugador))return Mensaje(playerid, COLOR_GRIS2, "Utiliza: /cedula [Usuario]");
 	if(!IsPlayerConnected(jugador))return Mensaje(playerid, COLOR_GRIS2, "Este jugador no esta conectado.");
 	if(booleano[AdminDuty]{jugador})return Mensaje(playerid, COLOR_ROJO, "Administrador en servicio.");
 	if(dDistanciaJugador(8.0, playerid, jugador))
 	{
 		MostrarIdentidad(playerid, jugador);
-		format(string, sizeof(string), "* %s le muestra su DNI a %s.", PlayerName(playerid), PlayerName(jugador));
+		format(string, sizeof(string), "* %s le muestra su Cedula a %s.", PlayerName(playerid), PlayerName(jugador));
 		ProxDetector(30.0, playerid, string, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA);
 	}else Mensaje(playerid, COLOR_GRIS2, "Este jugador no esta certa de usted.");
 	return 1;
 }
 
-command(dnifalso, playerid, params[]){
+command(cedulafalsa, playerid, params[]){
 	new player, string[90];
-	if(sscanf(params, "u", player))return Mensaje(playerid, COLOR_GRIS2, "Utiliza: /dnifalso <PlayerID>");
+	if(sscanf(params, "u", player))return Mensaje(playerid, COLOR_GRIS2, "Utiliza: /cedulafalsa <PlayerID>");
 	if(!IsPlayerConnected(player))return Mensaje(playerid, COLOR_GRIS2, "Jugador no conectado.");
-	if(cuenta[playerid][cIdentificacionFalse] == 0)return Mensaje(playerid, COLOR_GRIS2, "No posees un DNI falso.");
+	if(cuenta[playerid][cIdentificacionFalse] == 0)return Mensaje(playerid, COLOR_GRIS2, "No posees una Cedula falsa.");
 	if(booleano[AdminDuty]{player})return Mensaje(playerid, COLOR_ROJO, "Administrador en Servicio.");
 	if(dDistanciaJugador(8.0, playerid, player)){
-		ShowDNIFalse(playerid, player);
-		format(string, sizeof(string), "* %s le muestra su DNI a %s.", PlayerName(playerid), PlayerName(player));
+		ShowCEDULAFalse(playerid, player);
+		format(string, sizeof(string), "* %s le muestra su Cedula a %s.", PlayerName(playerid), PlayerName(player));
 		ProxDetector(30.0, playerid, string, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA);
 	}else return Mensaje(playerid, COLOR_GRIS2, "Jugador muy lejos.");
 	return 1;
@@ -15546,7 +15546,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 		{
 			SelectTextDraw(playerid, COLOR_LIMA);
 		}
-		else if(booleano[_ComprandoDNI]{playerid})
+		else if(booleano[_ComprandoCEDULA]{playerid})
 		{
 			SelectTextDraw(playerid, COLOR_LIMA);
 		}
@@ -15649,12 +15649,12 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 									CancelSelectTextDraw(playerid);
 									for(new ind=0;ind<6;ind++) TextDrawHideForPlayer(playerid, nonplayers[iAtc][interfaz][ind]);
 
-									DniValores[playerid][0] = 1;
-									DniValores[playerid][1] = 100000 + random(999999);
+									CedulaValores[playerid][0] = 1;
+									CedulaValores[playerid][1] = 100000 + random(999999);
 									cuenta[playerid][cOrigen] = 1;
 									cuenta[playerid][cSexo] = 1;
 									cuenta[playerid][cEdad] = 21;
-									booleano[_ComprandoDNI]{playerid} = true;
+									booleano[_ComprandoCEDULA]{playerid} = true;
 									
 									PlayerTextDrawShow(playerid, InfoText[playerid][5]);
 									PlayerTextDrawShow(playerid, InfoText[playerid][6]);
@@ -15663,7 +15663,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 									PlayerTextDrawShow(playerid, InfoText[playerid][9]);//Siguiente
 									PlayerTextDrawShow(playerid, InfoText[playerid][10]);//Listo
 									SelectTextDraw(playerid, COLOR_LIMA);
-									UpdateDniInformacion(playerid, 1);
+									UpdateCedulaInformacion(playerid, 1);
 								}else return Mensaje(playerid, COLOR_ROJO, "Usted ya esta legalizado en la ciudad.");
 							}
 							case 6 .. 19, 46:
@@ -15875,7 +15875,7 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 							}
 							case 5:
 							{
-								ShowPlayerDialog(playerid, DIALOGO_CAMBIO_NACION, DIALOG_STYLE_LIST, "Cambio de Nacionalidad [Coste 3000$]", "{008000}[*]{FFFFFF} Japon\n{008000}[*]{FFFFFF} Italia\n{008000}[*]{FFFFFF} Arabe\n{008000}[*]{FFFFFF} Rusia\n{008000}[*]{FFFFFF} Francia\n{008000}[*]{FFFFFF} China\n{008000}[*]{FFFFFF} Alemania\n{008000}[*]{FFFFFF} Argentina\n{008000}[*]{FFFFFF} Colombia\n{008000}[*]{FFFFFF} Bolivia\n{008000}[*]{FFFFFF} Brasil\n{008000}[*]{FFFFFF} Chile\n{008000}[*]{FFFFFF} España\n{008000}[*]{FFFFFF} Mexico\n{008000}[*]{FFFFFF} Ecuador\n{008000}[*]{FFFFFF} Estados Unidos\n{008000}[*]{FFFFFF} Holanda\n{008000}[*]{FFFFFF} Canada\n{008000}[*]{FFFFFF} Uruguay\n{008000}[*]{FFFFFF} Venezuela", "Aceptar", "Salir");
+								ShowPlayerDialog(playerid, DIALOGO_CAMBIO_NACION, DIALOG_STYLE_LIST, "Cambio de Nacionalidad [Coste 3000$]", "{008000}[*]{FFFFFF} Bogotá DC\n{008000}[*]{FFFFFF} Italia\n{008000}[*]{FFFFFF} Arabe\n{008000}[*]{FFFFFF} Rusia\n{008000}[*]{FFFFFF} Francia\n{008000}[*]{FFFFFF} China\n{008000}[*]{FFFFFF} Alemania\n{008000}[*]{FFFFFF} Argentina\n{008000}[*]{FFFFFF} Colombia\n{008000}[*]{FFFFFF} Bolivia\n{008000}[*]{FFFFFF} Brasil\n{008000}[*]{FFFFFF} Chile\n{008000}[*]{FFFFFF} España\n{008000}[*]{FFFFFF} Mexico\n{008000}[*]{FFFFFF} Ecuador\n{008000}[*]{FFFFFF} Estados Unidos\n{008000}[*]{FFFFFF} Holanda\n{008000}[*]{FFFFFF} Canada\n{008000}[*]{FFFFFF} Uruguay\n{008000}[*]{FFFFFF} Venezuela", "Aceptar", "Salir");
 							}
 							case 6 .. 19, 46:
 							{
@@ -16233,7 +16233,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 {
 	if(playertextid == InfoText[playerid][7])
 	{
-		switch(DniValores[playerid][0])
+		switch(CedulaValores[playerid][0])
 		{
 			case 1:
 			{
@@ -16241,7 +16241,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				{
 					cuenta[playerid][cEdad]--;
 				}
-				UpdateDniInformacion(playerid, 1);
+				UpdateCedulaInformacion(playerid, 1);
 			}
 			case 2:
 			{
@@ -16253,7 +16253,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				{
 					cuenta[playerid][cSexo] = 1;
 				} 
-				UpdateDniInformacion(playerid, 2);
+				UpdateCedulaInformacion(playerid, 2);
 			}
 			case 3:
 			{
@@ -16261,13 +16261,13 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				{
 					cuenta[playerid][cOrigen]--;
 				}
-				UpdateDniInformacion(playerid, 3);
+				UpdateCedulaInformacion(playerid, 3);
 			}
 		}
 	}
 	else if(playertextid == InfoText[playerid][8])
 	{
-		switch(DniValores[playerid][0])
+		switch(CedulaValores[playerid][0])
 		{
 			case 1:
 			{
@@ -16275,7 +16275,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				{
 					cuenta[playerid][cEdad]++;
 				}
-				UpdateDniInformacion(playerid, 1);
+				UpdateCedulaInformacion(playerid, 1);
 			}
 			case 2:
 			{
@@ -16287,7 +16287,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				{
 					cuenta[playerid][cSexo] = 1;
 				} 
-				UpdateDniInformacion(playerid, 2);
+				UpdateCedulaInformacion(playerid, 2);
 			}
 			case 3:
 			{
@@ -16295,28 +16295,28 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 				{
 					cuenta[playerid][cOrigen]++;
 				}
-				UpdateDniInformacion(playerid, 3);
+				UpdateCedulaInformacion(playerid, 3);
 			}
 		}
 	}
 	else if(playertextid == InfoText[playerid][9])
 	{
-		switch(DniValores[playerid][0])
+		switch(CedulaValores[playerid][0])
 		{
 			case 1:
 			{
-				DniValores[playerid][0] = 2;
-				UpdateDniInformacion(playerid, 2);
+				CedulaValores[playerid][0] = 2;
+				UpdateCedulaInformacion(playerid, 2);
 			}
 			case 2:
 			{
-				DniValores[playerid][0] = 3;
-				UpdateDniInformacion(playerid, 3);
+				CedulaValores[playerid][0] = 3;
+				UpdateCedulaInformacion(playerid, 3);
 			}
 			case 3:
 			{
-				DniValores[playerid][0] = 1;
-				UpdateDniInformacion(playerid, 1);
+				CedulaValores[playerid][0] = 1;
+				UpdateCedulaInformacion(playerid, 1);
 			}
 		}
 	}
@@ -16329,8 +16329,8 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 		PlayerTextDrawHide(playerid, InfoText[playerid][9]);//Siguiente
 		PlayerTextDrawHide(playerid, InfoText[playerid][10]);//Listo
 		CancelSelectTextDraw(playerid);
-		cuenta[playerid][cIdentificacion] = DniValores[playerid][1];
-		booleano[_ComprandoDNI]{playerid} = false;
+		cuenta[playerid][cIdentificacion] = CedulaValores[playerid][1];
+		booleano[_ComprandoCEDULA]{playerid} = false;
 		Mensaje(playerid, COLOR_AZUL_CLARO, "Felicidades: {ffffff}Usted se la legalizado en nuestra ciudad, Bienvenido.");
 	}
 	else if(playertextid == InfoText[playerid][14])
@@ -16566,7 +16566,7 @@ public OnPlayerConnect(playerid)
 	//
     Mostrar[playerid] = 0; 
 	SetPlayerColor(playerid, 0xBFC0C200);
-	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/101544487/Intro%20ZZ8.mp3");
+	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/muk5i2b80ui6sr6/Niche.mp3?dl=0");
 	//
 	Update3DTextLabelText(estado[playerid], COLOR_ROJO, "void");
 	Attach3DTextLabelToPlayer(estado[playerid], playerid, 0.0, 0.0, 1000.0);
@@ -18310,7 +18310,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				{
 				Mensaje(playerid, -1, "Comandos ZonaZero RP:");
 				Mensaje(playerid, -1, "{E48584}Comandos Administrativos:{FFFFFF} /re /duda /solicitaradmin");
-				Mensaje(playerid, -1, "{E48584}Comandos Generales:{FFFFFF} /pagar /hora /id /acciones /dni /licencias /iphone /numtarjeta");
+				Mensaje(playerid, -1, "{E48584}Comandos Generales:{FFFFFF} /pagar /hora /id /acciones /cedula /licencias /iphone /numtarjeta");
 				Mensaje(playerid, -1, "{E48584}Comandos Generales:{FFFFFF} /tirar /recoger /subirnivel /inventario /estilocaminar");
 				Mensaje(playerid, -1, "{E48584}Comandos Generales:{FFFFFF} /ocultarbarra /ccjugador (Contraseña) /paquete /mp /revisar");
 				Mensaje(playerid, -1, "{E48584}Comandos Generales:{FFFFFF} /pasar /drogas /bmbuy /csemillas /sembrarsemilla /cosecharsemilla");
@@ -21469,18 +21469,18 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				}
 			}
 		}
-		case DNI_MENU:
+		case CEDULA_MENU:
 		{
 		    if(response)
 		    {
 		        if(strlen(inputtext) < 1 || strlen(inputtext) > 32 || strfind(inputtext, "_", true) != -1)
 		        {
-		            ShowPlayerDialog(playerid, DNI_MENU, DIALOG_STYLE_INPUT, "Traficante - DNI Falso", "Ingresa el nombre que quieres usar, Ejemplo: Jonathan Torres", "Aceptar", "Cancelar");
+		            ShowPlayerDialog(playerid, CEDULA_MENU, DIALOG_STYLE_INPUT, "Traficante - Cedula Falsa", "Ingresa el nombre que quieres usar, Ejemplo: Jonathan Torres", "Aceptar", "Cancelar");
           		}
           		else{
-          		    strmid(DNIName[playerid], inputtext, 0, strlen(inputtext), 32);
-          			format(string, sizeof(string), "¿Estás seguro que quieres usar el nombre de\n\t%s en tu DNI falso?", DNIName[playerid]);
-					ShowPlayerDialog(playerid, DNI_CONFIRM, DIALOG_STYLE_MSGBOX, "Traficante - DNI Falso", string, "Aceptar", "Cancelar");
+          		    strmid(CEDULAName[playerid], inputtext, 0, strlen(inputtext), 32);
+          			format(string, sizeof(string), "¿Estás seguro que quieres usar el nombre de\n\t%s en tu Cedula falso?", CEDULAName[playerid]);
+					ShowPlayerDialog(playerid, CEDULA_CONFIRM, DIALOG_STYLE_MSGBOX, "Traficante - CEDULA Falso", string, "Aceptar", "Cancelar");
 				}
 			}
   		}
@@ -21500,12 +21500,12 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			}
 			return 1;
 		}
-  		case DNI_CONFIRM:
+  		case CEDULA_CONFIRM:
   		{
   		    if(response)
   		    {
-				strmid(cuenta[playerid][cIdentificacionName], DNIName[playerid], 0, strlen(DNIName[playerid]), 32);
-				new dni = 100000 + random(899999);  cuenta[playerid][cIdentificacionFalse] = dni;
+				strmid(cuenta[playerid][cIdentificacionName], CEDULAName[playerid], 0, strlen(CEDULAName[playerid]), 32);
+				new cedula = 100000 + random(899999);  cuenta[playerid][cIdentificacionFalse] = cedula;
 				format(string, sizeof(string), "* Has obtenido una identificación falsa, con el nombre de {41FF2F}%s.", cuenta[playerid][cIdentificacionName]);
 				Mensaje(playerid, COLOR_BLANCO, string);
 				pierdeDinero(playerid, 500);
@@ -23297,7 +23297,7 @@ stock AnimacionTalk(playerid, text[])
 		}
 	}
 }
-stock UpdateDniInformacion(playerid, tipo)
+stock UpdateCedulaInformacion(playerid, tipo)
 {
 	new string[256];
 	switch(cuenta[playerid][cOrigen])
@@ -23332,9 +23332,9 @@ stock UpdateDniInformacion(playerid, tipo)
 	
 	switch(tipo)
 	{
-		case 1: format(string, sizeof(string), "    Registrar Identidad~n~~n~~n~DNI: %d~n~~n~~r~Edad: %d~w~~n~~n~Sexo: %s~n~~n~Nacionalidad: %s~n~~n~Utiliza: las flechas para modificar sus datos y ~y~>>> ~w~para cambiar a modificar otros datos al terminar presionar ~g~~h~~h~Listo", DniValores[playerid][1], cuenta[playerid][cEdad], PlayerStatInfo[playerid][0], PlayerStatInfo[playerid][1]);
-		case 2: format(string, sizeof(string), "    Registrar Identidad~n~~n~~n~DNI: %d~n~~n~Edad: %d~n~~n~~r~Sexo: %s~w~~n~~n~Nacionalidad: %s~n~~n~Utiliza: las flechas para modificar sus datos y ~y~>>> ~w~para cambiar a modificar otros datos al terminar presionar ~g~~h~~h~Listo", DniValores[playerid][1], cuenta[playerid][cEdad], PlayerStatInfo[playerid][0], PlayerStatInfo[playerid][1]);
-		case 3: format(string, sizeof(string), "    Registrar Identidad~n~~n~~n~DNI: %d~n~~n~Edad: %d~n~~n~Sexo: %s~n~~n~~r~Nacionalidad: %s~w~~n~~n~Utiliza: las flechas para modificar sus datos y ~y~>>> ~w~para cambiar a modificar otros datos al terminar presionar ~g~~h~~h~Listo", DniValores[playerid][1], cuenta[playerid][cEdad], PlayerStatInfo[playerid][0], PlayerStatInfo[playerid][1]);
+		case 1: format(string, sizeof(string), "    Registrar Identidad~n~~n~~n~CEDULA: %d~n~~n~~r~Edad: %d~w~~n~~n~Sexo: %s~n~~n~Nacionalidad: %s~n~~n~Utiliza: las flechas para modificar sus datos y ~y~>>> ~w~para cambiar a modificar otros datos al terminar presionar ~g~~h~~h~Listo", CedulaValores[playerid][1], cuenta[playerid][cEdad], PlayerStatInfo[playerid][0], PlayerStatInfo[playerid][1]);
+		case 2: format(string, sizeof(string), "    Registrar Identidad~n~~n~~n~CEDULA: %d~n~~n~Edad: %d~n~~n~~r~Sexo: %s~w~~n~~n~Nacionalidad: %s~n~~n~Utiliza: las flechas para modificar sus datos y ~y~>>> ~w~para cambiar a modificar otros datos al terminar presionar ~g~~h~~h~Listo", CedulaValores[playerid][1], cuenta[playerid][cEdad], PlayerStatInfo[playerid][0], PlayerStatInfo[playerid][1]);
+		case 3: format(string, sizeof(string), "    Registrar Identidad~n~~n~~n~CEDULA: %d~n~~n~Edad: %d~n~~n~Sexo: %s~n~~n~~r~Nacionalidad: %s~w~~n~~n~Utiliza: las flechas para modificar sus datos y ~y~>>> ~w~para cambiar a modificar otros datos al terminar presionar ~g~~h~~h~Listo", CedulaValores[playerid][1], cuenta[playerid][cEdad], PlayerStatInfo[playerid][0], PlayerStatInfo[playerid][1]);
 	}
 	PlayerTextDrawSetString(playerid, InfoText[playerid][5], string);
 	return 1;
@@ -24617,7 +24617,7 @@ CallBack::ResetearVariables(playerid)
 	booleano[ConEstado]{playerid} = false;
 	booleano[CallGiveWeapon]{playerid} = false;
 	booleano[_ComprandoCoche]{playerid} = false;
-	booleano[_ComprandoDNI]{playerid} = false;
+	booleano[_ComprandoCEDULA]{playerid} = false;
 	booleano[_EstadoIphone]{playerid} = false;
 	booleano[iConnect]{playerid} = false;
 	booleano[PhoneOnline]{playerid} = false;
@@ -25921,7 +25921,7 @@ CallBack::NewUs(playerid)
 	return 1;
 }
 
-CallBack::Reg_ShowDNI(playerid){ MostrarIdentidad(playerid, playerid); }
+CallBack::Reg_ShowCEDULA(playerid){ MostrarIdentidad(playerid, playerid); }
 
 CallBack::MostrarIdentidad(playerid, targetid)
 {
@@ -25943,7 +25943,7 @@ CallBack::MostrarIdentidad(playerid, targetid)
    		Mensaje(targetid, COLOR_BLANCO, string);
    		format(string, sizeof(string), "   Nacionalidad: %s", PlayerStatInfo[playerid][1]);
    		Mensaje(targetid, COLOR_BLANCO, string);
-   		format(string, sizeof(string), "   Nº DNI: %d", cuenta[playerid][cIdentificacion]);
+   		format(string, sizeof(string), "   Nº CEDULA: %d", cuenta[playerid][cIdentificacion]);
    		Mensaje(targetid, COLOR_BLANCO, string);
    		format(string, sizeof(string), "   IDSA%d%s<%s>%d-%d", cuenta[playerid][cIdentificacion], sex, PlayerName(playerid), 2012-cuenta[playerid][cEdad], cuenta[playerid][cEdad]);
    		Mensaje(targetid, COLOR_GRIS2, string);
@@ -25951,7 +25951,7 @@ CallBack::MostrarIdentidad(playerid, targetid)
 	}
 }
 
-CallBack::ShowDNIFalse(playerid, targetid)
+CallBack::ShowCEDULAFalse(playerid, targetid)
 {
     if(IsPlayerConnected(playerid)&&IsPlayerConnected(targetid))
 	{
@@ -25970,7 +25970,7 @@ CallBack::ShowDNIFalse(playerid, targetid)
    		Mensaje(targetid, COLOR_BLANCO, string);
    		format(string, sizeof(string), "   Nacionalidad: %s", PlayerStatInfo[playerid][1]);
    		Mensaje(targetid, COLOR_BLANCO, string);
-   		format(string, sizeof(string), "   Nº DNI: %d", cuenta[playerid][cIdentificacionFalse]);
+   		format(string, sizeof(string), "   Nº CEDULA: %d", cuenta[playerid][cIdentificacionFalse]);
    		Mensaje(targetid, COLOR_BLANCO, string);
    		format(string, sizeof(string), "   IDSA%d%s<%s>%d-%d", cuenta[playerid][cIdentificacionFalse], sex, cuenta[playerid][cIdentificacionFalse], 2012-cuenta[playerid][cEdad], cuenta[playerid][cEdad]);
    		Mensaje(targetid, COLOR_GRIS2, string);
@@ -26196,7 +26196,7 @@ LoadPlayerText(playerid)
 	PlayerTextDrawSetProportional(playerid, InfoText[playerid][4], 1);
 	PlayerTextDrawSetSelectable(playerid, InfoText[playerid][4], 0);
 
-	InfoText[playerid][5] = CreatePlayerTextDraw(playerid, 200.000000, 120.000000, "    Registrar Identidad~n~~n~~n~DNI: 25212193~n~~n~Edad: 100~n~~n~Sexo: Hombre~n~~n~Nacionalidad: Venezuela~n~~n~Utiliza: las flechas");
+	InfoText[playerid][5] = CreatePlayerTextDraw(playerid, 200.000000, 120.000000, "    Registrar Identidad~n~~n~~n~CEDULA: 25212193~n~~n~Edad: 100~n~~n~Sexo: Hombre~n~~n~Nacionalidad: Venezuela~n~~n~Utiliza: las flechas");
 	PlayerTextDrawBackgroundColor(playerid, InfoText[playerid][5], 255);
 	PlayerTextDrawFont(playerid, InfoText[playerid][5], 1);
 	PlayerTextDrawLetterSize(playerid, InfoText[playerid][5], 0.289999, 1.399999);
