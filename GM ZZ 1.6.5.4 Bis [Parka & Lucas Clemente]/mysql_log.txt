@@ -1247,3 +1247,6 @@
 [09:09:17] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
 [09:09:17] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
 [09:09:17] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[10:36:23] [ERROR] CMySQLQuery::Execute[ConsultarCuenta] - (error #1364) Field 'clave2' doesn't have a default value
+[10:37:11] [ERROR] CMySQLQuery::Execute[ConsultarCuenta] - (error #1364) Field 'clave2' doesn't have a default value
+[11:02:24] [ERROR] CMySQLQuery::Execute[ConfirmarCuenta] - (error #2013) Lost connection to MySQL server during query

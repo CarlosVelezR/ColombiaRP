@@ -887,109 +887,60 @@ SA-MP Dedicated Server
 ----------------------
 v0.3.7, (C)2005-2015 SA-MP Team
 
-[07:39:58] filterscripts = ""  (string)
-[07:39:58] 
-[07:39:58] Server Plugins
-[07:39:58] --------------
-[07:39:58]  Loading plugin: crashdetect.dll
-[07:39:58]   CrashDetect v4.15.1 is OK.
-[07:39:58]   Loaded.
-[07:39:58]  Loading plugin: mysql.dll
-[07:39:58]   Failed.
-[07:39:58]  Loading plugin: sscanf.dll
-[07:39:58] 
+[10:31:43] filterscripts = ""  (string)
+[10:31:43] 
+[10:31:43] Server Plugins
+[10:31:43] --------------
+[10:31:43]  Loading plugin: crashdetect.dll
+[10:31:43]   CrashDetect v4.15.1 is OK.
+[10:31:43]   Loaded.
+[10:31:43]  Loading plugin: mysql.dll
+[10:31:43]  >> plugin.mysql: R39-2 successfully loaded.
+[10:31:43]   Loaded.
+[10:31:43]  Loading plugin: sscanf.dll
+[10:31:43] 
 
-[07:39:58]  ===============================
+[10:31:43]  ===============================
 
-[07:39:58]       sscanf plugin loaded.     
+[10:31:43]       sscanf plugin loaded.     
 
-[07:39:58]          Version:  2.8.1        
+[10:31:43]          Version:  2.8.1        
 
-[07:39:58]    (c) 2012 Alex "Y_Less" Cole  
+[10:31:43]    (c) 2012 Alex "Y_Less" Cole  
 
-[07:39:58]  ===============================
+[10:31:43]  ===============================
 
-[07:39:58]   Loaded.
-[07:39:58]  Loading plugin: streamer.dll
-[07:39:58]   Failed.
-[07:39:58]  Loaded 2 plugins.
+[10:31:43]   Loaded.
+[10:31:43]  Loading plugin: streamer.dll
+[10:31:43] 
 
-[07:39:58] 
-[07:39:58] Filterscripts
-[07:39:58] ---------------
-[07:39:58]   Loaded 0 filterscripts.
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
 
-[07:39:58] [debug] Run time error 19: "File or function is not found"
-[07:39:58] [debug]  EditDynamicObject
-[07:39:58] [debug]  DestroyDynamicObject
-[07:39:58] [debug]  CreateDynamicObject
-[07:39:58] [debug]  mysql_connect
-[07:39:58] [debug]  mysql_log
-[07:39:58] [debug]  CreateDynamic3DTextLabel
-[07:39:58] [debug]  CreateDynamicPickup
-[07:39:58] [debug]  CreateDynamicMapIcon
-[07:39:58] [debug]  CountDynamicPickups
-[07:39:58] [debug]  mysql_format
-[07:39:58] [debug]  mysql_tquery
-[07:39:58] [debug]  AttachDynamicObjectToVehicle
-[07:39:58] [debug]  mysql_query
-[07:39:58] [debug]  cache_get_row_count
-[07:39:58] [debug]  cache_get_row
-[07:39:58] [debug]  cache_get_row_int
-[07:39:58] [debug]  cache_delete
-[07:39:58] [debug]  DestroyDynamic3DTextLabel
-[07:39:58] [debug]  DestroyDynamicPickup
-[07:39:58] [debug]  MoveDynamicObject
-[07:39:58] [debug]  CountDynamicObjects
-[07:39:58] [debug]  CountDynamicCPs
-[07:39:58] [debug]  CountDynamicRaceCPs
-[07:39:58] [debug]  CountDynamicMapIcons
-[07:39:58] [debug]  CountDynamic3DTextLabels
-[07:39:58] [debug]  CreateDynamicSphere
-[07:39:58] [debug]  UpdateDynamic3DTextLabelText
-[07:39:58] [debug]  IsPlayerInDynamicArea
-[07:39:58] [debug]  IsValidDynamicObject
-[07:39:58] [debug]  mysql_escape_string
-[07:39:58] [debug]  cache_get_row_float
-[07:39:58] [debug]  SetDynamicObjectRot
-[07:39:58] [debug]  SetDynamicObjectMaterial
-[07:39:58] [debug]  SetDynamicObjectMaterialText
-[07:39:58] [debug]  CreateDynamicObjectEx
-[07:39:58] [debug] Run time error 19: "File or function is not found"
-[07:39:58] [debug]  EditDynamicObject
-[07:39:58] [debug]  DestroyDynamicObject
-[07:39:58] [debug]  CreateDynamicObject
-[07:39:58] [debug]  mysql_connect
-[07:39:58] [debug]  mysql_log
-[07:39:58] [debug]  CreateDynamic3DTextLabel
-[07:39:58] [debug]  CreateDynamicPickup
-[07:39:58] [debug]  CreateDynamicMapIcon
-[07:39:58] [debug]  CountDynamicPickups
-[07:39:58] [debug]  mysql_format
-[07:39:58] [debug]  mysql_tquery
-[07:39:58] [debug]  AttachDynamicObjectToVehicle
-[07:39:58] [debug]  mysql_query
-[07:39:58] [debug]  cache_get_row_count
-[07:39:58] [debug]  cache_get_row
-[07:39:58] [debug]  cache_get_row_int
-[07:39:58] [debug]  cache_delete
-[07:39:58] [debug]  DestroyDynamic3DTextLabel
-[07:39:58] [debug]  DestroyDynamicPickup
-[07:39:58] [debug]  MoveDynamicObject
-[07:39:58] [debug]  CountDynamicObjects
-[07:39:58] [debug]  CountDynamicCPs
-[07:39:58] [debug]  CountDynamicRaceCPs
-[07:39:58] [debug]  CountDynamicMapIcons
-[07:39:58] [debug]  CountDynamic3DTextLabels
-[07:39:58] [debug]  CreateDynamicSphere
-[07:39:58] [debug]  UpdateDynamic3DTextLabelText
-[07:39:58] [debug]  IsPlayerInDynamicArea
-[07:39:58] [debug]  IsValidDynamicObject
-[07:39:58] [debug]  mysql_escape_string
-[07:39:58] [debug]  cache_get_row_float
-[07:39:58] [debug]  SetDynamicObjectRot
-[07:39:58] [debug]  SetDynamicObjectMaterial
-[07:39:58] [debug]  SetDynamicObjectMaterialText
-[07:39:58] [debug]  CreateDynamicObjectEx
-[07:39:58] Script[gamemodes/ZZ-RP.amx]: Run time error 19: "File or function is not found"
-[07:39:58] Number of vehicle models: 0
+[10:31:43]   Loaded.
+[10:31:43]  Loaded 4 plugins.
+
+[10:31:44] 
+[10:31:44] Filterscripts
+[10:31:44] ---------------
+[10:31:44]   Loaded 0 filterscripts.
+
+[10:31:44] OnGameo
+[10:31:44] -CreateDynamicObjetcs[12848]
+[10:31:47] ZZ-RP: 1583 Pickups Cargados
+[10:31:47] Number of vehicle models: 73
+[10:32:17] [connection] 192.168.0.13:51355 requests connection cookie.
+[10:32:18] Incoming connection: 192.168.0.13:51355 id: 0
+[10:32:19] [join] Pacho_Vargas has joined the server (0:192.168.0.13)
+[10:32:47] [part] Pacho_Vargas has left the server (0:1)
+[10:36:07] [connection] 25.87.237.40:62522 requests connection cookie.
+[10:36:08] Incoming connection: 25.87.237.40:62522 id: 0
+[10:36:08] [join] Martin_Rojas has joined the server (0:25.87.237.40)
+[10:36:32] [part] Martin_Rojas has left the server (0:1)
+[10:36:53] [connection] 25.87.237.40:53719 requests connection cookie.
+[10:36:54] Incoming connection: 25.87.237.40:53719 id: 0
+[10:36:54] [join] Martin_Rojas has joined the server (0:25.87.237.40)
+[10:37:36] [part] Martin_Rojas has left the server (0:2)
+[11:02:19] [connection] 25.87.237.40:53445 requests connection cookie.
+[11:02:20] Incoming connection: 25.87.237.40:53445 id: 0
+[11:02:20] [join] Martin_Rojas has joined the server (0:25.87.237.40)
+[11:02:33] [part] Martin_Rojas has left the server (0:2)
