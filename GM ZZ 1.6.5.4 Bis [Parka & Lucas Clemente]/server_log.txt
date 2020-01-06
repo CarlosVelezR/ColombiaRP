@@ -617,3 +617,56 @@ v0.3.7, (C)2005-2015 SA-MP Team
 [08:30:15] Incoming connection: 192.168.0.13:65190 id: 0
 [08:30:15] [join] Pacho_Vargas has joined the server (0:192.168.0.13)
 [08:30:31] [part] Pacho_Vargas has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[08:31:48] filterscripts = ""  (string)
+[08:31:48] 
+[08:31:48] Server Plugins
+[08:31:48] --------------
+[08:31:48]  Loading plugin: crashdetect.dll
+[08:31:48]   CrashDetect v4.15.1 is OK.
+[08:31:48]   Loaded.
+[08:31:48]  Loading plugin: mysql.dll
+[08:31:48]  >> plugin.mysql: R39-2 successfully loaded.
+[08:31:48]   Loaded.
+[08:31:48]  Loading plugin: sscanf.dll
+[08:31:48] 
+
+[08:31:48]  ===============================
+
+[08:31:48]       sscanf plugin loaded.     
+
+[08:31:48]          Version:  2.8.1        
+
+[08:31:48]    (c) 2012 Alex "Y_Less" Cole  
+
+[08:31:48]  ===============================
+
+[08:31:48]   Loaded.
+[08:31:48]  Loading plugin: streamer.dll
+[08:31:48] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[08:31:48]   Loaded.
+[08:31:49]  Loaded 4 plugins.
+
+[08:31:49] 
+[08:31:49] Filterscripts
+[08:31:49] ---------------
+[08:31:49]   Loaded 0 filterscripts.
+
+[08:31:50] -CreateDynamicObjetcs[12848]
+[08:31:50] ZZ-RP: 1574 Pickups Cargados
+[08:31:50] Number of vehicle models: 47
+[08:33:40] [connection] 192.168.0.13:53281 requests connection cookie.
+[08:33:41] Incoming connection: 192.168.0.13:53281 id: 0
+[08:33:41] [join] Pacho_Vargas has joined the server (0:192.168.0.13)
+[08:33:58] [part] Pacho_Vargas has left the server (0:1)
