@@ -38,7 +38,7 @@ AntiDeAMX()
 #undef MAX_PLAYERS
 #define MAX_PLAYERS (150)
 
-#define Version			"v1.6.5.4"
+#define Version			"V1.0"
 #define ModeText		"RolePlay - RP - "Version""
 #define MapName			"mapname Bogota"
 #define Hostname		"hostname Colombia Roleplay - Tu Rol esta Aqui [0.3.7]"
@@ -13940,13 +13940,13 @@ public OnPlayerText(playerid, text[])
 			    Mensaje(playerid, COLOR_BLANCO, "{EE9900}Operadora: {FFFFFF}¿Donde está en LS o LV?");
 			 	return 0;
 			}
-			else if ((strcmp("LS", tmp, true, strlen(tmp)) == 0) && (strlen(tmp) == strlen("LS")))
+			else if ((strcmp("LS", tmp, true, strlen(tmp)) == 0) && (strlen(tmp) == strlen("BOG")))
 			{
 				Mensaje(playerid, COLOR_BLANCO, "{EE9900}Operadora: {FFFFFF}¿En que zona está?");
 				Mobile[playerid] = 447;
 				return 0;
 			}
-			else if ((strcmp("LV", tmp, true, strlen(tmp)) == 0) && (strlen(tmp) == strlen("LV")))
+			else if ((strcmp("LV", tmp, true, strlen(tmp)) == 0) && (strlen(tmp) == strlen("MED")))
 			{
 				Mensaje(playerid, COLOR_BLANCO, "{EE9900}Operadora: {FFFFFF}¿En que zona está?");
 				Mobile[playerid] = 448;
@@ -13954,7 +13954,7 @@ public OnPlayerText(playerid, text[])
 			}
 			else
 			{
-				Mensaje(playerid, COLOR_BLANCO, "{EE9900}Operadora: {FFFFFF}¿Donde está en LS o LV?");
+				Mensaje(playerid, COLOR_BLANCO, "{EE9900}Operadora: {FFFFFF}¿Donde está en BOG o MED?");
 				return 0;
 			}
 		}
@@ -14115,12 +14115,12 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 				{
 					case 50:
 					{
-						format(string, sizeof(string), "Usted compro un chaleco por %d dolares.", armasventa[x][av@Precio]);
+						format(string, sizeof(string), "Usted compro un chaleco por %d Pesos.", armasventa[x][av@Precio]);
 						darArmadura(playerid, 100.0);
 					}
 					default:
 					{
-						format(string, sizeof(string), "Usted compro un(a) %s con %d balas por %d dolares.", NombreArma(armasventa[x][av@armaid]), armasventa[x][av@municion], armasventa[x][av@Precio]);
+						format(string, sizeof(string), "Usted compro un(a) %s con %d balas por %d Pesos.", NombreArma(armasventa[x][av@armaid]), armasventa[x][av@municion], armasventa[x][av@Precio]);
 						darArma(playerid, armasventa[x][av@armaid], armasventa[x][av@municion]);
 					}
 				}
