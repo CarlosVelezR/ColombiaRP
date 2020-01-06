@@ -1,7 +1,7 @@
 /*
 	*	(c) Copyright 2013 - 2015
 	*
-	*	Nombre del proyecto:	ZonaZero RolePlay
+	*	Nombre del proyecto:	Colombia RolePlay
 	*	Desarrollador:			Parka, Lucas Clemente(lolking), Sergio Mitnick.
 	*   Mappers:                Javier_Cardenas.
 	*	Version:				1.6.5.4
@@ -41,10 +41,10 @@ AntiDeAMX()
 #define Version			"v1.6.5.4"
 #define ModeText		"RolePlay - RP - "Version""
 #define MapName			"mapname Bogota"
-#define Hostname		"hostname ZonaZero Roleplay - Tu Rol esta Aqui [0.3.7]"
+#define Hostname		"hostname Colombia Roleplay - Tu Rol esta Aqui [0.3.7]"
 #define Language        "Español - LS"
 
-#define ShowLoginDialog(%1,%2)			ShowPlayerDialog(%1, %2, DIALOG_STYLE_PASSWORD, "Bienvenido una vez más! - {EE6C68}ZonaZero Roleplay", "{FFFFFF}Un cordial saludo.\n\n{FFFFFF}Ingresa tu contraseña para ingresar legalmente al servidor.\n\n{FFFFFF}Web: {4AACAA}www.ZonaZeroRP.com\n{FFFFFF}Facebook: {005982}www.Facebook.com/groups/ZZRP\n{FFFFFF}Teamspeak3: {B63221}ts3.zonazerorp.com\n\n{FFFFFF}Recuerda ser activo en nuestro Foro!.", "Ingresar", "Salir")
+#define ShowLoginDialog(%1,%2)			ShowPlayerDialog(%1, %2, DIALOG_STYLE_PASSWORD, "Bienvenido una vez más! - {EE6C68}Colombia Roleplay", "{FFFFFF}Un cordial saludo.\n\n{FFFFFF}Ingresa tu contraseña para ingresar legalmente al servidor.\n\n{FFFFFF}Web: {4AACAA}(Proximamente)\n{FFFFFF}Facebook: {005982}www.Facebook.com/groups/ZZRP\n{FFFFFF}Teamspeak3: {B63221}ts3.zonazerorp.com\n\n{FFFFFF}Recuerda ser activo en nuestro Foro!.", "Ingresar", "Salir")
 #define ShowRegisterDialog(%1,%2)		ShowPlayerDialog(%1, %2, DIALOG_STYLE_INPUT, "Registre una cuenta ahora! - {EE6C68}ZonaZero Roleplay", "{FFFFFF}Un cordial saludo.\n\n{FFFFFF}Tu cuenta no está registrada, ingresa una contraseña para registrarte legalmente.", "Registrar", "Salir")
 #define MostrarDialogo(%1,%2)			ShowPlayerDialog(%1, DIALOG_ERROR, DIALOG_STYLE_MSGBOX, "{EE6C68}ZZ - {FFFFFF}Soporte.", %2, "Aceptar", "")
 
@@ -2431,7 +2431,7 @@ public OnPlayerSpawn(playerid)
 				
 				for(new p=0;p<5;p++) TextDrawShowForPlayer(playerid, Presentacion[p]);
 				
-				PlayerTextDrawSetString(playerid, InfoText[playerid][4], "~r~ZonaZero ~b~~h~~h~~h~es una comunidad de SAMP RolePlay en la que encontraras muchas opciones para divertirte.~n~~b~~h~~h~~h~Llevamos desde Junio de 2012 sirviendo a nuestros usuarios para brindarles una gran experiencia de rol.~n~~b~~h~~h~~h~Lo que diferencia a ~r~ZonaZero ~b~~h~~h~~h~de los demás servidores, es que el usuario tiene su propia libertad.~n~~b~~h~~h~~h~Podras entrar en facciones, legales o ilegales, o entrar a familias o incluso hacer tu propia familia!~n~~b~~h~~h~~h~Toda la información la podras encontrar en nuestro foro ~r~www.zonazerorp.com~n~");
+				PlayerTextDrawSetString(playerid, InfoText[playerid][4], "~r~Colombia RP ~b~~h~~h~~h~es una comunidad de SAMP RolePlay en la que encontraras muchas opciones para divertirte.~n~~b~~h~~h~~h~Llevamos desde Junio de 2012 sirviendo a nuestros usuarios para brindarles una gran experiencia de rol.~n~~b~~h~~h~~h~Lo que diferencia a ~r~ZonaZero ~b~~h~~h~~h~de los demás servidores, es que el usuario tiene su propia libertad.~n~~b~~h~~h~~h~Podras entrar en facciones, legales o ilegales, o entrar a familias o incluso hacer tu propia familia!~n~~b~~h~~h~~h~Toda la información la podras encontrar en nuestro foro ~r~www.zonazerorp.com~n~");
 				PlayerTextDrawShow(playerid, InfoText[playerid][4]);
 				PlayerTextDrawShow(playerid, InfoText[playerid][14]);
 				SelectTextDraw(playerid, COLOR_LIMA);
@@ -4131,7 +4131,7 @@ public OnGameModeInit()
 	for(new i=0;i<MAX_ANUNCIOS;i++)
 	{
 		Publicidad[i][_pObjecto] = CreateObject(4729, Publicidad[i][_pPosx], Publicidad[i][_pPosy], Publicidad[i][_pPosz], 0.0000, 0.0000, Publicidad[i][_pPosrz], 1000.0);
-		SetObjectMaterialText(Publicidad[i][_pObjecto], "Zona Zero RolePlay\n\n {FFFFFF}Publicidad Disponible", 0, 120, "impact", 32, 0, -32256, -16777216, 1);
+		SetObjectMaterialText(Publicidad[i][_pObjecto], "Colombia Roleplay\n\n {FFFFFF}Publicidad Disponible", 0, 120, "impact", 32, 0, -32256, -16777216, 1);
 	}
 	for(new x=0; x<sizeof(textObjeto); x++)
 	{
@@ -7399,7 +7399,7 @@ command(stop, playerid, params[])
 }
 command(acciones, playerid, params[])
 {
-	Mensaje(playerid, COLOR_NARANJA, "Zona Zero RP - Acciones disponibles:");
+	Mensaje(playerid, COLOR_NARANJA, "Colombia RP - Acciones disponibles:");
 	Mensaje(playerid, COLOR_ROJO3, "/rendirse /borracho /hablar /paja /irsecortao /arrestado");
 	Mensaje(playerid, COLOR_ROJO3, "/amenazar /superpatada /reirse /agredido /herido /encender");
 	Mensaje(playerid, COLOR_ROJO3, "/inhablar /asustado /adolorido /apagar /vigilar /recostarse");
@@ -7410,7 +7410,7 @@ command(acciones, playerid, params[])
 }
 command(acciones2, playerid, params[])
 {
-	Mensaje(playerid, COLOR_NARANJA, "Zona Zero RP - Acciones disponibles 2:");
+	Mensaje(playerid, COLOR_NARANJA, "Colombia RP - Acciones disponibles 2:");
 	Mensaje(playerid, COLOR_ROJO3, "/comerciar /piquero /taichi /beber /boxear /fuerza /pelea");
 	Mensaje(playerid, COLOR_ROJO3, "/recoger /botear /clavarse /lanzar /hombre /mujer /sanar");
 	Mensaje(playerid, COLOR_ROJO3, "/llorar /dormir /detener /rapear /alzar /cansado /bomba");
@@ -7680,7 +7680,7 @@ command(encenderb , playerid, params[])
 	command(soporte, playerid, params[])
 	{
         ClearChatbox(playerid, 8);
-	    Mensaje(playerid, -1, "{C8D228}-= {00B39D}Centro de Soporte {FFFFFF}Zona Zero RP {C8D228}=-");
+	    Mensaje(playerid, -1, "{C8D228}-= {00B39D}Centro de Soporte {FFFFFF}Colombia RP {C8D228}=-");
 	    Mensaje(playerid, -1, "{FFFFFF}- Dudas sobre terminos de juego - {FF0828}/duda");
 	    Mensaje(playerid, -1, "{FFFFFF}- Reportar a un jugador por infringir las normas - {46ED8F}/re");
 	    return Mensaje(playerid, -1, "{FFFFFF}- ¿Necesistas asistencia? - {00A400}/solicitaradmin");
@@ -11552,8 +11552,8 @@ command(adminduty, playerid, params[]){
 }
 
     command(administradores, playerid, params[]){
-       	Mensaje(playerid, 0xFF6464FF, "|___ Zona Zero RolePlay ___|");
-       	Mensaje(playerid, COLOR_GRIS2, "La lista de Administradores de Zona Zero RolePlay no se da a conocer por asuntos internos del servidor.");
+       	Mensaje(playerid, 0xFF6464FF, "|___ Colombia RolePlay ___|");
+       	Mensaje(playerid, COLOR_GRIS2, "La lista de Administradores de Colombia RolePlay no se da a conocer por asuntos internos del servidor.");
        	Mensaje(playerid, COLOR_GRIS2, "Utiliza: /duda para comunicarse con ellos y espere que le respondan.");
        	Mensaje(playerid, COLOR_GRIS2, "Utiliza: /re para reportar un jugador y espere que un administrador le responda");
 	    return 1;
@@ -11563,7 +11563,7 @@ command(adminduty, playerid, params[]){
 			Mensaje(playerid, COLOR_ROJO, "Por razones de privacidad se decidio ocultar la lista de administradores en servicio.");
 			return 1;
 		}
-        Mensaje(playerid, COLOR_GRIS2, "| Staff de Zona Zero RP |");
+        Mensaje(playerid, COLOR_GRIS2, "| Staff de Colombia RP |");
 		for(new i=0, t=GetMaxPlayers();i<t;i++){
 		    if(IsPlayerConnected(i)){
 		        if(cuenta[i][cAdministrador] >= 1 && cuenta[i][cAdministrador] <= 2014){
@@ -16108,17 +16108,17 @@ public OnPlayerClickTextDraw(playerid, Text:clickedid)
 		if(clickedid == cajeros[enteroChar[cajeroslot]{playerid}][Textdcajero][5])
 		{
 			actualizarCajero(playerid);
-			ShowPlayerDialog(playerid, DIALOGO_SACAR, DIALOG_STYLE_INPUT, "{F07A04}Zona zero - Sacar", "{FFFFFF}Escriba la cantidad exacta del dinero que quiere sacar", "Aceptar", "Cancelar");
+			ShowPlayerDialog(playerid, DIALOGO_SACAR, DIALOG_STYLE_INPUT, "{F07A04}Colombia - Sacar", "{FFFFFF}Escriba la cantidad exacta del dinero que quiere sacar", "Aceptar", "Cancelar");
 		}
 		else if(clickedid == cajeros[enteroChar[cajeroslot]{playerid}][Textdcajero][6])
 		{
 			actualizarCajero(playerid);
-			ShowPlayerDialog(playerid, DIALOGO_DEPOSITO, DIALOG_STYLE_INPUT, "{F07A04}Zona zero - Depositar", "{FFFFFF}Escriba la cantidad exacta del dinero que quiere depositar", "Aceptar", "Cancelar");
+			ShowPlayerDialog(playerid, DIALOGO_DEPOSITO, DIALOG_STYLE_INPUT, "{F07A04}Colombia - Depositar", "{FFFFFF}Escriba la cantidad exacta del dinero que quiere depositar", "Aceptar", "Cancelar");
 		}
 		else if(clickedid == cajeros[enteroChar[cajeroslot]{playerid}][Textdcajero][7])
 		{
 			if(cuenta[playerid][cNivel] < 4)return Mensaje(playerid, COLOR_ROJO, "Para transferir dinero debes ser nivel 4 o mayor.");
-			ShowPlayerDialog(playerid, DIALOGO_TRANSFERENCIA, DIALOG_STYLE_INPUT, "{F07A04}Zona zero - Tansferir", "{FFFFFF}Escriba el Nombre_Apellido de la cuenta a la que realizará la transacción.", "Aceptar", "Cancelar");
+			ShowPlayerDialog(playerid, DIALOGO_TRANSFERENCIA, DIALOG_STYLE_INPUT, "{F07A04}Colombia - Tansferir", "{FFFFFF}Escriba el Nombre_Apellido de la cuenta a la que realizará la transacción.", "Aceptar", "Cancelar");
 			actualizarCajero(playerid);
 		}
 		else if(clickedid == cajeros[enteroChar[cajeroslot]{playerid}][Textdcajero][8])
@@ -17136,7 +17136,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					}
 					ClearChatbox(playerid, 51);
 					
-					format(string, sizeof(string), "Bienvenido a {EE6C68}Zona Zero {FFFFFF}%s!", PlayerName(playerid));
+					format(string, sizeof(string), "Bienvenido a {EE6C68}Colombia {FFFFFF}%s!", PlayerName(playerid));
 					Mensaje(playerid, COLOR_BLANCO, string);
 					Mensaje(playerid, COLOR_BLANCO, "Recuerda seguir los términos y condiciones que mantiene nuestro servidor para la buena estabilidad.");
                     
@@ -17182,7 +17182,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			if(!response)return 1;
 			if(strval(inputtext) > obtenerDinero(playerid) || strval(inputtext) < 1)
 			{
-				ShowPlayerDialog(playerid, DIALOGO_DEPOSITO, DIALOG_STYLE_INPUT, "{F07A04}Zona zero - Depositar", "{FFFFFF}Escriba la cantidad exacta del dinero que quiere depositar ", "Aceptar", "Cancelar");
+				ShowPlayerDialog(playerid, DIALOGO_DEPOSITO, DIALOG_STYLE_INPUT, "{F07A04}Colombia - Depositar", "{FFFFFF}Escriba la cantidad exacta del dinero que quiere depositar ", "Aceptar", "Cancelar");
 				Mensaje(playerid, COLOR_AMARILLO, "* Usted colocó una cantidad errónea.");
 				return 1;
 			}
@@ -17206,7 +17206,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			}
 			cache_delete(resultado);
 			format(cajeros[enteroChar[cajeroslot]{playerid}][tranferenciaNombre], MAX_PLAYER_NAME, "%s", inputtext);
-			ShowPlayerDialog(playerid, DIALOGO_TRANSFERENCIA2, DIALOG_STYLE_INPUT, "{F07A04}Zona zero - Tansferir", "{FFFFFF}Escriba la cantidad exacta del dinero que quiere transferir.", "Aceptar", "Cancelar");
+			ShowPlayerDialog(playerid, DIALOGO_TRANSFERENCIA2, DIALOG_STYLE_INPUT, "{F07A04}Colombia - Tansferir", "{FFFFFF}Escriba la cantidad exacta del dinero que quiere transferir.", "Aceptar", "Cancelar");
 		}
 		case DIALOGO_SACAR:
 		{
@@ -17214,7 +17214,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			if(strval(inputtext) > cuenta[playerid][cDineroBanco] || strval(inputtext) < 1)
 			{
 				Mensaje(playerid, COLOR_AMARILLO, "* Usted colocó una cantidad errónea.");
-				ShowPlayerDialog(playerid, DIALOGO_SACAR, DIALOG_STYLE_INPUT, "{F07A04}Zona zero - Sacar", "{FFFFFF}Escriba la cantidad exacta del dinero que quiere sacar", "Aceptar", "Cancelar");
+				ShowPlayerDialog(playerid, DIALOGO_SACAR, DIALOG_STYLE_INPUT, "{F07A04}Colombia - Sacar", "{FFFFFF}Escriba la cantidad exacta del dinero que quiere sacar", "Aceptar", "Cancelar");
 				return 1;
 			}
 			new dinero;
@@ -17424,7 +17424,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					DestroyObject(Publicidad[aid][_pObjecto]);
 					Publicidad[aid][_pObjecto] = CreateObject(4729, Publicidad[aid][_pPosx], Publicidad[aid][_pPosy], Publicidad[aid][_pPosz], 0.0000, 0.0000, Publicidad[aid][_pPosrz], 1000.0);
 					
-					format(strons, sizeof(strons), "{FFA500}Zona Zero RolePlay\n {FFFFFF}%s \n{FFA500}Anunciante:{FFFFFF} %s - {00FF00}Contacto:{FFFFFF} %d", inputtext, PlayerName(playerid), cuenta[playerid][cTelefono]);
+					format(strons, sizeof(strons), "{FFA500}Colombia RolePlay\n {FFFFFF}%s \n{FFA500}Anunciante:{FFFFFF} %s - {00FF00}Contacto:{FFFFFF} %d", inputtext, PlayerName(playerid), cuenta[playerid][cTelefono]);
 					SetObjectMaterialText(Publicidad[aid][_pObjecto], strons, 0, 120, "impact", 32, 0, -32256, -16777216, 1);
 
 					format(strons, sizeof(strons), "Usted ha publicado su anuncio por {FFA500}%s{FFFFFF}, valor {00FF00}%d$", ObtenerTiempoRestante(Publicidad[aid][_pTime]), Precio);
@@ -17453,7 +17453,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				Publicidad[aid][_pTime] = 0;
 				DestroyObject(Publicidad[aid][_pObjecto]);
 				Publicidad[aid][_pObjecto] = CreateObject(4729, Publicidad[aid][_pPosx], Publicidad[aid][_pPosy], Publicidad[aid][_pPosz], 0.0000, 0.0000, Publicidad[aid][_pPosrz], 1000.0);
-				SetObjectMaterialText(Publicidad[aid][_pObjecto], "Zona Zero RolePlay\n\n {FFFFFF}Publicidad Disponible", 0, 120, "impact", 32, 0, -32256, -16777216, 1);
+				SetObjectMaterialText(Publicidad[aid][_pObjecto], "Colombia RolePlay\n\n {FFFFFF}Publicidad Disponible", 0, 120, "impact", 32, 0, -32256, -16777216, 1);
 				return 1;
 			}
 			return 1;
@@ -24368,7 +24368,7 @@ CallBack::StreamCincoSegundos()
 			Publicidad[i][_pTime] = 0;
 			DestroyObject(Publicidad[i][_pObjecto]);
 			Publicidad[i][_pObjecto] = CreateObject(4729, Publicidad[i][_pPosx], Publicidad[i][_pPosy], Publicidad[i][_pPosz], 0.0000, 0.0000, Publicidad[i][_pPosrz], 1000.0);
-			SetObjectMaterialText(Publicidad[i][_pObjecto], "Zona Zero RolePlay\n\n {FFFFFF}Publicidad Disponible", 0, 120, "impact", 32, 0, -32256, -16777216, 1);
+			SetObjectMaterialText(Publicidad[i][_pObjecto], "Colombia RolePlay\n\n {FFFFFF}Publicidad Disponible", 0, 120, "impact", 32, 0, -32256, -16777216, 1);
 		}
 	}
 	return 1;
@@ -27946,7 +27946,7 @@ COMMAND:regalo(playerid, params[]){
 
 		if(cuenta[playerid][cNivel] < 3)return Mensaje(playerid, COLOR_ROJO, "Usted debe ser nivel 3 para usar este comando.");
 		if(cuenta[playerid][cNavidad] == dia)return Mensaje(playerid, COLOR_ROJO, "Usted ya recogio su regalo hoy.");
-		Mensaje(playerid, -1, "{FFA500}Zona Zero RolePlay{FFFFFF} te desea Felices Fiestas.");
+		Mensaje(playerid, -1, "{FFA500}Colombia RolePlay{FFFFFF} te desea Felices Fiestas.");
 		Mensaje(playerid, -1, "{00FFFF}Gracias por estar con nosotros este 2014.");
 		new Dinero = dia * 300, Moneda = dia * 6;
 
