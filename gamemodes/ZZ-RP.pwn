@@ -6730,7 +6730,7 @@ CallBack::GuardarDatosMySQL(playerid)
 	materiales=%d, drogas=%d, speed=%d, ectasy=%d, ritalin=%d, heroina=%d, marihuana=%d, lider=%d, miembro=%d, rango=%d, caracter=%d, \
 	interior=%d, virtualworld=%d, team=%d, numerotelefonico=%d, minutos=%d, minutr=%d, horas=%d, mtexto=%d, ipod=%d, \
 	auto=%d, auto2=%d, auto3=%d, auto4=%d, casa=%d, casa2=%d, negocio=%d, negocio2=%d, licenciaauto=%d, licenciaarma=%d, gafas=%d, tutorial=%d, \
-	encendedor=%d, cigarrillos=%d, mascara=%d, advertencias=%d, adminadver=%d, cedula=%d, weap0=%d, ammo0=%d, weap1=%d, ammo1=%d, \
+	encendedor=%d, cigarrillos=%d, mascara=%d, advertencias=%d, adminadver=%d, dni=%d, weap0=%d, ammo0=%d, weap1=%d, ammo1=%d, \
 	weap2=%d, ammo2=%d, weap3=%d, ammo3=%d, weap4=%d, ammo4=%d, weap5=%d, ammo5=%d, weap6=%d, ammo6=%d, weap7=%d, ammo7=%d, \
 	weap8=%d, ammo8=%d, weap9=%d, ammo9=%d, weap10=%d, ammo10=%d, weap11=%d, ammo11=%d, maleta=%d, mochila=%d, casco=%d, miniwofer=%d, fam=%d, famr=%d, deagle=%d, shotgun=%d, mp5=%d, \
 	ak47=%d, m4=%d, sniper=%d, fstyle=%d, leccion=%d, busqueda=%d, rent=%d, rob=%d, donate=%d, donatedia=%d, donatemes=%d, donateyear=%d, banduda=%d, \
