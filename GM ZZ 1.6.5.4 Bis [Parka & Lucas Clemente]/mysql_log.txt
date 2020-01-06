@@ -439,3 +439,158 @@
 [08:47:50] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
 [08:47:50] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
 [08:47:50] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:01] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)
+[08:48:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:01] [WARNING] cache_get_row_count - no active cache
+[08:48:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:48:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:01] [WARNING] cache_get_row_count - no active cache
+[08:48:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:48:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:01] [WARNING] cache_get_row_count - no active cache
+[08:48:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:48:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:01] [WARNING] cache_get_row_count - no active cache
+[08:48:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:48:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:01] [WARNING] cache_get_row_count - no active cache
+[08:48:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:48:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:01] [WARNING] cache_get_row_count - no active cache
+[08:48:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:48:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:01] [WARNING] cache_get_row_count - no active cache
+[08:48:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:48:02] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:02] [WARNING] cache_get_row_count - no active cache
+[08:48:02] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:48:02] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)
+[08:48:02] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)
+[08:48:02] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)
+[08:48:07] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:07] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:07] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:13] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:13] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:13] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:18] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:18] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:18] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:24] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:24] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:24] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:29] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:29] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:29] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:34] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:34] [WARNING] cache_get_row_count - no active cache
+[08:48:34] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:48:34] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:34] [WARNING] cache_get_row_count - no active cache
+[08:48:34] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:48:35] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:35] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:35] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:40] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:40] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:40] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:45] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:45] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:45] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:51] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:51] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:48:51] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:01] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)
+[08:49:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:01] [WARNING] cache_get_row_count - no active cache
+[08:49:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:49:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:01] [WARNING] cache_get_row_count - no active cache
+[08:49:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:49:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:01] [WARNING] cache_get_row_count - no active cache
+[08:49:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:49:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:01] [WARNING] cache_get_row_count - no active cache
+[08:49:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:49:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:01] [WARNING] cache_get_row_count - no active cache
+[08:49:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:49:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:01] [WARNING] cache_get_row_count - no active cache
+[08:49:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:49:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:01] [WARNING] cache_get_row_count - no active cache
+[08:49:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:49:01] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:01] [WARNING] cache_get_row_count - no active cache
+[08:49:01] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:49:02] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)
+[08:49:02] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)
+[08:49:02] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)
+[08:49:07] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:07] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:07] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:12] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:12] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:12] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:18] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:18] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:18] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:23] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:23] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:23] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:28] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:28] [WARNING] cache_get_row_count - no active cache
+[08:49:28] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:49:28] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:28] [WARNING] cache_get_row_count - no active cache
+[08:49:28] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[08:49:29] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:29] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:29] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:34] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:34] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:34] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:40] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:40] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:40] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:45] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:45] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:45] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:51] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:51] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:51] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:56] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:56] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:49:56] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:02] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:02] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:02] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:07] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:07] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:07] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:12] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:12] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:12] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:18] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:18] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:18] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:23] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:23] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:23] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:29] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:29] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:29] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:34] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:34] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:34] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:40] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:40] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:40] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:45] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:45] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:45] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:51] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:51] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[08:50:51] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
