@@ -16566,7 +16566,7 @@ public OnPlayerConnect(playerid)
 	//
     Mostrar[playerid] = 0; 
 	SetPlayerColor(playerid, 0xBFC0C200);
-	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/101544487/Intro%20ZZ8.mp3");
+	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/muk5i2b80ui6sr6/Niche.mp3?dl=0");
 	//
 	Update3DTextLabelText(estado[playerid], COLOR_ROJO, "void");
 	Attach3DTextLabelToPlayer(estado[playerid], playerid, 0.0, 0.0, 1000.0);
