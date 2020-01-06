@@ -1,7 +1,7 @@
 /*
 	*	(c) Copyright 2013 - 2015
 	*
-	*	Nombre del proyecto:	ZonaZero RolePlay
+	*	Nombre del proyecto:	Colombia RolePlay
 	*	Desarrollador:			Parka, Lucas Clemente(lolking), Sergio Mitnick.
 	*   Mappers:                Javier_Cardenas.
 	*	Version:				1.6.5.4
@@ -38,15 +38,15 @@ AntiDeAMX()
 #undef MAX_PLAYERS
 #define MAX_PLAYERS (150)
 
-#define Version			"v1.6.5.4"
+#define Version			"v 0.1"
 #define ModeText		"RolePlay - RP - "Version""
 #define MapName			"mapname Los Santos"
-#define Hostname		"hostname ZonaZero Roleplay - Tu Rol esta Aqui [0.3.7]"
+#define Hostname		"hostname Colombia Roleplay - Unete! [C:RP]"
 #define Language        "Español - LS"
 
-#define ShowLoginDialog(%1,%2)			ShowPlayerDialog(%1, %2, DIALOG_STYLE_PASSWORD, "Bienvenido una vez más! - {EE6C68}ZonaZero Roleplay", "{FFFFFF}Un cordial saludo.\n\n{FFFFFF}Ingresa tu contraseña para ingresar legalmente al servidor.\n\n{FFFFFF}Web: {4AACAA}www.ZonaZeroRP.com\n{FFFFFF}Facebook: {005982}www.Facebook.com/groups/ZZRP\n{FFFFFF}Teamspeak3: {B63221}ts3.zonazerorp.com\n\n{FFFFFF}Recuerda ser activo en nuestro Foro!.", "Ingresar", "Salir")
-#define ShowRegisterDialog(%1,%2)		ShowPlayerDialog(%1, %2, DIALOG_STYLE_INPUT, "Registre una cuenta ahora! - {EE6C68}ZonaZero Roleplay", "{FFFFFF}Un cordial saludo.\n\n{FFFFFF}Tu cuenta no está registrada, ingresa una contraseña para registrarte legalmente.", "Registrar", "Salir")
-#define MostrarDialogo(%1,%2)			ShowPlayerDialog(%1, DIALOG_ERROR, DIALOG_STYLE_MSGBOX, "{EE6C68}ZZ - {FFFFFF}Soporte.", %2, "Aceptar", "")
+#define ShowLoginDialog(%1,%2)			ShowPlayerDialog(%1, %2, DIALOG_STYLE_PASSWORD, "Bienvenido una vez más! - {EE6C68}Colombia Roleplay", "{FFFFFF}Un cordial saludo.\n\n{FFFFFF}Ingresa tu contraseña para ingresar legalmente al servidor.\n\n{FFFFFF}Web: {4AACAA}(Proximamente)\n{FFFFFF}Facebook: {005982}(Proximamente)\n{FFFFFF}Discord: {B63221}discord.gg/KQta6CQ\n\n{FFFFFF}Recuerda ser activo en nuestro Servidor!.", "Ingresar", "Salir")
+#define ShowRegisterDialog(%1,%2)		ShowPlayerDialog(%1, %2, DIALOG_STYLE_INPUT, "Registre una cuenta ahora! - {EE6C68}Colombia Roleplay", "{FFFFFF}Un cordial saludo.\n\n{FFFFFF}Tu cuenta no está registrada, ingresa una contraseña para registrarte legalmente.", "Registrar", "Salir")
+#define MostrarDialogo(%1,%2)			ShowPlayerDialog(%1, DIALOG_ERROR, DIALOG_STYLE_MSGBOX, "{EE6C68}CRP - {FFFFFF}Soporte.", %2, "Aceptar", "")
 
 #define EnviarPeticion(%1,%2)  			ShowPlayerDialog(%1, DIALOGO_PETICIONES, DIALOG_STYLE_MSGBOX, "Petición", %2, "Aceptar", "Rechazar")
 #define AdminPanel(%1)  				ShowPlayerDialog(%1, PW_ADMIN, DIALOG_STYLE_INPUT, "{EE6C68}Panel Administrativo", "{FFFFFF}Ingrese su nueva contraseña de administración", "Ingresar", "Salir")
