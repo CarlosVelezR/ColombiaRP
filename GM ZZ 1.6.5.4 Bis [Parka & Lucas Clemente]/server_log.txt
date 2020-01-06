@@ -450,3 +450,11 @@ v0.3.7, (C)2005-2015 SA-MP Team
 [23:22:32] Estado del jugador Pacho_Vargas(ID: 0) #1: 1 (Coord..: 1476.361938, 725.263671, 10.820312, 104.374397)
 [23:22:33] Estado del jugador Pacho_Vargas(ID: 0) #2: 1 (Coord..: 1476.361938, 725.263671, 10.820312, 104.374397)
 [23:22:33] [part] Pacho_Vargas has left the server (0:1)
+[23:24:44] [chat] [Camilo_Velez]: f
+[23:24:47] [chat] [Camilo_Velez]: Wey
+[23:32:05] [chat] [Camilo_Velez]: f
+[23:32:11] [chat] [Camilo_Velez]: f
+[23:32:24] [chat] [Camilo_Velez]: G
+[23:32:31] Estado del jugador Camilo_Velez(ID: 1) #1: 1 (Coord..: 1453.799438, 715.886230, 10.820312, 289.928649)
+[23:32:31] Estado del jugador Camilo_Velez(ID: 1) #2: 1 (Coord..: 1453.799438, 715.886230, 10.820312, 289.928649)
+[23:32:31] [part] Camilo_Velez has left the server (1:1)
