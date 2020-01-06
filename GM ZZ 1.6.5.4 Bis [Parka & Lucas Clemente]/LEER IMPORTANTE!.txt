@@ -1,0 +1,6 @@
+1- Porfavor mantener los creditos dentro del PWN.
+2- Recuerden cambiar la conexion MYSQL tanto de la PCU como del servidor
+3- Para darse administrador registrar una cuenta nueva en el servidor, desconectarse y en la base de datos darse admin nivel 2014 y como segunda pass a eleccion, para ponerse duty /adminduty
+
+Mucha suerte
+Atte: Lucas Clemente & Parka

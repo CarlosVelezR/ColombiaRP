@@ -1,0 +1,12 @@
+RewriteEngine On
+
+RewriteRule ^([^/]*)/$ /index.php?opcion=$1 [L]
+
+RewriteRule ^staff$ staff.php
+
+RewriteRule ^logout$ logout.php
+
+RewriteRule ^login$ login.php
+
+
+

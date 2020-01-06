@@ -1,0 +1,315 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[20:55:13] filterscripts = ""  (string)
+[20:55:13] 
+[20:55:13] Server Plugins
+[20:55:13] --------------
+[20:55:13]  Loading plugin: crashdetect.dll
+[20:55:13]   CrashDetect v4.15.1 is OK.
+[20:55:13]   Loaded.
+[20:55:13]  Loading plugin: mysql.dll
+[20:55:14]  >> plugin.mysql: R39-2 successfully loaded.
+[20:55:14]   Loaded.
+[20:55:14]  Loading plugin: sscanf.dll
+[20:55:14] 
+
+[20:55:14]  ===============================
+
+[20:55:14]       sscanf plugin loaded.     
+
+[20:55:14]          Version:  2.8.1        
+
+[20:55:14]    (c) 2012 Alex "Y_Less" Cole  
+
+[20:55:14]  ===============================
+
+[20:55:14]   Loaded.
+[20:55:14]  Loading plugin: streamer.dll
+[20:55:14] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[20:55:14]   Loaded.
+[20:55:14]  Loaded 4 plugins.
+
+[20:55:14] 
+[20:55:14] Filterscripts
+[20:55:14] ---------------
+[20:55:14]   Loaded 0 filterscripts.
+
+[20:55:15] -CreateDynamicObjetcs[12848]
+[20:55:15] ZZ-RP: 1574 Pickups Cargados
+[20:55:15] Number of vehicle models: 47
+[20:58:04] [connection] 192.168.0.13:61423 requests connection cookie.
+[20:58:05] Incoming connection: 192.168.0.13:61423 id: 0
+[20:58:06] [join] Pablo_Escobar has joined the server (0:192.168.0.13)
+[20:58:34] [part] Pablo_Escobar has left the server (0:1)
+[21:10:06] [connection] 192.168.0.13:60057 requests connection cookie.
+[21:10:07] Incoming connection: 192.168.0.13:60057 id: 0
+[21:10:07] [join] Pablo_Escobar has joined the server (0:192.168.0.13)
+[21:10:20] [part] Pablo_Escobar has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[21:10:35] filterscripts = ""  (string)
+[21:10:35] 
+[21:10:35] Server Plugins
+[21:10:35] --------------
+[21:10:35]  Loading plugin: crashdetect.dll
+[21:10:35]   CrashDetect v4.15.1 is OK.
+[21:10:35]   Loaded.
+[21:10:35]  Loading plugin: mysql.dll
+[21:10:35]  >> plugin.mysql: R39-2 successfully loaded.
+[21:10:35]   Loaded.
+[21:10:35]  Loading plugin: sscanf.dll
+[21:10:35] 
+
+[21:10:35]  ===============================
+
+[21:10:35]       sscanf plugin loaded.     
+
+[21:10:35]          Version:  2.8.1        
+
+[21:10:35]    (c) 2012 Alex "Y_Less" Cole  
+
+[21:10:35]  ===============================
+
+[21:10:35]   Loaded.
+[21:10:35]  Loading plugin: streamer.dll
+[21:10:35] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[21:10:35]   Loaded.
+[21:10:35]  Loaded 4 plugins.
+
+[21:10:35] 
+[21:10:35] Filterscripts
+[21:10:35] ---------------
+[21:10:35]   Loaded 0 filterscripts.
+
+[21:10:35] -CreateDynamicObjetcs[12848]
+[21:10:36] ZZ-RP: 1581 Pickups Cargados
+[21:10:36] Number of vehicle models: 71
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[21:10:59] filterscripts = ""  (string)
+[21:10:59] 
+[21:10:59] Server Plugins
+[21:10:59] --------------
+[21:10:59]  Loading plugin: crashdetect.dll
+[21:10:59]   CrashDetect v4.15.1 is OK.
+[21:10:59]   Loaded.
+[21:10:59]  Loading plugin: mysql.dll
+[21:10:59]  >> plugin.mysql: R39-2 successfully loaded.
+[21:10:59]   Loaded.
+[21:10:59]  Loading plugin: sscanf.dll
+[21:10:59] 
+
+[21:10:59]  ===============================
+
+[21:10:59]       sscanf plugin loaded.     
+
+[21:10:59]          Version:  2.8.1        
+
+[21:10:59]    (c) 2012 Alex "Y_Less" Cole  
+
+[21:10:59]  ===============================
+
+[21:10:59]   Loaded.
+[21:10:59]  Loading plugin: streamer.dll
+[21:10:59] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[21:10:59]   Loaded.
+[21:10:59]  Loaded 4 plugins.
+
+[21:10:59] 
+[21:10:59] Filterscripts
+[21:10:59] ---------------
+[21:10:59]   Loaded 0 filterscripts.
+
+[21:10:59] -CreateDynamicObjetcs[12848]
+[21:11:00] ZZ-RP: 1581 Pickups Cargados
+[21:11:00] Number of vehicle models: 71
+[21:11:31] [connection] 192.168.0.13:50585 requests connection cookie.
+[21:11:32] Incoming connection: 192.168.0.13:50585 id: 0
+[21:11:32] [join] Pablo_Escobar has joined the server (0:192.168.0.13)
+[21:11:57] Inicio posiciones;
+[21:21:33] [connection] 25.87.237.40:64312 requests connection cookie.
+[21:21:34] Incoming connection: 25.87.237.40:64312 id: 1
+[21:21:34] [join] Rodriguez_Gacha has joined the server (1:25.87.237.40)
+[21:22:00] Inicio posiciones;
+[21:23:45] Estado del jugador Pablo_Escobar(ID: 0) #1: 1 (Coord..: 1682.808715, -1870.505493, 13.531250, 298.399169)
+[21:23:45] Estado del jugador Pablo_Escobar(ID: 0) #2: 1 (Coord..: 1682.808715, -1870.505493, 13.531250, 298.399169)
+[21:23:45] [part] Pablo_Escobar has left the server (0:0)
+[21:23:57] [chat] [Rodriguez_Gacha]: f
+[21:26:45] [connection] 192.168.0.13:60968 requests connection cookie.
+[21:26:46] Incoming connection: 192.168.0.13:60968 id: 0
+[21:26:46] [join] Pablo_Escobar has joined the server (0:192.168.0.13)
+[21:26:54] Inicio posiciones;
+[21:27:06] [chat] [Rodriguez_Gacha]: f
+[21:27:34] Estado del jugador Rodriguez_Gacha(ID: 1) #1: 2 (Coord..: 1661.050903, -1874.175292, 12.984890, 252.772964)
+[21:27:34] Estado del jugador Rodriguez_Gacha(ID: 1) #2: 2 (Coord..: 1661.050903, -1874.175292, 12.984890, 252.772964)
+[21:27:34] [part] Rodriguez_Gacha has left the server (1:0)
+[21:27:58] Estado del jugador Pablo_Escobar(ID: 0) #1: 1 (Coord..: 1679.597045, -1876.026000, 13.531250, 284.206054)
+[21:27:58] Estado del jugador Pablo_Escobar(ID: 0) #2: 1 (Coord..: 1679.597045, -1876.026000, 13.531250, 284.206054)
+[21:27:58] [part] Pablo_Escobar has left the server (0:0)
+[21:28:18] [connection] 192.168.0.13:50292 requests connection cookie.
+[21:28:19] Incoming connection: 192.168.0.13:50292 id: 0
+[21:28:20] [join] Pablo_Escobar has joined the server (0:192.168.0.13)
+[21:28:27] Inicio posiciones;
+[21:28:49] [chat] [Pablo_Escobar]: fd
+[21:29:02] [connection] 25.87.237.40:64559 requests connection cookie.
+[21:29:03] Incoming connection: 25.87.237.40:64559 id: 1
+[21:29:07] [join] Rodriguez_Gacha has joined the server (1:25.87.237.40)
+[21:29:19] Inicio posiciones;
+[21:29:37] [chat] [Pablo_Escobar]: ds
+[21:29:41] [chat] [Rodriguez_Gacha]: g
+[21:29:53] Estado del jugador Rodriguez_Gacha(ID: 1) #1: 1 (Coord..: 1719.897460, -1862.295410, 13.576469, 341.233245)
+[21:29:54] Estado del jugador Rodriguez_Gacha(ID: 1) #2: 1 (Coord..: 1719.897460, -1862.295410, 13.576469, 341.233245)
+[21:29:54] [part] Rodriguez_Gacha has left the server (1:1)
+[21:30:16] [connection] 25.87.237.40:59582 requests connection cookie.
+[21:30:17] Incoming connection: 25.87.237.40:59582 id: 1
+[21:30:17] [join] Rodriguez_Gacha has joined the server (1:25.87.237.40)
+[21:30:26] Inicio posiciones;
+[21:31:18] Estado del jugador Pablo_Escobar(ID: 0) #1: 1 (Coord..: 1705.305297, -1863.230590, 13.568927, 252.245925)
+[21:31:18] Estado del jugador Pablo_Escobar(ID: 0) #2: 1 (Coord..: 1705.305297, -1863.230590, 13.568927, 252.245925)
+[21:31:18] [part] Pablo_Escobar has left the server (0:1)
+[21:31:25] RCON (In-Game): Player #1 (Rodriguez_Gacha) failed login.
+[21:32:39] RCON (In-Game): Player #1 (Rodriguez_Gacha) has logged in.
+[21:32:39] Estado del jugador Rodriguez_Gacha(ID: 1) #1: 1 (Coord..: 1646.970092, -1904.805541, 13.552103, 311.220977)
+[21:32:39] Estado del jugador Rodriguez_Gacha(ID: 1) #2: 1 (Coord..: 1646.970092, -1904.805541, 13.552103, 311.220977)
+[21:32:39] [part] Rodriguez_Gacha has left the server (1:2)
+[21:33:07] [connection] 192.168.0.13:50889 requests connection cookie.
+[21:33:08] Incoming connection: 192.168.0.13:50889 id: 0
+[21:33:09] [join] Pablo_Escobar has joined the server (0:192.168.0.13)
+[21:33:17] Inicio posiciones;
+[21:33:21] [connection] 25.87.237.40:52578 requests connection cookie.
+[21:33:22] Incoming connection: 25.87.237.40:52578 id: 1
+[21:33:23] [join] Rodriguez_Gacha has joined the server (1:25.87.237.40)
+[21:33:23] Estado del jugador Rodriguez_Gacha(ID: 1) #1: 0 (Coord..: 0.000000, 0.000000, 0.000000, 0.000000)
+[21:33:23] Estado del jugador Rodriguez_Gacha(ID: 1) #2: 0 (Coord..: 0.000000, 0.000000, 0.000000, 0.000000)
+[21:33:23] [part] Rodriguez_Gacha has left the server (1:2)
+[21:33:39] Estado del jugador Pablo_Escobar(ID: 0) #1: 1 (Coord..: 1703.763061, -1864.957275, 13.569304, 95.600967)
+[21:33:39] Estado del jugador Pablo_Escobar(ID: 0) #2: 1 (Coord..: 1703.763061, -1864.957275, 13.569304, 95.600967)
+[21:33:39] [part] Pablo_Escobar has left the server (0:1)
+[21:34:01] [connection] 25.87.237.40:52582 requests connection cookie.
+[21:34:02] Incoming connection: 25.87.237.40:52582 id: 0
+[21:34:03] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[21:34:03] Estado del jugador Camilo_Velez(ID: 0) #1: 0 (Coord..: 0.000000, 0.000000, 0.000000, 0.000000)
+[21:34:03] Estado del jugador Camilo_Velez(ID: 0) #2: 0 (Coord..: 0.000000, 0.000000, 0.000000, 0.000000)
+[21:34:03] [part] Camilo_Velez has left the server (0:2)
+[21:35:49] [connection] 25.87.237.40:53304 requests connection cookie.
+[21:35:50] Incoming connection: 25.87.237.40:53304 id: 0
+[21:35:50] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[21:35:50] Estado del jugador Camilo_Velez(ID: 0) #1: 0 (Coord..: 0.000000, 0.000000, 0.000000, 0.000000)
+[21:35:51] Estado del jugador Camilo_Velez(ID: 0) #2: 0 (Coord..: 0.000000, 0.000000, 0.000000, 0.000000)
+[21:35:51] [part] Camilo_Velez has left the server (0:2)
+[21:39:48] [connection] 25.87.237.40:63039 requests connection cookie.
+[21:39:49] Incoming connection: 25.87.237.40:63039 id: 0
+[21:39:49] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[21:40:04] Inicio posiciones;
+[21:43:20] Estado del jugador Camilo_Velez(ID: 0) #1: 2 (Coord..: 1728.931640, -1858.069580, 13.116563, 264.281677)
+[21:43:20] Estado del jugador Camilo_Velez(ID: 0) #2: 2 (Coord..: 1728.931640, -1858.069580, 13.116563, 264.281677)
+[21:43:20] [part] Camilo_Velez has left the server (0:1)
+[21:44:46] [connection] 25.87.237.40:52636 requests connection cookie.
+[21:44:47] Incoming connection: 25.87.237.40:52636 id: 0
+[21:44:47] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[21:44:53] [connection] 192.168.0.13:52843 requests connection cookie.
+[21:44:54] Incoming connection: 192.168.0.13:52843 id: 1
+[21:44:54] [join] Carlos_Velez has joined the server (1:192.168.0.13)
+[21:44:58] Inicio posiciones;
+[21:45:04] Inicio posiciones;
+[21:45:54] Estado del jugador Carlos_Velez(ID: 1) #1: 1 (Coord..: 140.158721, -69.201957, 1.429687, 262.875762)
+[21:45:54] Estado del jugador Carlos_Velez(ID: 1) #2: 1 (Coord..: 140.158721, -69.201957, 1.429687, 262.875762)
+[21:45:54] [part] Carlos_Velez has left the server (1:1)
+[21:47:05] [connection] 192.168.0.13:52985 requests connection cookie.
+[21:47:06] Incoming connection: 192.168.0.13:52985 id: 1
+[21:47:06] [join] Carlos_Velez has joined the server (1:192.168.0.13)
+[21:47:18] Inicio posiciones;
+[21:48:41] Estado del jugador Camilo_Velez(ID: 0) #1: 2 (Coord..: 1297.835205, -814.537780, 83.739013, 240.398651)
+[21:48:41] Estado del jugador Camilo_Velez(ID: 0) #2: 2 (Coord..: 1297.835205, -814.537780, 83.739013, 240.398651)
+[21:48:41] [part] Camilo_Velez has left the server (0:1)
+[21:49:50] [connection] 25.87.237.40:56351 requests connection cookie.
+[21:49:51] Incoming connection: 25.87.237.40:56351 id: 0
+[21:49:51] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[21:50:04] Inicio posiciones;
+[21:55:29] [chat] [Camilo_Velez]: f
+[21:56:02] Estado del jugador Camilo_Velez(ID: 0) #1: 1 (Coord..: 1316.988891, -909.107727, 38.234603, 182.571395)
+[21:56:03] Estado del jugador Camilo_Velez(ID: 0) #2: 1 (Coord..: 1316.988891, -909.107727, 38.234603, 182.571395)
+[21:56:03] [part] Camilo_Velez has left the server (0:1)
+[21:56:27] [connection] 25.87.237.40:60875 requests connection cookie.
+[21:56:28] Incoming connection: 25.87.237.40:60875 id: 0
+[21:56:28] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[21:56:37] Inicio posiciones;
+[21:57:03] [chat] [Camilo_Velez]: G
+[21:57:54] [chat] [Carlos_Velez]: d
+[21:58:21] [chat] [Camilo_Velez]: f
+[21:58:54] [chat] [Camilo_Velez]: f
+[21:59:04] [chat] [Camilo_Velez]: f
+[21:59:06] [chat] [Camilo_Velez]: 7payday
+[21:59:11] [chat] [Camilo_Velez]: 7ah
+[22:00:22] [chat] [Camilo_Velez]: f
+[22:02:58] [chat] [Camilo_Velez]: f
+[22:03:34] [chat] [Camilo_Velez]: f
+[22:04:49] [chat] [Camilo_Velez]: g
+[22:06:31] Estado del jugador Camilo_Velez(ID: 0) #1: 1 (Coord..: 638.999023, -1399.906738, 13.414373, 150.779418)
+[22:06:31] Estado del jugador Camilo_Velez(ID: 0) #2: 1 (Coord..: 638.999023, -1399.906738, 13.414373, 150.779418)
+[22:06:31] [part] Camilo_Velez has left the server (0:1)
+[22:06:52] [connection] 25.87.237.40:60619 requests connection cookie.
+[22:06:53] Incoming connection: 25.87.237.40:60619 id: 0
+[22:06:53] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[22:07:15] Inicio posiciones;
+[22:07:45] [chat] [Camilo_Velez]: F
+[22:08:40] [chat] [Camilo_Velez]: F
+[22:08:59] [chat] [Camilo_Velez]: f
+[22:10:11] [chat] [Camilo_Velez]: f
+[22:10:55] Estado del jugador Camilo_Velez(ID: 0) #1: 1 (Coord..: 1689.274169, -1863.666748, 13.523452, 286.399383)
+[22:10:55] Estado del jugador Camilo_Velez(ID: 0) #2: 1 (Coord..: 1689.274169, -1863.666748, 13.523452, 286.399383)
+[22:10:55] [part] Camilo_Velez has left the server (0:1)
+[22:11:15] [connection] 25.87.237.40:65251 requests connection cookie.
+[22:11:16] Incoming connection: 25.87.237.40:65251 id: 0
+[22:11:16] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[22:11:30] Inicio posiciones;
+[22:11:46] Estado del jugador Carlos_Velez(ID: 1) #1: 1 (Coord..: 1691.838867, -1867.752685, 13.535627, 303.781005)
+[22:11:46] Estado del jugador Carlos_Velez(ID: 1) #2: 1 (Coord..: 1691.838867, -1867.752685, 13.535627, 303.781005)
+[22:11:46] [part] Carlos_Velez has left the server (1:1)
+[22:13:12] [chat] [Camilo_Velez]: F
+[22:16:33] [chat] [Camilo_Velez]: F
+[22:17:23] Estado del jugador Camilo_Velez(ID: 0) #1: 1 (Coord..: 1529.066894, 684.447998, 10.671875, 29.073720)
+[22:17:24] Estado del jugador Camilo_Velez(ID: 0) #2: 1 (Coord..: 1529.066894, 684.447998, 10.671875, 29.073720)
+[22:17:24] [part] Camilo_Velez has left the server (0:1)
+[22:17:51] [connection] 25.87.237.40:62487 requests connection cookie.
+[22:17:52] Incoming connection: 25.87.237.40:62487 id: 0
+[22:17:52] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[22:18:06] Inicio posiciones;
+[22:18:21] [chat] [Camilo_Velez]: f
+[22:20:05] Estado del jugador Camilo_Velez(ID: 0) #1: 1 (Coord..: 1485.342773, 718.639526, 10.820312, 56.896652)
+[22:20:05] Estado del jugador Camilo_Velez(ID: 0) #2: 1 (Coord..: 1485.342773, 718.639526, 10.820312, 56.896652)
+[22:20:05] [part] Camilo_Velez has left the server (0:1)
+[22:20:26] [connection] 25.87.237.40:56294 requests connection cookie.
+[22:20:28] Incoming connection: 25.87.237.40:56294 id: 0
+[22:20:28] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[22:20:42] Inicio posiciones;

@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+Disallow: /cuenta/
+
+Disallow: /skin/
+
+Disallow: /faccion/
+
+Disallow: comprobar.php
+
+Disallow: /*?*
+
+Disallow: /*%
+
+User-agent: Mediapartners-Google
+Allow: /

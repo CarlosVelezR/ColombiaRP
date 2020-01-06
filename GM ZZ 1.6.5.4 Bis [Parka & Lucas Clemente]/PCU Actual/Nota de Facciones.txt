@@ -1,0 +1,2 @@
+Listado de Facciones con sus ID`s
+1- LSPD 2- SAEM 3- LSMC 4- Mecánicos 6- Gobierno 7- CNN 9- FBI 10- NINGUNA 11- Yakuza 12- Latin Kings 13- La Cosa Nostra 14- Groove 15- Traficantes
