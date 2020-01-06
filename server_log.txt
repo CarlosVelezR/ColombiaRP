@@ -1,0 +1,49 @@
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[16:55:59] filterscripts = ""  (string)
+[16:55:59] 
+[16:55:59] Server Plugins
+[16:55:59] --------------
+[16:55:59]  Loading plugin: crashdetect.dll
+[16:55:59]   CrashDetect v4.15.1 is OK.
+[16:55:59]   Loaded.
+[16:55:59]  Loading plugin: mysql.dll
+[16:55:59]  >> plugin.mysql: R39-2 successfully loaded.
+[16:55:59]   Loaded.
+[16:55:59]  Loading plugin: sscanf.dll
+[16:55:59] 
+
+[16:55:59]  ===============================
+
+[16:55:59]       sscanf plugin loaded.     
+
+[16:55:59]          Version:  2.8.1        
+
+[16:55:59]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:55:59]  ===============================
+
+[16:55:59]   Loaded.
+[16:55:59]  Loading plugin: streamer.dll
+[16:55:59] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[16:55:59]   Loaded.
+[16:55:59]  Loaded 4 plugins.
+
+[16:55:59] 
+[16:55:59] Filterscripts
+[16:55:59] ---------------
+[16:55:59]   Loaded 0 filterscripts.
+
+[16:55:59] -CreateDynamicObjetcs[12848]
+[16:56:00] ZZ-RP: 1583 Pickups Cargados
+[16:56:00] Number of vehicle models: 74

@@ -6,7 +6,7 @@ function ObtenerFaccion($faccid){
 		case 1: $faccname = "Departamento de Policia"; break;
 		case 2: $faccname = "No Disponible"; break;
 		case 3: $faccname = "Departamento Medico"; break;
-		case 4: $faccname = "Car-Point Bogota"; break;
+		case 4: $faccname = "Car-Point Los Santos"; break;
 		case 5: $faccname = "No Disponible"; break;
 		case 6: $faccname = "Gobierno"; break;
 		case 7: $faccname = "Cable News Network"; break;

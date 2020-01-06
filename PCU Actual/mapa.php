@@ -54,7 +54,7 @@
 	
 	//Place a marker in Blueberry
 	var bbInfoWindow = new google.maps.InfoWindow({
-		content: '<h3>Plaza</h3><p><b>Plaza</b>, Bogota!</p>'
+		content: '<h3>Plaza</h3><p><b>Plaza</b>, los santos!</p>'
 	});
 	var bbMarker = new google.maps.Marker({
 		position: SanMap.getLatLngFromPos(0, 0),

@@ -114,7 +114,7 @@ RemoveObjects(playerid){
 	//Grotti
 	RemoveBuildingForPlayer(playerid, 6357, 505.054, -1269.937, 28.687, 0.250);
 	RemoveBuildingForPlayer(playerid, 1211, 555.156, -1251.929, 16.640, 0.250);
-	//Deposito de PNC
+	//Deposito de LSPD
 	RemoveBuildingForPlayer(playerid, 3745, 2475.1016, -2073.4766, 17.8203, 0.25);
 	RemoveBuildingForPlayer(playerid, 3745, 2482.0234, -2073.4766, 17.8203, 0.25);
 	RemoveBuildingForPlayer(playerid, 3745, 2489.1016, -2073.4766, 17.8203, 0.25);
@@ -413,7 +413,7 @@ RemoveObjects(playerid){
 	RemoveBuildingForPlayer(playerid, 3722, 2178.7344, -1971.2656, 16.8672, 0.25);
 	RemoveBuildingForPlayer(playerid, 3722, 2197.7500, -1993.3594, 14.9922, 0.25);
 	RemoveBuildingForPlayer(playerid, 3626, 2197.9766, -1970.5625, 14.0000, 0.25);
-	//PNC-Frank
+	//LSPD-Frank
 	RemoveBuildingForPlayer(playerid, 620, 1541.4531, -1709.6406, 13.0469, 0.25);
 	RemoveBuildingForPlayer(playerid, 620, 1547.5703, -1689.9844, 13.0469, 0.25);
 	RemoveBuildingForPlayer(playerid, 620, 1547.5703, -1661.0313, 13.0469, 0.25);
@@ -490,11 +490,11 @@ CargarMapeos(){
 	CreateObject(19055, 1477.20532, -1666.91138, 14.01590, 0.00000, 0.00000, 0.00000);
 	#endif
 	
-	pnc2 = CreateDynamicObject(988, 258.94287109375, 90.618301391602, 1001.330078125, 0.000000, 0.000000, 270, 0, 6);//Celda
-	pnc1 = CreateDynamicObject(19302, 757.79492, -391.00473, 1003.54712, 0.00000, 0.00000, 0.00000);
-	pdgate2 = CreateDynamicObject(980, 1545.7398681641, -1627.7280273438, 15.206203460693, 0, 0, 90);//PuertadeestacionamientoPNC
-	pncg5 = CreateDynamicObject(2957, 250.81405639648, 86.482467651367, 1003.235168457, 0, 0, 90, 0, 6);
-	pnc3 = CreateDynamicObject(975, 779.43903, -361.14828, 994.32251, 0.00000, 0.00000, 359.69696);
+	lspd2 = CreateDynamicObject(988, 258.94287109375, 90.618301391602, 1001.330078125, 0.000000, 0.000000, 270, 0, 6);//Celda
+	lspd1 = CreateDynamicObject(19302, 757.79492, -391.00473, 1003.54712, 0.00000, 0.00000, 0.00000);
+	pdgate2 = CreateDynamicObject(980, 1545.7398681641, -1627.7280273438, 15.206203460693, 0, 0, 90);//PuertadeestacionamientoLSPD
+	lspdg5 = CreateDynamicObject(2957, 250.81405639648, 86.482467651367, 1003.235168457, 0, 0, 90, 0, 6);
+	lspd3 = CreateDynamicObject(975, 779.43903, -361.14828, 994.32251, 0.00000, 0.00000, 359.69696);
 	//Parking cerca de trabajo Buses
 	CreateDynamicObject(970,1076.4124800,-1752.8421600,12.9058900,0.0000000,0.0000000,0.0000000); //
 	CreateDynamicObject(970,1080.6240200,-1752.7935800,12.9058900,0.0000000,0.0000000,0.0000000); //
@@ -1078,7 +1078,7 @@ CargarMapeos(){
 	CreateDynamicObject(1715, 858.1810300, 5534.5571300, 7.5886000, 0.0000000, 0.0000000, 56.0000000); //
 	CreateDynamicObject(19377, 849.6236600, 5530.1323200, 10.9500000, 0.0000000, 90.0000000, 0.0000000); //
 	CreateDynamicObject(19442, 854.3345900, 5536.1489300, 9.1390000, 0.0000000, 0.0000000, 90.0000000); //
-	//Depoisto de PNC
+	//Depoisto de LSPD
 	CreateDynamicObject(19122, 2422.75537, -2083.50098, 12.96530, 0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(19122, 2422.80518, -2095.38965, 12.96530, 0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(3578, 2471.16577, -2071.46289, 12.53570, 0.00000, 0.00000, 90.00000);
@@ -2546,7 +2546,7 @@ CargarMapeos(){
 	CreateDynamicObject(979, 1990.52258301, -2296.16699219, 12.46210957, 88.00000000, 180.00000000, 272.01770020);//object(sub_roadleft)(11)
 	CreateDynamicObject(979, 1989.79101562, -2272.89941406, 12.43710995, 87.99499512, 179.99450684, 272.01599121);//object(sub_roadleft)(11)
 	CreateDynamicObject(979, 1988.93615723, -2248.34155273, 12.38711071, 87.98950195, 179.99450684, 272.01049805);//object(sub_roadleft)(11)
-	//Escaleras Helipuerto PNC
+	//Escaleras Helipuerto LSPD
 	CreateDynamicObject(12958, 1578.02661, -1650.72327, 18.87016, 0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(12958, 1577.33240, -1651.81702, 24.19470, 0.00000, 0.00000, -270.00000);
 	CreateDynamicObject(12950, 1601.18384, -1633.10400, 15.55580, 0.00000, 0.00000, -176.00000);
@@ -6220,7 +6220,7 @@ CargarMapeos(){
 	CreateDynamicObject(970, 2165.94434, -1978.59973, 13.06170, 0.00000, 0.00000, 90.00000);
 	CreateDynamicObject(970, 2165.99683, -1974.41040, 13.06170, 0.00000, 0.00000, 90.00000);
 	CreateDynamicObject(3406, 2201.47803, -1986.47498, 11.14700, 0.00000, 0.00000, 90.00000);
-	//HQ PNC -Frank
+	//HQ LSPD -Frank
 	CreateDynamicObject(3749, 1543.9361600, -1627.7652600, 18.2000000, 0.0000000, 0.0000000, 270.0000000);//
 	CreateDynamicObject(984, 1556.0000000, -1617.8000500, 13.2000000, 0.0000000, 0.0000000, 270.0000000);//
 	CreateDynamicObject(984, 1568.8000500, -1617.8000500, 13.2000000, 0.0000000, 0.0000000, 270.0000000);//
@@ -10339,7 +10339,7 @@ tmpobjid = CreateDynamicObjectEx(3877, -1248.767, -2030.567, 24.911, 0.000, 0.00
 tmpobjid = CreateDynamicObjectEx(3877, -1248.664, -2011.072, 24.911, 0.000, 0.000, 0.000, 300.000, 300.000);
 tmpobjid = CreateDynamicObjectEx(3877, -1267.641, -2011.019, 24.911, 0.000, 0.000, 0.000, 300.000, 300.000);
 tmpobjid = CreateDynamicObjectEx(3877, -1267.606, -2030.635, 24.911, 0.000, 0.000, 0.000, 300.000, 300.000);
-//Interior PNC
+//Interior LSPD
 tmpobjid = CreateDynamicObjectEx(19379, 299.882, -1517.822, 3266.008, 0.000, 90.000, 0.000, 300.000, 300.000);
 SetDynamicObjectMaterial(tmpobjid, 0, 14392, "dr_gsstudio", "la_flair2", 0);
 tmpobjid = CreateDynamicObjectEx(19379, 310.274, -1518.006, 3265.987, 0.000, 90.000, 0.000, 300.000, 300.000);
