@@ -2572,7 +2572,7 @@ public OnPlayerSpawn(playerid)
 						if(!cuenta[playerid][cCarcel])
 						{
 							booleano[gMurio]{playerid} = false;
-							Mensaje(playerid, COLOR_CIAN, "Te has recuperado exsitósamente de tu accidente.");
+							Mensaje(playerid, COLOR_CIAN, "Te has recuperado exitosamente de tu accidente.");
 							Mensaje(playerid, COLOR_CIAN, "Te hemos transladado al hospital.");
 							Mensaje(playerid, COLOR_CIAN, "Desafortunadamente tienes amnesia, no recuerdas nada.");
 							SetPosEx(playerid, -2671.2676, 509.5787, 48.0791, 272.0, 0, 0);
@@ -3269,7 +3269,7 @@ public OnPlayerEnterCheckpoint(playerid)
 		}
 		else
 		{
-			TextoInformatico(15, playerid, "~r~Usted ha fallado en robar el vehiculo");
+			TextoInformatico(15, playerid, "Usted ha fallado en robar el vehiculo");
 			
 			cuenta[playerid][cBusqueda] += 2;
 			Mensaje(playerid, COLOR_GRIS2, "Usted ha recibido +2 nivel de busqueda por el robo fallido.");
@@ -4095,7 +4095,7 @@ public OnGameModeInit()
 {
 	AntiDeAMX();
 	//Host, User, Base, Clave
-	servidor[mysqlControl] = mysql_connect("37.59.55.185", "92dwePsFbc", "92dwePsFbc", "LiRaOjY6MB");
+	servidor[mysqlControl] = mysql_connect("127.0.0.1", "root", "samp1_db", "");
 	if(!servidor[mysqlControl])SendRconCommand("exit");
 	mysql_log(LOG_ERROR | LOG_WARNING);
 	
