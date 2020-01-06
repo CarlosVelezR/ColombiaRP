@@ -12908,9 +12908,9 @@ command(b, playerid, params[])
 		new accent;
 		if(sscanf(params, "d", accent)){
 			Mensaje(playerid, COLOR_BLANCO, "USO: /acento [id acento]");
-			Mensaje(playerid, COLOR_GRIS2, "Acentos: Normal [1], Britanico [2], Asiatico [3, 4, 5], Escocés [6], Irlandés [7], Ruso [8], Americano [9]");
-			Mensaje(playerid, COLOR_GRIS2, "Acentos: Español [10], Colombiano [11], Francés [12], Italiano [13], Gangster [14], Australiano [15]");
-			Mensaje(playerid, COLOR_GRIS2, "Acentos: Arabe [16], Argentino [17], Canadiense [18] Cubano [19] Israeli [20] Alemán [21] Hippie [22]");
+			Mensaje(playerid, COLOR_GRIS2, "Acentos: Normal [1], Rolo [2], Paisa [3, 4, 5], Caleño [6], Costeño [7], Boyacense [8], Santandereano [9]");
+			Mensaje(playerid, COLOR_GRIS2, "Acentos: Tolimense [10], Huilense [11], Pastuso [12], Gomelo[13], Ñero [14], Gamin [15]");
+			Mensaje(playerid, COLOR_GRIS2, "Acentos: Guiso [16], Veneco [17], Gringo [18] Llanero [19] Frances [20] Alemán [21] Ruso [22]");
 			return 1;
 		}
 		switch(accent){
@@ -12920,75 +12920,75 @@ command(b, playerid, params[])
 			}
 			case 2:{
 				cuenta[playerid][cAcento] = 2;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Britanico, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Rolo, usa /acento para cambiarlo." );
 			}
 			case 3:{
 				cuenta[playerid][cAcento] = 3;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Japones, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Paisa, usa /acento para cambiarlo." );
 			}
 			case 4:{
 				cuenta[playerid][cAcento] = 4;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Chino, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Caleño, usa /acento para cambiarlo." );
 			}
 			case 5:{
 				cuenta[playerid][cAcento] = 5;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Koreano, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Costeño, usa /acento para cambiarlo." );
 			}
 			case 6:{
 				cuenta[playerid][cAcento] = 6;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Escocés, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Boyacense, usa /acento para cambiarlo." );
 			}
 			case 7:{
 				cuenta[playerid][cAcento] = 7;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Irlandés, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Santandereano, usa /acento para cambiarlo." );
 			}
 			case 8:{
 				cuenta[playerid][cAcento] = 8;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Ruso, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Tolimense, usa /acento para cambiarlo." );
 			}
 			case 9:{
 				cuenta[playerid][cAcento] = 9;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Americano, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Huilense, usa /acento para cambiarlo." );
 			}
 			case 10:{
 				cuenta[playerid][cAcento] = 10;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Español, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Pastuso, usa /acento para cambiarlo." );
 			}
 			case 11:{
 				cuenta[playerid][cAcento] = 11;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Colombiano, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Gomelo, usa /acento para cambiarlo." );
 			}
 			case 12:{
 				cuenta[playerid][cAcento] = 12;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Francés, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Ñero, usa /acento para cambiarlo." );
 			}
 			case 13:{
 				cuenta[playerid][cAcento] = 13;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Italiano, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tu acento es Gamin, usa /acento para cambiarlo." );
 			}
 			case 14:{
 				cuenta[playerid][cAcento] = 14;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Gangster, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Guiso, usa /acento para cambiarlo." );
 			}
 			case 15:{
 				cuenta[playerid][cAcento] = 15;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Australiano, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Veneco, usa /acento para cambiarlo." );
 			}
 			case 16:{
 				cuenta[playerid][cAcento] = 16;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Arabe, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Gringo, usa /acento para cambiarlo." );
 			}
 			case 17:{
 				cuenta[playerid][cAcento] = 17;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Argentino, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Llanero, usa /acento para cambiarlo." );
 			}
 			case 18:{
 				cuenta[playerid][cAcento] = 18;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Canadiense, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Frances, usa /acento para cambiarlo." );
 			}
 			case 19:{
 				cuenta[playerid][cAcento] = 19;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Cubano, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Ruso, usa /acento para cambiarlo." );
 			}
 			case 20:{
 				cuenta[playerid][cAcento] = 20;
@@ -13000,7 +13000,7 @@ command(b, playerid, params[])
 			}
 			case 22:{
 				cuenta[playerid][cAcento] = 22;
-				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Hippie, usa /acento para cambiarlo." );
+				Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}Ahora tienes acento Joto, usa /acento para cambiarlo." );
 			}
 		}
 		return 1;
@@ -13785,72 +13785,72 @@ public OnPlayerText(playerid, text[])
 		}
 		case 2:
 		{
-			format(string, sizeof(string), "[Acento Britanico] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Rolo] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 3, 4, 5:
 		{
-			format(string, sizeof(string), "[Acento Asiático] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Paisa] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 6:
 		{
-			format(string, sizeof(string), "[Acento Escocés] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Caleño] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 7:
 		{
-			format(string, sizeof(string), "[Acento Irlandés] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Costeño] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 8:
 		{
-			format(string, sizeof(string), "[Acento Ruso] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Boyacense] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 9:
 		{
-			format(string, sizeof(string), "[Acento Americano] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Santandereano] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 10:
 		{
-			format(string, sizeof(string), "[Acento Español] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Tolimense] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 11:
 		{
-			format(string, sizeof(string), "[Acento Colombiano] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Huilense] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 12:
 		{
-			format(string, sizeof(string), "[Acento Francés] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Pastuso] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 13:
 		{
-			format(string, sizeof(string), "[Acento Italiano] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Gomelo] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 14:
 		{
-			format(string, sizeof(string), "[Acento Gangster] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Ñero] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 15:
 		{
-			format(string, sizeof(string), "[Acento Australiano] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Gamin] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 16:
 		{
-			format(string, sizeof(string), "[Acento Árabe] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Guiso] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 17:
 		{
-			format(string, sizeof(string), "[Acento Argentino] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Gringo] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 		case 18:
@@ -13875,7 +13875,7 @@ public OnPlayerText(playerid, text[])
 		}
 		case 22:
 		{
-			format(string, sizeof(string), "[Acento Hippie] %s dice: %s", PlayerName(playerid), text);
+			format(string, sizeof(string), "[Acento Joto] %s dice: %s", PlayerName(playerid), text);
 			ProxDetector(20.0, playerid, string, COLOR_FADE1, COLOR_FADE2, COLOR_FADE3, COLOR_FADE4, COLOR_FADE5);
 		}
 	}
