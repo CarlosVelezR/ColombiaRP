@@ -458,3 +458,56 @@ v0.3.7, (C)2005-2015 SA-MP Team
 [23:32:31] Estado del jugador Camilo_Velez(ID: 1) #1: 1 (Coord..: 1453.799438, 715.886230, 10.820312, 289.928649)
 [23:32:31] Estado del jugador Camilo_Velez(ID: 1) #2: 1 (Coord..: 1453.799438, 715.886230, 10.820312, 289.928649)
 [23:32:31] [part] Camilo_Velez has left the server (1:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[08:22:46] filterscripts = ""  (string)
+[08:22:46] 
+[08:22:46] Server Plugins
+[08:22:46] --------------
+[08:22:46]  Loading plugin: crashdetect.dll
+[08:22:46]   CrashDetect v4.15.1 is OK.
+[08:22:46]   Loaded.
+[08:22:46]  Loading plugin: mysql.dll
+[08:22:46]  >> plugin.mysql: R39-2 successfully loaded.
+[08:22:46]   Loaded.
+[08:22:46]  Loading plugin: sscanf.dll
+[08:22:46] 
+
+[08:22:46]  ===============================
+
+[08:22:46]       sscanf plugin loaded.     
+
+[08:22:46]          Version:  2.8.1        
+
+[08:22:46]    (c) 2012 Alex "Y_Less" Cole  
+
+[08:22:46]  ===============================
+
+[08:22:46]   Loaded.
+[08:22:46]  Loading plugin: streamer.dll
+[08:22:46] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[08:22:46]   Loaded.
+[08:22:46]  Loaded 4 plugins.
+
+[08:22:46] 
+[08:22:46] Filterscripts
+[08:22:46] ---------------
+[08:22:46]   Loaded 0 filterscripts.
+
+[08:22:47] -CreateDynamicObjetcs[12848]
+[08:22:47] ZZ-RP: 1574 Pickups Cargados
+[08:22:47] Number of vehicle models: 47
+[08:23:34] [connection] 192.168.0.13:52310 requests connection cookie.
+[08:23:35] Incoming connection: 192.168.0.13:52310 id: 0
+[08:23:35] [join] Pacho_Vargas has joined the server (0:192.168.0.13)
+[08:23:45] [part] Pacho_Vargas has left the server (0:1)
