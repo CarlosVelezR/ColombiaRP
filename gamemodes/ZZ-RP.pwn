@@ -23989,7 +23989,7 @@ CallBack::CambiarPagina(playerid)
 			SetPlayerPos(playerid, 1711.2914, -1894.8475, 13.5675);
 			SetPlayerFacingAngle(playerid, 2.2963);
 			
-			format(string, sizeof(string), "Ahora deberas pasar un pequeño cuestionario para ingresar!~w~~n~Recuerda que estamos en constante desarollo para mejorar ZZ!~n~~g~Gracias por elegirnos!~n~");
+			format(string, sizeof(string), "Ahora deberas pasar un pequeño cuestionario para ingresar!~w~~n~Recuerda que estamos en constante desarollo para mejorar CRP!~n~~g~Gracias por elegirnos!~n~");
 			PlayerTextDrawSetString(playerid, InfoText[playerid][4], string);
 			PlayerTextDrawShow(playerid, InfoText[playerid][4]);
 			
