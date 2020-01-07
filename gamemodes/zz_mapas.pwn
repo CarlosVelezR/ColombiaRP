@@ -1,8 +1,8 @@
 /*
 *	(c) Copyright 2013 - 2014
 *
-*	Nombre del proyecto:	ZonaZero RolePlay
-*	Desarrollador:			Parka, Lucas Clemente, Sergio Mitnick.
+*	Nombre del proyecto: Colombia Roleplay
+*	Desarrollador:   Carlos_Velez, Camilo_Velez
 *
 *	Include: zz_mapas.pwn
 *
