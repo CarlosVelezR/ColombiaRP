@@ -2350,3 +2350,30 @@
 [18:56:24] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
 [18:56:24] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
 [18:56:24] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[18:57:47] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)
+[18:57:47] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[18:57:47] [WARNING] cache_get_row_count - no active cache
+[18:57:47] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:57:47] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[18:57:47] [WARNING] cache_get_row_count - no active cache
+[18:57:47] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:57:47] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[18:57:47] [WARNING] cache_get_row_count - no active cache
+[18:57:47] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:57:47] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[18:57:47] [WARNING] cache_get_row_count - no active cache
+[18:57:47] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:57:47] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[18:57:47] [WARNING] cache_get_row_count - no active cache
+[18:57:47] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:57:47] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[18:57:47] [WARNING] cache_get_row_count - no active cache
+[18:57:47] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:57:47] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[18:57:47] [WARNING] cache_get_row_count - no active cache
+[18:57:47] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:57:47] [ERROR] CMySQLQuery::Execute - (error #2006) MySQL server has gone away
+[18:57:47] [WARNING] cache_get_row_count - no active cache
+[18:57:47] [WARNING] CMySQLHandle::DeleteSavedResult - invalid result id ('0')
+[18:57:48] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)
+[18:57:48] [ERROR] CMySQLConnection::Connect - (error #2003) Can't connect to MySQL server on '127.0.0.1' (10061)

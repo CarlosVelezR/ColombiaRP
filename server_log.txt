@@ -552,3 +552,53 @@ v0.3.7, (C)2005-2015 SA-MP Team
 [18:56:18] -CreateDynamicObjetcs[12848]
 [18:56:18] CO-RP: 1574 Pickups Cargados
 [18:56:18] Number of vehicle models: 47
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[18:57:45] filterscripts = ""  (string)
+[18:57:45] 
+[18:57:45] Server Plugins
+[18:57:45] --------------
+[18:57:45]  Loading plugin: crashdetect.dll
+[18:57:45]   CrashDetect v4.15.1 is OK.
+[18:57:45]   Loaded.
+[18:57:45]  Loading plugin: mysql.dll
+[18:57:45]  >> plugin.mysql: R39-2 successfully loaded.
+[18:57:45]   Loaded.
+[18:57:45]  Loading plugin: sscanf.dll
+[18:57:45] 
+
+[18:57:45]  ===============================
+
+[18:57:45]       sscanf plugin loaded.     
+
+[18:57:45]          Version:  2.8.1        
+
+[18:57:45]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:57:45]  ===============================
+
+[18:57:45]   Loaded.
+[18:57:45]  Loading plugin: streamer.dll
+[18:57:45] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[18:57:45]   Loaded.
+[18:57:45]  Loaded 4 plugins.
+
+[18:57:45] 
+[18:57:45] Filterscripts
+[18:57:45] ---------------
+[18:57:45]   Loaded 0 filterscripts.
+
+[18:57:46] OnGameo
+[18:57:47] -CreateDynamicObjetcs[12848]
+[18:57:47] CO-RP: 1574 Pickups Cargados
+[18:57:47] Number of vehicle models: 47
