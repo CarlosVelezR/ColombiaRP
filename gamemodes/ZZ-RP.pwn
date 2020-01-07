@@ -1498,9 +1498,9 @@ enum _@en@trabAviador
 new static trabAviador[][_@en@trabAviador] = 
 {
 	{{1757.0514, -2494.2644, 14.0136}, "Aeropuerto El Dorado", 0}, //Posicion de descarga.
-	{{1477.2335, 1554.3196, 11.2709}, "Aeropuerto Las Ventura", 750},
+	{{1477.2335, 1554.3196, 11.2709}, "Aeropuerto Medellin", 750},
 	{{203.4269, 2504.8892, 16.9481}, "Aeropuerto Abandonado", 850},
-	{{-1461.8287, 30.4893, 14.6016}, "Aeropuerto San Fierro", 800}
+	{{-1461.8287, 30.4893, 14.6016}, "Aeropuerto Cali", 800}
 };
 //Camionero
 new camioneroCoches[8];
@@ -4764,7 +4764,7 @@ public OnGameModeInit()
  	CreateDynamic3DTextLabel("Bar - {FC7F75}Middleton Social Club\n{FFFFFF}Pulsa Y", 0xFFFFFFFF, 1555.5348, -1199.9865, 20.0236, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	//Entrada Iglesia [MAPA]
 	CreateDynamicPickup(1239, 1, 2233.9846, -1333.1912, 23.9815); // Entrada a la Iglesia
- 	CreateDynamic3DTextLabel("Iglesia - {FC7F75}Los Santos\n{FFFFFF}Pulsa Y", 0xFFFFFFFF, 2233.9846, -1333.1912, 23.9815, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
+ 	CreateDynamic3DTextLabel("Iglesia - {FC7F75}Bogota\n{FFFFFF}Pulsa Y", 0xFFFFFFFF, 2233.9846, -1333.1912, 23.9815, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	//Hospital [Fort Carson]
 	CreateDynamicPickup(1239,1,-320.2980,1048.2344,20.3403); // Entrada del Hospital
  	CreateDynamic3DTextLabel("Fort Carson -{FC7F75}Hospital General\n{FFFFFF}Pulsa Y", 0xFFFFFFFF,-320.2980,1048.2344,20.3403,8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
@@ -8141,7 +8141,7 @@ COMMAND:incautar(playerid, params[])
 				casa[i][hCocaina] = 0;
 				casa[i][hMarihuana] = 0;
 				
-				format(string, sizeof(string), "* Central: %s ha incautado drogas/materiales en una casa de Los Santos.", PlayerName(playerid));
+				format(string, sizeof(string), "* Central: %s ha incautado drogas/materiales en una casa de Bogota DC.", PlayerName(playerid));
 				return 1;
 			}
 		}
@@ -8539,7 +8539,7 @@ command(contratar, playerid, params[]){
 						case 1: ReqF_Name[params[0]] = "Policía Local LS";
 						case 2: ReqF_Name[params[0]] = "Ejército Militar";
 						case 3: ReqF_Name[params[0]] = "Hospital Nacinoal";
-						case 4: ReqF_Name[params[0]] = "Los Santos Customs";
+						case 4: ReqF_Name[params[0]] = "Bogota DC Customs";
 						case 5: ReqF_Name[params[0]] = "Gobierno de Fort Carson";
 						case 6: ReqF_Name[params[0]] = "Gobierno";
 						case 7: ReqF_Name[params[0]] = "CNN";
@@ -10534,7 +10534,7 @@ command(centrevista, playerid, params[]){
             {
                 cuenta[playerid][cSeguro] = 1;
                 pierdeDinero(playerid, 1000);
-                Mensaje(playerid, -1, "{FF393E}Hospital: {FFFFFF}Adquiriste el seguro médico de Los Santos.");
+                Mensaje(playerid, -1, "{FF393E}Hospital: {FFFFFF}Adquiriste el seguro médico de Bogota DC.");
                 Mensaje(playerid, -1, "{FF393E}Hospital: {FFFFFF}Ahora cuando tengas un accidente te atenderemos en este hospital.");
 			}
         }
@@ -10551,7 +10551,7 @@ command(centrevista, playerid, params[]){
 			    if(Team_LSPD(playerid))
 				{
 				    ClearChatbox(params[0], 7);
-    				Mensaje(params[0], COLOR_AZUL_CLARO, "-- Policia de Los Santos --");
+    				Mensaje(params[0], COLOR_AZUL_CLARO, "-- Policia de Bogota DC --");
 				    format(string, sizeof(string), "Nombre: %s - Rango: %s", PlayerName(playerid), PlayerStatInfo[playerid][4]);
 				    Mensaje(params[0], COLOR_BLANCO, string);
 				    format(string, sizeof(string), "* %s le enseña la placa a %s", PlayerName(playerid), PlayerName(params[0]));
@@ -10588,7 +10588,7 @@ command(centrevista, playerid, params[]){
       		Mensaje(params[0], COLOR_VERDE, "__ Tarjeta de Seguro __");
         	format(string, sizeof(string), "   {FF231E}Nombre: {FFFFFF}%s", PlayerName(playerid));
         	Mensaje(params[0], -1, string);
-        	format(string, sizeof(string), "   {FF231E}Clinica: {FFFFFF}Los Santos Medical Center");
+        	format(string, sizeof(string), "   {FF231E}Clinica: {FFFFFF}Bogota DC Medical Center");
 	        Mensaje(params[0], -1, string);
          	format(string, sizeof(string), "* %s le muestra su tarjeta de seguro a %s.", PlayerName(playerid), PlayerName(params[0]));
 			ProxDetector(30.0, playerid, string, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA);
@@ -11203,19 +11203,19 @@ COMMAND:clima(playerid, params[])
 	if(sscanf(params, "d", climaid))return Mensaje(playerid, COLOR_GRIS2, "Use /clima [climaid]");
 	if(climaid < 0 || climaid > 20)
 	{
-		Mensaje(playerid, COLOR_ROJO, "0 = MUY SOLEADO LOS SANTOS");
-		Mensaje(playerid, COLOR_ROJO, "1 = SOLEADO LOS SANTOS");
+		Mensaje(playerid, COLOR_ROJO, "0 = MUY SOLEADO BOGOTA");
+		Mensaje(playerid, COLOR_ROJO, "1 = SOLEADO BOGOTA");
 		Mensaje(playerid, COLOR_ROJO, "2 = MUY SOLEADO CON NIEBLA");
 		Mensaje(playerid, COLOR_ROJO, "3 = SOLEADO CON NIEBLA");
-		Mensaje(playerid, COLOR_ROJO, "4 = NUBLADO LOS SANTOS");
-		Mensaje(playerid, COLOR_ROJO, "5 = SOLEADO SAN FIERRO");
-		Mensaje(playerid, COLOR_ROJO, "6 = MUY SOLEADO SAN FIERRO");
-		Mensaje(playerid, COLOR_ROJO, "7 = NUBLADO SAN FIERRO");
-		Mensaje(playerid, COLOR_ROJO, "8 = LLUVIA SAN FIERRO");
-		Mensaje(playerid, COLOR_ROJO, "9 = NIEBLA SAN FIERRO");
-		Mensaje(playerid, COLOR_ROJO, "10 = SOLEADO LAS VENTURAS");
-		Mensaje(playerid, COLOR_ROJO, "11 = MUY SOLEADO LAS VENTURAS");
-		Mensaje(playerid, COLOR_ROJO, "12 = NUBLADO LAS VENTURAS");
+		Mensaje(playerid, COLOR_ROJO, "4 = NUBLADO BOGOTA");
+		Mensaje(playerid, COLOR_ROJO, "5 = SOLEADO CALI");
+		Mensaje(playerid, COLOR_ROJO, "6 = MUY SOLEADO CALI");
+		Mensaje(playerid, COLOR_ROJO, "7 = NUBLADO CALI");
+		Mensaje(playerid, COLOR_ROJO, "8 = LLUVIA CALI");
+		Mensaje(playerid, COLOR_ROJO, "9 = NIEBLA CALI");
+		Mensaje(playerid, COLOR_ROJO, "10 = SOLEADO MEDELLIN");
+		Mensaje(playerid, COLOR_ROJO, "11 = MUY SOLEADO MEDELLIN");
+		Mensaje(playerid, COLOR_ROJO, "12 = NUBLADO MEDELLIN");
 		Mensaje(playerid, COLOR_ROJO, "13 = MUY SOLEADO CAMPO");
 		Mensaje(playerid, COLOR_ROJO, "14 = SOLEADO CAMPO");
 		Mensaje(playerid, COLOR_ROJO, "15 = NUBLADO CAMPO");
@@ -12021,7 +12021,7 @@ command(adminduty, playerid, params[]){
 		
   		new string[144];
 		
-		format(string, sizeof(string), "* Usted fue enviado a Los Santos por %s", PlayerName(playerid));
+		format(string, sizeof(string), "* Usted fue enviado a Bogota por %s", PlayerName(playerid));
 		Mensaje(player, COLOR_GRAD4, string);
 		
 		format(string, sizeof(string), "El administrador %s uso /mandarls con %s", PlayerName(playerid), PlayerName(player));
@@ -14211,12 +14211,12 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 					{
 						case 0 .. 2:
 						{
-							format(string, sizeof(string), "{008000}[NPC]{ffffff} %s dice: Bienvenido al Banco de Los Santos ¿Que puedo hacer por usted?", nonplayers[i][npcNombre]);
+							format(string, sizeof(string), "{008000}[NPC]{ffffff} %s dice: Bienvenido al Banco de Bogota D.C ¿Que puedo hacer por usted?", nonplayers[i][npcNombre]);
 							Mensaje(playerid, COLOR_BLANCO, string);
 						}
 						case 3 .. 4:
 						{
-							format(string, sizeof(string), "{008000}[NPC]{ffffff} %s dice: Bienvenido al Ayuntamiento de Los Santos ¿Que puedo hacer por usted?", nonplayers[i][npcNombre]);
+							format(string, sizeof(string), "{008000}[NPC]{ffffff} %s dice: Bienvenido al Ayuntamiento de Bogota D.C ¿Que puedo hacer por usted?", nonplayers[i][npcNombre]);
 							Mensaje(playerid, COLOR_BLANCO, string);
 						}
 						case 5:
@@ -14386,7 +14386,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 			{
 				LoadObjects(playerid);
 				SetPosEx(playerid, 1481.0374, -1772.3131, 18.7958, 0, 0, 0);
-				GameTextForPlayer(playerid, "~w~los santos", 5000, 1);
+				GameTextForPlayer(playerid, "~w~Bogota D.C", 5000, 1);
 			}
 			// Entrada al Interior Iglesia
 			else if(PlayerToPointStripped(1, playerid, 2233.9846, -1333.1912, 23.9815, cx, cy, cz))
@@ -14553,7 +14553,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 				SetPosEx(playerid, 251.2338, 131.8809, 1032.0173, 271.2408, 0, 0);
 				return 1;
 			}
-			//Hospital Los Santos ENTER
+			//Hospital Bogota ENTER
 			else if (PlayerToPointStripped(1, playerid, 1173.2563, -1323.3102, 15.3943, cx, cy, cz))
 			{
 				SetPosEx(playerid, -2647.9604, 539.7050, 48.0835, 180, 0, 0);
@@ -14593,7 +14593,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 			else if (PlayerToPointStripped(1, playerid, 2062.2095, -2214.4033, 2664.6157, cx, cy, cz))
 			{
 				SetPosEx(playerid, 2046.8928, -1908.0372, 13.5469, 280, 0, 0);
-				GameTextForPlayer(playerid, "~w~Los Santos", 5000, 1);
+				GameTextForPlayer(playerid, "~w~Bogota D.C", 5000, 1);
 				return 1;
 			}
 			//PD Elevator
@@ -14630,7 +14630,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 			else if(PlayerToPointStripped(1.5, playerid, 1548.8167, -1366.2247, 326.2109, cx, cy, cz))
 			{
 				SetPosEx(playerid, 1572.1115, -1332.5288, 16.4844, 0, 0, 0);
-				GameTextForPlayer(playerid, "~w~Los Santos", 5000, 1);
+				GameTextForPlayer(playerid, "~w~Bogota DC", 5000, 1);
 				return 1;
 			}
 		// FBI Enter
@@ -16376,7 +16376,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 		if(!SenalWifi(playerid))return Mensaje(playerid, COLOR_GRIS2, "No tiene señal wifi.");
 		if(cuenta[playerid][cNivel] >= 6)
 		{
-			ShowPlayerDialog(playerid, DIALOGO_PUBLICIDAD, DIALOG_STYLE_LIST, "[!]Publica tu anuncio", "Commerce - Comiseria\nIdlewood - 24/7\nCommerce - 24/7\nDowntown - Ammunation\nSanta Maria Beach - Autopista 1\nSanta Maria Beach - Autopista 2\nSanta Maria Beach - Autopista 3\nWillowfield - Basureros\nEast Los Santos - Puente Ganton\nGlenn Park - Estacionamiento", "Aceptar", "Cancelar");
+			ShowPlayerDialog(playerid, DIALOGO_PUBLICIDAD, DIALOG_STYLE_LIST, "[!]Publica tu anuncio", "Commerce - Comiseria\nIdlewood - 24/7\nCommerce - 24/7\nDowntown - Ammunation\nSanta Maria Beach - Autopista 1\nSanta Maria Beach - Autopista 2\nSanta Maria Beach - Autopista 3\nWillowfield - Basureros\nEast Bogota DC - Puente Ganton\nGlenn Park - Estacionamiento", "Aceptar", "Cancelar");
 		}else Mensaje(playerid, COLOR_ROJO, "Usted debe ser nivel 6 o superior.");
 		EsconderIphone(playerid);
 	}
@@ -16388,7 +16388,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 		{
 			format(string, sizeof(string), "%s\n%s", string, Periodico[i]);
 		}
-		ShowPlayerDialog(playerid, DIALOGO_DEFAULT, DIALOG_STYLE_MSGBOX, "Los Santos Periodico", string, "Aceptar", "");
+		ShowPlayerDialog(playerid, DIALOGO_DEFAULT, DIALOG_STYLE_MSGBOX, "Bogota DC Periodico", string, "Aceptar", "");
 		EsconderIphone(playerid);
 	}
 	else if(playertextid == iPhoneDatos[9][TDIphone])
@@ -17425,7 +17425,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			}
 			else
 			{
-				ShowPlayerDialog(playerid, DIALOGO_PUBLICIDAD, DIALOG_STYLE_LIST, "[!]Publica tu anuncio", "Commerce - Comiseria\nIdlewood - 24/7/nCommerce - 24/7/nDowntown - Ammunation/nSanta Maria Beach - Autopista 1/nSanta Maria Beach - Autopista 2/nSanta Maria Beach - Autopista 3/nWillowfield - Basureros/nEast Los Santos - Puente Ganton/nGlenn Park - Estacionamiento", "Aceptar", "Cancelar");
+				ShowPlayerDialog(playerid, DIALOGO_PUBLICIDAD, DIALOG_STYLE_LIST, "[!]Publica tu anuncio", "Commerce - Comiseria\nIdlewood - 24/7/nCommerce - 24/7/nDowntown - Ammunation/nSanta Maria Beach - Autopista 1/nSanta Maria Beach - Autopista 2/nSanta Maria Beach - Autopista 3/nWillowfield - Basureros/nEast Bogota DC - Puente Ganton/nGlenn Park - Estacionamiento", "Aceptar", "Cancelar");
 			}
 			return 1;
 		}
@@ -18604,11 +18604,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				SetHP(playerid, 2000);
 				darArmadura(playerid, 2000);
 				
-				Update3DTextLabelText(estado[playerid], COLOR_VERDE, "ADMINISTRADOR - EN SERVICIO");
+				Update3DTextLabelText(estado[playerid], COLOR_AZUL_CLARO, "ADMINISTRADOR - EN SERVICIO");
 				Attach3DTextLabelToPlayer(estado[playerid], playerid, 0.0, 0.0, 0.7);
 				
 				ShowPlayerDialog(playerid, CREDITOS, DIALOG_STYLE_MSGBOX, "{006FFF}Sistema Anti AA", "\n{FFFFFF}Sistema anti AA Recuerde revisar el /reglasadmin\n{006FFF}Saludos - Encargados de Staff", "Aceptar", "");
-				format(string, sizeof(string), "{FFFFFF}[ADM] {006FFF}%s está conectado. (/w %d)", PlayerName(playerid), playerid); BroadCast(0xFFFFA4FF, string);
+				format(string, sizeof(string), "{FFFFFF}[ADM] {006FFF}%s Esta en Servicio Respondiendo Dudas. (/w %d)", PlayerName(playerid), playerid); BroadCast(0xFFFFA4FF, string);
 			}
 		}
 		case DIALOGO_INVENTARIO:
@@ -22872,7 +22872,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	        	{
 		            case 0: SetPlayerCheckpoint(playerid, 1481.0374, -1772.3131, 18.7958, 3.0);  // Ayuntamiento
 	    	        case 1: SetPlayerCheckpoint(playerid, 1545.8611, -1680.0559, 13.5612, 3.0);  // LSPD
-	        	    case 2: SetPlayerCheckpoint(playerid, 2240.9753, -2218.4404, 13.5469, 3.0);  // Taller de Los Santos
+	        	    case 2: SetPlayerCheckpoint(playerid, 2240.9753, -2218.4404, 13.5469, 3.0);  // Taller de Bogota
 	        	    case 3: SetPlayerCheckpoint(playerid, 2073.2747, -1914.5770, 13.3648, 3.0);  // Licencieria
 		            case 4: SetPlayerCheckpoint(playerid, 2266.3047, -1666.6727, 15.3930, 3.0);  // Binco
 	    	        case 5: SetPlayerCheckpoint(playerid, 1318.7915, -899.3480, 39.5781, 3.0);   // 24-7 Vinewood
@@ -22902,7 +22902,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	    }
 	    case DIALOGO_TRABAJO_UBICACION:
 	    {
-			if(!response)return ShowPlayerDialog(playerid, DIALOGO_MAPA, DIALOG_STYLE_LIST, "{018CFE}Puntos de interes", "{FFFFFF}» Ayuntamiento\n» Juzgados\n» Comisaria de Los Santos\n» Taller\n» Licencieria\n» Binco\n» 24-7 Vinewood\n» 24-7 Unity\n» 24-7\n» Deposito de la LSPD\n» Joyeria\n» Banco\n» Grotti\n» Cyber\n» Biblioteca\n» Baño Público\n» Iglesia\n» Casino\n» Trabajos", "Aceptar", "Salir");
+			if(!response)return ShowPlayerDialog(playerid, DIALOGO_MAPA, DIALOG_STYLE_LIST, "{018CFE}Puntos de interes", "{FFFFFF}» Ayuntamiento\n» Juzgados\n» Comisaria de Bogota DC\n» Taller\n» Licencieria\n» Binco\n» 24-7 Vinewood\n» 24-7 Unity\n» 24-7\n» Deposito de la LSPD\n» Joyeria\n» Banco\n» Grotti\n» Cyber\n» Biblioteca\n» Baño Público\n» Iglesia\n» Casino\n» Trabajos", "Aceptar", "Salir");
 	        if(response)
 	        {
 				new listid = listitem + 1;
@@ -23952,7 +23952,7 @@ CallBack::CambiarPagina(playerid)
 			SetPlayerCameraLookAt(playerid, 1828.430908, -1869.829833, 33.731708);
 			SetPlayerPos(playerid, 1832.036743, -1867.144409, 0.0000);
 			
-			format(string, sizeof(string), "Empiezas tu vida en Los Santos! Lo principal es conseguir un trabajo!~n~Tienes bastantes opciones de trabajo que podras buscar en el GPS!~n~Casi todos los trabajos tienen habilidad, no olvides subirla!~n~");
+			format(string, sizeof(string), "Empiezas tu vida en Bogota DC! Lo principal es conseguir un trabajo!~n~Tienes bastantes opciones de trabajo que podras buscar en el GPS!~n~Casi todos los trabajos tienen habilidad, no olvides subirla!~n~");
 			PlayerTextDrawSetString(playerid, InfoText[playerid][4], string);
 			PlayerTextDrawShow(playerid, InfoText[playerid][4]);
 			
@@ -23998,7 +23998,7 @@ CallBack::CambiarPagina(playerid)
 		case 7:
 		{
 			ClearChatbox(playerid, 21);
-			Mensaje(playerid, -1, "Conductor Tren: Hemos llegado a Los Santos!, sin embargo ya nos iremos, todos a bordo, siguiente parada San Fierro!");
+			Mensaje(playerid, -1, "Conductor Tren: Hemos llegado a Bogota DC!, sin embargo ya nos iremos, todos a bordo, siguiente parada Cali!");
 			Mensaje(playerid, COLOR_AZUL_CLARO, "Bienvenido! {FFFFFF}Si tienes alguna inquietud, puedes publicarla en el canal de ayuda o{FFFF00} /duda.");
 			Mensaje(playerid, COLOR_AZUL_CLARO, "Informacion: {FFFFFF}Si deseas que tu personaje tenga un acento, puedes utilizar{EF9995} /acento.");
 
@@ -25349,7 +25349,7 @@ CallBack::ComproVehiculo(jugador, modelo, valor, stockact, stockmax)
 		case 3:
 		{
 			carid = CreateVehicleEx(modelo, 1926.4454, -2297.2805, 13.3786, 2.8863, 1, 1, VEHICULO_SPAWN);
-			Mensaje(jugador, COLOR_ROJO, "IMPORTANTE:{FFFFFF} Su Avion/Helicoptero esta en el Aereopuerto de Los Santos.");
+			Mensaje(jugador, COLOR_ROJO, "IMPORTANTE:{FFFFFF} Su Avion/Helicoptero esta en el Aereopuerto de Bogota DC.");
 		}
 	}
 	
@@ -28664,7 +28664,7 @@ COMMAND:periodico(playerid, params[])
 		format(string, sizeof(string), "%s\n%s", string, Periodico[i]);
 	}
 	AccionMe(playerid, "toma el periodico y abre la seccion de anuncios.");
-	ShowPlayerDialog(playerid, DIALOGO_DEFAULT, DIALOG_STYLE_MSGBOX, "Los Santos Periodico", string, "Aceptar", "");
+	ShowPlayerDialog(playerid, DIALOGO_DEFAULT, DIALOG_STYLE_MSGBOX, "Bogota DC Periodico", string, "Aceptar", "");
 	return 1;
 }
 COMMAND:inventario(playerid, params[])
@@ -29699,7 +29699,7 @@ COMMAND:publicidad(playerid, params[]){
 	if(IsPlayerInRangeOfPoint(playerid, 5.0, 1088.1642, -1377.9141, 13.8070)){
 		if(!cuenta[playerid][cTelefono])return Mensaje(playerid, COLOR_GRIS, "No tienes teléfono, compra uno en la tienda electronica.");
 		if(cuenta[playerid][cNivel] >= 6){
-			ShowPlayerDialog(playerid, DIALOGO_PUBLICIDAD, DIALOG_STYLE_LIST, "[!]Publica tu anuncio", "Commerce - Comiseria\nIdlewood - 24/7\nCommerce - 24/7\nDowntown - Ammunation\nSanta Maria Beach - Autopista 1\nSanta Maria Beach - Autopista 2\nSanta Maria Beach - Autopista 3\nWillowfield - Basureros\nEast Los Santos - Puente Ganton\nGlenn Park - Estacionamiento", "Aceptar", "Cancelar");
+			ShowPlayerDialog(playerid, DIALOGO_PUBLICIDAD, DIALOG_STYLE_LIST, "[!]Publica tu anuncio", "Commerce - Comiseria\nIdlewood - 24/7\nCommerce - 24/7\nDowntown - Ammunation\nSanta Maria Beach - Autopista 1\nSanta Maria Beach - Autopista 2\nSanta Maria Beach - Autopista 3\nWillowfield - Basureros\nEast Bogota DC - Puente Ganton\nGlenn Park - Estacionamiento", "Aceptar", "Cancelar");
 		}else Mensaje(playerid, COLOR_ROJO, "Usted debe ser nivel 6 o superior para usar este comando.");
 	}else Mensaje(playerid, COLOR_GRIS, "Usted no se encuentra en el centro de anuncios de la CNN.");
 	return 1;
@@ -30106,7 +30106,7 @@ COMMAND:removerpublicidad(playerid, params[]){
 		Mensaje(playerid, COLOR_AMARILLO, "»{FFFFFF} No puedes usar este comando sin estar en OnDuty.");
 		return 1;
 	}
-	ShowPlayerDialog(playerid, DIALOG_EDITAR_PUBLICIDAD, DIALOG_STYLE_LIST, "[!]Edita un anuncio", "Commerce - Comiseria\nIdlewood - 24/7\nCommerce - 24/7\nDowntown - Ammunation\nSanta Maria Beach - Autopista 1\nSanta Maria Beach - Autopista 2\nSanta Maria Beach - Autopista 3\nWillowfield - Basureros\nEast Los Santos - Puente Ganton\nGlenn Park - Estacionamiento", "Aceptar", "Cancelar");
+	ShowPlayerDialog(playerid, DIALOG_EDITAR_PUBLICIDAD, DIALOG_STYLE_LIST, "[!]Edita un anuncio", "Commerce - Comiseria\nIdlewood - 24/7\nCommerce - 24/7\nDowntown - Ammunation\nSanta Maria Beach - Autopista 1\nSanta Maria Beach - Autopista 2\nSanta Maria Beach - Autopista 3\nWillowfield - Basureros\nEast Bogota DC - Puente Ganton\nGlenn Park - Estacionamiento", "Aceptar", "Cancelar");
 	return 1;
 }
 //familias
