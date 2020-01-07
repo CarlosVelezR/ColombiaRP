@@ -6,7 +6,7 @@
 	*   Mappers:                Javier_Cardenas.
 	*	Version:				1.6.5.4
 	*
-	*	Principal: ZZ-RP.pwn
+	*	Principal: CO-RP.pwn
 	*
 */
 /******************************************************************************/
@@ -40,7 +40,7 @@ AntiDeAMX()
 
 #define Version			"v 0.1"
 #define ModeText		"RolePlay - RP - "Version""
-#define MapName			"mapname Los Santos"
+#define MapName			"mapname Bogotá"
 #define Hostname		"hostname Colombia Roleplay - Unete! [C:RP]"
 #define Language        "Español - LS"
 
@@ -1377,7 +1377,7 @@ new const fRangos[][_@en@fRangos] =
 	{{"Práctico"}, {"Paramedico"}, {"Bombero"}, {"Supervisor General"}, {"Responsable Técnico"}, {"Director"}, {"Civil"}, {"Civil"}}, 
 	{{"Ayudante"}, {"Trucker"}, {"Mecánico"}, {"Ingeniero"}, {"Supervisor"}, {"Director"}, {"Civil"}, {"Civil"}}, 
 	{{"Medico"}, {"Bombero"}, {"Oficial"}, {"Sheriff"}, {"Mecanico"}, {"Gobernador"}, {"Civil"}, {"Civil"}},
-	{{"Seguridad"}, {"Jefe de seguridad"}, {"Ministro"}, {"Alcalde LS"}, {"Vice-Presidente"}, {"Presidente"}, {"Civil"}, {"Civil"}}, 
+	{{"Seguridad"}, {"Senador"}, {"Ministro"}, {"Alcalde BOG"}, {"Vice-Presidente-S"}, {"Presidente-S"}, {"Civil"}, {"Civil"}},
 	{{"Becario"}, {"Redactor"}, {"Periodista"}, {"Enviado Especial"}, {"Presentador"}, {"Director CNN"}, {"Civil"}, {"Civil"}}, 
 	{{"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}}, 
 	{{"Agente"}, {"S. Agente"}, {"Especial"}, {"Criminalista"}, {"Sub-Director"}, {"Director"}, {"Civil"}, {"Civil"}}
@@ -1477,7 +1477,7 @@ enum _@en@trabTransportador
 }
 new static trabTransportador[][_@en@trabTransportador] = 
 {
-	{{1324.9205, -1020.4911, 30.5684}, "Banco Los Santos", 0}, //Posicion de descarga.
+	{{1324.9205, -1020.4911, 30.5684}, "Banco Bogotá", 0}, //Posicion de descarga.
 	{{1361.1056, -1279.5759, 13.1084}, "Ammunation", 75}, 
 	{{641.2266, -1358.4257, 13.1411}, "CNN", 167}, 
 	{{538.2512, -1284.9053, 16.9693}, "Grotti", 245}, 
@@ -1497,9 +1497,9 @@ enum _@en@trabAviador
 }
 new static trabAviador[][_@en@trabAviador] = 
 {
-	{{1757.0514, -2494.2644, 14.0136}, "Aeropuerto Los Santos", 0}, //Posicion de descarga.
-	{{1477.2335, 1554.3196, 11.2709}, "Aeropuerto Las Ventura", 750}, 
-	{{203.4269, 2504.8892, 16.9481}, "Aeropuerto Abandonado", 850}, 
+	{{1757.0514, -2494.2644, 14.0136}, "Aeropuerto El Dorado", 0}, //Posicion de descarga.
+	{{1477.2335, 1554.3196, 11.2709}, "Aeropuerto Las Ventura", 750},
+	{{203.4269, 2504.8892, 16.9481}, "Aeropuerto Abandonado", 850},
 	{{-1461.8287, 30.4893, 14.6016}, "Aeropuerto San Fierro", 800}
 };
 //Camionero
@@ -2431,7 +2431,7 @@ public OnPlayerSpawn(playerid)
 				
 				for(new p=0;p<5;p++) TextDrawShowForPlayer(playerid, Presentacion[p]);
 				
-				PlayerTextDrawSetString(playerid, InfoText[playerid][4], "~r~ZonaZero ~b~~h~~h~~h~es una comunidad de SAMP RolePlay en la que encontraras muchas opciones para divertirte.~n~~b~~h~~h~~h~Llevamos desde Junio de 2012 sirviendo a nuestros usuarios para brindarles una gran experiencia de rol.~n~~b~~h~~h~~h~Lo que diferencia a ~r~ZonaZero ~b~~h~~h~~h~de los demás servidores, es que el usuario tiene su propia libertad.~n~~b~~h~~h~~h~Podras entrar en facciones, legales o ilegales, o entrar a familias o incluso hacer tu propia familia!~n~~b~~h~~h~~h~Toda la información la podras encontrar en nuestro foro ~r~www.zonazerorp.com~n~");
+				PlayerTextDrawSetString(playerid, InfoText[playerid][4], "~r~Colombia ~b~~h~~h~~h~es una comunidad de SAMP RolePlay en la que encontraras muchas opciones para divertirte.~n~~b~~h~~h~~h~Llevamos desde 2020 sirviendo a nuestros usuarios para brindarles una gran experiencia de rol.~n~~b~~h~~h~~h~Lo que diferencia a ~r~Colombia-RP ~b~~h~~h~~h~de los demás servidores, es que el usuario tiene su propia libertad.~n~~b~~h~~h~~h~Podras entrar en facciones, legales o ilegales, o entrar a familias o incluso hacer tu propia familia!~n~~b~~h~~h~~h~Toda la información la podras encontrar en nuestro foro ~r~(Foro Prox)~n~");
 				PlayerTextDrawShow(playerid, InfoText[playerid][4]);
 				PlayerTextDrawShow(playerid, InfoText[playerid][14]);
 				SelectTextDraw(playerid, COLOR_LIMA);
@@ -4087,7 +4087,7 @@ public OnPlayerRequestClass(playerid, classid)
 public OnGameModeExit(){
 	new year, month, day;
 	getdate(year, month, day);
-    printf("Gamemode ZonaZero Finalizado. [%d/%d/%d]", day, month, year);
+    printf("Gamemode Colombia-RP Finalizado. [%d/%d/%d]", day, month, year);
 	return 1;
 }
 
@@ -4156,7 +4156,7 @@ public OnGameModeInit()
 	TextDrawTextSize(TextdBan[0], 564.000000, 0.000000);
 	TextDrawSetSelectable(TextdBan[0], 0);
 
-	TextdBan[1] = TextDrawCreate(325.000000, 180.000000, "usted ha sido expulsado(~r~Ban~w~)~n~~n~~n~~n~~n~~n~~n~~n~~n~usted fue expulsado permanentemente del servidor, si cree que es un mal entendido.~n~presione ~g~F8~w~ y haga una apelacion en el foro: ~b~foro.zonazerorp.com");
+	TextdBan[1] = TextDrawCreate(325.000000, 180.000000, "usted ha sido expulsado(~r~Ban~w~)~n~~n~~n~~n~~n~~n~~n~~n~~n~usted fue expulsado permanentemente del servidor, si cree que es un mal entendido.~n~presione ~g~F8~w~ y haga una apelacion en el foro: ~b~(Foro Prox)");
 	TextDrawAlignment(TextdBan[1], 2);
 	TextDrawBackgroundColor(TextdBan[1], 255);
 	TextDrawFont(TextdBan[1], 2);
@@ -4220,7 +4220,7 @@ public OnGameModeInit()
 		TextDrawTextSize(cajeros[i][Textdcajero][2], 0.00, 0.00);
 		TextDrawSetSelectable(cajeros[i][Textdcajero][2], 0);
 		
-		cajeros[i][Textdcajero][3] = TextDrawCreate(151.00, 377.00, "cajero automatico~n~     banco de los santos");
+		cajeros[i][Textdcajero][3] = TextDrawCreate(151.00, 377.00, "cajero automatico~n~     banco de bogotá");
 		TextDrawBackgroundColor(cajeros[i][Textdcajero][3], 255);
 		TextDrawFont(cajeros[i][Textdcajero][3], 2);
 		TextDrawLetterSize(cajeros[i][Textdcajero][3], 0.59, 3.69);
@@ -4440,7 +4440,7 @@ public OnGameModeInit()
 	TextDrawTextSize(TextdrawGlobal[0], 633.000000, 150.000000);
 	TextDrawSetSelectable(TextdrawGlobal[0], 0);
 	
-	TextdrawGlobal[1] = TextDrawCreate(100.000000, 60.000000, "[~r~Bajada~w~] AmmuNation - Cesar_Segura - Los Santos - ~g~750$~w~ - 20~n~ ");
+	TextdrawGlobal[1] = TextDrawCreate(100.000000, 60.000000, "[~r~Bajada~w~] AmmuNation - Cesar_Segura - Bogotá - ~g~750$~w~ - 20~n~ ");
 	TextDrawBackgroundColor(TextdrawGlobal[1], 255);
 	TextDrawFont(TextdrawGlobal[1], 1);
 	TextDrawLetterSize(TextdrawGlobal[1], 0.259999, 1.600000);
@@ -4639,7 +4639,7 @@ public OnGameModeInit()
 	TextDrawTextSize(Presentacion[1], 1.000000, 365.000000);
 	TextDrawSetSelectable(Presentacion[1], 0);
 
-	Presentacion[2] = TextDrawCreate(250.000000, 120.000000, "ZONAZERO ROLEPLAY");
+	Presentacion[2] = TextDrawCreate(250.000000, 120.000000, "COLOMBIA ROLEPLAY");
 	TextDrawBackgroundColor(Presentacion[2], 255);
 	TextDrawFont(Presentacion[2], 2);
 	TextDrawLetterSize(Presentacion[2], 0.300000, 2.000000);
@@ -4794,7 +4794,7 @@ public OnGameModeInit()
 	CreateDynamicPickup(1239, 1, 1713.2515, -1860.7002, 13.5784); // CEDULA Inicio
 	CreateDynamic3DTextLabel("Gobierno -{868FD9}Registro Ciudadano", 0xFFFFFFFF, 1713.2515, -1860.7002, 13.5784, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	CreateDynamicPickup(1239, 1, 1710.8884, -1888.7478, 13.5676); // Duda Inicio
- 	CreateDynamic3DTextLabel("ZonaZero:\nBienvenido!\n{CE726E}/duda", 0xFFFFFFFF, 1710.8884, -1888.7478, 13.5676, 40.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
+ 	CreateDynamic3DTextLabel("Colombia:\nBienvenido!\n{CE726E}/duda", 0xFFFFFFFF, 1710.8884, -1888.7478, 13.5676, 40.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	//ENTRADA/SALIDA Mineria [TRABAJO]
 	CreateDynamic3DTextLabel("Privado - {E6DE48}Mina\n{FFFFFF}Pulsa Y", 0xFFFFFFFF, 2553.6379, -876.1029, 88.6428, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	CreateDynamicPickup(1239, 1, 2553.6379, -876.1029, 88.6428);//Entrada
@@ -5234,7 +5234,7 @@ public OnGameModeInit()
 	CreateDynamicPickup(1239, 1, 2089.0627, -1823.5455, 13.5469);
 	CreateDynamicPickup(1239, 1, 1718.7406, -1865.7048, 13.5723);
 	CreateDynamicPickup(1239, 1, 1271.5137, -994.5891, 35.6477);
-	printf("ZZ-RP: %d Pickups Cargados", CountDynamicPickups());
+	printf("CO-RP: %d Pickups Cargados", CountDynamicPickups());
 
 	if(realtime)
 	{
@@ -6166,7 +6166,7 @@ CallBack::StreamMediaHora()
 		case 5: MensajeGlobal(COLOR_AMARILLO, "INFO: {FFFFFF}Para ocultar los logos del servidor utiliza /ocultarbarra");
 		case 6: MensajeGlobal(COLOR_AMARILLO, "INFO: {FFFFFF}¿Tienes dudas? Utiliza /duda.");
 		case 7: MensajeGlobal(COLOR_AMARILLO, "INFO: {FFFFFF}¿Antirol? /re(reportar) o pueden reportan en nuestro foro.");
-		case 8: MensajeGlobal(COLOR_AMARILLO, "INFO: {FFFFFF}Visitanos para informarte de todo en foro.zonazerorp.com.");
+		case 8: MensajeGlobal(COLOR_AMARILLO, "INFO: {FFFFFF}Visitanos para informarte de todo en (Foro Proximamente).");
 		case 9: MensajeGlobal(COLOR_AMARILLO, "INFO: {FFFFFF}Recuerda tomar a menudo Screenshots de tu /cuenta.");
 		case 10: MensajeGlobal(COLOR_AMARILLO, "INFO: {FFFFFF}Recuerda guardar los datos de tu cuenta /guardarcuenta.");
 		case 11: MensajeGlobal(COLOR_AMARILLO, "INFO: {FFFFFF}No olvides agregar nuestra IP a favoritos!");
@@ -6325,7 +6325,7 @@ CallBack::Timer1000ms()
 		{ 
 			if(!RetornarNombre(playerid))
 			{
-				format(string, sizeof(string), "[Seguridad ZonaZero]: %s[%d] ha sido Baneado por entrar a la RCON.", Nombre(playerid), playerid);
+				format(string, sizeof(string), "[Seguridad Colombia]: %s[%d] ha sido Baneado por entrar a la RCON.", Nombre(playerid), playerid);
 				AdminMensaje(string);
 				
 				new tmp15[24];
@@ -7513,7 +7513,7 @@ return 1;
 command(sexo, playerid, params[])
 {
 Mensaje(playerid, 0xFFFFFFAA, " {FFFFFF}=====================================================");
-Mensaje(playerid, 0xFFFFFFAA, " {FFFFFF}Animaciones de{00FF00}sexo ZonaZero{00FF00}RP");
+Mensaje(playerid, 0xFFFFFFAA, " {FFFFFF}Animaciones de{00FF00}sexo Colombia{00FF00}RP");
 Mensaje(playerid, 0xFFFFFFAA, " {FFFFFF}/encuatro{00FFFF}[1/3] {FFFFFF}/nalgada{00FFFF}[1/3]");
 Mensaje(playerid, 0xFFFFFFAA, " {FFFFFF}/chupamela{00FFFF}[1/6] {FFFFFF}/mamar{00FFFF}[1/5]");
 Mensaje(playerid, 0xFFFFFFAA, " {FFFFFF}=====================================================");
@@ -9652,7 +9652,7 @@ command(cuenta, playerid, params[])
 	
 COMMAND:ayuda(playerid, params[])
 {
-	ShowPlayerDialog(playerid, SOPORTE_D, DIALOG_STYLE_LIST, "ZonaZero{E48584} Soporte.", "» Comandos Generales\n» Sistema de Casas\n» Sistema de Vehiculos\n» Sistema de Negocios\n» Sistema de Familias\n» Comandos para Lideres\n» Sistema de Facciones\n» Comandos de Trabajo\n» Ayuda de Rol", "Aceptar", "Cancelar");
+	ShowPlayerDialog(playerid, SOPORTE_D, DIALOG_STYLE_LIST, "Colombia{E48584} Soporte.", "» Comandos Generales\n» Sistema de Casas\n» Sistema de Vehiculos\n» Sistema de Negocios\n» Sistema de Familias\n» Comandos para Lideres\n» Sistema de Facciones\n» Comandos de Trabajo\n» Ayuda de Rol", "Aceptar", "Cancelar");
 	return 1;
 }
 COMMAND:ah2014(playerid, params[])
@@ -10290,7 +10290,7 @@ COMMAND:darlider(playerid, params[])
       		new string[128];
         	format(string, sizeof(string), "{FFFFFF}AdmWarning: {3F96CB}%s {FFFFFF}ha rechazado el reporte de [ID:%d] {FF0000}%s.", PlayerName(playerid), params[0], PlayerName(params[0]));
          	MensajeAdmin(-1, string, 1);
-          	format(string, sizeof(string), "{80FF00}*ZZ-RP*: {FFFFFF}Administrador {FF0000}%s [ID:%d] {FFFFFF}ha rechazado su reporte.", PlayerName(playerid), playerid);
+          	format(string, sizeof(string), "{80FF00}*CO-RP*: {FFFFFF}Administrador {FF0000}%s [ID:%d] {FFFFFF}ha rechazado su reporte.", PlayerName(playerid), playerid);
            	Mensaje(params[0], -1, string);
             booleano[PlayerNeedsHelp]{params[0]} = false;
         }
@@ -10307,7 +10307,7 @@ COMMAND:darlider(playerid, params[])
    			new string[128];
 			format(string, sizeof(string), "{FFFFFF}AdmWarning: {80FF00}%s {FFFFFF}ha aceptado el reporte de [ID:%d] {FF0000}%s.", PlayerName(playerid), params[0], PlayerName(params[0]));
 			MensajeAdmin(-1, string, 1);
-			format(string, sizeof(string), "{80FF00}*ZZ-RP*: {FFFFFF}Administrador {FF0000}%s [ID:%d] {FFFFFF}ha aceptado tu reporte porfavor espere.", PlayerName(playerid), playerid);
+			format(string, sizeof(string), "{80FF00}*CO-RP*: {FFFFFF}Administrador {FF0000}%s [ID:%d] {FFFFFF}ha aceptado tu reporte porfavor espere.", PlayerName(playerid), playerid);
 			Mensaje(params[0], -1, string);
 			booleano[PlayerNeedsHelp]{params[0]} = false;
 		}
@@ -11546,7 +11546,7 @@ command(adminduty, playerid, params[]){
 			case 1 .. 4: SetPlayerColor(playerid, 0xFFD70000);
 			default: SetPlayerColor(playerid, 0xFFFFFF00);
 		}
-		format(string, sizeof(string), "{FFFFFF}[ADM]{BF0000} %s está fuera de servicio.", PlayerName(playerid), playerid); BroadCast(0xBF0000FF, string);
+		format(string, sizeof(string), "{FFFFFF}[ADM]{BF0000} %s Ya no está Atendiendo Dudas.", PlayerName(playerid), playerid); BroadCast(0xBF0000FF, string);
 	}
 	return 1;
 }
@@ -13188,7 +13188,7 @@ command(b, playerid, params[])
     {
 		new string[610];
 		new di[] = "{FFFFFF}Este nuevo canal de ayuda es para dar más facilidad a los usuarios menores de nivel 6, ya que los administradores o helpers \nresponderán y si otro user tenia la misma inquietud se habrá respondido su Pregunta rapidamente.\n {26FF67}*Recuerda que solo son para usuarios de nivel 1 al 5.";
-		new di2[] = "\n *Si surge algún cRobolema con su cuenta solo Utiliza: /duda.\n *Si sabes rolear y no necesitas este canal usa /togooc\n *No abuses del comando o te banearan del sistema.\n\n\n\t\t\t\t{429EE6}http://www.zonazerorp.com/";
+		new di2[] = "\n *Si surge algún cRobolema con su cuenta solo Utiliza: /duda.\n *Si sabes rolear y no necesitas este canal usa /togooc\n *No abuses del comando o te banearan del sistema.\n\n\n\t\t\t\t{429EE6}(FORO PROX)";
 		format(string, sizeof(string), "%s %s", di, di2);
         return ShowPlayerDialog(playerid, 999, DIALOG_STYLE_MSGBOX, "{FF231D}Info del uso de /new", string, "Ok", "" );
 	}
@@ -15198,7 +15198,7 @@ public OnVehicleMod(playerid, vehicleid, componentid)
         Menu[0]='\0';
         strcat(Menu, "{FFFFFF} Has sido kickeado por intento de Car Crash.  \n", 1024);
         strcat(Menu, "{FFFFFF} Si es un error, evite tunear su auto con lo último que le puso.  \n", 1024);
-        ShowPlayerDialog(playerid, 9046, DIALOG_STYLE_MSGBOX, " {FF0000}Advertencia - ZonaZero: ", Menu, "Aceptar", "Cerrar") ;
+        ShowPlayerDialog(playerid, 9046, DIALOG_STYLE_MSGBOX, " {FF0000}Advertencia - Colombia: ", Menu, "Aceptar", "Cerrar") ;
         GetPlayerName(playerid, Name, sizeof(Name));
         format(Texto, sizeof(Texto), "Servidor: %s ha sido expulsado por el anticheat. Razón: Car Crash.", Name);
         MensajeGlobal(COLOR_AMARILLO2, Texto);
@@ -16488,7 +16488,7 @@ public OnPlayerConnect(playerid)
 	//
 	if(strfind(Nombre(playerid), "_", true) == -1 || EncontroNumeroCaracter(playerid))
 	{
-		Mensaje(playerid, COLOR_AMARILLO3, "| -=== ZonaZero ===- |");
+		Mensaje(playerid, COLOR_AMARILLO3, "| -=== Colombia ===- |");
 		Mensaje(playerid, COLOR_AMARILLO3, "Su nombre debe ser en el formato Nombre_Apellido. Ejemplo: Juan_Perez");
 		Kick(playerid);
 		return 1;
@@ -18292,7 +18292,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 			{
 				case 0:
 				{
-				Mensaje(playerid, -1, "Comandos ZonaZero RP:");
+				Mensaje(playerid, -1, "Comandos Colombia-RP:");
 				Mensaje(playerid, -1, "{E48584}Comandos Administrativos:{FFFFFF} /re /duda /solicitaradmin");
 				Mensaje(playerid, -1, "{E48584}Comandos Generales:{FFFFFF} /pagar /hora /id /acciones /cedula /licencias /iphone /numtarjeta");
 				Mensaje(playerid, -1, "{E48584}Comandos Generales:{FFFFFF} /tirar /recoger /subirnivel /inventario /estilocaminar");
@@ -18307,14 +18307,14 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 				}
 				case 1:
 				{
-				Mensaje(playerid, -1, "Comandos ZonaZero RP:");
+				Mensaje(playerid, -1, "Comandos Colombia-RP:");
 				Mensaje(playerid, -1, "{E48584}Sistema de Propiedades:{FFFFFF} /vendercasa /rcuarto /desalojar /desrentar /cinfo");
                 Mensaje(playerid, -1, "{E48584}Sistema de Propiedades:{FFFFFF} /houseid /comprarcasa /houseint /cajafuerte /renta");
                 Mensaje(playerid, -1, "{E48584}Sistema de Propiedades:{FFFFFF} /vendercas [Jugador a jugador] /pagarcasa [Ubicado dentro del Ayuntamiento NPC]");
 				}
 				case 2:
 				{
-				Mensaje(playerid, -1, "Comandos ZonaZero RP:");
+				Mensaje(playerid, -1, "Comandos Colombia-RP:");
                 Mensaje(playerid, -1, "{E48584}Sistema de Vehículos:{FFFFFF} /papeles /ejectar /vmaletero");
                 Mensaje(playerid, -1, "{E48584}Sistema de Vehículos:{FFFFFF} /llenar /pcu(gasolina) /cinturon /ven /vehiculo /venderauto");
                 Mensaje(playerid, -1, "{E48584}Sistema de Vehículos:{FFFFFF} /venderveh [Jugador a jugador]");
@@ -18322,20 +18322,20 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                 Mensaje(playerid, -1, "{E48584}Sistema de Vehículos:{FFFFFF} /pagarauto [Ubicado dentro del Ayuntamiento - NPC]");
 				}
 				case 3:{
-				Mensaje(playerid, -1, "Comandos ZonaZero RP:");
+				Mensaje(playerid, -1, "Comandos Colombia-RP:");
 				Mensaje(playerid, -1, "{E48584}Sistema de Negocios:{FFFFFF} /comprarnegocio /sganancias /extorcion /qextorcion /recaudar /vendernegocio");
 				Mensaje(playerid, -1, "{E48584}Sistema de Negocios:{FFFFFF} /pagarnegocio /costoentrada /comprarproductos /negocio");
 				Mensaje(playerid, -1, "{E48584}Sistema de Negocios:{FFFFFF} /venderneg [Jugador a jugador] /pagarnegocio [Ubicado dentro del Ayuntamiento NPC]");
 				}
 				case 4:{
-					Mensaje(playerid, -1, "Comandos ZonaZero RP:");
+					Mensaje(playerid, -1, "Comandos Colombia-RP:");
 					Mensaje(playerid, -1, "{E48584}Sistema de familias:");
 					Mensaje(playerid, -1, "{E48584}Comandos Lider:{FFFFFF} /fnombre /frangos /fhechar /freclutar /frango /fcuartel /ftogfac");
 					Mensaje(playerid, -1, "{E48584}Comandos Miembros:{FFFFFF} /fmiembros /fam (Canal OOC) /fr (Radio) /familias /fsalir");
 				}
 				case 5:
 				{
-					Mensaje(playerid, -1, "Comandos ZonaZero RP:");
+					Mensaje(playerid, -1, "Comandos Colombia-RP:");
 					Mensaje(playerid, -1, "{E48584}Comandos para Líderes");
 					Mensaje(playerid, -1, "{AFAFAF}[*] /contratar: {FFFFFF}Contrata miembros de forma IG");
 					Mensaje(playerid, -1, "{AFAFAF}[*] /faccion: {FFFFFF}Edita a tus miembros de modo [OFFLINE], asciende, degrada y expulsa!");
@@ -20398,49 +20398,49 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	                    format(string, sizeof(string), "Atención: %s [%d] ha solicitado a un Ayudante.", PlayerName(playerid), playerid);
 	                    MensajeAdmin(0xEBBDA3FF, string, 1);
 	                    booleano[PlayerSol]{playerid} = true;
-	                    Mensaje(playerid, -1, "{1AFF2A}ZZ-RP{FFFFFF}: En breve un Ayudante le dará soporte");
+	                    Mensaje(playerid, -1, "{1AFF2A}CO-RP{FFFFFF}: En breve un Ayudante le dará soporte");
 					}
 					case 1:
 					{
 	                    format(string, sizeof(string), "Atención: %s [%d] ha solicitado a un Moderador.", PlayerName(playerid), playerid);
 	                    MensajeAdmin(0xEBBDA3FF, string, 1);
 	                    booleano[PlayerSol]{playerid} = true;
-	                    Mensaje(playerid, -1, "{1AFF2A}ZZ-RP{FFFFFF}: En breve un moderador le dará soporte");
+	                    Mensaje(playerid, -1, "{1AFF2A}CO-RP{FFFFFF}: En breve un moderador le dará soporte");
 					}
 					case 2:
 					{
 	                    format(string, sizeof(string), "Atención: %s [%d] ha solicitado a un Administrador.", PlayerName(playerid), playerid);
 	                    MensajeAdmin(0xEBBDA3FF, string, 1);
 	                    booleano[PlayerSol]{playerid} = true;
-	                    Mensaje(playerid, -1, "{1AFF2A}ZZ-RP{FFFFFF}: En breve un Administrador le dará soporte");
+	                    Mensaje(playerid, -1, "{1AFF2A}CO-RP{FFFFFF}: En breve un Administrador le dará soporte");
 					}
 					case 3:
 					{
 	                    format(string, sizeof(string), "Atención: %s [%d] ha solicitado a un Administrador General/Encargado de Facciones [2012].", PlayerName(playerid), playerid);
 	                    MensajeAdmin(0xEBBDA3FF, string, 1);
 	                    booleano[PlayerSol]{playerid} = true;
-	                    Mensaje(playerid, -1, "{1AFF2A}ZZ-RP{FFFFFF}: En breve un Administrador General/Encargado de Facciones le dará soporte.");
+	                    Mensaje(playerid, -1, "{1AFF2A}CO-RP{FFFFFF}: En breve un Administrador General/Encargado de Facciones le dará soporte.");
 					}
 					case 4:
 					{
 	                    format(string, sizeof(string), "Atención: %s [%d] ha solicitado a un Administrador Dueño/Encargado de Staff [2013].", PlayerName(playerid), playerid);
 	                    MensajeAdmin(0xEBBDA3FF, string, 1);
 	                    booleano[PlayerSol]{playerid} = true;
-	                    Mensaje(playerid, -1, "{1AFF2A}ZZ-RP{FFFFFF}: En breve un Administrador Dueño/Encargado de Staff le dará soporte");
+	                    Mensaje(playerid, -1, "{1AFF2A}CO-RP{FFFFFF}: En breve un Administrador Dueño/Encargado de Staff le dará soporte");
 					}
 					case 5:
 					{
 	                    format(string, sizeof(string), "Atención: %s [%d] ha solicitado a un Scripter/Mapper [2014].", PlayerName(playerid), playerid);
 	                    MensajeAdmin(0xEBBDA3FF, string, 1);
 	                    booleano[PlayerSol]{playerid} = true;
-	                    Mensaje(playerid, -1, "{1AFF2A}ZZ-RP{FFFFFF}: En breve un Scripter/Mapper le dará soporte.");
+	                    Mensaje(playerid, -1, "{1AFF2A}CO-RP{FFFFFF}: En breve un Scripter/Mapper le dará soporte.");
 					}
 					case 6:
 					{
 	                    format(string, sizeof(string), "Atención: %s [%d] ha solicitado a un Dueño [2014].", PlayerName(playerid), playerid);
 	                    MensajeAdmin(0xEBBDA3FF, string, 1);
 	                    booleano[PlayerSol]{playerid} = true;
-	                    Mensaje(playerid, -1, "{1AFF2A}ZZ-RP{FFFFFF}: En breve un Dueño le dará soporte.");
+	                    Mensaje(playerid, -1, "{1AFF2A}CO-RP{FFFFFF}: En breve un Dueño le dará soporte.");
 					}
 				}
 			}
@@ -24392,7 +24392,7 @@ CallBack::StreamMedioSegundo()
 		//Textdraw Banco y Barra
 		new date[3];
 		getdate(date[0], date[1], date[2]);
-		format(string, sizeof(string), "     ~p~>~w~foro.zonazerorp.com     ~g~>~w~Nivel: %d ~r~>~w~Experiencia: %d/%d ~y~>~w~Fecha: %02d/%02d/%04d    ~b~>~w~RolePlay "Version"", cuenta[playerid][cNivel], cuenta[playerid][cExperiencia], (cuenta[playerid][cNivel] + 1) * levelexp, date[2], date[1], date[0]);
+		format(string, sizeof(string), "     ~p~>~w~ 	discord.gg/KQta6CQ     ~g~>~w~Nivel: %d ~r~>~w~Experiencia: %d/%d ~y~>~w~Fecha: %02d/%02d/%04d    ~b~>~w~RolePlay "Version"", cuenta[playerid][cNivel], cuenta[playerid][cExperiencia], (cuenta[playerid][cNivel] + 1) * levelexp, date[2], date[1], date[0]);
 		PlayerTextDrawSetString(playerid, InfoText[playerid][1], string);
 		format(string, sizeof(string), "~b~$~w~%08d", cuenta[playerid][cDineroBanco]);
 		PlayerTextDrawSetString(playerid, InfoText[playerid][3], string);
@@ -26137,7 +26137,7 @@ LoadPlayerText(playerid)
     PlayerTextDrawFont(playerid, InfoText[playerid][0], 1);
     PlayerTextDrawSetProportional(playerid, InfoText[playerid][0], 1);
 	
-	InfoText[playerid][1] = CreatePlayerTextDraw(playerid, -21.000000, 432.000000, "     ~p~>~w~WWW.ZONAZERORP.COM     ~g~>~w~Nivel: 100 ~r~>~w~Experiencia: 100/100 ~y~>~w~Fecha: 30/07/2014    ~b~>~w~RolePlay "Version"");
+	InfoText[playerid][1] = CreatePlayerTextDraw(playerid, -21.000000, 432.000000, "     ~p~>~w~(FORO PROX)     ~g~>~w~Nivel: 100 ~r~>~w~Experiencia: 100/100 ~y~>~w~Fecha: 30/07/2014    ~b~>~w~RolePlay "Version"");
 	PlayerTextDrawBackgroundColor(playerid, InfoText[playerid][0], 255);
 	PlayerTextDrawFont(playerid, InfoText[playerid][1], 1);
 	PlayerTextDrawLetterSize(playerid, InfoText[playerid][1], 0.330000, 1.600000);
@@ -26170,7 +26170,7 @@ LoadPlayerText(playerid)
 	PlayerTextDrawSetProportional(playerid, InfoText[playerid][3], 1);
 	PlayerTextDrawSetSelectable(playerid, InfoText[playerid][3], 0);
 
-	InfoText[playerid][4] = CreatePlayerTextDraw(playerid, 320.000000, 145.000000, "ZonaZero es una comunidad de SAMP RolePlay en la que encontrarás muchas opciones para divertirte.~n~");
+	InfoText[playerid][4] = CreatePlayerTextDraw(playerid, 320.000000, 145.000000, "Colombia-RP es una comunidad de SAMP RolePlay en la que encontrarás muchas opciones para divertirte.~n~");
 	PlayerTextDrawAlignment(playerid, InfoText[playerid][4], 2);
 	PlayerTextDrawBackgroundColor(playerid, InfoText[playerid][4], 255);
 	PlayerTextDrawFont(playerid, InfoText[playerid][4], 2);
@@ -29024,10 +29024,10 @@ COMMAND:cosecharsemilla(playerid, params[])
 COMMAND:drogas(playerid, params[]){
 	new string[128];
 	Mensaje(playerid, COLOR_BLANCO, "Drogas Encima:");
-	format(string, sizeof(string), "Drogas: %d - Speed: %d - Extasis: %d - Ritalin: %d - Heroína: %d - Marihuana: %d", cuenta[playerid][cDrogas], cuenta[playerid][cSpeed], cuenta[playerid][cExtasis], cuenta[playerid][cRitalin], cuenta[playerid][cCocaina], cuenta[playerid][cMarihuana]);
+	format(string, sizeof(string), "Drogas: %d - Speed: %d - Extasis: %d - Ritalin: %d - Cocaina: %d - Marihuana: %d", cuenta[playerid][cDrogas], cuenta[playerid][cSpeed], cuenta[playerid][cExtasis], cuenta[playerid][cRitalin], cuenta[playerid][cCocaina], cuenta[playerid][cMarihuana]);
 	Mensaje(playerid, COLOR_AMARILLO2, string);
 	Mensaje(playerid, COLOR_BLANCO, "Semillas Encima:");
-	format(string, sizeof(string), "Speed: %d - Extasis: %d - Ritalin: %d - Heroína: %d - Marihuana: %d", cuenta[playerid][cSemillas][0], cuenta[playerid][cSemillas][1], cuenta[playerid][cSemillas][2], cuenta[playerid][cSemillas][3], cuenta[playerid][cSemillas][4]);
+	format(string, sizeof(string), "Speed: %d - Extasis: %d - Ritalin: %d - Cocaina: %d - Marihuana: %d", cuenta[playerid][cSemillas][0], cuenta[playerid][cSemillas][1], cuenta[playerid][cSemillas][2], cuenta[playerid][cSemillas][3], cuenta[playerid][cSemillas][4]);
 	Mensaje(playerid, COLOR_AMARILLO2, string);
 	return 1;
 }
@@ -31935,7 +31935,7 @@ Funcion.NombreDroga(droga)
 		case 1: tmp = "Speed";
 		case 2: tmp = "Extasis";
 		case 3: tmp = "Ritalin";
-		case 4: tmp = "Heroína";
+		case 4: tmp = "Cocaina";
 		case 5: tmp = "Marihuana";
 	}
 	return tmp;
