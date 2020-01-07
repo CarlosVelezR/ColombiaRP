@@ -1,18 +1,15 @@
 /*
 *	(c) Copyright 2013 - 2014
 *
-*	Nombre del proyecto: Colombia Roleplay
-*	Desarrollador:   Carlos_Velez, Camilo_Velez
+*	Nombre del proyecto:	ZonaZero RolePlay
+*	Desarrollador:			Parka, Lucas Clemente, Sergio Mitnick.
 *
 *	Include: zz_mapas.pwn
 *
 */
-
-#include <streamer>
 #pragma tabsize 0
 
 RemoveObjects(playerid){
-
 		//Parking cerca Buses
 		RemoveBuildingForPlayer(playerid, 1290, 1080.8438, -1750.1797, 18.5781, 0.25);
 		//Fort Carson
@@ -81,83 +78,6 @@ RemoveObjects(playerid){
         RemoveBuildingForPlayer(playerid, 3221, 121.140, 1076.789, 12.664, 0.250);
         RemoveBuildingForPlayer(playerid, 3221, 128.140, 1076.789, 12.664, 0.250);
         RemoveBuildingForPlayer(playerid, 3221, 122.968, 1067.203, 12.664, 0.250);
-
-   //Remover Cartel de Medellin
-
-
-	RemoveBuildingForPlayer(playerid, 710, 1466.4219, 794.5391, 25.1484, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1553.4375, 675.8281, 25.5469, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1440.2578, 794.5391, 25.5469, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1492.5938, 794.5391, 25.5469, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1517.0625, 795.1953, 24.9844, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1537.0000, 792.1250, 25.1094, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1402.0859, 785.1172, 25.5469, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1402.5469, 762.4453, 25.1406, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1402.0859, 737.8828, 25.5469, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1402.0859, 716.0313, 25.5469, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1402.0859, 690.7266, 25.5469, 0.25);
-	RemoveBuildingForPlayer(playerid, 710, 1402.6172, 668.3828, 25.5469, 0.25);
-	RemoveBuildingForPlayer(playerid, 8145, 1493.9297, 751.0156, 20.9141, 0.25);
-	RemoveBuildingForPlayer(playerid, 8146, 1544.6172, 676.2109, 20.5156, 0.25);
-	RemoveBuildingForPlayer(playerid, 1294, 1338.9844, 715.0938, 14.2734, 0.25);
-	RemoveBuildingForPlayer(playerid, 1294, 1355.5781, 682.1016, 14.2734, 0.25);
-	RemoveBuildingForPlayer(playerid, 1294, 1355.7500, 744.9063, 14.2969, 0.25);
-	RemoveBuildingForPlayer(playerid, 1294, 1388.5703, 661.7266, 14.2734, 0.25);
-	RemoveBuildingForPlayer(playerid, 759, 1402.5703, 711.9297, 10.1875, 0.25);
-	RemoveBuildingForPlayer(playerid, 673, 1402.6016, 673.0469, 9.3203, 0.25);
-	RemoveBuildingForPlayer(playerid, 759, 1405.5938, 667.2266, 10.1875, 0.25);
-	RemoveBuildingForPlayer(playerid, 676, 1403.7422, 681.4688, 10.0000, 0.25);
-	RemoveBuildingForPlayer(playerid, 759, 1403.9531, 718.0469, 10.1875, 0.25);
-	RemoveBuildingForPlayer(playerid, 759, 1400.4844, 740.8594, 10.1875, 0.25);
-	RemoveBuildingForPlayer(playerid, 760, 1418.2109, 736.4766, 10.2188, 0.25);
-	RemoveBuildingForPlayer(playerid, 676, 1413.1016, 724.4922, 10.0000, 0.25);
-	RemoveBuildingForPlayer(playerid, 676, 1403.0859, 792.0078, 10.0000, 0.25);
-	RemoveBuildingForPlayer(playerid, 759, 1417.9453, 795.0000, 10.1875, 0.25);
-	RemoveBuildingForPlayer(playerid, 680, 1420.4141, 666.5547, 9.9688, 0.25);
-	RemoveBuildingForPlayer(playerid, 8132, 1436.5938, 673.2578, 12.4297, 0.25);
-	RemoveBuildingForPlayer(playerid, 1215, 1450.5469, 766.6406, 10.4688, 0.25);
-	RemoveBuildingForPlayer(playerid, 680, 1451.9297, 765.3594, 10.1250, 0.25);
-	RemoveBuildingForPlayer(playerid, 761, 1442.8125, 792.9844, 10.2031, 0.25);
-	RemoveBuildingForPlayer(playerid, 761, 1455.8672, 736.1016, 10.2031, 0.25);
-	RemoveBuildingForPlayer(playerid, 673, 1453.7969, 736.9609, 9.7031, 0.25);
-	RemoveBuildingForPlayer(playerid, 746, 1457.3047, 763.9688, 10.1406, 0.25);
-	RemoveBuildingForPlayer(playerid, 761, 1458.1406, 738.7969, 10.2031, 0.25);
-	RemoveBuildingForPlayer(playerid, 1294, 1465.6563, 661.6016, 14.2734, 0.25);
-	RemoveBuildingForPlayer(playerid, 680, 1467.2266, 669.6953, 9.7031, 0.25);
-	RemoveBuildingForPlayer(playerid, 761, 1479.8672, 668.7344, 10.2031, 0.25);
-	RemoveBuildingForPlayer(playerid, 712, 1473.2813, 671.2266, 19.4609, 0.25);
-	RemoveBuildingForPlayer(playerid, 759, 1491.6094, 668.4766, 10.2813, 0.25);
-	RemoveBuildingForPlayer(playerid, 712, 1489.5469, 672.5000, 19.4219, 0.25);
-	RemoveBuildingForPlayer(playerid, 760, 1487.2422, 670.9609, 10.2188, 0.25);
-	RemoveBuildingForPlayer(playerid, 746, 1501.6719, 673.8281, 10.3438, 0.25);
-	RemoveBuildingForPlayer(playerid, 712, 1506.5000, 672.5000, 19.3516, 0.25);
-	RemoveBuildingForPlayer(playerid, 746, 1473.6953, 681.1484, 10.2969, 0.25);
-	RemoveBuildingForPlayer(playerid, 746, 1498.3672, 682.0313, 10.0859, 0.25);
-	RemoveBuildingForPlayer(playerid, 680, 1504.3438, 679.3594, 9.7031, 0.25);
-	RemoveBuildingForPlayer(playerid, 761, 1501.1250, 685.2656, 10.2031, 0.25);
-	RemoveBuildingForPlayer(playerid, 1350, 1537.6641, 658.7266, 9.7891, 0.25);
-	RemoveBuildingForPlayer(playerid, 1294, 1544.9297, 661.6797, 14.2734, 0.25);
-	RemoveBuildingForPlayer(playerid, 746, 1552.4922, 666.8594, 10.1016, 0.25);
-	RemoveBuildingForPlayer(playerid, 8131, 1544.6172, 676.2109, 20.5156, 0.25);
-	RemoveBuildingForPlayer(playerid, 746, 1552.4922, 685.4688, 10.1016, 0.25);
-	RemoveBuildingForPlayer(playerid, 761, 1548.4375, 686.6172, 10.1641, 0.25);
-	RemoveBuildingForPlayer(playerid, 760, 1553.5469, 707.1641, 10.2188, 0.25);
-	RemoveBuildingForPlayer(playerid, 712, 1555.4844, 710.5000, 19.3359, 0.25);
-	RemoveBuildingForPlayer(playerid, 760, 1534.2266, 736.0156, 10.2188, 0.25);
-	RemoveBuildingForPlayer(playerid, 761, 1535.8750, 739.1875, 10.2031, 0.25);
-	RemoveBuildingForPlayer(playerid, 8130, 1493.9297, 751.0156, 20.9141, 0.25);
-	RemoveBuildingForPlayer(playerid, 712, 1553.9297, 729.3516, 19.4375, 0.25);
-	RemoveBuildingForPlayer(playerid, 1294, 1559.0000, 728.8906, 14.2734, 0.25);
-	RemoveBuildingForPlayer(playerid, 712, 1553.9297, 746.9063, 19.4375, 0.25);
-	RemoveBuildingForPlayer(playerid, 761, 1553.9375, 749.4453, 10.1641, 0.25);
-	RemoveBuildingForPlayer(playerid, 761, 1493.8594, 785.2422, 10.0000, 0.25);
-	RemoveBuildingForPlayer(playerid, 759, 1493.3281, 789.5078, 10.1875, 0.25);
-	RemoveBuildingForPlayer(playerid, 676, 1553.6563, 785.9219, 9.9844, 0.25);
-	RemoveBuildingForPlayer(playerid, 746, 1553.5469, 792.3125, 10.0781, 0.25);
-	RemoveBuildingForPlayer(playerid, 761, 1514.6250, 794.4453, 10.2031, 0.25);
-	RemoveBuildingForPlayer(playerid, 680, 1545.7266, 793.7266, 9.7031, 0.25);
-	RemoveBuildingForPlayer(playerid, 676, 1527.3438, 794.0547, 9.9844, 0.25);
-	RemoveBuildingForPlayer(playerid, 676, 1506.0156, 794.0547, 9.9844, 0.25);
 	//Nueva prisión By Parka y Lucas
 	RemoveBuildingForPlayer(playerid, 2186, 325.2656, 302.5000, 998.1406, 0.25);
 	RemoveBuildingForPlayer(playerid, 2616, 325.8281, 302.0391, 1000.2578, 0.25);
@@ -7746,73 +7666,6 @@ CargarMapeos(){
 	CreateObject(8880, 1481.0899700, -807.5900300, 76.7200000, 48.0930000, 179.9950000, 179.9950000);//object(vgsecnstrct09)(17)
 	CreateObject(8880, 1488.1600300, -807.6099900, 76.1900000, 48.0930000, 179.9950000, 179.9950000);//object(vgsecnstrct09)(18)
 	CreateObject(8880, 1488.1600300, -807.6099900, 78.1700000, 48.0930000, 179.9950000, 179.9950000);//object(vgsecnstrct09)(19)
- //Cartel de Medellin HQ "CDM" By- Camilo Velez
-	CreateObject(8171, 1378.21887, 732.20258, 9.83080,   0.00000, 0.00000, 0.00000);
-	CreateObject(3749, 1447.39880, 663.68488, 15.16810,   0.00000, 0.00000, 0.00000);
-	CreateObject(3749, 1527.25598, 663.35999, 15.16810,   0.00000, 0.00000, 0.00000);
-	CreateObject(3934, 1544.04089, 676.35437, 9.81790,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1457.23389, 661.90082, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1469.25513, 661.91180, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1481.24792, 661.91431, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1493.22705, 661.89716, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1505.20032, 661.89276, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1537.12415, 662.19928, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1546.90149, 662.13214, 9.64830,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1426.14551, 662.59155, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1414.19922, 662.57477, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1390.23950, 662.55634, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1402.20886, 662.55267, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1378.27881, 662.54407, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1356.45935, 662.72211, 9.64830,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1366.47791, 662.71906, 9.64829,   0.00000, 0.00000, 0.00000);
-	CreateObject(987, 1356.40051, 674.80151, 9.81960,   0.00000, 0.00000, -90.02000);
-	CreateObject(987, 1356.37854, 686.75836, 9.81960,   0.00000, 0.00000, -90.02000);
-	CreateObject(987, 1356.37390, 698.73352, 9.81960,   0.00000, 0.00000, -90.02000);
-	CreateObject(987, 1356.36682, 707.22693, 9.81960,   0.00000, 0.00000, -90.02000);
-	CreateObject(987, 1356.35339, 733.23962, 9.81960,   0.00000, 0.00000, -90.02000);
-	CreateObject(3749, 1356.46692, 714.01257, 15.20400,   0.00000, 0.00000, -90.00000);
-	CreateObject(3749, 1355.95154, 775.66406, 14.70400,   0.00000, 0.00000, -90.00000);
-	CreateObject(987, 1356.33130, 745.16919, 9.81960,   0.00000, 0.00000, -90.02000);
-	CreateObject(987, 1356.38525, 769.10870, 9.81960,   0.00000, 0.00000, -90.02000);
-	CreateObject(987, 1356.37598, 757.14850, 9.81960,   0.00000, 0.00000, -90.02000);
-	CreateObject(987, 1356.39844, 797.44250, 9.81960,   0.00000, 0.00000, -90.02000);
-	CreateObject(987, 1356.40833, 803.42126, 9.81960,   0.00000, 0.00000, -90.02000);
-	CreateObject(987, 1368.32861, 803.36530, 9.81960,   0.00000, 0.00000, 180.00000);
-	CreateObject(987, 1380.28088, 803.36029, 9.81960,   0.00000, 0.00000, 180.00000);
-	CreateObject(987, 1392.23193, 803.36438, 9.81960,   0.00000, 0.00000, 180.00000);
-	CreateObject(987, 1404.19165, 803.29285, 9.81960,   0.00000, 0.00000, 179.64001);
-	CreateObject(987, 1392.23193, 803.36438, 9.81960,   0.00000, 0.00000, 180.00000);
-	CreateObject(987, 1416.19434, 803.20013, 9.81960,   0.00000, 0.00000, 179.64001);
-	CreateObject(987, 1428.14893, 803.17444, 9.81960,   0.00000, 0.00000, 179.64001);
-	CreateObject(987, 1440.04529, 803.11188, 9.81960,   0.00000, 0.00000, 179.64001);
-	CreateObject(987, 1451.97461, 802.93646, 9.81960,   0.00000, 0.00000, 179.14000);
-	CreateObject(987, 1463.88074, 802.76776, 9.81960,   0.00000, 0.00000, 179.14000);
-	CreateObject(987, 1475.82056, 802.60156, 9.81960,   0.00000, 0.00000, 179.14000);
-	CreateObject(987, 1487.75488, 802.42297, 9.81960,   0.00000, 0.00000, 179.14000);
-	CreateObject(987, 1499.73547, 802.29266, 9.81960,   0.00000, 0.00000, 179.14000);
-	CreateObject(987, 1511.67761, 802.26093, 9.81960,   0.00000, 0.00000, 179.64000);
-	CreateObject(987, 1523.60034, 802.18488, 9.81960,   0.00000, 0.00000, 179.64000);
-	CreateObject(987, 1535.53503, 802.12927, 9.81960,   0.00000, 0.00000, 179.64000);
-	CreateObject(987, 1547.46118, 802.07635, 9.81960,   0.00000, 0.00000, 179.64000);
-	CreateObject(987, 1559.37463, 802.00244, 9.81960,   0.00000, 0.00000, 179.64000);
-	CreateObject(987, 1559.26465, 790.10834, 9.81960,   0.00000, 0.00000, 90.00000);
-	CreateObject(987, 1559.25708, 778.16949, 9.81960,   0.00000, 0.00000, 90.00000);
-	CreateObject(987, 1559.26318, 766.24060, 9.81960,   0.00000, 0.00000, 90.00000);
-	CreateObject(987, 1559.26599, 754.30322, 9.81960,   0.00000, 0.00000, 90.00000);
-	CreateObject(987, 1559.16602, 742.35284, 9.81960,   0.00000, 0.00000, 89.50000);
-	CreateObject(987, 1559.07117, 730.39673, 9.81960,   0.00000, 0.00000, 89.50000);
-	CreateObject(987, 1558.97571, 718.47205, 9.81960,   0.00000, 0.00000, 89.50000);
-	CreateObject(987, 1558.97217, 706.52496, 9.81960,   0.00000, 0.00000, 90.00000);
-	CreateObject(987, 1558.99927, 694.57788, 9.81960,   0.00000, 0.00000, 90.00000);
-	CreateObject(987, 1559.00952, 682.65045, 9.81960,   0.00000, 0.00000, 90.00000);
-	CreateObject(987, 1558.93005, 670.72736, 9.81960,   0.00000, 0.00000, 89.50000);
-	CreateObject(987, 1558.85999, 662.09308, 9.81960,   0.00000, 0.00000, 89.50000);
-	CreateObject(3598, 1524.26099, 738.91949, 12.11880,   0.00000, 0.00000, 0.00000);
-	CreateObject(13681, 1495.35645, 743.53809, 15.00540,   0.00000, 0.00000, 1.00000);
-	CreateObject(3598, 1465.96887, 740.06342, 12.11880,   0.00000, 0.00000, 0.00000);
-	CreateObject(3598, 1465.99915, 762.65869, 12.11880,   0.00000, 0.00000, 180.00000);
-	CreateObject(3598, 1494.84448, 762.39648, 12.11880,   0.00000, 0.00000, 180.00000);
-	CreateObject(3598, 1523.08936, 762.46490, 12.11880,   0.00000, 0.00000, 180.00000);
 	///CIRCUITO
 	CreateDynamicObject(18981, 1266.01965, -1295.34619, 1600.05432, 0.00000, 90.00000, 0.00000);
 	CreateDynamicObject(18981, 1290.72375, -1295.22119, 1600.05432, 0.00000, 90.00000, 0.00000);
@@ -15406,5 +15259,4 @@ tmpobjid = CreateDynamicObjectEx(1687, 1286.392, -1001.470, 44.913, -0.699, 0.59
 	
 	
 	printf("-CreateDynamicObjetcs[%d]", CountDynamicObjects());
-
 }

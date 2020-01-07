@@ -1,10 +1,10 @@
 /*
-	*
+	*	(c) Copyright 2013 - 2015
 	*
 	*	Nombre del proyecto:	Colombia RolePlay
-	*	Desarrollador:   Carlos_Velez, Camilo_Velez
-	*   Mappers:                Camilo_Velez
-	*	Version:				1.0
+	*	Desarrollador:			Parka, Lucas Clemente(lolking), Sergio Mitnick.
+	*   Mappers:                Javier_Cardenas.
+	*	Version:				1.6.5.4
 	*
 	*	Principal: CO-RP.pwn
 	*
@@ -38,10 +38,10 @@ AntiDeAMX()
 #undef MAX_PLAYERS
 #define MAX_PLAYERS (150)
 
-#define Version			"V 1.0"
+#define Version			"v 0.1"
 #define ModeText		"RolePlay - RP - "Version""
 #define MapName			"mapname Bogotá"
-#define Hostname		"hostname Colombia Roleplay - Un Rol Colombiano [C:RP]"
+#define Hostname		"hostname Colombia Roleplay - Unete! [C:RP]"
 #define Language        "Español - LS"
 
 #define ShowLoginDialog(%1,%2)			ShowPlayerDialog(%1, %2, DIALOG_STYLE_PASSWORD, "Bienvenido una vez más! - {EE6C68}Colombia Roleplay", "{FFFFFF}Un cordial saludo.\n\n{FFFFFF}Ingresa tu contraseña para ingresar legalmente al servidor.\n\n{FFFFFF}Web: {4AACAA}(Proximamente)\n{FFFFFF}Facebook: {005982}(Proximamente)\n{FFFFFF}Discord: {B63221}discord.gg/KQta6CQ\n\n{FFFFFF}Recuerda ser activo en nuestro Servidor!.", "Ingresar", "Salir")
