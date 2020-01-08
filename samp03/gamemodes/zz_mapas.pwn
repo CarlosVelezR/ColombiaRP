@@ -10,6 +10,10 @@
 
 #include <streamer>
 #pragma tabsize 0
+#define _streamer_included
+
+#define sd 350.0
+#define dd 350.0 
 
 RemoveObjects(playerid){
 
@@ -2841,8 +2845,6 @@ RemoveObjects(playerid){
 	CreateObject(19124, 474.29001, 2381.69995, 28.45000,   0.00000, 0.00000, 0.00000);
 	CreateObject(19124, 473.31000, 2382.02002, 28.45000,   0.00000, 0.00000, 0.00000);
 
-	
-	
 	//Anti-DB (VARIOS)
 	CreateDynamicObject(971, 1977.27039, -1621.79224, 15.27220, 0.00000, 0.00000, 271.33060); //Reja cerca de Unity
 	CreateDynamicObject(984, 1851.66711, -1037.84070, 23.70750, 0.00000, 0.00000, 359.79080); //Aparcamiento grande
@@ -2867,6 +2869,10 @@ RemoveObjects(playerid){
 	CreateDynamicObject(1280, 1801.79589844, -1588.47436523, 12.93736362, 0.00000000, 0.00000000, 309.74853516);//object(parkbench1)(2)
 	CreateDynamicObject(1280, 1796.06933594, -1593.20556641, 12.93888855, 0.00000000, 0.00000000, 309.74853516);//object(parkbench1)(3)
 	CreateDynamicObject(6462, 1794.72363281, -1576.30712891, 14.55592728, 0.00000000, 0.00000000, 130.25000000);//object(pier04a_law2)(1)
+	//Isla
+
+
+	
 	//Gimnasio - Pablo Richman
 	CreateDynamicObject(14789, 2228.75928, -1697.26782, 6.00930, 0.00000, 0.00000, 0.00000);
 	CreateDynamicObject(1537, 2247.65308, -1721.64148, 1.77300, 0.00000, 0.00000, 180.00000);
