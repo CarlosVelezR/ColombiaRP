@@ -22764,6 +22764,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		    	{
 		        	case 0:
 		   			{
+		   			
+		   			// Radio "Audio Stream"
 			        Mensaje(playerid, COLOR_AMARILLO, "Guaracha Radio, Sintonizada");
 					GameTextForPlayer(playerid, "~w~Guaracha Sintonizada", 5000, 3);
 			        PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/00pfufak9qi14sz/FUMARASTTEN%20-%20Esquelefascina%20%28Vol.%202%29%20%20Aleteo%2C%20Zapateo%20%26%20Guaracha%20%20%28Dj%20Dasten%2C%20Fumaratto%29.mp3?dl=0");
