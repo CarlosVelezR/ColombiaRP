@@ -1725,9 +1725,9 @@ new const premiums[][_@en@premiums] =
 	{3, 1800, 1296000, "Premium Titanium"}, //titanium
 	{3, 3600, 2592000, "Premium Titanium"}, 
 	{3, 5800, 5184000, "Premium Titanium"}, 
-	{4, 5000, 1296000, "Premium ZZ Fans"}, //zz fans
-	{4, 9000, 2592000, "Premium ZZ Fans"}, 
-	{4, 16000, 5184000, "Premium ZZ Fans"}
+	{4, 5000, 1296000, "Premium C:RP Fans"}, //zz fans
+	{4, 9000, 2592000, "Premium C:RP Fans"},
+	{4, 16000, 5184000, "Premium C:RP Fans"}
 };
 
 new ReduceTimeb                                                                 [MAX_PLAYERS];
@@ -5872,32 +5872,32 @@ COMMAND:practicar(playerid, params[])
 			case 24:
 			{
 				if(cuenta[playerid][cDesert] >= 999)return Mensaje(playerid, COLOR_ROJO, "Ya no necesitas practicar con esta arma!");
-				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 ZZCASH]\n20 Secuencias[EXP: x3][220 ZZCASH]\n30 Secuencias[EXP: x4][400 ZZCASH]", "Aceptar", "Salir");
+				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 CRPCASH]\n20 Secuencias[EXP: x3][220 CRPCASH]\n30 Secuencias[EXP: x4][400 CRPCASH]", "Aceptar", "Salir");
 			}
 			case 25:
 			{
 				if(cuenta[playerid][cEscopeta] >= 999)return Mensaje(playerid, COLOR_ROJO, "Ya no necesitas practicar con esta arma!");
-				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 ZZCASH]\n20 Secuencias[EXP: x3][220 ZZCASH]\n30 Secuencias[EXP: x4][400 ZZCASH]", "Aceptar", "Salir");
+				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 CRPCASH]\n20 Secuencias[EXP: x3][220 CRPCASH]\n30 Secuencias[EXP: x4][400 CRPCASH]", "Aceptar", "Salir");
 			}
 			case 29:
 			{
 				if(cuenta[playerid][cMP5] >= 999)return Mensaje(playerid, COLOR_ROJO, "Ya no necesitas practicar con esta arma!");
-				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 ZZCASH]\n20 Secuencias[EXP: x3][220 ZZCASH]\n30 Secuencias[EXP: x4][400 ZZCASH]", "Aceptar", "Salir");
+				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 CRPCASH]\n20 Secuencias[EXP: x3][220 CRPCASH]\n30 Secuencias[EXP: x4][400 CRPCASH]", "Aceptar", "Salir");
 			}
 			case 30:
 			{
 				if(cuenta[playerid][cAK47] >= 999)return Mensaje(playerid, COLOR_ROJO, "Ya no necesitas practicar con esta arma!");
-				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 ZZCASH]\n20 Secuencias[EXP: x3][220 ZZCASH]\n30 Secuencias[EXP: x4][400 ZZCASH]", "Aceptar", "Salir");
+				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 CRPCASH]\n20 Secuencias[EXP: x3][220 CRPCASH]\n30 Secuencias[EXP: x4][400 CRPCASH]", "Aceptar", "Salir");
 			}
 			case 31:
 			{
 				if(cuenta[playerid][cM4] >= 999)return Mensaje(playerid, COLOR_ROJO, "Ya no necesitas practicar con esta arma!");
-				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 ZZCASH]\n20 Secuencias[EXP: x3][220 ZZCASH]\n30 Secuencias[EXP: x4][400 ZZCASH]", "Aceptar", "Salir");
+				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 CRPCASH]\n20 Secuencias[EXP: x3][220 CRPCASH]\n30 Secuencias[EXP: x4][400 CRPCASH]", "Aceptar", "Salir");
 			}
 			case 34:
 			{
 				if(cuenta[playerid][cSniper] >= 999)return Mensaje(playerid, COLOR_ROJO, "Ya no necesitas practicar con esta arma!");
-				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 ZZCASH]\n20 Secuencias[EXP: x3][220 ZZCASH]\n30 Secuencias[EXP: x4][400 ZZCASH]", "Aceptar", "Salir");
+				ShowPlayerDialog(playerid, DIALOGO_HABILIDAD_ARMAS, DIALOG_STYLE_LIST, "Lista de Aprendizajes", "5 Secuencias[200$]\n10 Secuencias[380$]\n15 Secuencias[760$]\n10 Secuencias[EXP: x3][120 CRPCASH]\n20 Secuencias[EXP: x3][220 CRPCASH]\n30 Secuencias[EXP: x4][400 CRPCASH]", "Aceptar", "Salir");
 			}
 			default: Mensaje(playerid, COLOR_GRIS2, "Con esta arma no puedes practicar!");
 		}
@@ -7695,7 +7695,7 @@ command(encenderb , playerid, params[])
     command(facciones, playerid, params[]){
         if(cuenta[playerid][cAdministrador] >= 2012){
 		if(!booleano[AntiAbusos]{playerid}){Mensaje(playerid, COLOR_AMARILLO, "»{FFFFFF} No puedes usar este comando sin estar en OnDuty."); return 1;}
-		    Mensaje(playerid, -1, "{E48584}Facciones Oficiales ZZ:");
+		    Mensaje(playerid, -1, "{E48584}Facciones Oficiales C:RP:");
 			Mensaje(playerid, -1, "{FFFFFF}1- LSPD  3- LSMC 4- Mecánicos 5- Mecanicos Ian 6- Gobierno 7- CNN 9- FBI Ilegales: /listafaccion");
 		} else Mensaje(playerid, COLOR_GRIS2, "No autorizado!");
 		return 1;
@@ -7703,7 +7703,7 @@ command(encenderb , playerid, params[])
 	command(armas, playerid, params[]){
         if(cuenta[playerid][cAdministrador] >= 2014){
 		if(!booleano[AntiAbusos]{playerid}){Mensaje(playerid, COLOR_AMARILLO, "»{FFFFFF} No puedes usar este comando sin estar en OnDuty."); return 1;}
-            Mensaje(playerid, -1, "{E48584}Armas Oficiales ZZ:");
+            Mensaje(playerid, -1, "{E48584}Armas Oficiales C:RP:");
 			Mensaje(playerid, -1, "2- Palo de Golf 3- Porra 4- Cuchillo 5- Bate 6- Pala 7- Palo de Pool");
 			Mensaje(playerid, -1, "9- Motosierra 10- Dildo Violeta 11- Dildo 14- Flores 15- Baston ");
 			Mensaje(playerid, -1, "16- Granada 17- Bomba de gas 18- Molotov 22- 9mm 23- Silenciada 24- D.Eagle");
@@ -16565,7 +16565,7 @@ public OnPlayerConnect(playerid)
 	//
     Mostrar[playerid] = 0; 
 	SetPlayerColor(playerid, 0xBFC0C200);
-	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/muk5i2b80ui6sr6/Niche.mp3?dl=0");
+	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent/s/kjgwd7zz6vty5i5/El%20Cartel%20De%20Los%20Sapos%20-%20Raton%20Y%20Queso%20Version%20Original..%21%21%21.mp3?dl=0");
 	//
 	Update3DTextLabelText(estado[playerid], COLOR_ROJO, "void");
 	Attach3DTextLabelToPlayer(estado[playerid], playerid, 0.0, 0.0, 1000.0);
@@ -22478,10 +22478,10 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					case 0:
 					{
 					    new strcan[2000];
-					    new can0[] = "Una Aventura - Salsa\nEl Mexicano - Corrido\nCallaita - Trap\nNi Bien Ni Mal - Trap\nI could be the one - Avicii\n";
-					    new can1[] = "Play hard - David Guetta\nHo hey - The Lumineers\nImpossible - James Arthur\nLive it up - Jennifer Lopez\nMore than friends - Inna\nBlurred lines - Robin Thicke\n";
-					    new can2[] = "Come & get it - Selena Gomez\nOn top of the world - Imagine Dragons\nThe other side - Jason Derulo\nCorre! - Jesse & Joy\nI love it - Icona Pop\n";
-					    new can3[] = "Turn on the radio - Xuso Jones\nRight now - Kostrok\nMirrors - Justin Timberlake\nLove me again - John Newman\nCero - Dani Martin\nStay - Rihanna\n";
+					    new can0[] = "Una Aventura - Salsa\nEl Mexicano - Corrido\nCallaita - Trap\nNi Bien Ni Mal - Trap\nSin Sentimiento - Salsa\n";
+					    new can1[] = "Nuestro Sueño - Salsa\nMuerte Anunciada - Corrido\nEl Diablo - Corrido\nPapa de Los Pollitos - Corrido\nEl Raton del Queso - Corrido\nJefe de Jefes - Corrido\n";
+					    new can2[] = "Santo Cachon - Vallenato\nVivo En El Limbo - Vallenato\nElla Es Mi Todo - Vallenato\nLa Reina - Vallenato \nEn Los Años 1600 - Salsa\n";
+					    new can3[] = "ElPreso - Salsa\nPedro Navaja - Salsa\nMirrors - Justin Timberlake\nLove me again - John Newman\nCero - Dani Martin\nStay - Rihanna\n";
 					    new can4[] = "Quién - Pablo Alborán\nWhen I was your man - Bruno Mars\nNo digas nada -Cali & El Dandee\nUnbreakable - Marien Baker\nVuelvo a verte - Malu\nCamino de rosas - Alejandro Sanz\n";
 				    	new can5[] = "Heartbreaker - Auryn\nFunketón - Efecto Pasillo\nWalks like Rihanna - The Wanted\nGitana - El viaje de Elliot\nMe enamoré (Feeling of love) - XRIZ\nTu jardín con enanitos - Melendi\nMondays - Yanela Brooks\n";
 					    new can6[] = "Make my day - Auryn\nPretty boy - Edurne\nCon fuego - Soraya\nBoy toy - Angy\nViven - Rasel";
@@ -22539,79 +22539,79 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
                		case 4:
                		{
 	                    StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Avicii%20vs%20Nicky%20Romero%20%20%20I%20Could%20Be%20The%20One%20%28Official%20Music%20Video%29.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/i1yk76ksy2qe39h/SinSentimiento.mp3?dl=0");
 
 					}
 					case 5:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/David%20Guetta%20%20%20Play%20Hard%20%28Official%20Video%29%20ft%20Ne%20Yo%2C%20Akon.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/1yo6gprah6gf3ur/NuestroSue%C3%B1o.mp3?dl=0");
 
 					}
                		case 6:
                		{
 	               	    StopAudioStreamForPlayer(playerid);
-    	                PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/The%20Lumineers%20%20%20Ho%20Hey%20%28Official%20Video%29.mp3");
+    	                PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/ftplx1ag7933rgg/MuerteAnunciada.mp3?dl=0");
 
             	   	}
                		case 7:
                		{
 	               		StopAudioStreamForPlayer(playerid);
-						PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/James%20Arthur%20%20%20Impossible%20%20%20Official%20Single.mp3");
+						PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/ao7gvgqh8f9i7dh/El%20Diablo.mp3?dl=0");
 
 					}
                		case 8:
                		{
 	               		StopAudioStreamForPlayer(playerid);
-						PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Jennifer%20Lopez%20%20%20Live%20It%20Up%20ft%20Pitbull.mp3");
+						PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/bp92luvbk7nh66u/PapaPollitos.mp3?dl=0");
 
 					}
 					case 9:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/INNA%20feat%20Daddy%20Yankee%20%20%20More%20Than%20Friends%20%28Official%20Music%20Video%29.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/kjgwd7zz6vty5i5/El%20Cartel%20De%20Los%20Sapos%20-%20Raton%20Y%20Queso%20Version%20Original..%21%21%21.mp3?dl=0");
 
             	   	}
                 	case 10:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Robin%20Thicke%20%20%20Blurred%20Lines%20ft%20TI%2C%20Pharrell.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/dgqwic7om8s1ngs/Los%20Tigres%20Del%20Norte%20-%20Jefe%20De%20Jefes.mp3?dl=0");
 
             	   	}
                		case 11:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Selena%20Gomez%20%20%20Come%20%20Get%20It.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/jnhzqw1ot9qa51l/SantoCachon.mp3?dl=0");
 
             	   	}
                		case 12:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Imagine%20Dragons%20%20%20On%20Top%20of%20the%20World%20%20%20Lyrics.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/863cc8o9xbtkoil/VivoEnELLimbo.mp3?dl=0");
 
             	   	}
                		case 13:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Jason%20Derulo%20%27The%20Other%20Side%27%20Lyrics.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/ukdlzdqnv1ui2mt/LaReina.mp3?dl=0");
 
             	   	}
                		case 14:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Jesse%20%20Joy%20%20%20Corre%20%20%28Lyric%20Video%29.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/me62nr0dqzfpp62/LosA%C3%B1os1600.mp3?dl=0");
 
             	   	}
                		case 15:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Icona%20Pop%20%20%20I%20Love%20It%20%28feat%20Charli%20XCX%29%20%5BOFFICIAL%20VIDEO%5D.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/s36ow8qo7gamr95/ElPreso.mp3?dl=0");
 
             	   	}
                		case 16:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Xuso%20Jones%20%20%20Turn%20On%20The%20Radio%20%28Lyric%20Video%29.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/igfjdbtog561upp/Ruben%20Blades%20Pedro%20Navaja%20Video%20Original.mp3?dl=0");
 
             	   	}
                		case 17:
@@ -22764,9 +22764,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		    	{
 		        	case 0:
 		   			{
-			        Mensaje(playerid, COLOR_AMARILLO, "Radio DrumBass Sintonizada");
-					GameTextForPlayer(playerid, "~w~Radio DrumBass Sintonizada", 5000, 3);
-			        PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/59142770/Emisoras/Drum%26Bass.pls/");
+			        Mensaje(playerid, COLOR_AMARILLO, "Guaracha Radio, Sintonizada");
+					GameTextForPlayer(playerid, "~w~Guaracha Sintonizada", 5000, 3);
+			        PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/00pfufak9qi14sz/FUMARASTTEN%20-%20Esquelefascina%20%28Vol.%202%29%20%20Aleteo%2C%20Zapateo%20%26%20Guaracha%20%20%28Dj%20Dasten%2C%20Fumaratto%29.mp3?dl=0");
 			        }
 		        	case 1:
 	        	    {
@@ -24407,7 +24407,7 @@ CallBack::StreamMedioSegundo()
 		//Textdraw Banco y Barra
 		new date[3];
 		getdate(date[0], date[1], date[2]);
-		format(string, sizeof(string), "     ~p~>~w~ 	discord.gg/KQta6CQ     ~g~>~w~Nivel: %d ~r~>~w~Experiencia: %d/%d ~y~>~w~Fecha: %02d/%02d/%04d    ~b~>~w~RolePlay "Version"", cuenta[playerid][cNivel], cuenta[playerid][cExperiencia], (cuenta[playerid][cNivel] + 1) * levelexp, date[2], date[1], date[0]);
+		format(string, sizeof(string), "     ~p~>~w~ 	/KQta6CQ     ~g~>~w~Nivel: %d ~r~>~w~Experiencia: %d/%d ~y~>~w~Fecha: %02d/%02d/%04d    ~b~>~w~RolePlay "Version"", cuenta[playerid][cNivel], cuenta[playerid][cExperiencia], (cuenta[playerid][cNivel] + 1) * levelexp, date[2], date[1], date[0]);
 		PlayerTextDrawSetString(playerid, InfoText[playerid][1], string);
 		format(string, sizeof(string), "~b~$~w~%08d", cuenta[playerid][cDineroBanco]);
 		PlayerTextDrawSetString(playerid, InfoText[playerid][3], string);
