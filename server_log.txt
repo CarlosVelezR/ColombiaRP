@@ -652,3 +652,118 @@ v0.3.7, (C)2005-2015 SA-MP Team
 [18:59:48] -CreateDynamicObjetcs[12848]
 [18:59:48] CO-RP: 1574 Pickups Cargados
 [18:59:48] Number of vehicle models: 47
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[19:02:05] filterscripts = ""  (string)
+[19:02:05] 
+[19:02:05] Server Plugins
+[19:02:05] --------------
+[19:02:05]  Loading plugin: crashdetect.dll
+[19:02:05]   CrashDetect v4.15.1 is OK.
+[19:02:05]   Loaded.
+[19:02:05]  Loading plugin: mysql.dll
+[19:02:06]   Failed.
+[19:02:06]  Loading plugin: sscanf.dll
+[19:02:06] 
+
+[19:02:06]  ===============================
+
+[19:02:06]       sscanf plugin loaded.     
+
+[19:02:06]          Version:  2.8.1        
+
+[19:02:06]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:02:06]  ===============================
+
+[19:02:06]   Loaded.
+[19:02:06]  Loading plugin: streamer.dll
+[19:02:06]   Failed.
+[19:02:06]  Loaded 2 plugins.
+
+[19:02:06] 
+[19:02:06] Filterscripts
+[19:02:06] ---------------
+[19:02:06]   Loaded 0 filterscripts.
+
+[19:02:06] [debug] Run time error 19: "File or function is not found"
+[19:02:06] [debug]  EditDynamicObject
+[19:02:06] [debug]  DestroyDynamicObject
+[19:02:06] [debug]  CreateDynamicObject
+[19:02:06] [debug]  mysql_connect
+[19:02:06] [debug]  mysql_log
+[19:02:06] [debug]  CreateDynamic3DTextLabel
+[19:02:06] [debug]  CreateDynamicPickup
+[19:02:06] [debug]  CreateDynamicMapIcon
+[19:02:06] [debug]  CountDynamicPickups
+[19:02:06] [debug]  mysql_format
+[19:02:06] [debug]  mysql_tquery
+[19:02:06] [debug]  AttachDynamicObjectToVehicle
+[19:02:06] [debug]  mysql_query
+[19:02:06] [debug]  cache_get_row_count
+[19:02:06] [debug]  cache_get_row
+[19:02:06] [debug]  cache_get_row_int
+[19:02:06] [debug]  cache_delete
+[19:02:06] [debug]  DestroyDynamic3DTextLabel
+[19:02:06] [debug]  DestroyDynamicPickup
+[19:02:06] [debug]  MoveDynamicObject
+[19:02:06] [debug]  CountDynamicObjects
+[19:02:06] [debug]  CountDynamicCPs
+[19:02:06] [debug]  CountDynamicRaceCPs
+[19:02:06] [debug]  CountDynamicMapIcons
+[19:02:06] [debug]  CountDynamic3DTextLabels
+[19:02:06] [debug]  CreateDynamicSphere
+[19:02:06] [debug]  UpdateDynamic3DTextLabelText
+[19:02:06] [debug]  IsPlayerInDynamicArea
+[19:02:06] [debug]  IsValidDynamicObject
+[19:02:06] [debug]  mysql_escape_string
+[19:02:06] [debug]  cache_get_row_float
+[19:02:06] [debug]  SetDynamicObjectRot
+[19:02:06] [debug]  SetDynamicObjectMaterial
+[19:02:06] [debug]  SetDynamicObjectMaterialText
+[19:02:06] [debug]  CreateDynamicObjectEx
+[19:02:06] [debug] Run time error 19: "File or function is not found"
+[19:02:06] [debug]  EditDynamicObject
+[19:02:06] [debug]  DestroyDynamicObject
+[19:02:06] [debug]  CreateDynamicObject
+[19:02:06] [debug]  mysql_connect
+[19:02:06] [debug]  mysql_log
+[19:02:06] [debug]  CreateDynamic3DTextLabel
+[19:02:06] [debug]  CreateDynamicPickup
+[19:02:06] [debug]  CreateDynamicMapIcon
+[19:02:06] [debug]  CountDynamicPickups
+[19:02:06] [debug]  mysql_format
+[19:02:06] [debug]  mysql_tquery
+[19:02:06] [debug]  AttachDynamicObjectToVehicle
+[19:02:06] [debug]  mysql_query
+[19:02:06] [debug]  cache_get_row_count
+[19:02:06] [debug]  cache_get_row
+[19:02:06] [debug]  cache_get_row_int
+[19:02:06] [debug]  cache_delete
+[19:02:06] [debug]  DestroyDynamic3DTextLabel
+[19:02:06] [debug]  DestroyDynamicPickup
+[19:02:06] [debug]  MoveDynamicObject
+[19:02:06] [debug]  CountDynamicObjects
+[19:02:06] [debug]  CountDynamicCPs
+[19:02:06] [debug]  CountDynamicRaceCPs
+[19:02:06] [debug]  CountDynamicMapIcons
+[19:02:06] [debug]  CountDynamic3DTextLabels
+[19:02:06] [debug]  CreateDynamicSphere
+[19:02:06] [debug]  UpdateDynamic3DTextLabelText
+[19:02:06] [debug]  IsPlayerInDynamicArea
+[19:02:06] [debug]  IsValidDynamicObject
+[19:02:06] [debug]  mysql_escape_string
+[19:02:06] [debug]  cache_get_row_float
+[19:02:06] [debug]  SetDynamicObjectRot
+[19:02:06] [debug]  SetDynamicObjectMaterial
+[19:02:06] [debug]  SetDynamicObjectMaterialText
+[19:02:06] [debug]  CreateDynamicObjectEx
+[19:02:06] Script[gamemodes/ZZ-RP.amx]: Run time error 19: "File or function is not found"
+[19:02:06] Number of vehicle models: 0
