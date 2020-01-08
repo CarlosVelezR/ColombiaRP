@@ -5,7 +5,7 @@
 *	Desarrollador:   Carlos_Velez, Camilo_Velez
 *
 *	Include: zz_mapas.pwn
-*
+*112 update
 */
 
 #include <streamer>
@@ -549,7 +549,7 @@ RemoveObjects(playerid){
 	RemoveBuildingForPlayer(playerid, 13759, 1413.4141, -804.7422, 83.4375, 0.25);
 	RemoveBuildingForPlayer(playerid, 13722, 1413.4141, -804.7422, 83.4375, 0.25);
 	RemoveBuildingForPlayer(playerid, 13831, 1413.4141, -804.7422, 83.4375, 0.25);
-	RemoveBuildingForPlayer(playerid, 762, 1011.8594, -2043.5000, 16.0859, 0.25); 0
+	RemoveBuildingForPlayer(playerid, 762, 1011.8594, -2043.5000, 16.0859, 0.25); 01
 	*/
 	
 	//Campodetiro
