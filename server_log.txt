@@ -47,3 +47,608 @@ v0.3.7, (C)2005-2015 SA-MP Team
 [16:55:59] -CreateDynamicObjetcs[12848]
 [16:56:00] ZZ-RP: 1583 Pickups Cargados
 [16:56:00] Number of vehicle models: 74
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[16:59:06] filterscripts = ""  (string)
+[16:59:06] 
+[16:59:06] Server Plugins
+[16:59:06] --------------
+[16:59:06]  Loading plugin: crashdetect.dll
+[16:59:06]   CrashDetect v4.15.1 is OK.
+[16:59:06]   Loaded.
+[16:59:06]  Loading plugin: mysql.dll
+[16:59:06]  >> plugin.mysql: R39-2 successfully loaded.
+[16:59:06]   Loaded.
+[16:59:06]  Loading plugin: sscanf.dll
+[16:59:06] 
+
+[16:59:06]  ===============================
+
+[16:59:06]       sscanf plugin loaded.     
+
+[16:59:06]          Version:  2.8.1        
+
+[16:59:06]    (c) 2012 Alex "Y_Less" Cole  
+
+[16:59:06]  ===============================
+
+[16:59:06]   Loaded.
+[16:59:06]  Loading plugin: streamer.dll
+[16:59:06] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[16:59:06]   Loaded.
+[16:59:06]  Loaded 4 plugins.
+
+[16:59:06] 
+[16:59:06] Filterscripts
+[16:59:06] ---------------
+[16:59:06]   Loaded 0 filterscripts.
+
+[16:59:06] -CreateDynamicObjetcs[12848]
+[16:59:07] ZZ-RP: 1583 Pickups Cargados
+[16:59:07] Number of vehicle models: 74
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[17:09:30] filterscripts = ""  (string)
+[17:09:30] 
+[17:09:30] Server Plugins
+[17:09:30] --------------
+[17:09:30]  Loading plugin: crashdetect.dll
+[17:09:30]   CrashDetect v4.15.1 is OK.
+[17:09:30]   Loaded.
+[17:09:30]  Loading plugin: mysql.dll
+[17:09:30]  >> plugin.mysql: R39-2 successfully loaded.
+[17:09:30]   Loaded.
+[17:09:30]  Loading plugin: sscanf.dll
+[17:09:30] 
+
+[17:09:30]  ===============================
+
+[17:09:30]       sscanf plugin loaded.     
+
+[17:09:30]          Version:  2.8.1        
+
+[17:09:30]    (c) 2012 Alex "Y_Less" Cole  
+
+[17:09:30]  ===============================
+
+[17:09:30]   Loaded.
+[17:09:30]  Loading plugin: streamer.dll
+[17:09:30] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[17:09:30]   Loaded.
+[17:09:30]  Loaded 4 plugins.
+
+[17:09:30] 
+[17:09:30] Filterscripts
+[17:09:30] ---------------
+[17:09:30]   Loaded 0 filterscripts.
+
+[17:09:30] -CreateDynamicObjetcs[12848]
+[17:09:31] ZZ-RP: 1583 Pickups Cargados
+[17:09:31] Number of vehicle models: 74
+[17:09:52] [connection] 25.87.237.40:62403 requests connection cookie.
+[17:09:53] Incoming connection: 25.87.237.40:62403 id: 0
+[17:09:53] [join] Martin_Rojas has joined the server (0:25.87.237.40)
+[17:10:19] Inicio posiciones;
+[17:27:43] Estado del jugador Martin_Rojas(ID: 0) #1: 1 (Coord..: 1712.228149, -1852.362670, 13.569844, 22.953077)
+[17:27:43] Estado del jugador Martin_Rojas(ID: 0) #2: 1 (Coord..: 1712.228149, -1852.362670, 13.569844, 22.953077)
+[17:27:43] [part] Martin_Rojas has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[17:29:10] filterscripts = ""  (string)
+[17:29:10] 
+[17:29:10] Server Plugins
+[17:29:10] --------------
+[17:29:10]  Loading plugin: crashdetect.dll
+[17:29:10]   CrashDetect v4.15.1 is OK.
+[17:29:10]   Loaded.
+[17:29:10]  Loading plugin: mysql.dll
+[17:29:10]  >> plugin.mysql: R39-2 successfully loaded.
+[17:29:10]   Loaded.
+[17:29:10]  Loading plugin: sscanf.dll
+[17:29:10] 
+
+[17:29:10]  ===============================
+
+[17:29:10]       sscanf plugin loaded.     
+
+[17:29:10]          Version:  2.8.1        
+
+[17:29:10]    (c) 2012 Alex "Y_Less" Cole  
+
+[17:29:10]  ===============================
+
+[17:29:10]   Loaded.
+[17:29:10]  Loading plugin: streamer.dll
+[17:29:10] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[17:29:10]   Loaded.
+[17:29:10]  Loaded 4 plugins.
+
+[17:29:10] 
+[17:29:10] Filterscripts
+[17:29:10] ---------------
+[17:29:10]   Loaded 0 filterscripts.
+
+[17:29:10] OnGameo
+[17:29:10] -CreateDynamicObjetcs[12848]
+[17:29:10] ZZ-RP: 1583 Pickups Cargados
+[17:29:10] Number of vehicle models: 74
+[17:29:46] [connection] 25.87.237.40:56980 requests connection cookie.
+[17:29:47] Incoming connection: 25.87.237.40:56980 id: 0
+[17:29:47] [join] Martin_Rojas has joined the server (0:25.87.237.40)
+[17:30:20] Inicio posiciones;
+[17:30:55] Estado del jugador Martin_Rojas(ID: 0) #1: 1 (Coord..: 1704.381713, -1853.311279, 13.568095, 273.192504)
+[17:30:56] Estado del jugador Martin_Rojas(ID: 0) #2: 1 (Coord..: 1704.381713, -1853.311279, 13.568095, 273.192504)
+[17:30:56] [part] Martin_Rojas has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[17:53:13] filterscripts = ""  (string)
+[17:53:13] 
+[17:53:13] Server Plugins
+[17:53:13] --------------
+[17:53:13]  Loading plugin: crashdetect.dll
+[17:53:13]   CrashDetect v4.15.1 is OK.
+[17:53:13]   Loaded.
+[17:53:13]  Loading plugin: mysql.dll
+[17:53:13]  >> plugin.mysql: R39-2 successfully loaded.
+[17:53:13]   Loaded.
+[17:53:13]  Loading plugin: sscanf.dll
+[17:53:13] 
+
+[17:53:13]  ===============================
+
+[17:53:13]       sscanf plugin loaded.     
+
+[17:53:13]          Version:  2.8.1        
+
+[17:53:13]    (c) 2012 Alex "Y_Less" Cole  
+
+[17:53:13]  ===============================
+
+[17:53:13]   Loaded.
+[17:53:13]  Loading plugin: streamer.dll
+[17:53:13] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[17:53:13]   Loaded.
+[17:53:13]  Loaded 4 plugins.
+
+[17:53:13] 
+[17:53:13] Filterscripts
+[17:53:13] ---------------
+[17:53:13]   Loaded 0 filterscripts.
+
+[17:53:13] OnGameo
+[17:53:13] -CreateDynamicObjetcs[12848]
+[17:53:13] ZZ-RP: 1583 Pickups Cargados
+[17:53:13] Number of vehicle models: 74
+[17:53:39] [connection] 25.87.237.40:54998 requests connection cookie.
+[17:53:40] Incoming connection: 25.87.237.40:54998 id: 0
+[17:53:40] [join] Martin_Rojas has joined the server (0:25.87.237.40)
+[17:53:56] Inicio posiciones;
+[17:54:15] [chat] [Martin_Rojas]: G
+[17:54:21] [chat] [Martin_Rojas]: F
+[17:54:29] [chat] [Martin_Rojas]: f
+[17:54:40] [chat] [Martin_Rojas]: f
+[17:54:47] [chat] [Martin_Rojas]: f
+[17:55:20] [chat] [Martin_Rojas]: f
+[17:55:27] [chat] [Martin_Rojas]: f
+[17:55:35] [chat] [Martin_Rojas]: f
+[17:55:40] [chat] [Martin_Rojas]: f
+[17:55:49] [chat] [Martin_Rojas]: f
+[17:56:43] [chat] [Martin_Rojas]: f
+[17:56:47] [chat] [Martin_Rojas]: y
+[17:56:52] [chat] [Martin_Rojas]: g
+[17:57:00] [chat] [Martin_Rojas]: d
+[17:57:17] [chat] [Martin_Rojas]: f
+[18:13:32] [chat] [Martin_Rojas]: yf
+[18:14:26] [chat] [Martin_Rojas]: fg
+[18:14:32] [chat] [Martin_Rojas]: f
+[18:14:52] [connection] 192.168.0.13:52755 requests connection cookie.
+[18:14:53] Incoming connection: 192.168.0.13:52755 id: 1
+[18:14:53] [join] Carlos_Velez has joined the server (1:192.168.0.13)
+[18:14:55] [chat] [Martin_Rojas]: f
+[18:15:01] Inicio posiciones;
+[18:15:45] [chat] [Martin_Rojas]: f
+[18:16:33] [chat] [Martin_Rojas]: f
+[18:17:00] [chat] [Martin_Rojas]: f
+[18:17:36] Estado del jugador Martin_Rojas(ID: 0) #1: 2 (Coord..: 1362.033325, -1285.423950, 12.982054, 184.225830)
+[18:17:36] Estado del jugador Martin_Rojas(ID: 0) #2: 2 (Coord..: 1362.033325, -1285.423950, 12.982054, 184.225830)
+[18:17:36] [part] Martin_Rojas has left the server (0:1)
+[18:18:49] [chat] [Carlos_Velez]: gf
+[18:19:58] [connection] 25.87.237.40:52197 requests connection cookie.
+[18:19:59] Incoming connection: 25.87.237.40:52197 id: 0
+[18:19:59] [join] Martin_Rojas has joined the server (0:25.87.237.40)
+[18:20:11] Inicio posiciones;
+[18:20:19] [chat] [Martin_Rojas]: f
+[18:20:33] Estado del jugador Carlos_Velez(ID: 1) #1: 1 (Coord..: 1537.353149, -1673.697998, 13.382812, 195.446609)
+[18:20:33] Estado del jugador Carlos_Velez(ID: 1) #2: 1 (Coord..: 1537.353149, -1673.697998, 13.382812, 195.446609)
+[18:20:33] [part] Carlos_Velez has left the server (1:1)
+[18:20:36] [chat] [Martin_Rojas]: f
+[18:20:42] Estado del jugador Martin_Rojas(ID: 0) #1: 1 (Coord..: 1367.944702, -1280.293701, 13.546875, 193.315109)
+[18:20:42] Estado del jugador Martin_Rojas(ID: 0) #2: 1 (Coord..: 1367.944702, -1280.293701, 13.546875, 193.315109)
+[18:20:42] [part] Martin_Rojas has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[18:32:29] filterscripts = ""  (string)
+[18:32:29] 
+[18:32:29] Server Plugins
+[18:32:29] --------------
+[18:32:29]  Loading plugin: crashdetect.dll
+[18:32:29]   CrashDetect v4.15.1 is OK.
+[18:32:29]   Loaded.
+[18:32:29]  Loading plugin: mysql.dll
+[18:32:29]  >> plugin.mysql: R39-2 successfully loaded.
+[18:32:29]   Loaded.
+[18:32:29]  Loading plugin: sscanf.dll
+[18:32:29] 
+
+[18:32:29]  ===============================
+
+[18:32:29]       sscanf plugin loaded.     
+
+[18:32:29]          Version:  2.8.1        
+
+[18:32:29]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:32:29]  ===============================
+
+[18:32:29]   Loaded.
+[18:32:29]  Loading plugin: streamer.dll
+[18:32:29] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[18:32:29]   Loaded.
+[18:32:29]  Loaded 4 plugins.
+
+[18:32:29] 
+[18:32:29] Filterscripts
+[18:32:29] ---------------
+[18:32:29]   Loaded 0 filterscripts.
+
+[18:32:29] OnGameo
+[18:32:29] -CreateDynamicObjetcs[12848]
+[18:32:29] ZZ-RP: 1583 Pickups Cargados
+[18:32:29] Number of vehicle models: 74
+[18:33:16] [connection] 25.87.237.40:60628 requests connection cookie.
+[18:33:17] Incoming connection: 25.87.237.40:60628 id: 0
+[18:33:17] [join] Jesica_Garcia has joined the server (0:25.87.237.40)
+[18:33:39] Inicio posiciones;
+[18:35:59] [chat] [Jesica_Garcia]: f
+[18:36:16] [chat] [Jesica_Garcia]: f
+[18:36:21] [chat] [Jesica_Garcia]: f
+[18:38:47] [chat] [Jesica_Garcia]: f
+[18:39:36] [chat] [Jesica_Garcia]: f
+[18:42:38] Estado del jugador Jesica_Garcia(ID: 0) #1: 2 (Coord..: 1505.886230, -961.766357, 35.837230, 271.399597)
+[18:42:39] Estado del jugador Jesica_Garcia(ID: 0) #2: 2 (Coord..: 1505.886230, -961.766357, 35.837230, 271.399597)
+[18:42:39] [part] Jesica_Garcia has left the server (0:1)
+[18:43:13] [connection] 25.87.237.40:50086 requests connection cookie.
+[18:43:14] Incoming connection: 25.87.237.40:50086 id: 0
+[18:43:14] [join] Jesica_Garcia has joined the server (0:25.87.237.40)
+[18:44:04] Inicio posiciones;
+[18:44:18] Estado del jugador Jesica_Garcia(ID: 0) #1: 1 (Coord..: 1471.873535, -879.328735, 0.000000, 269.142486)
+[18:44:18] Estado del jugador Jesica_Garcia(ID: 0) #2: 1 (Coord..: 1471.873535, -879.328735, 0.000000, 269.142486)
+[18:44:18] [part] Jesica_Garcia has left the server (0:1)
+[18:44:46] [connection] 25.87.237.40:57043 requests connection cookie.
+[18:44:47] Incoming connection: 25.87.237.40:57043 id: 0
+[18:44:47] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[18:45:02] Inicio posiciones;
+[18:47:04] [connection] 192.168.0.13:52359 requests connection cookie.
+[18:47:05] Incoming connection: 192.168.0.13:52359 id: 1
+[18:47:05] [join] Carlos_Velez has joined the server (1:192.168.0.13)
+[18:47:08] [chat] [Camilo_Velez]: 7g
+[18:47:14] Inicio posiciones;
+[18:47:19] [chat] [Camilo_Velez]: f
+[18:49:46] [chat] [Camilo_Velez]: f
+[18:50:49] [chat] [Camilo_Velez]: f
+[18:53:14] Estado del jugador Carlos_Velez(ID: 1) #1: 1 (Coord..: 1485.774536, 716.578735, 10.820312, 78.994079)
+[18:53:15] Estado del jugador Carlos_Velez(ID: 1) #2: 1 (Coord..: 1485.774536, 716.578735, 10.820312, 78.994079)
+[18:53:15] [part] Carlos_Velez has left the server (1:1)
+[18:55:37] [chat] [Camilo_Velez]: f
+[18:55:59] [connection] 192.168.0.13:58256 requests connection cookie.
+[18:56:00] Incoming connection: 192.168.0.13:58256 id: 1
+[18:56:00] [join] Carlos_Velez has joined the server (1:192.168.0.13)
+[18:56:08] Inicio posiciones;
+[18:56:10] [chat] [Camilo_Velez]: 7pp
+[18:56:14] [chat] [Camilo_Velez]: 7pp
+[19:01:39] [chat] [Camilo_Velez]: f
+[19:01:45] [chat] [Camilo_Velez]: ffgfg
+[19:01:52] [death] Carlos_Velez died 255
+[19:01:57] Estado del jugador Camilo_Velez(ID: 0) #1: 1 (Coord..: 1436.857299, 747.343078, 10.820312, 36.541160)
+[19:01:57] Estado del jugador Camilo_Velez(ID: 0) #2: 1 (Coord..: 1436.857299, 747.343078, 10.820312, 36.541160)
+[19:01:57] [part] Camilo_Velez has left the server (0:1)
+[19:02:31] [connection] 25.87.237.40:57133 requests connection cookie.
+[19:02:32] Incoming connection: 25.87.237.40:57133 id: 0
+[19:02:32] [join] Camilo_Velez has joined the server (0:25.87.237.40)
+[19:02:43] Inicio posiciones;
+[19:09:49] [death] Carlos_Velez died 255
+[19:10:34] [death] Carlos_Velez died 255
+[19:11:21] [kill] Camilo_Velez killed Carlos_Velez UZI
+[19:11:43] [death] Carlos_Velez died 255
+[19:13:31] [death] Camilo_Velez died 255
+[19:13:46] [death] Camilo_Velez died 255
+[19:13:55] [death] Carlos_Velez died 255
+[19:14:02] [death] Camilo_Velez died 255
+[19:14:05] [death] Carlos_Velez died 255
+[19:14:13] [death] Carlos_Velez died 255
+[19:14:13] [death] Camilo_Velez died 255
+[19:25:36] [chat] [Camilo_Velez]: f
+[19:27:07] [death] Camilo_Velez died 255
+[19:27:13] [death] Camilo_Velez died 255
+[19:27:35] [death] Carlos_Velez died 255
+[19:27:42] [death] Camilo_Velez died 255
+[19:28:26] [death] Carlos_Velez died 255
+[19:28:44] [death] Camilo_Velez died 255
+[19:28:53] Estado del jugador Camilo_Velez(ID: 0) #1: 1 (Coord..: -2663.657714, 513.047668, 48.087677, 292.016052)
+[19:28:53] Estado del jugador Camilo_Velez(ID: 0) #2: 1 (Coord..: -2663.657714, 513.047668, 48.087677, 292.016052)
+[19:28:53] [part] Camilo_Velez has left the server (0:1)
+[19:29:23] [connection] 25.87.237.40:65117 requests connection cookie.
+[19:29:24] Incoming connection: 25.87.237.40:65117 id: 0
+[19:29:24] [join] Jesica_Garcia has joined the server (0:25.87.237.40)
+[19:29:46] Inicio posiciones;
+[19:35:06] Estado del jugador Carlos_Velez(ID: 1) #1: 2 (Coord..: 1331.716064, -1440.395263, 13.574604, 0.019782)
+[19:35:06] Estado del jugador Carlos_Velez(ID: 1) #2: 2 (Coord..: 1331.716064, -1440.395263, 13.574604, 0.019782)
+[19:35:06] [part] Carlos_Velez has left the server (1:1)
+[19:45:33] Estado del jugador Jesica_Garcia(ID: 0) #1: 1 (Coord..: 1957.069213, -1993.370483, 13.390586, 355.449798)
+[19:45:34] Estado del jugador Jesica_Garcia(ID: 0) #2: 1 (Coord..: 1957.069213, -1993.370483, 13.390586, 355.449798)
+[19:45:34] [part] Jesica_Garcia has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[19:56:04] filterscripts = ""  (string)
+[19:56:04] 
+[19:56:04] Server Plugins
+[19:56:04] --------------
+[19:56:04]  Loading plugin: crashdetect.dll
+[19:56:04]   CrashDetect v4.15.1 is OK.
+[19:56:04]   Loaded.
+[19:56:04]  Loading plugin: mysql.dll
+[19:56:04]  >> plugin.mysql: R39-2 successfully loaded.
+[19:56:04]   Loaded.
+[19:56:04]  Loading plugin: sscanf.dll
+[19:56:04] 
+
+[19:56:04]  ===============================
+
+[19:56:04]       sscanf plugin loaded.     
+
+[19:56:04]          Version:  2.8.1        
+
+[19:56:04]    (c) 2012 Alex "Y_Less" Cole  
+
+[19:56:04]  ===============================
+
+[19:56:04]   Loaded.
+[19:56:04]  Loading plugin: streamer.dll
+[19:56:04] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[19:56:04]   Loaded.
+[19:56:04]  Loaded 4 plugins.
+
+[19:56:04] 
+[19:56:04] Filterscripts
+[19:56:04] ---------------
+[19:56:04]   Loaded 0 filterscripts.
+
+[19:56:04] OnGameo
+[19:56:04] -CreateDynamicObjetcs[12848]
+[19:56:04] CO-RP: 1583 Pickups Cargados
+[19:56:04] Number of vehicle models: 74
+[19:57:30] [connection] 25.87.237.40:63402 requests connection cookie.
+[19:57:31] Incoming connection: 25.87.237.40:63402 id: 0
+[19:57:31] [join] Jesica_Garcia has joined the server (0:25.87.237.40)
+[19:57:46] Inicio posiciones;
+[20:00:28] [chat] [Jesica_Garcia]: f
+[20:03:07] [chat] [Jesica_Garcia]: yf
+[20:03:11] [chat] [Jesica_Garcia]: f
+[20:03:16] [chat] [Jesica_Garcia]: f
+[20:04:00] [chat] [Jesica_Garcia]: f
+[20:04:03] [chat] [Jesica_Garcia]: f
+[20:04:04] [chat] [Jesica_Garcia]: f
+[20:04:06] [chat] [Jesica_Garcia]: asdyas8d
+[20:04:43] Estado del jugador Jesica_Garcia(ID: 0) #1: 1 (Coord..: 1272.691284, -971.451721, 38.330093, 92.981437)
+[20:04:43] Estado del jugador Jesica_Garcia(ID: 0) #2: 1 (Coord..: 1272.691284, -971.451721, 38.330093, 92.981437)
+[20:04:43] [part] Jesica_Garcia has left the server (0:1)
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[18:56:17] filterscripts = ""  (string)
+[18:56:17] 
+[18:56:17] Server Plugins
+[18:56:17] --------------
+[18:56:17]  Loading plugin: crashdetect.dll
+[18:56:17]   CrashDetect v4.15.1 is OK.
+[18:56:17]   Loaded.
+[18:56:17]  Loading plugin: mysql.dll
+[18:56:17]  >> plugin.mysql: R39-2 successfully loaded.
+[18:56:17]   Loaded.
+[18:56:17]  Loading plugin: sscanf.dll
+[18:56:17] 
+
+[18:56:17]  ===============================
+
+[18:56:17]       sscanf plugin loaded.     
+
+[18:56:17]          Version:  2.8.1        
+
+[18:56:17]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:56:17]  ===============================
+
+[18:56:17]   Loaded.
+[18:56:17]  Loading plugin: streamer.dll
+[18:56:17] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[18:56:17]   Loaded.
+[18:56:17]  Loaded 4 plugins.
+
+[18:56:17] 
+[18:56:17] Filterscripts
+[18:56:17] ---------------
+[18:56:17]   Loaded 0 filterscripts.
+
+[18:56:17] OnGameo
+[18:56:18] -CreateDynamicObjetcs[12848]
+[18:56:18] CO-RP: 1574 Pickups Cargados
+[18:56:18] Number of vehicle models: 47
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[18:57:45] filterscripts = ""  (string)
+[18:57:45] 
+[18:57:45] Server Plugins
+[18:57:45] --------------
+[18:57:45]  Loading plugin: crashdetect.dll
+[18:57:45]   CrashDetect v4.15.1 is OK.
+[18:57:45]   Loaded.
+[18:57:45]  Loading plugin: mysql.dll
+[18:57:45]  >> plugin.mysql: R39-2 successfully loaded.
+[18:57:45]   Loaded.
+[18:57:45]  Loading plugin: sscanf.dll
+[18:57:45] 
+
+[18:57:45]  ===============================
+
+[18:57:45]       sscanf plugin loaded.     
+
+[18:57:45]          Version:  2.8.1        
+
+[18:57:45]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:57:45]  ===============================
+
+[18:57:45]   Loaded.
+[18:57:45]  Loading plugin: streamer.dll
+[18:57:45] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[18:57:45]   Loaded.
+[18:57:45]  Loaded 4 plugins.
+
+[18:57:45] 
+[18:57:45] Filterscripts
+[18:57:45] ---------------
+[18:57:45]   Loaded 0 filterscripts.
+
+[18:57:46] OnGameo
+[18:57:47] -CreateDynamicObjetcs[12848]
+[18:57:47] CO-RP: 1574 Pickups Cargados
+[18:57:47] Number of vehicle models: 47
+
+----------
+Loaded log file: "server_log.txt".
+----------
+
+SA-MP Dedicated Server
+----------------------
+v0.3.7, (C)2005-2015 SA-MP Team
+
+[18:59:47] filterscripts = ""  (string)
+[18:59:47] 
+[18:59:47] Server Plugins
+[18:59:47] --------------
+[18:59:47]  Loading plugin: crashdetect.dll
+[18:59:47]   CrashDetect v4.15.1 is OK.
+[18:59:47]   Loaded.
+[18:59:47]  Loading plugin: mysql.dll
+[18:59:47]  >> plugin.mysql: R39-2 successfully loaded.
+[18:59:47]   Loaded.
+[18:59:47]  Loading plugin: sscanf.dll
+[18:59:47] 
+
+[18:59:47]  ===============================
+
+[18:59:47]       sscanf plugin loaded.     
+
+[18:59:47]          Version:  2.8.1        
+
+[18:59:47]    (c) 2012 Alex "Y_Less" Cole  
+
+[18:59:47]  ===============================
+
+[18:59:47]   Loaded.
+[18:59:47]  Loading plugin: streamer.dll
+[18:59:47] 
+
+*** Streamer Plugin v2.7.4 by Incognito loaded ***
+
+[18:59:47]   Loaded.
+[18:59:47]  Loaded 4 plugins.
+
+[18:59:47] 
+[18:59:47] Filterscripts
+[18:59:47] ---------------
+[18:59:47]   Loaded 0 filterscripts.
+
+[18:59:47] OnGameo
+[18:59:48] -CreateDynamicObjetcs[12848]
+[18:59:48] CO-RP: 1574 Pickups Cargados
+[18:59:48] Number of vehicle models: 47
