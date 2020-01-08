@@ -22478,7 +22478,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					case 0:
 					{
 					    new strcan[2000];
-					    new can0[] = "Let her go - Passenger\nGet lucky - Daft Punk\nThrift shop - Macklemore\nJust give me a reason - Pink\nI could be the one - Avicii\n";
+					    new can0[] = "Una Aventura - Salsa\nEl Mexicano - Corrido\nCallaita - Trap\nNi Bien Ni Mal - Trap\nI could be the one - Avicii\n";
 					    new can1[] = "Play hard - David Guetta\nHo hey - The Lumineers\nImpossible - James Arthur\nLive it up - Jennifer Lopez\nMore than friends - Inna\nBlurred lines - Robin Thicke\n";
 					    new can2[] = "Come & get it - Selena Gomez\nOn top of the world - Imagine Dragons\nThe other side - Jason Derulo\nCorre! - Jesse & Joy\nI love it - Icona Pop\n";
 					    new can3[] = "Turn on the radio - Xuso Jones\nRight now - Kostrok\nMirrors - Justin Timberlake\nLove me again - John Newman\nCero - Dani Martin\nStay - Rihanna\n";
@@ -22515,25 +22515,25 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		        	case 0:
 		        	{
 	                    StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Passenger%20%20%20Let%20Her%20Go%20%5BOfficial%20Video%5D.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/muk5i2b80ui6sr6/Niche.mp3?dl=0");
 
 					}
 					case 1:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Daft%20Punk%20%20%20Get%20Lucky%20%28Official%20Audio%29%20ft%20Pharrell%20Williams%5B1%5D.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/e6tln2wu09c39z3/ElMexicano.mp3?dl=0");
 
 					}
 		        	case 2:
 		        	{
 			            StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/MACKLEMORE%20%20RYAN%20LEWIS%20%20%20THRIFT%20SHOP%20FEAT%20WANZ%20%28OFFICIAL%20VIDEO%29.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/zmo8grg39zqkyr2/Callaita.mp3?dl=0");
 
         			}
         			case 3:
         			{
 	        		    StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/P%21nk%20%20%20Just%20Give%20Me%20A%20Reason%20ft%20Nate%20Ruess.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/byleuyrhwf2esvj/NiBienNiMal.mp3?dl=0");
 
             	   	}
                		case 4:
