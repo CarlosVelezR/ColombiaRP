@@ -12897,10 +12897,25 @@ command(b, playerid, params[])
 	{
 		new string[128]; 
 		format(string, sizeof(string), "(( [OOC] %s(%d) dice: %s ))", PlayerName(playerid), playerid, params[0]);
-		ProxDetector(20.0, playerid, string, COLOR_BLANCO, COLOR_BLANCO, COLOR_BLANCO, COLOR_BLANCO, COLOR_BLANCO);
+		ProxDetector(20.0, playerid, string, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA, COLOR_PURPURA);
 	}else Mensaje(playerid, COLOR_GRIS2, "Utiliza: /b <Canal OOC>");
 	return 1;
 }
+//Comando para Admin "Camilo"
+
+command(camilo, playerid, params[])
+{
+	if(estaSilenciado(playerid)) return 1;
+	if(palabrasProhibidas(params[0]))return AccionSPAM(playerid, params[0]);
+	if(!sscanf(params, "s[128]", params[0]))
+	{
+		new string[128];
+		format(string, sizeof(string), "(( [DUEÑO] %s(%d) dice: %s ))", PlayerName(playerid), playerid, params[0]);
+		ProxDetector(20.0, playerid, string, COLOR_ROJO, COLOR_ROJO, COLOR_ROJO, COLOR_ROJO, COLOR_ROJO);
+	}else Mensaje(playerid, COLOR_BLANCO, "Utiliza: /camilo <Canal Admin>");
+	return 1;
+}
+
 	
 	
     command(acento, playerid, params[])
