@@ -12907,9 +12907,9 @@ command(camilo, playerid, params[])
 {
 	if(estaSilenciado(playerid)) return 1;
 	if(palabrasProhibidas(params[0]))return AccionSPAM(playerid, params[0]);
-	if(!sscanf(params, "s[128]", params[0]))
+	if(!sscanf(params, "s[129]", params[0]))
 	{
-		new string[128];
+		new string[129];
 		format(string, sizeof(string), "(( [DUEÑO] %s(%d) dice: %s ))", PlayerName(playerid), playerid, params[0]);
 		ProxDetector(20.0, playerid, string, COLOR_ROJO, COLOR_ROJO, COLOR_ROJO, COLOR_ROJO, COLOR_ROJO);
 	}else Mensaje(playerid, COLOR_BLANCO, "Utiliza: /camilo <Canal Admin>");
