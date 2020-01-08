@@ -82,7 +82,7 @@ RemoveObjects(playerid){
         RemoveBuildingForPlayer(playerid, 3221, 128.140, 1076.789, 12.664, 0.250);
         RemoveBuildingForPlayer(playerid, 3221, 122.968, 1067.203, 12.664, 0.250);
 
-   //Remover Cartel de Medellin
+   //Remover Cartel de Medellin "Camilo_Velez"
 
 
 	RemoveBuildingForPlayer(playerid, 710, 1466.4219, 794.5391, 25.1484, 0.25);
@@ -7752,6 +7752,7 @@ RemoveObjects(playerid){
 	CreateObject(8880, 1488.1600300, -807.6099900, 78.1700000, 48.0930000, 179.9950000, 179.9950000);//object(vgsecnstrct09)(19)*/
 	
  //Cartel de Medellin HQ "CDM" By- Camilo Velez
+ 
 	CreateObject(8171, 1378.21887, 732.20258, 9.83080,   0.00000, 0.00000, 0.00000);
 	CreateObject(3749, 1447.39880, 663.68488, 15.16810,   0.00000, 0.00000, 0.00000);
 	CreateObject(3749, 1527.25598, 663.35999, 15.16810,   0.00000, 0.00000, 0.00000);
