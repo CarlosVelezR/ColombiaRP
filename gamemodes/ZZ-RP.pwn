@@ -12911,7 +12911,7 @@ command(camilo, playerid, params[])
 	{
 		new string[129];
 		format(string, sizeof(string), "(( [DUEÑO] %s(%d) dice: %s ))", PlayerName(playerid), playerid, params[0]);
-		ProxDetector(20.0, playerid, string, COLOR_ROJO, COLOR_ROJO, COLOR_ROJO, COLOR_ROJO, COLOR_ROJO);
+		ProxDetector(20.0, playerid, string, COLOR_ROJO2, COLOR_ROJO2, COLOR_ROJO2, COLOR_ROJO2, COLOR_ROJO2);
 	}else Mensaje(playerid, COLOR_BLANCO, "Utiliza: /camilo <Canal Admin>");
 	return 1;
 }
