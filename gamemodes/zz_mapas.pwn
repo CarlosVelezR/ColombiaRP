@@ -1,5 +1,5 @@
 /*
-*	(c) Copyright 2013 - 2014
+*	(c) Copyright 2020
 *
 *	Nombre del proyecto: Colombia Roleplay
 *	Desarrollador:   Carlos_Velez, Camilo_Velez
@@ -549,7 +549,7 @@ RemoveObjects(playerid){
 	RemoveBuildingForPlayer(playerid, 13759, 1413.4141, -804.7422, 83.4375, 0.25);
 	RemoveBuildingForPlayer(playerid, 13722, 1413.4141, -804.7422, 83.4375, 0.25);
 	RemoveBuildingForPlayer(playerid, 13831, 1413.4141, -804.7422, 83.4375, 0.25);
-	RemoveBuildingForPlayer(playerid, 762, 1011.8594, -2043.5000, 16.0859, 0.25);
+	RemoveBuildingForPlayer(playerid, 762, 1011.8594, -2043.5000, 16.0859, 0.25); 0
 	*/
 	
 	//Campodetiro
@@ -558,7 +558,7 @@ RemoveObjects(playerid){
 	return 1;
 }
 
-CargarMapeos(){
+ CargarMapeos(){
 	#if defined NAVIDAD
 	CreateObject(19076, 1479.68750, -1666.07532, 13.33460, 0.00000, 0.00000, 0.00000);
 	CreateObject(19055, 1482.54187, -1668.27686, 14.01590, 0.00000, 0.00000, 0.00000);
