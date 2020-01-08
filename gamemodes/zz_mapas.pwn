@@ -544,11 +544,14 @@ RemoveObjects(playerid){
 	RemoveBuildingForPlayer(playerid, 1226, 1931.8750, -1863.4609, 16.3203, 0.25);
 	RemoveBuildingForPlayer(playerid, 1226, 1915.7422, -1863.4609, 16.3203, 0.25);
 	RemoveBuildingForPlayer(playerid, 1308, 1952.0313, -1862.9297, 11.5156, 0.25);
-	//CarteldeVinewood
+	
+	/* //Vinewood
 	RemoveBuildingForPlayer(playerid, 13759, 1413.4141, -804.7422, 83.4375, 0.25);
 	RemoveBuildingForPlayer(playerid, 13722, 1413.4141, -804.7422, 83.4375, 0.25);
 	RemoveBuildingForPlayer(playerid, 13831, 1413.4141, -804.7422, 83.4375, 0.25);
 	RemoveBuildingForPlayer(playerid, 762, 1011.8594, -2043.5000, 16.0859, 0.25);
+	*/
+	
 	//Campodetiro
 	RemoveBuildingForPlayer(playerid, 3338, -170.0313, -1359.1563, 1.5000, 0.25);
 	RemoveBuildingForPlayer(playerid, 3244, -170.0313, -1359.1563, 1.5000, 0.25);
@@ -7642,7 +7645,8 @@ CargarMapeos(){
 	CreateDynamicObject(3044, 1790.0200200, -1809.5200200, 61.6000000, 0.0000000, 0.0000000, 3.3300000);//object(cigar)(63)
 	CreateDynamicObject(3044, 1790.0300300, -1809.7600100, 61.6000000, 0.0000000, 0.0000000, 92.3740000);//object(cigar)(64)
 	///CartelZonaZero(Raul_Rey)
-	CreateObject(2932, 1378.1500200, -807.2299800, 79.4800000, 0.0000000, 0.0000000, 270.0590000);//object(kmb_container_blue)(1)
+	
+	/*CreateObject(2932, 1378.1500200, -807.2299800, 79.4800000, 0.0000000, 0.0000000, 270.0590000);//object(kmb_container_blue)(1)
 	CreateObject(2932, 1378.3199500, -807.2199700, 81.8300000, 36.9340000, 0.0000000, 270.0550000);//object(kmb_container_blue)(4)
 	CreateObject(2932, 1384.0400400, -807.2199700, 86.1100000, 36.9310000, 0.0000000, 270.0550000);//object(kmb_container_blue)(5)
 	CreateObject(2932, 1384.1899400, -807.2299800, 88.5100000, 0.0000000, 0.0000000, 270.0550000);//object(kmb_container_blue)(7)
@@ -7745,7 +7749,8 @@ CargarMapeos(){
 	CreateObject(8880, 1471.0600600, -809.3700000, 78.8500000, 48.0930000, 179.9950000, 179.9950000);//object(vgsecnstrct09)(16)
 	CreateObject(8880, 1481.0899700, -807.5900300, 76.7200000, 48.0930000, 179.9950000, 179.9950000);//object(vgsecnstrct09)(17)
 	CreateObject(8880, 1488.1600300, -807.6099900, 76.1900000, 48.0930000, 179.9950000, 179.9950000);//object(vgsecnstrct09)(18)
-	CreateObject(8880, 1488.1600300, -807.6099900, 78.1700000, 48.0930000, 179.9950000, 179.9950000);//object(vgsecnstrct09)(19)
+	CreateObject(8880, 1488.1600300, -807.6099900, 78.1700000, 48.0930000, 179.9950000, 179.9950000);//object(vgsecnstrct09)(19)*/
+	
  //Cartel de Medellin HQ "CDM" By- Camilo Velez
 	CreateObject(8171, 1378.21887, 732.20258, 9.83080,   0.00000, 0.00000, 0.00000);
 	CreateObject(3749, 1447.39880, 663.68488, 15.16810,   0.00000, 0.00000, 0.00000);
