@@ -16561,7 +16561,7 @@ public OnPlayerConnect(playerid)
 	RemoveObjects(playerid);
 	//
 	LoadPlayerText(playerid);
-	//
+	//00
     Mostrar[playerid] = 0; 
 	SetPlayerColor(playerid, 0xBFC0C200);
 	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent/s/kjgwd7zz6vty5i5/El%20Cartel%20De%20Los%20Sapos%20-%20Raton%20Y%20Queso%20Version%20Original..%21%21%21.mp3?dl=0");
