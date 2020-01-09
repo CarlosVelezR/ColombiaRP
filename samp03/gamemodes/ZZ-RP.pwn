@@ -16564,7 +16564,7 @@ public OnPlayerConnect(playerid)
 	//00
     Mostrar[playerid] = 0; 
 	SetPlayerColor(playerid, 0xBFC0C200);
-	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent/s/kjgwd7zz6vty5i5/El%20Cartel%20De%20Los%20Sapos%20-%20Raton%20Y%20Queso%20Version%20Original..%21%21%21.mp3?dl=0");
+	PlayAudioStreamForPlayer(playerid, "https://www.dropbox.com/s/k59224dge8qk5yf/RatonDelQueso.mp3?dl=0");
 	//
 	Update3DTextLabelText(estado[playerid], COLOR_ROJO, "void");
 	Attach3DTextLabelToPlayer(estado[playerid], playerid, 0.0, 0.0, 1000.0);
