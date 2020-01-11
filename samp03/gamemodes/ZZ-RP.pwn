@@ -16564,7 +16564,7 @@ public OnPlayerConnect(playerid)
 	//00
     Mostrar[playerid] = 0; 
 	SetPlayerColor(playerid, 0xBFC0C200);
-	PlayAudioStreamForPlayer(playerid, "https://www.dropbox.com/s/k59224dge8qk5yf/RatonDelQueso.mp3?dl=0");
+	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/k59224dge8qk5yf/RatonDelQueso.mp3?dl=0"); //Musica desde dl.dropboxusercontent.com
 	//
 	Update3DTextLabelText(estado[playerid], COLOR_ROJO, "void");
 	Attach3DTextLabelToPlayer(estado[playerid], playerid, 0.0, 0.0, 1000.0);
