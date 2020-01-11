@@ -23990,7 +23990,7 @@ CallBack::CambiarPagina(playerid)
 			SetPlayerCameraLookAt(playerid, 2693.583007, -1648.947387, 36.773063);
 			SetPlayerPos(playerid, 2693.651611, -1644.348999, 0.0000);
 
-			format(string, sizeof(string), "Muy importante es la diversion! Hay muchas formas de divertirte!~n~Por ejemplo, tienes el paintball en el estadio, la pista de karts.~n~Tambien podras organizar fiestas y usar un stereo ~n~que podras comprar en la tienda electronica!~n~La administracion cada cierto tiempo suele realizar eventos...~n~ En resumen, diversion asegurada en ~r~ZonaZero RP!~n~");
+			format(string, sizeof(string), "Muy importante es la diversion! Hay muchas formas de divertirte!~n~Por ejemplo, tienes el paintball en el estadio, la pista de karts.~n~Tambien podras organizar fiestas y usar un stereo ~n~que podras comprar en la tienda electronica!~n~La administracion cada cierto tiempo suele realizar eventos...~n~ En resumen, diversion asegurada en ~r~Colombia-RP RP!~n~");
 			PlayerTextDrawSetString(playerid, InfoText[playerid][4], string);
 			PlayerTextDrawShow(playerid, InfoText[playerid][4]);
 			
