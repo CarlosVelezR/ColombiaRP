@@ -28800,9 +28800,9 @@ COMMAND:sembrarsemilla(playerid, params[])
 			if(!strcmp(Nombre(playerid), semillas[f][sDueno]))
 			{
 				LimitarSemillas++;
-				if(LimitarSemillas > 2)
+				if(LimitarSemillas > 24)
 				{
-					Mensaje(playerid, COLOR_ROJO, "Imposible plantar mas de 3 semillas.");
+					Mensaje(playerid, COLOR_ROJO, "Imposible plantar mas de 25 semillas.");
 					return 1;
 				}
 			}
