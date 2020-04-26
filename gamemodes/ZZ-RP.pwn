@@ -7,7 +7,7 @@
 	*	Version:				1.0
 	*
 	*	Principal: CO-RP.pwn
-	*
+	*zxzx
 */
 /******************************************************************************/
 /*******************************[- Librerias -]********************************/
@@ -4095,7 +4095,7 @@ public OnGameModeInit()
 {
 	AntiDeAMX();
 	//Host, User, Base, Clave
-	servidor[mysqlControl] = mysql_connect("127.0.0.1", "root", "samp1_db", "");
+	servidor[mysqlControl] = mysql_connect("142.11.205.20", "UserDb", "samp1_db", "Carlos319846");
 	if(!servidor[mysqlControl])SendRconCommand("exit");
 	mysql_log(LOG_ERROR | LOG_WARNING);
 	
@@ -12901,6 +12901,20 @@ command(b, playerid, params[])
 	}else Mensaje(playerid, COLOR_GRIS2, "Utiliza: /b <Canal OOC>");
 	return 1;
 }
+//Comando para Admin "Camilo"
+
+command(camilo, playerid, params[])
+{
+	if(estaSilenciado(playerid)) return 1;
+	if(palabrasProhibidas(params[0]))return AccionSPAM(playerid, params[0]);
+	if(!sscanf(params, "s[129]", params[0]))
+	{
+		new string[129];
+		format(string, sizeof(string), "(( [DUEÑO] %s(%d) dice: %s ))", PlayerName(playerid), playerid, params[0]);
+		ProxDetector(20.0, playerid, string, COLOR_ROJO2, COLOR_ROJO2, COLOR_ROJO2, COLOR_ROJO2, COLOR_ROJO2);
+	}else Mensaje(playerid, COLOR_BLANCO, "Utiliza: /camilo <Canal Admin>");
+	return 1;
+}
 	
 	
     command(acento, playerid, params[])
@@ -16547,10 +16561,10 @@ public OnPlayerConnect(playerid)
 	RemoveObjects(playerid);
 	//
 	LoadPlayerText(playerid);
-	//
+	//00
     Mostrar[playerid] = 0; 
 	SetPlayerColor(playerid, 0xBFC0C200);
-	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/muk5i2b80ui6sr6/Niche.mp3?dl=0");
+	PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/k59224dge8qk5yf/RatonDelQueso.mp3?dl=0"); //Musica desde dl.dropboxusercontent.com
 	//
 	Update3DTextLabelText(estado[playerid], COLOR_ROJO, "void");
 	Attach3DTextLabelToPlayer(estado[playerid], playerid, 0.0, 0.0, 1000.0);
@@ -22462,11 +22476,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	        	{
 					case 0:
 					{
-					    new strcan[2000];
-					    new can0[] = "Let her go - Passenger\nGet lucky - Daft Punk\nThrift shop - Macklemore\nJust give me a reason - Pink\nI could be the one - Avicii\n";
-					    new can1[] = "Play hard - David Guetta\nHo hey - The Lumineers\nImpossible - James Arthur\nLive it up - Jennifer Lopez\nMore than friends - Inna\nBlurred lines - Robin Thicke\n";
-					    new can2[] = "Come & get it - Selena Gomez\nOn top of the world - Imagine Dragons\nThe other side - Jason Derulo\nCorre! - Jesse & Joy\nI love it - Icona Pop\n";
-					    new can3[] = "Turn on the radio - Xuso Jones\nRight now - Kostrok\nMirrors - Justin Timberlake\nLove me again - John Newman\nCero - Dani Martin\nStay - Rihanna\n";
+						new strcan[2000];
+					    new can0[] = "Una Aventura - Salsa\nEl Mexicano - Corrido\nCallaita - Trap\nNi Bien Ni Mal - Trap\nSin Sentimiento - Salsa\n";
+					    new can1[] = "Nuestro Sueño - Salsa\nMuerte Anunciada - Corrido\nEl Diablo - Corrido\nPapa de Los Pollitos - Corrido\nEl Raton del Queso - Corrido\nJefe de Jefes - Corrido\n";
+					    new can2[] = "Santo Cachon - Vallenato\nVivo En El Limbo - Vallenato\nElla Es Mi Todo - Vallenato\nLa Reina - Vallenato \nEn Los Años 1600 - Salsa\n";
+					    new can3[] = "ElPreso - Salsa\nPedro Navaja - Salsa\nMirrors - Justin Timberlake\nLove me again - John Newman\nCero - Dani Martin\nStay - Rihanna\n";
 					    new can4[] = "Quién - Pablo Alborán\nWhen I was your man - Bruno Mars\nNo digas nada -Cali & El Dandee\nUnbreakable - Marien Baker\nVuelvo a verte - Malu\nCamino de rosas - Alejandro Sanz\n";
 				    	new can5[] = "Heartbreaker - Auryn\nFunketón - Efecto Pasillo\nWalks like Rihanna - The Wanted\nGitana - El viaje de Elliot\nMe enamoré (Feeling of love) - XRIZ\nTu jardín con enanitos - Melendi\nMondays - Yanela Brooks\n";
 					    new can6[] = "Make my day - Auryn\nPretty boy - Edurne\nCon fuego - Soraya\nBoy toy - Angy\nViven - Rasel";
@@ -22500,103 +22514,103 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 		        	case 0:
 		        	{
 	                    StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Passenger%20%20%20Let%20Her%20Go%20%5BOfficial%20Video%5D.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/muk5i2b80ui6sr6/Niche.mp3?dl=0");
 
 					}
 					case 1:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Daft%20Punk%20%20%20Get%20Lucky%20%28Official%20Audio%29%20ft%20Pharrell%20Williams%5B1%5D.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/e6tln2wu09c39z3/ElMexicano.mp3?dl=0");
 
 					}
 		        	case 2:
 		        	{
 			            StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/MACKLEMORE%20%20RYAN%20LEWIS%20%20%20THRIFT%20SHOP%20FEAT%20WANZ%20%28OFFICIAL%20VIDEO%29.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/zmo8grg39zqkyr2/Callaita.mp3?dl=0");
 
         			}
         			case 3:
         			{
 	        		    StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/P%21nk%20%20%20Just%20Give%20Me%20A%20Reason%20ft%20Nate%20Ruess.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/byleuyrhwf2esvj/NiBienNiMal.mp3?dl=0");
 
             	   	}
                		case 4:
                		{
 	                    StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Avicii%20vs%20Nicky%20Romero%20%20%20I%20Could%20Be%20The%20One%20%28Official%20Music%20Video%29.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/i1yk76ksy2qe39h/SinSentimiento.mp3?dl=0");
 
 					}
 					case 5:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/David%20Guetta%20%20%20Play%20Hard%20%28Official%20Video%29%20ft%20Ne%20Yo%2C%20Akon.mp3");
+    	          		PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/1yo6gprah6gf3ur/NuestroSue%C3%B1o.mp3?dl=0");
 
 					}
                		case 6:
                		{
 	               	    StopAudioStreamForPlayer(playerid);
-    	                PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/The%20Lumineers%20%20%20Ho%20Hey%20%28Official%20Video%29.mp3");
+    	                PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/ftplx1ag7933rgg/MuerteAnunciada.mp3?dl=0");
 
             	   	}
                		case 7:
                		{
 	               		StopAudioStreamForPlayer(playerid);
-						PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/James%20Arthur%20%20%20Impossible%20%20%20Official%20Single.mp3");
+						PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/ao7gvgqh8f9i7dh/El%20Diablo.mp3?dl=0");
 
 					}
                		case 8:
                		{
 	               		StopAudioStreamForPlayer(playerid);
-						PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Jennifer%20Lopez%20%20%20Live%20It%20Up%20ft%20Pitbull.mp3");
+						PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/bp92luvbk7nh66u/PapaPollitos.mp3?dl=0");
 
 					}
 					case 9:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/INNA%20feat%20Daddy%20Yankee%20%20%20More%20Than%20Friends%20%28Official%20Music%20Video%29.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/kjgwd7zz6vty5i5/El%20Cartel%20De%20Los%20Sapos%20-%20Raton%20Y%20Queso%20Version%20Original..%21%21%21.mp3?dl=0");
 
             	   	}
                 	case 10:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Robin%20Thicke%20%20%20Blurred%20Lines%20ft%20TI%2C%20Pharrell.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/dgqwic7om8s1ngs/Los%20Tigres%20Del%20Norte%20-%20Jefe%20De%20Jefes.mp3?dl=0");
 
             	   	}
                		case 11:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Selena%20Gomez%20%20%20Come%20%20Get%20It.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/jnhzqw1ot9qa51l/SantoCachon.mp3?dl=0");
 
             	   	}
                		case 12:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Imagine%20Dragons%20%20%20On%20Top%20of%20the%20World%20%20%20Lyrics.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/863cc8o9xbtkoil/VivoEnELLimbo.mp3?dl=0");
 
             	   	}
                		case 13:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Jason%20Derulo%20%27The%20Other%20Side%27%20Lyrics.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/ukdlzdqnv1ui2mt/LaReina.mp3?dl=0");
 
             	   	}
                		case 14:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Jesse%20%20Joy%20%20%20Corre%20%20%28Lyric%20Video%29.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/me62nr0dqzfpp62/LosA%C3%B1os1600.mp3?dl=0");
 
             	   	}
                		case 15:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Icona%20Pop%20%20%20I%20Love%20It%20%28feat%20Charli%20XCX%29%20%5BOFFICIAL%20VIDEO%5D.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/s36ow8qo7gamr95/ElPreso.mp3?dl=0");
 
             	   	}
                		case 16:
 					{
 					    StopAudioStreamForPlayer(playerid);
-    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/u/88698185/canciones/Xuso%20Jones%20%20%20Turn%20On%20The%20Radio%20%28Lyric%20Video%29.mp3");
+    	     			PlayAudioStreamForPlayer(playerid, "https://dl.dropboxusercontent.com/s/igfjdbtog561upp/Ruben%20Blades%20Pedro%20Navaja%20Video%20Original.mp3?dl=0");
 
             	   	}
                		case 17:
@@ -23976,7 +23990,7 @@ CallBack::CambiarPagina(playerid)
 			SetPlayerCameraLookAt(playerid, 2693.583007, -1648.947387, 36.773063);
 			SetPlayerPos(playerid, 2693.651611, -1644.348999, 0.0000);
 
-			format(string, sizeof(string), "Muy importante es la diversion! Hay muchas formas de divertirte!~n~Por ejemplo, tienes el paintball en el estadio, la pista de karts.~n~Tambien podras organizar fiestas y usar un stereo ~n~que podras comprar en la tienda electronica!~n~La administracion cada cierto tiempo suele realizar eventos...~n~ En resumen, diversion asegurada en ~r~ZonaZero RP!~n~");
+			format(string, sizeof(string), "Muy importante es la diversion! Hay muchas formas de divertirte!~n~Por ejemplo, tienes el paintball en el estadio, la pista de karts.~n~Tambien podras organizar fiestas y usar un stereo ~n~que podras comprar en la tienda electronica!~n~La administracion cada cierto tiempo suele realizar eventos...~n~ En resumen, diversion asegurada en ~r~Colombia-RP RP!~n~");
 			PlayerTextDrawSetString(playerid, InfoText[playerid][4], string);
 			PlayerTextDrawShow(playerid, InfoText[playerid][4]);
 			
