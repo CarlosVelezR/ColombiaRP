@@ -5036,11 +5036,11 @@ public OnGameModeInit()
 	CochesMedicos[1] = AddStaticVehicleAnt(407, 1110.9609, -1328.4464, 13.4448, 1.3679, 3, 3, VEHICULO_SPAWN);      // Camion de Bomberos
 	CochesMedicos[2] = AddStaticVehicleAnt(407, 1123.9703, -1328.4863, 13.4420, 359.8991, 3, 3, VEHICULO_SPAWN);    // Camion de Bomberos
 	CochesMedicos[3] = AddStaticVehicleAnt(416, 1095.5303, -1315.5038, 13.8521, 269.5015, 1, 3, VEHICULO_SPAWN);    // Ambulancia
-	CochesMedicos[4] = AddStaticVehicleAnt(416, 1136.3173, -1338.6797, 13.8751, 0.5538, 1, 3, VEHICULO_SPAWN);      // Ambulancia
-	CochesMedicos[5] = AddStaticVehicleAnt(416, 1141.5852, -1338.4622, 13.7902, 1.1260, 1, 3, VEHICULO_SPAWN);      // Ambulancia
-	CochesMedicos[6] = AddStaticVehicleAnt(596, 1131.2094, -1327.8986, 13.3697, 0.5494, 3, 1, VEHICULO_SPAWN);      // Patrulla LS
-	CochesMedicos[7] = AddStaticVehicleAnt(596, 1134.8329, -1309.3987, 13.3042, 359.3751, 3, 1, VEHICULO_SPAWN);    // Patrulla LS
-	CochesMedicos[8] = AddStaticVehicleAnt(563, 1162.8477, -1309.0045, 32.2224, 271.4168, 1, 3, VEHICULO_SPAWN);    // Raindance [HELICOPTERO]
+	CochesMedicos[4] = AddStaticVehicleAnt(416, 1136.3173, -1338.6797, 13.8751, 0.5538, 1, 7, VEHICULO_SPAWN);      // Ambulancia
+	CochesMedicos[5] = AddStaticVehicleAnt(416, 1141.5852, -1338.4622, 13.7902, 1.1260, 1, 7, VEHICULO_SPAWN);      // Ambulancia
+	CochesMedicos[6] = AddStaticVehicleAnt(596, 1131.2094, -1327.8986, 13.3697, 0.5494, 7, 1, VEHICULO_SPAWN);      // Patrulla LS
+	CochesMedicos[7] = AddStaticVehicleAnt(596, 1134.8329, -1309.3987, 13.3042, 359.3751, 7, 1, VEHICULO_SPAWN);    // Patrulla LS
+	CochesMedicos[8] = AddStaticVehicleAnt(563, 1162.8477, -1309.0045, 32.2224, 271.4168, 1, 7, VEHICULO_SPAWN);    // Raindance [HELICOPTERO]
 
 	CochesMecanicos[0] = AddStaticVehicleAnt(525, 2218.4348, -2285.8645, 13.4286, 45.0082, -1, 103, VEHICULO_SPAWN);                 	// Grua
 	CochesMecanicos[1] = AddStaticVehicleAnt(525, 2249.0920, -2255.0837, 13.4255, 44.5224, -1, 103, VEHICULO_SPAWN);                 	// Grua
