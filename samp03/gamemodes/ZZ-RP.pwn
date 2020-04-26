@@ -4095,7 +4095,7 @@ public OnGameModeInit()
 {
 	AntiDeAMX();
 	//Host, User, Base, Clave
-	servidor[mysqlControl] = mysql_connect("142.11.205.20", "UserDB", "samp1_db", "Rambo412");
+	servidor[mysqlControl] = mysql_connect("142.11.205.20", "root", "samp1_db", "");
 	if(!servidor[mysqlControl])SendRconCommand("exit");
 	mysql_log(LOG_ERROR | LOG_WARNING);
 	
