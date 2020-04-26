@@ -1372,13 +1372,13 @@ enum _@en@fRangos
 new const fRangos[][_@en@fRangos] = 
 {
 	{{"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}}, 
-	{{"Cadete"}, {"Oficial"}, {"Agente"}, {"Sargento"}, {"Capitán"}, {"Comandante"}, {"Civil"}, {"Civil"}}, 
-	{{"Cabo"}, {"Soldado"}, {"Trooper"}, {"Sargento"}, {"Teniente"}, {"Capitán"}, {"Mayor"}, {"Coronel"}}, 
+	{{"Cadete"}, {"Teniente"}, {"Capitan"}, {"Mayor"}, {"Coronel"}, {"General"}, {"Civil"}, {"Civil"}},
+	{{"Cabo"}, {"Sargento"}, {"Teniente"}, {"Capitan"}, {"Mayor"}, {"Coronel"}, {"Comandante"}, {"General"}},
 	{{"Práctico"}, {"Paramedico"}, {"Bombero"}, {"Supervisor General"}, {"Responsable Técnico"}, {"Director"}, {"Civil"}, {"Civil"}}, 
 	{{"Ayudante"}, {"Trucker"}, {"Mecánico"}, {"Ingeniero"}, {"Supervisor"}, {"Director"}, {"Civil"}, {"Civil"}}, 
-	{{"Medico"}, {"Bombero"}, {"Oficial"}, {"Sheriff"}, {"Mecanico"}, {"Gobernador"}, {"Civil"}, {"Civil"}},
-	{{"Seguridad"}, {"Senador"}, {"Ministro"}, {"Alcalde BOG"}, {"Vice-Presidente-S"}, {"Presidente-S"}, {"Civil"}, {"Civil"}},
-	{{"Becario"}, {"Redactor"}, {"Periodista"}, {"Enviado Especial"}, {"Presentador"}, {"Director Caracol"}, {"Civil"}, {"Civil"}},
+	{{"Medico"}, {"Bombero"}, {"Oficial"}, {"Carabinero"}, {"Mecanico"}, {"Gobernador"}, {"Civil"}, {"Civil"}},
+	{{"Seguridad"}, {"Senador"}, {"Ministro"}, {"Alcalde BOG"}, {"Vice-Presidente"}, {"Presidente"}, {"Civil"}, {"Civil"}},
+	{{"Practicante"}, {"Redactor"}, {"Periodista"}, {"Enviado Especial"}, {"Presentador"}, {"Director Caracol"}, {"Civil"}, {"Civil"}},
 	{{"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}}, 
 	{{"Agente"}, {"S. Agente"}, {"Especial"}, {"Criminalista"}, {"Sub-Director"}, {"Director"}, {"Civil"}, {"Civil"}}
 };
