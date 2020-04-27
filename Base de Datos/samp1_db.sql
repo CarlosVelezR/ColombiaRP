@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.1
--- http://www.phpmyadmin.net
+-- version 4.4.15.10
+-- https://www.phpmyadmin.net
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 07-06-2016 a las 04:27:00
--- Versión del servidor: 10.1.10-MariaDB
--- Versión de PHP: 5.5.33
+-- Servidor: localhost
+-- Tiempo de generación: 26-04-2020 a las 18:42:14
+-- Versión del servidor: 5.5.64-MariaDB
+-- Versión de PHP: 7.0.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,8 +17,10 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Base de datos: `db_zonazero`
+-- Base de datos: `samp1_db`
 --
+CREATE DATABASE IF NOT EXISTS `samp1_db` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
+USE `samp1_db`;
 
 -- --------------------------------------------------------
 
@@ -26,7 +28,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `zz_autosfacc`
 --
 
-CREATE TABLE `zz_autosfacc` (
+CREATE TABLE IF NOT EXISTS `zz_autosfacc` (
   `idunico` int(4) NOT NULL,
   `faccion` int(2) NOT NULL,
   `col1` int(3) NOT NULL,
@@ -36,7 +38,7 @@ CREATE TABLE `zz_autosfacc` (
   `posz` float NOT NULL,
   `posa` float NOT NULL,
   `modelo` int(3) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=151 DEFAULT CHARSET=latin1;
 
 --
 -- Volcado de datos para la tabla `zz_autosfacc`
@@ -200,7 +202,7 @@ INSERT INTO `zz_autosfacc` (`idunico`, `faccion`, `col1`, `col2`, `posx`, `posy`
 -- Estructura de tabla para la tabla `zz_bantmp`
 --
 
-CREATE TABLE `zz_bantmp` (
+CREATE TABLE IF NOT EXISTS `zz_bantmp` (
   `nombreadmin` varchar(24) NOT NULL,
   `nombrejugador` varchar(24) NOT NULL,
   `razon` varchar(128) NOT NULL,
@@ -214,7 +216,7 @@ CREATE TABLE `zz_bantmp` (
 -- Estructura de tabla para la tabla `zz_casas`
 --
 
-CREATE TABLE `zz_casas` (
+CREATE TABLE IF NOT EXISTS `zz_casas` (
   `casaid` int(11) NOT NULL,
   `ocupado` int(11) NOT NULL,
   `propietario` varchar(24) NOT NULL,
@@ -240,7 +242,7 @@ CREATE TABLE `zz_casas` (
   `speed` int(11) NOT NULL,
   `ectasi` int(11) NOT NULL,
   `ritalin` int(11) NOT NULL,
-  `heroina` int(11) NOT NULL,
+  `cocaina` int(11) NOT NULL,
   `marihuana` int(11) NOT NULL,
   `world` int(11) NOT NULL,
   `tiempo` int(11) NOT NULL
@@ -250,7 +252,7 @@ CREATE TABLE `zz_casas` (
 -- Volcado de datos para la tabla `zz_casas`
 --
 
-INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre`, `entradax`, `entraday`, `entradaz`, `salidax`, `saliday`, `salidaz`, `interior`, `nivel`, `precio`, `seguro`, `cuartos`, `renta`, `rentabil`, `arma`, `municion`, `materiales`, `drogas`, `speed`, `ectasi`, `ritalin`, `heroina`, `marihuana`, `world`, `tiempo`) VALUES
+INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre`, `entradax`, `entraday`, `entradaz`, `salidax`, `saliday`, `salidaz`, `interior`, `nivel`, `precio`, `seguro`, `cuartos`, `renta`, `rentabil`, `arma`, `municion`, `materiales`, `drogas`, `speed`, `ectasi`, `ritalin`, `cocaina`, `marihuana`, `world`, `tiempo`) VALUES
 (0, 0, 'El Estado', 'Ganton', 'Casa Muestra', 2469.55, -1646.35, 13.7801, 223.392, 1287.51, 1082.14, 1, 3, 10140, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (1, 0, 'El Estado', 'Los Santos', 'Casa Particular', 1456.13, 2773.42, 10.8203, 2325.14, -1149.13, 1050.71, 12, 10, 420886, 0, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0),
 (2, 0, 'El Estado', 'Los Santos', 'Casa Particular', 1093.82, -806.785, 107.42, 2270.14, -1210.41, 1047.56, 10, 8, 228341, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0),
@@ -545,7 +547,7 @@ INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre
 (291, 0, 'Sin Propietario', 'Los Santos', 'Casa Particular', 2091.47, -1068.11, 28.0853, 2282.93, -1140.02, 1050.9, 11, 5, 57208, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 291, 0),
 (292, 0, 'El Estado', 'Los Santos', 'Casa Particular', 2077.27, -1056.96, 31.3459, 223.392, 1287.51, 1082.14, 1, 3, 17642, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 292, 0),
 (293, 0, 'El Estado', 'Los Santos', 'Casa Particular', 2035.82, -1059.33, 25.6508, 223.392, 1287.51, 1082.14, 1, 3, 13906, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 293, 0);
-INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre`, `entradax`, `entraday`, `entradaz`, `salidax`, `saliday`, `salidaz`, `interior`, `nivel`, `precio`, `seguro`, `cuartos`, `renta`, `rentabil`, `arma`, `municion`, `materiales`, `drogas`, `speed`, `ectasi`, `ritalin`, `heroina`, `marihuana`, `world`, `tiempo`) VALUES
+INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre`, `entradax`, `entraday`, `entradaz`, `salidax`, `saliday`, `salidaz`, `interior`, `nivel`, `precio`, `seguro`, `cuartos`, `renta`, `rentabil`, `arma`, `municion`, `materiales`, `drogas`, `speed`, `ectasi`, `ritalin`, `cocaina`, `marihuana`, `world`, `tiempo`) VALUES
 (294, 0, 'El Estado', 'Los Santos', 'Casa Particular', 2105.44, -1055.99, 27.1686, 223.392, 1287.51, 1082.14, 1, 3, 12327, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 294, 0),
 (295, 0, 'El Estado', 'Los Santos', 'Casa Particular', 2099.79, -1051.72, 28.8146, 223.392, 1287.51, 1082.14, 1, 3, 9423, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 295, 0),
 (296, 0, 'El Estado', 'Los Santos', 'Casa Particular', 2093.79, -1047.34, 30.107, 223.392, 1287.51, 1082.14, 1, 3, 14752, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 296, 0),
@@ -836,7 +838,7 @@ INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre
 (581, 0, 'El Estado', 'Los Santos', 'Casa Particular', 1252.89, -901.886, 42.8828, 2308.94, -1212.35, 1049.02, 6, 2, 4400, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 581, 0),
 (582, 0, 'El Estado', 'Los Santos', 'Casa Particular', 1242.13, -878.331, 46.6406, 2308.94, -1212.35, 1049.02, 6, 2, 5943, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 582, 0),
 (583, 0, 'El Estado', 'Los Santos', 'Casa Particular', 1249.61, -877.297, 46.6406, 2308.94, -1212.35, 1049.02, 6, 2, 6045, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 583, 0);
-INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre`, `entradax`, `entraday`, `entradaz`, `salidax`, `saliday`, `salidaz`, `interior`, `nivel`, `precio`, `seguro`, `cuartos`, `renta`, `rentabil`, `arma`, `municion`, `materiales`, `drogas`, `speed`, `ectasi`, `ritalin`, `heroina`, `marihuana`, `world`, `tiempo`) VALUES
+INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre`, `entradax`, `entraday`, `entradaz`, `salidax`, `saliday`, `salidaz`, `interior`, `nivel`, `precio`, `seguro`, `cuartos`, `renta`, `rentabil`, `arma`, `municion`, `materiales`, `drogas`, `speed`, `ectasi`, `ritalin`, `cocaina`, `marihuana`, `world`, `tiempo`) VALUES
 (584, 0, 'El Estado', 'Los Santos', 'Casa Particular', 1241.3, -872.053, 46.6329, 2308.94, -1212.35, 1049.02, 6, 2, 3585, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 584, 0),
 (585, 0, 'El Estado', 'Los Santos', 'Casa Particular', 1248.81, -871.169, 46.6329, 2308.94, -1212.35, 1049.02, 6, 2, 5756, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 585, 0),
 (586, 0, 'El Estado', 'Los Santos', 'Casa Particular', 1249.62, -877.329, 42.8828, 2308.94, -1212.35, 1049.02, 6, 2, 4649, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 586, 0),
@@ -1185,7 +1187,7 @@ INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre
 (929, 0, 'Sin Propietario', 'Los Santos', 'Casa Particular', 3000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 929, 0),
 (930, 0, 'Sin Propietario', 'Los Santos', 'Casa Particular', 3000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 930, 0),
 (931, 0, 'Sin Propietario', 'Los Santos', 'Casa Particular', 3000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 931, 0);
-INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre`, `entradax`, `entraday`, `entradaz`, `salidax`, `saliday`, `salidaz`, `interior`, `nivel`, `precio`, `seguro`, `cuartos`, `renta`, `rentabil`, `arma`, `municion`, `materiales`, `drogas`, `speed`, `ectasi`, `ritalin`, `heroina`, `marihuana`, `world`, `tiempo`) VALUES
+INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre`, `entradax`, `entraday`, `entradaz`, `salidax`, `saliday`, `salidaz`, `interior`, `nivel`, `precio`, `seguro`, `cuartos`, `renta`, `rentabil`, `arma`, `municion`, `materiales`, `drogas`, `speed`, `ectasi`, `ritalin`, `cocaina`, `marihuana`, `world`, `tiempo`) VALUES
 (932, 0, 'Sin Propietario', 'Los Santos', 'Casa Particular', 3000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 932, 0),
 (933, 0, 'Sin Propietario', 'Los Santos', 'Casa Particular', 3000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 933, 0),
 (934, 0, 'Sin Propietario', 'Los Santos', 'Casa Particular', 3000, 0, 0, 0, 0, 0, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 934, 0),
@@ -1261,7 +1263,7 @@ INSERT INTO `zz_casas` (`casaid`, `ocupado`, `propietario`, `ubicacion`, `nombre
 -- Estructura de tabla para la tabla `zz_coches`
 --
 
-CREATE TABLE `zz_coches` (
+CREATE TABLE IF NOT EXISTS `zz_coches` (
   `carid` int(11) NOT NULL,
   `modelo` int(11) NOT NULL,
   `propietario` varchar(24) NOT NULL,
@@ -2112,7 +2114,7 @@ INSERT INTO `zz_coches` (`carid`, `modelo`, `propietario`, `nombre`, `ocupado`, 
 -- Estructura de tabla para la tabla `zz_familias`
 --
 
-CREATE TABLE `zz_familias` (
+CREATE TABLE IF NOT EXISTS `zz_familias` (
   `fslot` int(11) NOT NULL,
   `focupado` int(11) NOT NULL,
   `fnombre` varchar(64) NOT NULL,
@@ -2159,7 +2161,7 @@ INSERT INTO `zz_familias` (`fslot`, `focupado`, `fnombre`, `frango1`, `frango2`,
 -- Estructura de tabla para la tabla `zz_ilegalfacciones`
 --
 
-CREATE TABLE `zz_ilegalfacciones` (
+CREATE TABLE IF NOT EXISTS `zz_ilegalfacciones` (
   `ifid` int(2) NOT NULL,
   `ifuso` int(1) NOT NULL,
   `ifnombre` varchar(32) NOT NULL,
@@ -2261,7 +2263,7 @@ INSERT INTO `zz_ilegalfacciones` (`ifid`, `ifuso`, `ifnombre`, `ifrango0`, `ifra
 -- Estructura de tabla para la tabla `zz_inventario`
 --
 
-CREATE TABLE `zz_inventario` (
+CREATE TABLE IF NOT EXISTS `zz_inventario` (
   `unico` int(8) NOT NULL,
   `arma0` int(2) NOT NULL,
   `arma1` int(2) NOT NULL,
@@ -2284,6 +2286,8 @@ CREATE TABLE `zz_inventario` (
 --
 
 INSERT INTO `zz_inventario` (`unico`, `arma0`, `arma1`, `arma2`, `arma3`, `arma4`, `arma5`, `balas0`, `balas1`, `balas2`, `balas3`, `balas4`, `balas5`, `bebida`, `bebida2`) VALUES
+(1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+(2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (223, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (512, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 (18969, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
@@ -2299,7 +2303,7 @@ INSERT INTO `zz_inventario` (`unico`, `arma0`, `arma1`, `arma2`, `arma3`, `arma4
 -- Estructura de tabla para la tabla `zz_juguetes`
 --
 
-CREATE TABLE `zz_juguetes` (
+CREATE TABLE IF NOT EXISTS `zz_juguetes` (
   `nombre` varchar(24) NOT NULL,
   `model0` int(6) NOT NULL,
   `model1` int(6) NOT NULL,
@@ -2358,13 +2362,21 @@ CREATE TABLE `zz_juguetes` (
   `scalez4` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Volcado de datos para la tabla `zz_juguetes`
+--
+
+INSERT INTO `zz_juguetes` (`nombre`, `model0`, `model1`, `model2`, `model3`, `model4`, `bone0`, `bone1`, `bone2`, `bone3`, `bone4`, `posx0`, `posx1`, `posx2`, `posx3`, `posx4`, `posy0`, `posy1`, `posy2`, `posy3`, `posy4`, `posz0`, `posz1`, `posz2`, `posz3`, `posz4`, `rotx0`, `rotx1`, `rotx2`, `rotx3`, `rotx4`, `roty0`, `roty1`, `roty2`, `roty3`, `roty4`, `rotz0`, `rotz1`, `rotz2`, `rotz3`, `rotz4`, `scalex0`, `scalex1`, `scalex2`, `scalex3`, `scalex4`, `scaley0`, `scaley1`, `scaley2`, `scaley3`, `scaley4`, `scalez0`, `scalez1`, `scalez2`, `scalez3`, `scalez4`) VALUES
+('Camilo_Velez', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+('Carlos_Velez', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0);
+
 -- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `zz_maletas`
 --
 
-CREATE TABLE `zz_maletas` (
+CREATE TABLE IF NOT EXISTS `zz_maletas` (
   `vehicleid` int(4) NOT NULL,
   `arma1` int(2) NOT NULL,
   `arma2` int(2) NOT NULL,
@@ -4395,7 +4407,7 @@ INSERT INTO `zz_maletas` (`vehicleid`, `arma1`, `arma2`, `arma3`, `arma4`, `arma
 -- Estructura de tabla para la tabla `zz_negocios`
 --
 
-CREATE TABLE `zz_negocios` (
+CREATE TABLE IF NOT EXISTS `zz_negocios` (
   `negocioid` int(11) NOT NULL,
   `owned` int(11) NOT NULL,
   `owner` varchar(24) NOT NULL,
@@ -4932,7 +4944,7 @@ INSERT INTO `zz_negocios` (`negocioid`, `owned`, `owner`, `name`, `extortion`, `
 -- Estructura de tabla para la tabla `zz_rejas`
 --
 
-CREATE TABLE `zz_rejas` (
+CREATE TABLE IF NOT EXISTS `zz_rejas` (
   `unico` int(2) NOT NULL,
   `modelo` int(5) NOT NULL,
   `cobra` int(4) NOT NULL,
@@ -5013,7 +5025,7 @@ INSERT INTO `zz_rejas` (`unico`, `modelo`, `cobra`, `faccion`, `aposx`, `aposy`,
 -- Estructura de tabla para la tabla `zz_servidor`
 --
 
-CREATE TABLE `zz_servidor` (
+CREATE TABLE IF NOT EXISTS `zz_servidor` (
   `fondos` int(8) NOT NULL,
   `jackpot` int(8) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -5024,7 +5036,7 @@ CREATE TABLE `zz_servidor` (
 -- Estructura de tabla para la tabla `zz_tablaip`
 --
 
-CREATE TABLE `zz_tablaip` (
+CREATE TABLE IF NOT EXISTS `zz_tablaip` (
   `ipaddress` varchar(16) NOT NULL,
   `razon` varchar(128) NOT NULL,
   `fecha` varchar(24) NOT NULL,
@@ -5037,7 +5049,7 @@ CREATE TABLE `zz_tablaip` (
 -- Estructura de tabla para la tabla `zz_usuarios`
 --
 
-CREATE TABLE `zz_usuarios` (
+CREATE TABLE IF NOT EXISTS `zz_usuarios` (
   `id` int(11) NOT NULL,
   `nombre` varchar(24) NOT NULL,
   `clave` varchar(48) NOT NULL,
@@ -5072,7 +5084,7 @@ CREATE TABLE `zz_usuarios` (
   `speed` int(11) NOT NULL,
   `ectasy` int(11) NOT NULL,
   `ritalin` int(11) NOT NULL,
-  `heroina` int(11) NOT NULL,
+  `cocaina` int(11) NOT NULL,
   `marihuana` int(11) NOT NULL,
   `lider` int(2) NOT NULL,
   `miembro` int(2) NOT NULL,
@@ -5234,7 +5246,15 @@ CREATE TABLE `zz_usuarios` (
   `avatar` varchar(255) DEFAULT 'http://images.gofreedownload.net/default-profile-picture-8242.jpg',
   `soporte` varchar(25) DEFAULT '0',
   `tadmin` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `zz_usuarios`
+--
+
+INSERT INTO `zz_usuarios` (`id`, `nombre`, `clave`, `clave2`, `online`, `nivel`, `contrato`, `niveladmin`, `zzcash`, `connectedtime`, `acento`, `registro`, `sexo`, `edad`, `origen`, `estilocaminar`, `cobro`, `stereo`, `respeto`, `dinero`, `dinerobanco`, `cheques`, `kills`, `muertes`, `arrestos`, `lottonr`, `trabajo`, `carcel`, `tiempocarcel`, `materiales`, `drogas`, `speed`, `ectasy`, `ritalin`, `cocaina`, `marihuana`, `lider`, `miembro`, `rango`, `caracter`, `salud`, `chaleco`, `interior`, `virtualworld`, `team`, `model`, `numerotelefonico`, `minutos`, `minutr`, `horas`, `mtexto`, `ipod`, `auto`, `auto2`, `auto3`, `auto4`, `tiempoauto`, `tiempoauto2`, `casa`, `negocio`, `posicionx`, `posiciony`, `posicionz`, `licenciaauto`, `licenciaarma`, `gafas`, `tutorial`, `antecedente1`, `antecedente2`, `antecedente3`, `nota1`, `nota2`, `nota3`, `nota4`, `nota5`, `sms1`, `sms2`, `sms3`, `sms4`, `sms5`, `encendedor`, `cigarrillos`, `mascara`, `locked`, `advertencias`, `adminadver`, `dni`, `estado`, `weap0`, `ammo0`, `weap1`, `ammo1`, `weap2`, `ammo2`, `weap3`, `ammo3`, `weap4`, `ammo4`, `weap5`, `ammo5`, `weap6`, `ammo6`, `weap7`, `ammo7`, `weap8`, `ammo8`, `weap9`, `ammo9`, `weap10`, `ammo10`, `weap11`, `ammo11`, `maleta`, `mochila`, `casco`, `miniwofer`, `fam`, `famr`, `deagle`, `shotgun`, `mp5`, `ak47`, `m4`, `sniper`, `fstyle`, `leccion`, `busqueda`, `rent`, `rob`, `donate`, `donatedia`, `donatemes`, `donateyear`, `banduda`, `seguro`, `walkie`, `head`, `married`, `marriedto`, `entered`, `peces`, `implementos`, `pagas`, `fichas`, `hambre`, `enfermedad`, `enfermedad2`, `enfermedad3`, `pulsera`, `aretes`, `reloj`, `cobrap`, `scorerp`, `tarjeta`, `advrol`, `dia`, `mes`, `hora`, `paquete`, `packtipo`, `skill0`, `skill1`, `skill2`, `skill3`, `skill4`, `skill5`, `skill6`, `skill7`, `skill8`, `skill9`, `skill10`, `skill11`, `skill12`, `inv10`, `inv11`, `inv20`, `inv21`, `monedas`, `ultconn`, `semillas1`, `semillas2`, `semillas3`, `semillas4`, `semillas5`, `navidad`, `janombre`, `jrazon`, `licenciavuelo`, `licenciabote`, `licenciamoto`, `negocio2`, `casa2`, `Correo`, `avatar`, `soporte`, `tadmin`) VALUES
+(1, 'Carlos_Velez', '3fb66d2cd2ad4731c18883b3e266882c', '', 1, 15, 0, 2014, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 50, 0, 0, 0, 3, 0, 0, 0, 1, 4, 0, 0, 0, 0, 0, 0, 0, 0, 9999, 9999, 180.242, -18.428, 1.578, 0, 1, 0, 1, '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100, 100, 100, 100, 100, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 1, 0, 0, 0, '27/04/2020 - 01:33:00', 0, 0, 0, 0, 0, 0, '', '', 0, 0, 0, 9999, 9999, '0', 'http://images.gofreedownload.net/default-profile-picture-8242.jpg', '0', '2020-04-27 01:34:42'),
+(2, 'Camilo_Velez', 'a42ab6bae5ba4a8d263e48e8c90076f5', '', 1, 15, 0, 2014, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 3000, 3500, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 26, 50, 0, 0, 0, 3, 0, 0, 0, 24, 150, 0, 0, 0, 0, 0, 0, 0, 0, 9999, 9999, -867.544, -934.93, 160.841, 0, 0, 0, 1, '', '', '', '', '', '', '', '', '', '', '', '', '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 100, 100, 100, 100, 100, 100, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1587959547, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 11, 1, 0, 0, 0, '27/04/2020 - 01:37:45', 0, 0, 0, 0, 0, 0, '', '', 0, 0, 0, 9999, 9999, '0', 'http://images.gofreedownload.net/default-profile-picture-8242.jpg', '0', '2020-04-27 01:40:49');
 
 --
 -- Índices para tablas volcadas
@@ -5327,12 +5347,12 @@ ALTER TABLE `zz_usuarios`
 -- AUTO_INCREMENT de la tabla `zz_autosfacc`
 --
 ALTER TABLE `zz_autosfacc`
-  MODIFY `idunico` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=151;
+  MODIFY `idunico` int(4) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=151;
 --
 -- AUTO_INCREMENT de la tabla `zz_usuarios`
 --
 ALTER TABLE `zz_usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=3;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
