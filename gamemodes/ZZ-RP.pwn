@@ -5001,46 +5001,46 @@ public OnGameModeInit()
 		AddPlayerClass(i, 0.0, 0.0, 0.0, 0.0, 0, 0, 0, 0, 0, 0);
 	}
 	// -====[ Vehiculos Del Servidor, Se puede extender]====- //
-	CochesPolicia[0] = AddStaticVehicleAnt(596, 1601.9473, -1696.1240, 5.6107, 89.0810, 0, 1, VEHICULO_SPAWN);			// Patrulla
-	CochesPolicia[1] = AddStaticVehicleAnt(596, 1602.1748, -1691.9042, 5.6110, 88.4362, 0, 1, VEHICULO_SPAWN);        // Patrulla
-	CochesPolicia[2] = AddStaticVehicleAnt(596, 1602.0411, -1700.2920, 5.6110, 88.6648, 0, 1, VEHICULO_SPAWN);        // Patrulla
-	CochesPolicia[3] = AddStaticVehicleAnt(596, 1601.8983, -1704.0681, 5.6115, 89.3552, 0, 1, VEHICULO_SPAWN);        // Patrulla
-	CochesPolicia[4] = AddStaticVehicleAnt(596, 1587.3389, -1710.4362, 5.6118, 1.0410, 0, 1, VEHICULO_SPAWN);         // Patrulla
-	CochesPolicia[5] = AddStaticVehicleAnt(596, 1583.4728, -1710.5020, 5.6120, 359.4709, 0, 1, VEHICULO_SPAWN);       // Patrulla
-    CochesPolicia[6] = AddStaticVehicleAnt(402, 1545.2308, -1680.1783, 5.7223, 89.2245, 0, 0, VEHICULO_SPAWN); SetVehicleAttachedObject(CochesPolicia[6], 0, 19419, 0.0, -0.3, 0.8, 0.000000, 0.000000, 0.000000);
-	CochesPolicia[7] = AddStaticVehicleAnt(411, 1544.4467, -1676.0834, 5.6177, 89.6164, 0, 0, VEHICULO_SPAWN); SetVehicleAttachedObject(CochesPolicia[7], 0, 19419, 0.0, -0.2, 0.7, 0.000000, 0.000000, 0.000000);
+	CochesPolicia[0] = AddStaticVehicleAnt(596, 1601.9473, -1696.1240, 5.6107, 89.0810, 86, 1, VEHICULO_SPAWN);			// Patrulla
+	CochesPolicia[1] = AddStaticVehicleAnt(596, 1602.1748, -1691.9042, 5.6110, 88.4362, 86, 1, VEHICULO_SPAWN);        // Patrulla
+	CochesPolicia[2] = AddStaticVehicleAnt(596, 1602.0411, -1700.2920, 5.6110, 88.6648, 86, 1, VEHICULO_SPAWN);        // Patrulla
+	CochesPolicia[3] = AddStaticVehicleAnt(596, 1601.8983, -1704.0681, 5.6115, 89.3552, 86, 1, VEHICULO_SPAWN);        // Patrulla
+	CochesPolicia[4] = AddStaticVehicleAnt(596, 1587.3389, -1710.4362, 5.6118, 1.0410, 86, 1, VEHICULO_SPAWN);         // Patrulla
+	CochesPolicia[5] = AddStaticVehicleAnt(596, 1583.4728, -1710.5020, 5.6120, 359.4709, 86, 1, VEHICULO_SPAWN);       // Patrulla
+    CochesPolicia[6] = AddStaticVehicleAnt(402, 1545.2308, -1680.1783, 5.7223, 89.2245, 86, 0, VEHICULO_SPAWN); SetVehicleAttachedObject(CochesPolicia[6], 0, 19419, 0.0, -0.3, 0.8, 0.000000, 0.000000, 0.000000);
+	CochesPolicia[7] = AddStaticVehicleAnt(411, 1544.4467, -1676.0834, 5.6177, 89.6164, 86, 0, VEHICULO_SPAWN); SetVehicleAttachedObject(CochesPolicia[7], 0, 19419, 0.0, -0.2, 0.7, 0.000000, 0.000000, 0.000000);
 	CochesPolicia[8] = AddStaticVehicleAnt(430, 635.1070, -2006.1445, -0.1934, 354.5684, -1, -1, VEHICULO_SPAWN);    // Predator
-	CochesPolicia[9] = AddStaticVehicleAnt(599, 1570.1743, -1710.9041, 6.0789, 0.5127, 0, 1, VEHICULO_SPAWN);        // Ranger
-	CochesPolicia[10] = AddStaticVehicleAnt(599, 1574.3672, -1710.9801, 6.0787, 0.3933, 0, 1, VEHICULO_SPAWN);       // Ranger
+	CochesPolicia[9] = AddStaticVehicleAnt(599, 1570.1743, -1710.9041, 6.0789, 0.5127, 86, 1, VEHICULO_SPAWN);        // Ranger
+	CochesPolicia[10] = AddStaticVehicleAnt(599, 1574.3672, -1710.9801, 6.0787, 0.3933, 86, 1, VEHICULO_SPAWN);       // Ranger
 	CochesPolicia[11] = AddStaticVehicleAnt(525, 2437.7898, -2077.6123, 13.4239, 180.6872, 255, 103, VEHICULO_SPAWN); // Grua 1
 	CochesPolicia[12] = AddStaticVehicleAnt(525, 2448.0420, -2077.7617, 13.4239, 180.9981, 255, 103, VEHICULO_SPAWN); // Grua 2
-	CochesPolicia[13] = AddStaticVehicleAnt(523, 1583.7402, -1668.5023, 5.4657, 88.7599, 0, 1, VEHICULO_SPAWN);      // HPV 1000
-	CochesPolicia[14] = AddStaticVehicleAnt(523, 1583.7308, -1671.5286, 5.4637, 87.6115, 0, 1, VEHICULO_SPAWN);      // HPV 1000
-	CochesPolicia[15] = AddStaticVehicleAnt(523, 1583.8281, -1674.2369, 5.4653, 89.9781, 0, 1, VEHICULO_SPAWN);      // HPV 1000
-	CochesPolicia[16] = AddStaticVehicleAnt(427, 1538.5195, -1645.3208, 6.0224, 178.7787, 0, 1, VEHICULO_SPAWN);     // Enforcer
-	CochesPolicia[17] = AddStaticVehicleAnt(427, 1534.8190, -1645.2932, 6.0222, 178.9228, 0, 1, VEHICULO_SPAWN);     // Enforcer
-	CochesPolicia[18] = AddStaticVehicleAnt(601, 1526.7194, -1644.9723, 5.6494, 179.5714, 0, 1, VEHICULO_SPAWN);     // SWAT Van
-	CochesPolicia[19] = AddStaticVehicleAnt(497, 1564.4968, -1653.5677, 28.5751, 271.6026, 0, 1, VEHICULO_SPAWN);    // Maverick LSPD [HELICOPTERO]
+	CochesPolicia[13] = AddStaticVehicleAnt(523, 1583.7402, -1668.5023, 5.4657, 88.7599, 86, 1, VEHICULO_SPAWN);      // HPV 1000
+	CochesPolicia[14] = AddStaticVehicleAnt(523, 1583.7308, -1671.5286, 5.4637, 87.6115, 86, 1, VEHICULO_SPAWN);      // HPV 1000
+	CochesPolicia[15] = AddStaticVehicleAnt(523, 1583.8281, -1674.2369, 5.4653, 89.9781, 86, 1, VEHICULO_SPAWN);      // HPV 1000
+	CochesPolicia[16] = AddStaticVehicleAnt(427, 1538.5195, -1645.3208, 6.0224, 178.7787, 86, 1, VEHICULO_SPAWN);     // Enforcer
+	CochesPolicia[17] = AddStaticVehicleAnt(427, 1534.8190, -1645.2932, 6.0222, 178.9228, 86, 1, VEHICULO_SPAWN);     // Enforcer
+	CochesPolicia[18] = AddStaticVehicleAnt(601, 1526.7194, -1644.9723, 5.6494, 179.5714, 86, 1, VEHICULO_SPAWN);     // SWAT Van
+	CochesPolicia[19] = AddStaticVehicleAnt(497, 1564.4968, -1653.5677, 28.5751, 271.6026, 86, 1, VEHICULO_SPAWN);    // Maverick LSPD [HELICOPTERO]
 	CochesPolicia[20] = AddStaticVehicleAnt(430, 661.1824, -2006.5925, -0.5202, 38.5216, -1, -1, VEHICULO_SPAWN);    // Predator
 	CochesPolicia[21] = AddStaticVehicleAnt(430, 646.9103, -2007.3157, 0.0745, 354.4583, -1, -1, VEHICULO_SPAWN);    // Predator
 	CochesPolicia[22] = AddStaticVehicleAnt(525, 2458.3225, -2077.9106, 13.4237, 180.5472, 255, 103, VEHICULO_SPAWN);   // Grua 3
-	CochesPolicia[23] = AddStaticVehicleAnt(596, 1601.9880, -1687.8237, 5.6110, 89.6723, 0, 1, VEHICULO_SPAWN); 		// Patrulla nueva 1
-	CochesPolicia[24] = AddStaticVehicleAnt(596, 1602.2769, -1684.0154, 5.6119, 89.6658, 0, 1, VEHICULO_SPAWN); 		// Patrulla nueva 2
-	CochesPolicia[25] = AddStaticVehicleAnt(596, 1591.4995, -1710.3190, 5.6105, 359.6988, 0, 1, VEHICULO_SPAWN); 		// Patrulla nueva 3
-	CochesPolicia[26] = AddStaticVehicleAnt(596, 1595.5188, -1710.3881, 5.6109, 358.7049, 0, 1, VEHICULO_SPAWN); 		// Patrulla nueva 4
-	CochesPolicia[27] = AddStaticVehicleAnt(528, 1546.5891, -1654.8442, 5.9344, 90.4177, 0, 0, VEHICULO_SPAWN); 		// FBI trucker 1
-	CochesPolicia[28] = AddStaticVehicleAnt(528, 1546.4629, -1650.9556, 5.9348, 90.2691, 0, 0, VEHICULO_SPAWN); 		// FBI trucker 2
-	CochesPolicia[29] = AddStaticVehicleAnt(601, 1530.5052, -1644.9598, 5.6494, 179.5481, 0, 0, VEHICULO_SPAWN); 		// SWAT Van 2
+	CochesPolicia[23] = AddStaticVehicleAnt(596, 1601.9880, -1687.8237, 5.6110, 89.6723, 86, 1, VEHICULO_SPAWN); 		// Patrulla nueva 1
+	CochesPolicia[24] = AddStaticVehicleAnt(596, 1602.2769, -1684.0154, 5.6119, 89.6658, 86, 1, VEHICULO_SPAWN); 		// Patrulla nueva 2
+	CochesPolicia[25] = AddStaticVehicleAnt(596, 1591.4995, -1710.3190, 5.6105, 359.6988, 86, 1, VEHICULO_SPAWN); 		// Patrulla nueva 3
+	CochesPolicia[26] = AddStaticVehicleAnt(596, 1595.5188, -1710.3881, 5.6109, 358.7049, 86, 1, VEHICULO_SPAWN); 		// Patrulla nueva 4
+	CochesPolicia[27] = AddStaticVehicleAnt(528, 1546.5891, -1654.8442, 5.9344, 90.4177, 86, 0, VEHICULO_SPAWN); 		// FBI trucker 1
+	CochesPolicia[28] = AddStaticVehicleAnt(528, 1546.4629, -1650.9556, 5.9348, 90.2691, 86, 0, VEHICULO_SPAWN); 		// FBI trucker 2
+	CochesPolicia[29] = AddStaticVehicleAnt(601, 1530.5052, -1644.9598, 5.6494, 179.5481, 86, 0, VEHICULO_SPAWN); 		// SWAT Van 2
 
 	CochesMedicos[0] = AddStaticVehicleAnt(407, 1097.6229, -1328.4508, 13.4449, 359.6445, 3, 3, VEHICULO_SPAWN);    // Camion de Bomberos
 	CochesMedicos[1] = AddStaticVehicleAnt(407, 1110.9609, -1328.4464, 13.4448, 1.3679, 3, 3, VEHICULO_SPAWN);      // Camion de Bomberos
 	CochesMedicos[2] = AddStaticVehicleAnt(407, 1123.9703, -1328.4863, 13.4420, 359.8991, 3, 3, VEHICULO_SPAWN);    // Camion de Bomberos
-	CochesMedicos[3] = AddStaticVehicleAnt(416, 1095.5303, -1315.5038, 13.8521, 269.5015, 1, 3, VEHICULO_SPAWN);    // Ambulancia
-	CochesMedicos[4] = AddStaticVehicleAnt(416, 1136.3173, -1338.6797, 13.8751, 0.5538, 1, 3, VEHICULO_SPAWN);      // Ambulancia
-	CochesMedicos[5] = AddStaticVehicleAnt(416, 1141.5852, -1338.4622, 13.7902, 1.1260, 1, 3, VEHICULO_SPAWN);      // Ambulancia
-	CochesMedicos[6] = AddStaticVehicleAnt(596, 1131.2094, -1327.8986, 13.3697, 0.5494, 3, 1, VEHICULO_SPAWN);      // Patrulla LS
-	CochesMedicos[7] = AddStaticVehicleAnt(596, 1134.8329, -1309.3987, 13.3042, 359.3751, 3, 1, VEHICULO_SPAWN);    // Patrulla LS
-	CochesMedicos[8] = AddStaticVehicleAnt(563, 1162.8477, -1309.0045, 32.2224, 271.4168, 1, 3, VEHICULO_SPAWN);    // Raindance [HELICOPTERO]
+	CochesMedicos[3] = AddStaticVehicleAnt(416, 1095.5303, -1315.5038, 13.8521, 269.5015, 1, 7, VEHICULO_SPAWN);    // Ambulancia
+	CochesMedicos[4] = AddStaticVehicleAnt(416, 1136.3173, -1338.6797, 13.8751, 0.5538, 1, 7, VEHICULO_SPAWN);      // Ambulancia
+	CochesMedicos[5] = AddStaticVehicleAnt(416, 1141.5852, -1338.4622, 13.7902, 1.1260, 1, 7, VEHICULO_SPAWN);      // Ambulancia
+	CochesMedicos[6] = AddStaticVehicleAnt(596, 1131.2094, -1327.8986, 13.3697, 0.5494, 7, 1, VEHICULO_SPAWN);      // Patrulla LS
+	CochesMedicos[7] = AddStaticVehicleAnt(596, 1134.8329, -1309.3987, 13.3042, 359.3751, 7, 1, VEHICULO_SPAWN);    // Patrulla LS
+	CochesMedicos[8] = AddStaticVehicleAnt(563, 1162.8477, -1309.0045, 32.2224, 271.4168, 1, 7, VEHICULO_SPAWN);    // Raindance [HELICOPTERO]
 
 	CochesMecanicos[0] = AddStaticVehicleAnt(525, 2218.4348, -2285.8645, 13.4286, 45.0082, -1, 103, VEHICULO_SPAWN);                 	// Grua
 	CochesMecanicos[1] = AddStaticVehicleAnt(525, 2249.0920, -2255.0837, 13.4255, 44.5224, -1, 103, VEHICULO_SPAWN);                 	// Grua
@@ -5054,10 +5054,10 @@ public OnGameModeInit()
 	CochesMecanicos[9] = AddStaticVehicleAnt(554, 2193.8828, -2311.0906, 13.6332, 43.2058, 96, 53, VEHICULO_SPAWN);                   // Yosemite
 	CochesMecanicos[10] = AddStaticVehicleAnt(554, 2200.1372, -2304.9612, 13.6228, 41.6273, 96, 53, VEHICULO_SPAWN);                  // Yosemite
 
-	CochesNoticias[0] = AddStaticVehicleAnt(582, 746.9738, -1335.4572, 13.7571, 180.2626, 2, 1, VEHICULO_SPAWN);                     // CNN Van
-	CochesNoticias[1] = AddStaticVehicleAnt(582, 752.7899, -1335.1346, 13.7565, 178.3179, 2, 1, VEHICULO_SPAWN);                     // CNN Van
-	CochesNoticias[2] = AddStaticVehicleAnt(582, 741.6085, -1335.1671, 13.7574, 179.1018, 2, 1, VEHICULO_SPAWN);                     // CNN Van
-	CochesNoticias[3] = AddStaticVehicleAnt(488, 743.5662, -1372.6359, 25.9022, 358.8606, 2, 1, VEHICULO_SPAWN);                     // Marverik CNN [HELICOPTERO]
+	CochesNoticias[0] = AddStaticVehicleAnt(582, 746.9738, -1335.4572, 13.7571, 180.2626, 1, 1, VEHICULO_SPAWN);                     // CNN Van
+	CochesNoticias[1] = AddStaticVehicleAnt(582, 752.7899, -1335.1346, 13.7565, 178.3179, 1, 1, VEHICULO_SPAWN);                     // CNN Van
+	CochesNoticias[2] = AddStaticVehicleAnt(582, 741.6085, -1335.1671, 13.7574, 179.1018, 1, 1, VEHICULO_SPAWN);                     // CNN Van
+	CochesNoticias[3] = AddStaticVehicleAnt(488, 743.5662, -1372.6359, 25.9022, 358.8606, 1, 1, VEHICULO_SPAWN);                     // Marverik CNN [HELICOPTERO]
 
 	for(new i=0; i<sizeof obtenerLicencia; i++)
 	{
@@ -16335,10 +16335,10 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 	{
 		if(tCambioPagina[playerid] < gettime())
 		{
-			tCambioPagina[playerid] = gettime() + 10;
+			tCambioPagina[playerid] = gettime() + 5;
 			CambioPagina[playerid]++;
 			CambiarPagina(playerid);
-		}else Mensaje(playerid, COLOR_GRIS3, "Por favor espera 10 segundos.");
+		}else Mensaje(playerid, COLOR_GRIS3, "Por favor espera 5 segundos.");
 	}
 	//sistema de iphone por textdraw
 	else if(playertextid == iPhoneDatos[0][TDIphone])
