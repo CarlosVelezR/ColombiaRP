@@ -4852,7 +4852,7 @@ public OnGameModeInit()
 	CreateDynamic3DTextLabel("Salida\nUtiliza /salirpaintball", 0xF4BA0BFF, 1947.2084, 1653.8584, -4.6563, 3.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	CreateDynamicPickup(1242, 1, 1947.2084, 1653.8584, -4.6563);
 	//CNN [FACCION]
-	CreateDynamic3DTextLabel("Privado -{8AC56A} Oficina LSTV\n{FFFFFF}Pulsa Y", 0xFFFFFFFF, 759.8471, -1358.7413, 13.9899, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
+	CreateDynamic3DTextLabel("Privado -{8AC56A} Oficina Caracol\n{FFFFFF}Pulsa Y", 0xFFFFFFFF, 759.8471, -1358.7413, 13.9899, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	CreateDynamicPickup(1242, 1, 759.8471, -1358.7413, 13.9899);
 	//Guias Publicas [MAPAS]
 	CreateDynamic3DTextLabel("Guía Pública de la ciudad!\n{868FD9}/mapa", -1, 1181.4065, -1318.3972, 13.6281, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);	//Hospital
@@ -14524,10 +14524,10 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 			//LSTV ENTER
 			else if(PlayerToPointStripped(1, playerid, 759.8471, -1358.7413, 13.9899, cx, cy, cz))
 			{
-				ShowPlayerDialog(playerid, ENTER_LSTV, DIALOG_STYLE_LIST, "¿ Dónde desea ir ?", "LSTV Planta 1\tOficina\nLSTV Planta 2\tEstudio\nLSTV Planta 3\tTerraza", "Ir", "Salir");
+				ShowPlayerDialog(playerid, ENTER_LSTV, DIALOG_STYLE_LIST, "¿ Dónde desea ir ?", "Caracol Planta 1\tOficina\nCaracol Planta 2\tEstudio\nCaracol Planta 3\tTerraza", "Ir", "Salir");
 				return 1;
 			}
-			//LSTV EXIT
+			//Caracol EXIT
 			else if(PlayerToPointStripped(1, playerid, 243.2710, 302.7583, 999.1343, cx, cy, cz) || PlayerToPointStripped(1, playerid, -2719.7854, 519.2936, 48.3752, cx, cy, cz) || PlayerToPointStripped(1, playerid, 734.9713, -1358.6119, 25.5060, cx, cy, cz))
 			{
 				SetPosEx(playerid, 759.8471, -1358.7413, 13.9899, 20.0, 0, 0);
@@ -22403,19 +22403,19 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	            	{
 	                    LoadObjects(playerid);
 		                SetPosEx(playerid, -2719.7854, 519.2936, 48.3752, 0, 0, 0);
-	    	            GameTextForPlayer(playerid, "~g~~h~lstv", 5000, 1);
+	    	            GameTextForPlayer(playerid, "~g~~h~Caracol", 5000, 1);
 	        	    }
 	            	case 1:
 	            	{
 		                LoadObjects(playerid);
 		                SetPosEx(playerid, 243.2710, 302.7583, 999.1343+1, 0, 0, 0);
-	    	            GameTextForPlayer(playerid, "~g~~h~lstv", 5000, 1);
+	    	            GameTextForPlayer(playerid, "~g~~h~Caracol", 5000, 1);
 	        	    }
 	            	case 2:
 	            	{
 		                LoadObjects(playerid);
 		                SetPosEx(playerid, 734.9713, -1358.6119, 25.5060, 0, 0, 0);
-	    	            GameTextForPlayer(playerid, "~g~~h~lstv", 5000, 1);
+	    	            GameTextForPlayer(playerid, "~g~~h~Caracol", 5000, 1);
 	        	    }
 		        }
 		    }
