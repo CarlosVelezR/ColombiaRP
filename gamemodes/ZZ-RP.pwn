@@ -24406,7 +24406,7 @@ CallBack::StreamMedioSegundo()
 		//Textdraw Banco y Barra
 		new date[3];
 		getdate(date[0], date[1], date[2]);
-		format(string, sizeof(string), "     ~p~>~w~  Discord Proximamente   ~g~>~w~Nivel: %d ~r~>~w~Experiencia: %d/%d ~y~>~w~ Año 1976    ~b~>~w~RolePlay "Version"", cuenta[playerid][cNivel], cuenta[playerid][cExperiencia], (cuenta[playerid][cNivel] + 1) * levelexp, date[2], date[1], date[0]);
+		format(string, sizeof(string), "     ~p~>~w~ Colombia Roleplay   ~g~>~w~Nivel: %d ~r~>~w~Experiencia: %d/%d ~y~>~w~ Comienzos de los 70's    ~b~>~w~RolePlay "Version"", cuenta[playerid][cNivel], cuenta[playerid][cExperiencia], (cuenta[playerid][cNivel] + 1) * levelexp, date[2], date[1], date[0]);
 		PlayerTextDrawSetString(playerid, InfoText[playerid][1], string);
 		format(string, sizeof(string), "~b~$~w~%08d", cuenta[playerid][cDineroBanco]);
 		PlayerTextDrawSetString(playerid, InfoText[playerid][3], string);
