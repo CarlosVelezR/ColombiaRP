@@ -19139,9 +19139,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					{
 						if(cuenta[playerid][cNivel] < 3)return Mensaje(playerid, COLOR_ROJO, "Usted debe ser nivel 3 para comprar esto!");
 						if(!EsIlegal(playerid))return Mensaje(playerid, COLOR_ROJO, "Usted no pertenece a una Faccion Ilegal.");
-						if(verificarDinero(playerid, 1500))
+						if(verificarDinero(playerid, 15000))
 						{
-							pierdeDinero(playerid, 1500);
+							pierdeDinero(playerid, 15000);
 							cuenta[playerid][cSemillas][0] += 50;
 							Mensaje(playerid, COLOR_GRIS1, "Compraste 50 semillas de Speed!");
 							Mensaje(playerid, COLOR_VERDE, "Para sembrar usar /sembrarsemilla en un lugar discreto! Que no te roben tu cosecha!");
@@ -19152,9 +19152,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					{
 						if(cuenta[playerid][cNivel] < 3)return Mensaje(playerid, COLOR_ROJO, "Usted debe ser nivel 3 para comprar esto!");
 						if(!EsIlegal(playerid))return Mensaje(playerid, COLOR_ROJO, "Usted no pertenece a una Faccion Ilegal.");
-						if(verificarDinero(playerid, 3000))
+						if(verificarDinero(playerid, 30000))
 						{
-							pierdeDinero(playerid, 3000);
+							pierdeDinero(playerid, 30000);
 							cuenta[playerid][cSemillas][1] += 50;
 							Mensaje(playerid, COLOR_GRIS1, "Compraste 50 semillas de Extasis!");
 							Mensaje(playerid, COLOR_VERDE, "Para sembrar usar /sembrarsemilla en un lugar discreto! Que no te roben tu cosecha!");
@@ -19165,9 +19165,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					{
 						if(cuenta[playerid][cNivel] < 3)return Mensaje(playerid, COLOR_ROJO, "Usted debe ser nivel 3 para comprar esto!");
 						if(!EsIlegal(playerid))return Mensaje(playerid, COLOR_ROJO, "Usted no pertenece a una Faccion Ilegal.");
-						if(verificarDinero(playerid, 4250))
+						if(verificarDinero(playerid, 42050))
 						{
-							pierdeDinero(playerid, 4250);
+							pierdeDinero(playerid, 42050);
 							cuenta[playerid][cSemillas][2] += 50;
 							Mensaje(playerid, COLOR_GRIS1, "Compraste 50 semillas de Ritalin!");
 							Mensaje(playerid, COLOR_VERDE, "Para sembrar usar /sembrarsemilla en un lugar discreto! Que no te roben tu cosecha!");
@@ -19178,11 +19178,11 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					{
 						if(cuenta[playerid][cNivel] < 3)return Mensaje(playerid, COLOR_ROJO, "Usted debe ser nivel 3 para comprar esto!");
 						if(!EsIlegal(playerid))return Mensaje(playerid, COLOR_ROJO, "Usted no pertenece a una Faccion Ilegal.");
-						if(verificarDinero(playerid, 6000))
+						if(verificarDinero(playerid, 80000))
 						{
-							pierdeDinero(playerid, 6000);
+							pierdeDinero(playerid, 80000);
 							cuenta[playerid][cSemillas][3] += 50;
-							Mensaje(playerid, COLOR_GRIS1, "Compraste 50 semillas de Cocaina!");
+							Mensaje(playerid, COLOR_GRIS1, "Compraste 500 semillas de Cocaina!");
 							Mensaje(playerid, COLOR_VERDE, "Para sembrar usar /sembrarsemilla en un lugar discreto! Que no te roben tu cosecha!");
 							return 1;
 						}
@@ -19191,9 +19191,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 					{
 						if(cuenta[playerid][cNivel] < 3)return Mensaje(playerid, COLOR_ROJO, "Usted debe ser nivel 3 para comprar esto!");
 						if(!EsIlegal(playerid))return Mensaje(playerid, COLOR_ROJO, "Usted no pertenece a una Faccion Ilegal.");
-						if(verificarDinero(playerid, 4500))
+						if(verificarDinero(playerid, 40500))
 						{
-							pierdeDinero(playerid, 4500);
+							pierdeDinero(playerid, 40500);
 							cuenta[playerid][cSemillas][4] += 50;
 							Mensaje(playerid, COLOR_GRIS1, "Compraste 50 semillas de Marihuana!");
 							Mensaje(playerid, COLOR_VERDE, "Para sembrar usar /sembrarsemilla en un lugar discreto! Que no te roben tu cosecha!");
@@ -28800,9 +28800,9 @@ COMMAND:sembrarsemilla(playerid, params[])
 			if(!strcmp(Nombre(playerid), semillas[f][sDueno]))
 			{
 				LimitarSemillas++;
-				if(LimitarSemillas > 24)
+				if(LimitarSemillas > 249)
 				{
-					Mensaje(playerid, COLOR_ROJO, "Imposible plantar mas de 24 semillas.");
+					Mensaje(playerid, COLOR_ROJO, "Imposible plantar mas de 250 semillas.");
 					return 1;
 				}
 			}
