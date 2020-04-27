@@ -9039,7 +9039,7 @@ command(bar, playerid, params[]){
 				else
 				{
 				    ClearChatbox(playerid, 10);
-				    Mensaje(params[0], -1, "  {1A5FFF}Estado de San Andreas");
+				    Mensaje(params[0], -1, "  {1A5FFF}Estado de Colombia");
 				    format(string, sizeof(string), "  {89CBC1}Demandante: {FFFFFF}%s", PlayerName(playerid));
 					Mensaje(params[0], -1, string);
 					format(string, sizeof(string), "  {89CBC1}Infracción: {FFFFFF}%s", params[2]);
@@ -10454,7 +10454,7 @@ command(noticias, playerid, params[]){
 	    	}else{
 				if(!booleano[TalkingLive]{playerid}){
 					booleano[TalkingLive]{playerid} = true;
-					Mensaje(playerid, COLOR_BLANCO, "Has entrado en antena, estás hablando para todo San Andreas");
+					Mensaje(playerid, COLOR_BLANCO, "Has entrado en antena, estás hablando para todo Colombia");
 				}else{
        				booleano[TalkingLive]{playerid} = false;
 			        Mensaje(playerid, COLOR_BLANCO, "Estás fuera de antena.");
