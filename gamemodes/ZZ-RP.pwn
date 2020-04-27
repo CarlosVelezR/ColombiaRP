@@ -1378,7 +1378,7 @@ new const fRangos[][_@en@fRangos] =
 	{{"Ayudante"}, {"Trucker"}, {"Mecánico"}, {"Ingeniero"}, {"Supervisor"}, {"Director"}, {"Civil"}, {"Civil"}}, 
 	{{"Medico"}, {"Bombero"}, {"Oficial"}, {"Sheriff"}, {"Mecanico"}, {"Gobernador"}, {"Civil"}, {"Civil"}},
 	{{"Seguridad"}, {"Senador"}, {"Ministro"}, {"Alcalde BOG"}, {"Vice-Presidente-S"}, {"Presidente-S"}, {"Civil"}, {"Civil"}},
-	{{"Becario"}, {"Redactor"}, {"Periodista"}, {"Enviado Especial"}, {"Presentador"}, {"Director CNN"}, {"Civil"}, {"Civil"}}, 
+	{{"Becario"}, {"Redactor"}, {"Periodista"}, {"Enviado Especial"}, {"Presentador"}, {"Director Caracol"}, {"Civil"}, {"Civil"}},
 	{{"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}, {"Civil"}}, 
 	{{"Agente"}, {"S. Agente"}, {"Especial"}, {"Criminalista"}, {"Sub-Director"}, {"Director"}, {"Civil"}, {"Civil"}}
 };
@@ -1479,7 +1479,7 @@ new static trabTransportador[][_@en@trabTransportador] =
 {
 	{{1324.9205, -1020.4911, 30.5684}, "Banco Bogotá", 0}, //Posicion de descarga.
 	{{1361.1056, -1279.5759, 13.1084}, "Ammunation", 75}, 
-	{{641.2266, -1358.4257, 13.1411}, "CNN", 167}, 
+	{{641.2266, -1358.4257, 13.1411}, "Caracol", 167},
 	{{538.2512, -1284.9053, 16.9693}, "Grotti", 245}, 
 	{{1825.4022, -1684.7849, 13.1099}, "Alhambra", 350}, 
 	{{1933.4580, -1777.9232, 13.1099}, "24-7 Idlewood", 370}, 
@@ -1521,7 +1521,7 @@ new static trabCamionero[][_@en@trabCamionero] =
 	{{1534.4846, -1612.2167, 13.1891}, "Uniformes Comisaria", 310, 0, 0}, 
 	{{1361.7355, -1279.9271, 13.1889}, "Chalecos y Porras Ammunation", 350, 0, 0}, 
 	{{1191.1016, -1330.4587, 13.2075}, "Medicamentos Hospital", 365, 0, 0}, 
-	{{763.6075, -1324.5220, 13.1931}, "Microfonos y parlantes CNN", 380, 0, 0}, 
+	{{763.6075, -1324.5220, 13.1931}, "Microfonos y parlantes Caracol", 380, 0, 0},
 	{{-63.9782, -1163.8698, 1.4974}, "Drogas Ilegales", 280, 0, 1}, 
 	{{957.5847, -1195.5867, 16.7029}, "Armas Ilegales", 300, 1, 0}
 };
@@ -4711,7 +4711,7 @@ public OnGameModeInit()
  
 	//Carteles Publicitarios
 	CreateDynamicPickup(1239, 1, 1088.1642, -1377.9141, 13.8070);
-	CreateDynamic3DTextLabel("CNN -{868FD9} Centro de anuncios Carteles\n{FFFFFF}/publicidad", 0xFFFFFFFF, 1088.1642, -1377.9141, 13.8070, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
+	CreateDynamic3DTextLabel("Caracol -{868FD9} Centro de anuncios Carteles\n{FFFFFF}/publicidad", 0xFFFFFFFF, 1088.1642, -1377.9141, 13.8070, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	// 3D Labels
 	CreateDynamic3DTextLabel("{ABD387}Estándares de ropa:{FFFFFF} Uniforme y cajas de herramientas para mecánicos!", -1, 2132.3005, -2280.6406, 14.7769, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	CreateDynamic3DTextLabel("{ABD387}Librero:{FFFFFF} Radios, manuales e identificaciones para mecánicos!", -1, 2124.6816, -2272.2881, 20.6719, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
@@ -4831,7 +4831,7 @@ public OnGameModeInit()
 	CreateDynamicPickup(1242, 1, 1775.0223, -1806.0796, 13.5285);
 	CreateDynamic3DTextLabel("Pabellón de{E6DE48} Box!", 0xFFFFFFFF, 1775.0223, -1806.0796, 13.5285, 25.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	//Anuncios [CABINA]
- 	CreateDynamic3DTextLabel("CNN -{868FD9} Centro de anuncios\n{FFFFFF}/ad", 0xFFFFFFFF, 1088.3285, -1379.8683, 13.8077, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
+ 	CreateDynamic3DTextLabel("Caracol -{868FD9} Centro de anuncios\n{FFFFFF}/ad", 0xFFFFFFFF, 1088.3285, -1379.8683, 13.8077, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	//Venta de Hotdog [PUESTO]
 	CreateDynamic3DTextLabel("Venta{FFFFFF} de Hotdog!\n/comprarhotdog", COLOR_ROJO, 1589.6941, -1288.7108, 17.5133, 6.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	//FBI [FACCION]
@@ -7696,7 +7696,7 @@ command(encenderb , playerid, params[])
         if(cuenta[playerid][cAdministrador] >= 2012){
 		if(!booleano[AntiAbusos]{playerid}){Mensaje(playerid, COLOR_AMARILLO, "»{FFFFFF} No puedes usar este comando sin estar en OnDuty."); return 1;}
 		    Mensaje(playerid, -1, "{E48584}Facciones Oficiales ZZ:");
-			Mensaje(playerid, -1, "{FFFFFF}1- LSPD  3- LSMC 4- Mecánicos 5- Mecanicos Ian 6- Gobierno 7- CNN 9- FBI Ilegales: /listafaccion");
+			Mensaje(playerid, -1, "{FFFFFF}1- LSPD  3- LSMC 4- Mecánicos 5- Mecanicos Ian 6- Gobierno 7- Caracol 9- FBI Ilegales: /listafaccion");
 		} else Mensaje(playerid, COLOR_GRIS2, "No autorizado!");
 		return 1;
 	}
@@ -8542,7 +8542,7 @@ command(contratar, playerid, params[]){
 						case 4: ReqF_Name[params[0]] = "Bogota DC Customs";
 						case 5: ReqF_Name[params[0]] = "Gobierno de Fort Carson";
 						case 6: ReqF_Name[params[0]] = "Gobierno";
-						case 7: ReqF_Name[params[0]] = "CNN";
+						case 7: ReqF_Name[params[0]] = "Caracol";
 						case 9: ReqF_Name[params[0]] = "FBI";
 					}
 					ReqF_Faction[params[0]] = cuenta[playerid][cLider];
@@ -10444,13 +10444,13 @@ command(noticias, playerid, params[]){
 				if(car == 488 || car == 582){
 					if(!booleano[TalkingLive]{playerid}){
 						booleano[TalkingLive]{playerid} = true;
-						Mensaje(playerid, COLOR_BLANCO, "Has entrado en antena, estás hablando para todo San Andreas");
-						Mensaje(playerid, COLOR_BLANCO, "Recuerda que solo puedes hablar en un vehículo CNN con ese rango.");
+						Mensaje(playerid, COLOR_BLANCO, "Has entrado en antena, estás hablando para todo Colombia");
+						Mensaje(playerid, COLOR_BLANCO, "Recuerda que solo puedes hablar en un vehículo de Caracol con ese rango.");
 					}else{
 						booleano[TalkingLive]{playerid} = false;
 						Mensaje(playerid, COLOR_BLANCO, "Estás fuera de antena.");
 					}
-				}else return Mensaje(playerid, COLOR_GRIS2, "No estás en un vehículo CNN!");
+				}else return Mensaje(playerid, COLOR_GRIS2, "No estás en un vehículo de Caracol!");
 	    	}else{
 				if(!booleano[TalkingLive]{playerid}){
 					booleano[TalkingLive]{playerid} = true;
@@ -13739,19 +13739,19 @@ public OnPlayerText(playerid, text[])
 		{
 			if(car == 488 || car == 582)
 			{
-				format(string, sizeof(string), "[CNN-Directo](%s): %s", PlayerName(playerid), text);
+				format(string, sizeof(string), "[Caracol-Directo](%s): %s", PlayerName(playerid), text);
 				OOCNews(0x00B75BFF, string);
-	    	}else Mensaje(playerid, COLOR_GRIS2, "No estás en un vehículo CNN!");
+	    	}else Mensaje(playerid, COLOR_GRIS2, "No estás en un vehículo de Caracol!");
 			return 0;
 		}
 		else
 		{
 			if(EsPeriodista(playerid))
 			{
-				format(string, sizeof(string), "[CNN-Directo](%s): %s", PlayerName(playerid), text);
+				format(string, sizeof(string), "[Caracol-Directo](%s): %s", PlayerName(playerid), text);
 				OOCNews(0x00B75BFF, string);
 			}else{
-				format(string, sizeof(string), "[CNN-Directo]Invitado(%s): %s", PlayerName(playerid), text);
+				format(string, sizeof(string), "[Caracol-Directo]Invitado(%s): %s", PlayerName(playerid), text);
 				OOCNews(0x00B75BFF, string);
 			}
 			return 0;
@@ -18390,7 +18390,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 							}
 						   case 7:
 						   {
-						   		Mensaje(playerid, -1, "{E48584}CNN:{FFFFFF} /duty /noticias /entrevista /centrevista");
+						   		Mensaje(playerid, -1, "{E48584}Caracol:{FFFFFF} /duty /noticias /entrevista /centrevista");
 						   	}
 						   case 9:
 						   {
@@ -18427,7 +18427,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 							}
 							case 7:
 							{
-						   		Mensaje(playerid, -1, "{E48584}CNN:{FFFFFF} /duty /noticias /entrevista /centrevista");
+						   		Mensaje(playerid, -1, "{E48584}Caracol:{FFFFFF} /duty /noticias /entrevista /centrevista");
 							}
 							case 9:
 							{
@@ -22932,7 +22932,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	            	case 0: ShowPlayerDialog(playerid, BARES, DIALOG_STYLE_LIST, "{018CFE}GPS - Bares/Discotecas:", "{FFFFFF}Alhambra\nClub VIP\nBar Groove", "Marcar", "Atrás");
 		            case 1: ShowPlayerDialog(playerid, EMERGENCIAS, DIALOG_STYLE_LIST, "{018CFE}GPS - Emergencias:", "{FFFFFF}SAMUR\nLSPD\nFBI\nSAEM", "Marcar", "Atrás");
 		            case 2: ShowPlayerDialog(playerid, NEGOCIOS, DIALOG_STYLE_LIST, "{018CFE}GPS - Negocios:", "{FFFFFF}24/7 Ayuntamiento\n24/7 Unity\n24/7 Vinewood\nPizza Stark\nAmmunation\nBinco\nGimnasio\nVictim", "Marcar", "Atrás");
-	    	        case 3: ShowPlayerDialog(playerid, LUGARPUBLICO, DIALOG_STYLE_LIST, "{018CFE}GPS - Lugares Públicos:", "{FFFFFF}Ayuntamiento\nBanco\nGasolinera\nGrotti\nCyber\nCNN\nBiblioteca\nPaintball\nBowling\nIglesia\nCasino", "Marcar", "Atrás");
+	    	        case 3: ShowPlayerDialog(playerid, LUGARPUBLICO, DIALOG_STYLE_LIST, "{018CFE}GPS - Lugares Públicos:", "{FFFFFF}Ayuntamiento\nBanco\nGasolinera\nGrotti\nCyber\nCaracol\nBiblioteca\nPaintball\nBowling\nIglesia\nCasino", "Marcar", "Atrás");
 	        	    case 4: ShowPlayerDialog(playerid, SERVICIOS, DIALOG_STYLE_LIST, "{018CFE}GPS - Servicios:", "{FFFFFF}Mecánicos\nAutoescuela\nCIA", "Marcar", "Atrás");
 				}
 		    }
@@ -23978,7 +23978,7 @@ CallBack::CambiarPagina(playerid)
 			SetPlayerCameraLookAt(playerid, 2240.355712, -2232.531250, 25.983198);
 			SetPlayerPos(playerid, 2245.186523, -2232.575439, 0.0000);
 			
-			format(string, sizeof(string), "Podras formar parte de facciones! Hay bastantes a tu disposicion~n~como ~g~LSPD, SAEM, CPLS ~w~(mecanicos), ~g~CNN...~n~~w~Tambien puedes crear tu faccion ~r~Ilegal~w~ via foro y hacerla oficial!~n~Para las ~g~Legales~w~ deberas mandar postulacion via foro para ser parte!~n~Sin emabrgo para entrar a facciones ~r~Ilegales~w~ deberas hacerlo IC.~n~");
+			format(string, sizeof(string), "Podras formar parte de facciones! Hay bastantes a tu disposicion~n~como ~g~LSPD, SAEM, CPLS ~w~(mecanicos), ~g~Caracol...~n~~w~Tambien puedes crear tu faccion ~r~Ilegal~w~ via foro y hacerla oficial!~n~Para las ~g~Legales~w~ deberas mandar postulacion via foro para ser parte!~n~Sin emabrgo para entrar a facciones ~r~Ilegales~w~ deberas hacerlo IC.~n~");
 			PlayerTextDrawSetString(playerid, InfoText[playerid][4], string);
 			PlayerTextDrawShow(playerid, InfoText[playerid][4]);
 			
@@ -28665,7 +28665,7 @@ COMMAND:ad(playerid, params[])
 	}
 	else
 	{
-		Mensaje(playerid, COLOR_ROJO, "Para enviar un anuncio dirigirse a la Cabina de la CNN.");
+		Mensaje(playerid, COLOR_ROJO, "Para enviar un anuncio dirigirse a la Cabina de la Caracol.");
 	}
 	return 1;
 }
@@ -29715,7 +29715,7 @@ COMMAND:publicidad(playerid, params[]){
 		if(cuenta[playerid][cNivel] >= 6){
 			ShowPlayerDialog(playerid, DIALOGO_PUBLICIDAD, DIALOG_STYLE_LIST, "[!]Publica tu anuncio", "Commerce - Comiseria\nIdlewood - 24/7\nCommerce - 24/7\nDowntown - Ammunation\nSanta Maria Beach - Autopista 1\nSanta Maria Beach - Autopista 2\nSanta Maria Beach - Autopista 3\nWillowfield - Basureros\nEast Bogota DC - Puente Ganton\nGlenn Park - Estacionamiento", "Aceptar", "Cancelar");
 		}else Mensaje(playerid, COLOR_ROJO, "Usted debe ser nivel 6 o superior para usar este comando.");
-	}else Mensaje(playerid, COLOR_GRIS, "Usted no se encuentra en el centro de anuncios de la CNN.");
+	}else Mensaje(playerid, COLOR_GRIS, "Usted no se encuentra en el centro de anuncios de la Caracol.");
 	return 1;
 }
 /************************************************************/
@@ -29889,7 +29889,7 @@ COMMAND:arrestar(playerid, params[]){
 				cuenta[player][cSemillas][i] = 0;
 			}
 
-			format(string, sizeof(string), "{FFFFFF}Noticias {EE0000}SA {00B546}CNN+{FFFFFF} 'Sospechoso {FF9900}%s {FFFFFF}ha sido arrestado por %d Dias'", PlayerName(player), minuto);
+			format(string, sizeof(string), "{FFFFFF}Noticias {EE0000}SA {00B546}Caracol+{FFFFFF} 'Sospechoso {FF9900}%s {FFFFFF}ha sido arrestado por %d Dias'", PlayerName(player), minuto);
 			MensajeGlobal(-1, string);
 
 			format(string, sizeof(string), "[ Sospechoso %s encarcelado por %d minutos, multa %d$, fianza %d$ - Oficial: %s ]", PlayerName(player), minuto, multa, fianza, PlayerName(playerid));
