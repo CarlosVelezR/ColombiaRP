@@ -5080,10 +5080,10 @@ public OnGameModeInit()
 	CochesPesca[2] = AddStaticVehicleAnt(453, 609.20001221, -2018.80004883, 0.00000000, 176.00000000, -1, -1, VEHICULO_SPAWN);    // Reefer
 	CochesPesca[3] = AddStaticVehicleAnt(453, 597.09997559, -2018.09997559, 0.00000000, 176.00000000, -1, -1, VEHICULO_SPAWN);    // Reefer
 
-	CochesGobierno[0] = AddStaticVehicleAnt(409, 1405.9868, -1794.7078, 13.3469, 89.9807, 1, 1, VEHICULO_SPAWN);    // Stretch
-	CochesGobierno[1] = AddStaticVehicleAnt(426, 1406.5286, -1786.8263, 13.2902, 89.7796, 1, 1, VEHICULO_SPAWN);    // Premier
-	CochesGobierno[2] = AddStaticVehicleAnt(426, 1406.5192, -1782.9362, 13.2900, 90.5440, 1, 1, VEHICULO_SPAWN);    // Premier
-	CochesGobierno[3] = AddStaticVehicleAnt(426, 1406.6017, -1790.5774, 13.2898, 89.7113, 1, 1, VEHICULO_SPAWN);    // Premier
+	CochesGobierno[0] = AddStaticVehicleAnt(409, 1405.9868, -1794.7078, 13.3469, 89.9807, 0, 0, VEHICULO_SPAWN);    // Stretch
+	CochesGobierno[1] = AddStaticVehicleAnt(426, 1406.5286, -1786.8263, 13.2902, 89.7796, 0, 0, VEHICULO_SPAWN);    // Premier
+	CochesGobierno[2] = AddStaticVehicleAnt(426, 1406.5192, -1782.9362, 13.2900, 90.5440, 0, 0, VEHICULO_SPAWN);    // Premier
+	CochesGobierno[3] = AddStaticVehicleAnt(426, 1406.6017, -1790.5774, 13.2898, 89.7113, 0, 0, VEHICULO_SPAWN);    // Premier
 	
 	transCoches[0] = AddStaticVehicleAnt(428, 1315.9596, -1009.3345, 30.9452, 179.9991, 1, 0, VEHICULO_SPAWN);
 	transCoches[1] = AddStaticVehicleAnt(428, 1320.3640, -1009.5320, 30.9460, 179.7460, 1, 0, VEHICULO_SPAWN);
@@ -6078,7 +6078,8 @@ COMMAND:jail(playerid, params[])
 	return 1;
 }
 
-		///himno
+
+// himno Policia
 
 command(himno, playerid, params[])
 {
@@ -6093,9 +6094,60 @@ command(himno, playerid, params[])
 	    	}
 
  		return 1;
-	}
+}
 	
-//Termina Acá
+
+
+command(himnocolombiano, playerid, params[])
+{
+
+			if(cuenta[playerid][cLider] == 6) // GOB.
+	    	{
+				for(new i = 0; i < MAX_PLAYERS; i++)
+	   			{
+ 					PlayAudioStreamForPlayer(i,"https://dl.dropboxusercontent.com/s/s1rm6s6qjtl2isd/Himno%20Nacional%20de%20la%20Rep%C3%BAblica%20de%20Colombia.mp3?dl=0");
+ 				}
+
+	    	}
+
+  return 1;
+}
+
+
+
+command(anuncio, playerid, params[])
+{
+
+			if(cuenta[playerid][cLider] == 6) //CDM.
+	    	{
+				for(new i = 0; i < MAX_PLAYERS; i++)
+	   			{
+ 					PlayAudioStreamForPlayer(i,"https://dl.dropboxusercontent.com/s/utizg4gckaoqt78/Se%20Busca%20Pablo%20Escobar.mp3?dl=0");
+ 				}
+
+	    	}
+
+  return 1;
+}
+
+command(ultimabala, playerid, params[])
+{
+
+			if(cuenta[playerid][cLider] == 6) //CDM.
+	    	{
+				for(new i = 0; i < MAX_PLAYERS; i++)
+	   			{
+ 					PlayAudioStreamForPlayer(i,"https://dl.dropboxusercontent.com/s/3ixuvfctd6u1uyq/La%20Ultima%20Bala%20-%20Yuri%20Buenaventura%20-%20OficialHD%20%282%29.mp3?dl=0");
+ 				}
+
+	    	}
+
+  return 1;
+}
+
+
+
+
 
 COMMAND:pp(playerid, params[])
 {
@@ -18391,9 +18443,9 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /duty /d /radio /r /m /multar /equipo /placa /ap /cp /ta /drag");
 								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /limpiar /ant /arrestar /su /bk /bkc /esposar /revisarcarga /quitar");
 								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /vercinturon /remolcar /allanarcasa /revisarcasa /incautar /bar /qb");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /pstrips /qstrips /retener /camaras /sospechosos /qbs /miranda");
+								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /pstrips /qstrips /retener /camaras /sospechosos /qbs /miranda /himno");
 								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /tlcdesasdb /quitarcarga /estadoemergencia (SOLO LG)");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /quemarcosecha [SOLO PARA COSECHAS PG (Medio de la calle o lugares publicos]");
+								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /quemarcosecha [SOLO PARA COSECHAS PG (Medio de la calle o lugares publicos]  ");
 							}
 						   	case 3:
 							{
@@ -18406,7 +18458,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 							}
 						   case 6:
 						   {
-			   		 			Mensaje(playerid, -1, "{E48584}Gobierno:{FFFFFF} /duty /d /equipo /gob /impuesto /estadoemergencia (SOLO LG)");
+			   		 			Mensaje(playerid, -1, "{E48584}Gobierno:{FFFFFF} /duty /himnocolombiano /d /equipo /gob /impuesto /estadoemergencia");
 							}
 						   case 7:
 						   {
