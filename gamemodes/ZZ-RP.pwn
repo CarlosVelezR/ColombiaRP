@@ -6077,6 +6077,26 @@ COMMAND:jail(playerid, params[])
 	AdminMensaje(tmp);
 	return 1;
 }
+
+		///himno
+
+command(himno, playerid, params[])
+{
+
+			if(cuenta[playerid][cLider] == 1) // PNC.
+	    	{
+				for(new i = 0; i < MAX_PLAYERS; i++)
+	   			{
+ 					PlayAudioStreamForPlayer(i,"https://dl.dropboxusercontent.com/s/3njt3hhuhgpvcuz/Himno%20Polic%C3%ADa%20Nacional%20de%20Colombia%28MP3_160K%29.mp3?dl=0");
+ 				}
+
+	    	}
+
+ 		return 1;
+	}
+	
+//Termina Acá
+
 COMMAND:pp(playerid, params[])
 {
 	if(!booleano[gIngreso]{playerid} || !cuenta[playerid][cTutorial])return Mensaje(playerid, COLOR_GRIS2, "Primero debes ingresar.");
@@ -22811,6 +22831,8 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
            		}
 			}
 		}
+		
+
 		case DIALOGO_RECARGAR_TELEFONO:
 		{
 		    if(response)
