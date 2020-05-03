@@ -6115,7 +6115,7 @@ command(himnocolombiano, playerid, params[])
 
 
 
-command(anuncio, playerid, params[])
+command(anunciobusqueda, playerid, params[])
 {
 
 			if(cuenta[playerid][cLider] == 6) //CDM.
