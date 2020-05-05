@@ -4752,7 +4752,7 @@ public OnGameModeInit()
 	CreateDynamicPickup(1239, 1, 1241.6906,-1781.8174,33.6510); // Helipuerto a la Central
 	//LSPD [PRISION]
 	CreateDynamicPickup(1239, 1, 2046.4567, -2075.2861, 13.6079); // Comando /arrestar [PRISION]
-	CreateDynamic3DTextLabel("PNC -{868FD9} Para arrestar utilizar\n{FFFFFF}/arrestar", 0xFFFFFFFF, 2046.4567, -2075.2861, 13.6079, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
+	CreateDynamic3DTextLabel("LSPD -{868FD9} Para arrestar utilizar\n{FFFFFF}/arrestar", 0xFFFFFFFF, 2046.4567, -2075.2861, 13.6079, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	//Entrada Pigpen
 	CreateDynamicPickup(1239, 1, 2421.5698, -1219.2428, 25.5615); // Entrada iglesia
 	CreateDynamic3DTextLabel("Club - {FC7F75}Pigpen Strip Club\n{FFFFFF}Pulsa Y", 0xFFFFFFFF, 2421.5698, -1219.2428, 25.5615, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
@@ -4788,7 +4788,7 @@ public OnGameModeInit()
 	CreateDynamicPickup(1239, 1, 1555.2174, -1675.6044, 16.1953); // Exterior Comisaria
 	CreateDynamicPickup(1239, 1, 786.1667, -360.7837, 994.2100); // Celdas
 	CreateDynamic3DTextLabel("Para abrir/cerrar\n{868FD9}/ap y /cp", 0xFFFFFFFF, 786.1667, -360.7837, 994.2100, 8.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
-	CreateDynamic3DTextLabel("Gobierno - {868FD9}Deposito PNC\n{AA3333}Acceso Restringido", 0xFFFFFFFF, 2422.0039, -2077.8850, 13.5538, 12.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
+	CreateDynamic3DTextLabel("Gobierno - {868FD9}Deposito LSPD\n{AA3333}Acceso Restringido", 0xFFFFFFFF, 2422.0039, -2077.8850, 13.5538, 12.0, INVALID_PLAYER_ID, INVALID_VEHICLE_ID, 1, 0, 0);
 	CreateDynamicPickup(1239, 1, 2422.0039, -2077.8850, 13.5538); // Deposito
 	//Labels de Inicio ZZ [IMPORTANTES]
 	CreateDynamicPickup(1239, 1, 1713.2515, -1860.7002, 13.5784); // CEDULA Inicio
@@ -5080,10 +5080,10 @@ public OnGameModeInit()
 	CochesPesca[2] = AddStaticVehicleAnt(453, 609.20001221, -2018.80004883, 0.00000000, 176.00000000, -1, -1, VEHICULO_SPAWN);    // Reefer
 	CochesPesca[3] = AddStaticVehicleAnt(453, 597.09997559, -2018.09997559, 0.00000000, 176.00000000, -1, -1, VEHICULO_SPAWN);    // Reefer
 
-	CochesGobierno[0] = AddStaticVehicleAnt(409, 1405.9868, -1794.7078, 13.3469, 89.9807, 0, 0, VEHICULO_SPAWN);    // Stretch
-	CochesGobierno[1] = AddStaticVehicleAnt(426, 1406.5286, -1786.8263, 13.2902, 89.7796, 0, 0, VEHICULO_SPAWN);    // Premier
-	CochesGobierno[2] = AddStaticVehicleAnt(426, 1406.5192, -1782.9362, 13.2900, 90.5440, 0, 0, VEHICULO_SPAWN);    // Premier
-	CochesGobierno[3] = AddStaticVehicleAnt(426, 1406.6017, -1790.5774, 13.2898, 89.7113, 0, 0, VEHICULO_SPAWN);    // Premier
+	CochesGobierno[0] = AddStaticVehicleAnt(409, 1405.9868, -1794.7078, 13.3469, 89.9807, 1, 1, VEHICULO_SPAWN);    // Stretch
+	CochesGobierno[1] = AddStaticVehicleAnt(426, 1406.5286, -1786.8263, 13.2902, 89.7796, 1, 1, VEHICULO_SPAWN);    // Premier
+	CochesGobierno[2] = AddStaticVehicleAnt(426, 1406.5192, -1782.9362, 13.2900, 90.5440, 1, 1, VEHICULO_SPAWN);    // Premier
+	CochesGobierno[3] = AddStaticVehicleAnt(426, 1406.6017, -1790.5774, 13.2898, 89.7113, 1, 1, VEHICULO_SPAWN);    // Premier
 	
 	transCoches[0] = AddStaticVehicleAnt(428, 1315.9596, -1009.3345, 30.9452, 179.9991, 1, 0, VEHICULO_SPAWN);
 	transCoches[1] = AddStaticVehicleAnt(428, 1320.3640, -1009.5320, 30.9460, 179.7460, 1, 0, VEHICULO_SPAWN);
@@ -6077,78 +6077,6 @@ COMMAND:jail(playerid, params[])
 	AdminMensaje(tmp);
 	return 1;
 }
-
-
-// himno Policia
-
-command(himno, playerid, params[])
-{
-
-			if(cuenta[playerid][cLider] == 1) // PNC.
-	    	{
-				for(new i = 0; i < MAX_PLAYERS; i++)
-	   			{
- 					PlayAudioStreamForPlayer(i,"https://dl.dropboxusercontent.com/s/3njt3hhuhgpvcuz/Himno%20Polic%C3%ADa%20Nacional%20de%20Colombia%28MP3_160K%29.mp3?dl=0");
- 				}
-
-	    	}
-
- 		return 1;
-}
-	
-
-
-command(himnocolombiano, playerid, params[])
-{
-
-			if(cuenta[playerid][cLider] == 6) // GOB.
-	    	{
-				for(new i = 0; i < MAX_PLAYERS; i++)
-	   			{
- 					PlayAudioStreamForPlayer(i,"https://dl.dropboxusercontent.com/s/s1rm6s6qjtl2isd/Himno%20Nacional%20de%20la%20Rep%C3%BAblica%20de%20Colombia.mp3?dl=0");
- 				}
-
-	    	}
-
-  return 1;
-}
-
-
-
-command(anunciobusqueda, playerid, params[])
-{
-
-			if(cuenta[playerid][cLider] == 6) //CDM.
-	    	{
-				for(new i = 0; i < MAX_PLAYERS; i++)
-	   			{
- 					PlayAudioStreamForPlayer(i,"https://dl.dropboxusercontent.com/s/utizg4gckaoqt78/Se%20Busca%20Pablo%20Escobar.mp3?dl=0");
- 				}
-
-	    	}
-
-  return 1;
-}
-
-command(ultimabala, playerid, params[])
-{
-
-			if(cuenta[playerid][cLider] == 6) //CDM.
-	    	{
-				for(new i = 0; i < MAX_PLAYERS; i++)
-	   			{
- 					PlayAudioStreamForPlayer(i,"https://dl.dropboxusercontent.com/s/3ixuvfctd6u1uyq/La%20Ultima%20Bala%20-%20Yuri%20Buenaventura%20-%20OficialHD%20%282%29.mp3?dl=0");
- 				}
-
-	    	}
-
-  return 1;
-}
-
-
-
-
-
 COMMAND:pp(playerid, params[])
 {
 	if(!booleano[gIngreso]{playerid} || !cuenta[playerid][cTutorial])return Mensaje(playerid, COLOR_GRIS2, "Primero debes ingresar.");
@@ -7768,7 +7696,7 @@ command(encenderb , playerid, params[])
         if(cuenta[playerid][cAdministrador] >= 2012){
 		if(!booleano[AntiAbusos]{playerid}){Mensaje(playerid, COLOR_AMARILLO, "»{FFFFFF} No puedes usar este comando sin estar en OnDuty."); return 1;}
 		    Mensaje(playerid, -1, "{E48584}Facciones Oficiales ZZ:");
-			Mensaje(playerid, -1, "{FFFFFF}1- PNC  3- LSMC 4- Mecánicos 5- Mecanicos Ian 6- Gobierno 7- Caracol 9- FBI Ilegales: /listafaccion");
+			Mensaje(playerid, -1, "{FFFFFF}1- LSPD  3- LSMC 4- Mecánicos 5- Mecanicos Ian 6- Gobierno 7- Caracol 9- FBI Ilegales: /listafaccion");
 		} else Mensaje(playerid, COLOR_GRIS2, "No autorizado!");
 		return 1;
 	}
@@ -9357,7 +9285,7 @@ command(cedulafalsa, playerid, params[]){
    	command(mapa, playerid, params[])
 	{
  		if(!IsAtMap(playerid))return Mensaje(playerid, COLOR_AMARILLO, "»{FFFFFF} No estas delante de un mapa.");
-		ShowPlayerDialog(playerid, DIALOGO_MAPA, DIALOG_STYLE_LIST, "{018CFE}Puntos de interes", "{FFFFFF}» Ayuntamiento\n» Comisaria\n» Taller\n» Licencieria\n» Binco\n» 24-7 Vinewood\n» 24-7 Unity\n» 24-7\n» Deposito de la PNC\n» Banco\n» Consecionaria\n» Paintball\n» Casino\n» Pista de Karting\n» Localizador de Vehiculos\n» Tienda de Electronica\n» Cabina de Anuncios (/ad)\n» Prision Federal\n» Trabajos", "Aceptar", "Salir");
+		ShowPlayerDialog(playerid, DIALOGO_MAPA, DIALOG_STYLE_LIST, "{018CFE}Puntos de interes", "{FFFFFF}» Ayuntamiento\n» Comisaria\n» Taller\n» Licencieria\n» Binco\n» 24-7 Vinewood\n» 24-7 Unity\n» 24-7\n» Deposito de la LSPD\n» Banco\n» Consecionaria\n» Paintball\n» Casino\n» Pista de Karting\n» Localizador de Vehiculos\n» Tienda de Electronica\n» Cabina de Anuncios (/ad)\n» Prision Federal\n» Trabajos", "Aceptar", "Salir");
 		return 1;
  	}
 
@@ -9565,7 +9493,7 @@ command(cuenta, playerid, params[])
 		{
             if(IsPlayerInRangeOfPoint(playerid, 5.0, 313.1193, -1565.2349, 3267.0879))
             {
- 			  format(string, sizeof(string), "[PNC] Comisario %s: %s", PlayerName(playerid), params[0]);
+ 			  format(string, sizeof(string), "[LSPD] Comisario %s: %s", PlayerName(playerid), params[0]);
 			  MensajeGlobal(0x00ACFFFF, string);
 			} else Mensaje(playerid, COLOR_AMARILLO, "»{FFFFFF} Usted no está en el lugar indicado para iniciar una transmición.");
 			return 1;
@@ -12850,7 +12778,7 @@ COMMAND:habilidad(playerid, params[])
     	{
             if(!IsPlayerInAnyVehicle(playerid))return Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}No estás en un vehículo para utilizar las funciones.");
      		if(!booleano[OnDuty]{playerid})return Mensaje(playerid, COLOR_AMARILLO, "» {FFFFFF}No estás de servicio. Ve a la comisaria para ponerte en Servicio.");
-	    	return ShowPlayerDialog(playerid, LSPD_EMBARGOS_MENU, DIALOG_STYLE_LIST, "-> Embargos PNC Menú <-", "» Embargar Vehiculo", ">>", "<<");
+	    	return ShowPlayerDialog(playerid, LSPD_EMBARGOS_MENU, DIALOG_STYLE_LIST, "-> Embargos LSPD Menú <-", "» Embargar Vehiculo", ">>", "<<");
 		}
 		else Mensaje(playerid, COLOR_ROJO, "No eres de la Policia Local o mayor a rango 3!");
 		return 1;
@@ -14099,7 +14027,7 @@ public OnPlayerText(playerid, text[])
 			}
 			else if ((strcmp("Policia", tmp, true, strlen(tmp)) == 0) && (strlen(tmp) == strlen("Policia")))
 			{
-				Mensaje(playerid, COLOR_BLANCO, "--> Conexión establecida con PNC.");
+				Mensaje(playerid, COLOR_BLANCO, "--> Conexión establecida con LSPD.");
 				Mensaje(playerid, 0x0080FFFF, "Central: Explique brevemente lo ocurrido.");
 				Mobile[playerid] = 912;
 				return 0;
@@ -14558,7 +14486,7 @@ public OnPlayerKeyStateChange(playerid, newkeys, oldkeys)
 				//Ascensor LSPD
 				if(IsACop(playerid))
 				{
-					ShowPlayerDialog(playerid, DIALOG_LSPD_ELEVATOR, DIALOG_STYLE_LIST, "Ascensor PNC", "¿ Donde desea ir ?", "Garage", "Salir");
+					ShowPlayerDialog(playerid, DIALOG_LSPD_ELEVATOR, DIALOG_STYLE_LIST, "Ascensor LSPD", "¿ Donde desea ir ?", "Garage", "Salir");
 					return 1;
 				}else return GameTextForPlayer(playerid, "~r~Solo Policias!", 5000, 3);
 			}
@@ -16479,7 +16407,7 @@ public OnPlayerClickPlayerTextDraw(playerid, PlayerText:playertextid)
 	}
 	else if(playertextid == iPhoneDatos[9][TDIphone])
 	{
-		ShowPlayerDialog(playerid, DIALOGO_MAPA, DIALOG_STYLE_LIST, "{018CFE}Puntos de interes", "{FFFFFF}» Ayuntamiento\n» Comisaria\n» Taller\n» Licencieria\n» Binco\n» 24-7 Vinewood\n» 24-7 Unity\n» 24-7\n» Deposito de la PNC\n» Banco\n» Consecionaria\n» Paintball\n» Casino\n» Pista de Karting\n» Localizador de Vehiculos\n» Tienda de Electronica\n» Cabina de Anuncios (/ad)\n» Prision Federal\n» Trabajos", "Aceptar", "Salir");
+		ShowPlayerDialog(playerid, DIALOGO_MAPA, DIALOG_STYLE_LIST, "{018CFE}Puntos de interes", "{FFFFFF}» Ayuntamiento\n» Comisaria\n» Taller\n» Licencieria\n» Binco\n» 24-7 Vinewood\n» 24-7 Unity\n» 24-7\n» Deposito de la LSPD\n» Banco\n» Consecionaria\n» Paintball\n» Casino\n» Pista de Karting\n» Localizador de Vehiculos\n» Tienda de Electronica\n» Cabina de Anuncios (/ad)\n» Prision Federal\n» Trabajos", "Aceptar", "Salir");
 		EsconderIphone(playerid);
 	}
 	else if(playertextid == iPhoneDatos[10][TDIphone])
@@ -18439,13 +18367,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						{
 							case 1:
 							{
-							    Mensaje(playerid, -1, "{E48584}PNC [RANGOS 3]:{FFFFFF}/embargar /quitarseguro /remolcar /changeit (Cambia Spawn de auto)");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /duty /d /radio /r /m /multar /equipo /placa /ap /cp /ta /drag");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /limpiar /ant /arrestar /su /bk /bkc /esposar /revisarcarga /quitar");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /vercinturon /remolcar /allanarcasa /revisarcasa /incautar /bar /qb");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /pstrips /qstrips /retener /camaras /sospechosos /qbs /miranda /himno");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /tlcdesasdb /quitarcarga /estadoemergencia (SOLO LG)");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /quemarcosecha [SOLO PARA COSECHAS PG (Medio de la calle o lugares publicos]  ");
+							    Mensaje(playerid, -1, "{E48584}LSPD [RANGOS 3]:{FFFFFF}/embargar /quitarseguro /remolcar /changeit (Cambia Spawn de auto)");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /duty /d /radio /r /m /multar /equipo /placa /ap /cp /ta /drag");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /limpiar /ant /arrestar /su /bk /bkc /esposar /revisarcarga /quitar");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /vercinturon /remolcar /allanarcasa /revisarcasa /incautar /bar /qb");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /pstrips /qstrips /retener /camaras /sospechosos /qbs /miranda");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /tlcdesasdb /quitarcarga /estadoemergencia (SOLO LG)");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /quemarcosecha [SOLO PARA COSECHAS PG (Medio de la calle o lugares publicos]");
 							}
 						   	case 3:
 							{
@@ -18458,7 +18386,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 							}
 						   case 6:
 						   {
-			   		 			Mensaje(playerid, -1, "{E48584}Gobierno:{FFFFFF} /duty /himnocolombiano /d /equipo /gob /impuesto /estadoemergencia");
+			   		 			Mensaje(playerid, -1, "{E48584}Gobierno:{FFFFFF} /duty /d /equipo /gob /impuesto /estadoemergencia (SOLO LG)");
 							}
 						   case 7:
 						   {
@@ -18476,13 +18404,13 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 						{
 							case 1:
 							{
-			    				Mensaje(playerid, -1, "{E48584}PNC [RANGOS 3]:{FFFFFF}/embargar /quitarseguro /remolcar");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /duty /d /radio /r /m /multar /equipo /placa /ap /cp /ta /drag");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /limpiar /ant /arrestar /su /bk /bkc /esposar /revisarcarga /quitar");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /vercinturon /remolcar /allanarcasa /revisarcasa /incautar /bar /qb");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /pstrips /qstrips /retener /camaras /sospechosos /qbs /miranda");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /tlcdesasdb /quitarcarga");
-								Mensaje(playerid, -1, "{E48584}PNC:{FFFFFF} /quemarcosecha [SOLO PARA COSECHAS PG (Medio de la calle o lugares publicos]");
+			    				Mensaje(playerid, -1, "{E48584}LSPD [RANGOS 3]:{FFFFFF}/embargar /quitarseguro /remolcar");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /duty /d /radio /r /m /multar /equipo /placa /ap /cp /ta /drag");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /limpiar /ant /arrestar /su /bk /bkc /esposar /revisarcarga /quitar");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /vercinturon /remolcar /allanarcasa /revisarcasa /incautar /bar /qb");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /pstrips /qstrips /retener /camaras /sospechosos /qbs /miranda");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /tlcdesasdb /quitarcarga");
+								Mensaje(playerid, -1, "{E48584}LSPD:{FFFFFF} /quemarcosecha [SOLO PARA COSECHAS PG (Medio de la calle o lugares publicos]");
 							}
 						   	case 3:
 							{
@@ -22883,8 +22811,6 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
            		}
 			}
 		}
-		
-
 		case DIALOGO_RECARGAR_TELEFONO:
 		{
 		    if(response)
@@ -22990,7 +22916,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	    }
 	    case DIALOGO_TRABAJO_UBICACION:
 	    {
-			if(!response)return ShowPlayerDialog(playerid, DIALOGO_MAPA, DIALOG_STYLE_LIST, "{018CFE}Puntos de interes", "{FFFFFF}» Ayuntamiento\n» Juzgados\n» Comisaria de Bogota DC\n» Taller\n» Licencieria\n» Binco\n» 24-7 Vinewood\n» 24-7 Unity\n» 24-7\n» Deposito de la PNC\n» Joyeria\n» Banco\n» Grotti\n» Cyber\n» Biblioteca\n» Baño Público\n» Iglesia\n» Casino\n» Trabajos", "Aceptar", "Salir");
+			if(!response)return ShowPlayerDialog(playerid, DIALOGO_MAPA, DIALOG_STYLE_LIST, "{018CFE}Puntos de interes", "{FFFFFF}» Ayuntamiento\n» Juzgados\n» Comisaria de Bogota DC\n» Taller\n» Licencieria\n» Binco\n» 24-7 Vinewood\n» 24-7 Unity\n» 24-7\n» Deposito de la LSPD\n» Joyeria\n» Banco\n» Grotti\n» Cyber\n» Biblioteca\n» Baño Público\n» Iglesia\n» Casino\n» Trabajos", "Aceptar", "Salir");
 	        if(response)
 	        {
 				new listid = listitem + 1;
@@ -23004,7 +22930,7 @@ public OnDialogResponse(playerid, dialogid, response, listitem, inputtext[])
 	    	    switch(listitem)
 	        	{
 	            	case 0: ShowPlayerDialog(playerid, BARES, DIALOG_STYLE_LIST, "{018CFE}GPS - Bares/Discotecas:", "{FFFFFF}Alhambra\nClub VIP\nBar Groove", "Marcar", "Atrás");
-		            case 1: ShowPlayerDialog(playerid, EMERGENCIAS, DIALOG_STYLE_LIST, "{018CFE}GPS - Emergencias:", "{FFFFFF}SAMUR\nPNC\nFBI\nSAEM", "Marcar", "Atrás");
+		            case 1: ShowPlayerDialog(playerid, EMERGENCIAS, DIALOG_STYLE_LIST, "{018CFE}GPS - Emergencias:", "{FFFFFF}SAMUR\nLSPD\nFBI\nSAEM", "Marcar", "Atrás");
 		            case 2: ShowPlayerDialog(playerid, NEGOCIOS, DIALOG_STYLE_LIST, "{018CFE}GPS - Negocios:", "{FFFFFF}24/7 Ayuntamiento\n24/7 Unity\n24/7 Vinewood\nPizza Stark\nAmmunation\nBinco\nGimnasio\nVictim", "Marcar", "Atrás");
 	    	        case 3: ShowPlayerDialog(playerid, LUGARPUBLICO, DIALOG_STYLE_LIST, "{018CFE}GPS - Lugares Públicos:", "{FFFFFF}Ayuntamiento\nBanco\nGasolinera\nGrotti\nCyber\nCaracol\nBiblioteca\nPaintball\nBowling\nIglesia\nCasino", "Marcar", "Atrás");
 	        	    case 4: ShowPlayerDialog(playerid, SERVICIOS, DIALOG_STYLE_LIST, "{018CFE}GPS - Servicios:", "{FFFFFF}Mecánicos\nAutoescuela\nCIA", "Marcar", "Atrás");
@@ -24052,7 +23978,7 @@ CallBack::CambiarPagina(playerid)
 			SetPlayerCameraLookAt(playerid, 2240.355712, -2232.531250, 25.983198);
 			SetPlayerPos(playerid, 2245.186523, -2232.575439, 0.0000);
 			
-			format(string, sizeof(string), "Podras formar parte de facciones! Hay bastantes a tu disposicion~n~como ~g~PNC, SAEM, CPLS ~w~(mecanicos), ~g~Caracol...~n~~w~Tambien puedes crear tu faccion ~r~Ilegal~w~ via foro y hacerla oficial!~n~Para las ~g~Legales~w~ deberas mandar postulacion via foro para ser parte!~n~Sin emabrgo para entrar a facciones ~r~Ilegales~w~ deberas hacerlo IC.~n~");
+			format(string, sizeof(string), "Podras formar parte de facciones! Hay bastantes a tu disposicion~n~como ~g~LSPD, SAEM, CPLS ~w~(mecanicos), ~g~Caracol...~n~~w~Tambien puedes crear tu faccion ~r~Ilegal~w~ via foro y hacerla oficial!~n~Para las ~g~Legales~w~ deberas mandar postulacion via foro para ser parte!~n~Sin emabrgo para entrar a facciones ~r~Ilegales~w~ deberas hacerlo IC.~n~");
 			PlayerTextDrawSetString(playerid, InfoText[playerid][4], string);
 			PlayerTextDrawShow(playerid, InfoText[playerid][4]);
 			
@@ -29827,7 +29753,7 @@ COMMAND:estadoemergencia(playerid, params[])
 			{
 				ESTemergencia[i][ESTobjeto] = CreateDynamicObject(ESTemergencia[i][ESTmodelo], ESTemergencia[i][ESTpos][0], ESTemergencia[i][ESTpos][1], ESTemergencia[i][ESTpos][2], ESTemergencia[i][ESTrot][0], ESTemergencia[i][ESTrot][1], ESTemergencia[i][ESTrot][2]);
 			}
-			MensajeGlobal(0x00ACFFFF, "PNC: Estado de Emergencia! El Ayuntamiento queda cerrado temporalmente, porfavor evitar esta zona!");
+			MensajeGlobal(0x00ACFFFF, "LSPD: Estado de Emergencia! El Ayuntamiento queda cerrado temporalmente, porfavor evitar esta zona!");
 		}
 		else if(ESTemerg)
 		{
@@ -29836,7 +29762,7 @@ COMMAND:estadoemergencia(playerid, params[])
 			{
 				DestroyDynamicObject(ESTemergencia[i][ESTobjeto]);
 			}
-			MensajeGlobal(0x00ACFFFF, "PNC: La zona del ayuntamiento ya fue liberada, se puede transitar normalmente!");
+			MensajeGlobal(0x00ACFFFF, "LSPD: La zona del ayuntamiento ya fue liberada, se puede transitar normalmente!");
 		}
 	}
 	else if(cuenta[playerid][cAdministrador] >= 2012 && booleano[AdminDuty]{playerid})
@@ -29977,7 +29903,7 @@ COMMAND:darlicencia(playerid, params[])
 {
 	new player;
 	if(sscanf(params, "u", player))return Mensaje(playerid, COLOR_GRIS2, "Utiliza: /darlicencia [Jugador]");
-	if(!IsACop(playerid) || cuenta[playerid][cRango] < 4)return Mensaje(playerid, COLOR_GRIS2, "No eres de la PNC o tu rango es muy bajo!");
+	if(!IsACop(playerid) || cuenta[playerid][cRango] < 4)return Mensaje(playerid, COLOR_GRIS2, "No eres de la LSPD o tu rango es muy bajo!");
 	if(IsPlayerConnected(player))
 	{
 		if(dDistanciaJugador(5.0, playerid, player))
