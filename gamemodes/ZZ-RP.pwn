@@ -24406,7 +24406,7 @@ CallBack::StreamMedioSegundo()
 		//Textdraw Banco y Barra
 		new date[3];
 		getdate(date[0], date[1], date[2]);
-		format(string, sizeof(string), "     ~p~>~w~  Discord Proximamente   ~g~>~w~Nivel: %d ~r~>~w~Experiencia: %d/%d ~y~>~w~ Año 1976    ~b~>~w~RolePlay "Version"", cuenta[playerid][cNivel], cuenta[playerid][cExperiencia], (cuenta[playerid][cNivel] + 1) * levelexp, date[2], date[1], date[0]);
+		format(string, sizeof(string), "     ~p~>~w~ 	discord.gg/KQta6CQ     ~g~>~w~Nivel: %d ~r~>~w~Experiencia: %d/%d ~y~>~w~Fecha: %02d/%02d/%04d    ~b~>~w~RolePlay "Version"", cuenta[playerid][cNivel], cuenta[playerid][cExperiencia], (cuenta[playerid][cNivel] + 1) * levelexp, date[2], date[1], date[0]);
 		PlayerTextDrawSetString(playerid, InfoText[playerid][1], string);
 		format(string, sizeof(string), "~b~$~w~%08d", cuenta[playerid][cDineroBanco]);
 		PlayerTextDrawSetString(playerid, InfoText[playerid][3], string);
@@ -28990,7 +28990,7 @@ COMMAND:cosecharsemilla(playerid, params[])
 		if(IsPlayerInRangeOfPoint(playerid, 1, semillas[f][sPosicion][0], semillas[f][sPosicion][1], semillas[f][sPosicion][2])){
 			if(semillas[f][sSlot] && gettime() > semillas[f][sTime])
 			{
-				new string[128], dGramos = 9 + random(2);
+				new string[128], dGramos = 3 + random(2);
 				switch(semillas[f][sTipo])
 				{
 					case 1:
